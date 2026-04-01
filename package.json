@@ -1,0 +1,17 @@
+{
+  "name": "outreach-bot",
+  "version": "1.0.0",
+  "description": "AI-powered outreach message generator for local businesses",
+  "main": "generate.js",
+  "type": "module",
+  "scripts": {
+    "start": "node generate.js",
+    "generate": "node generate.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.54.0",
+    "csv-parse": "^5.6.0",
+    "csv-stringify": "^6.5.2",
+    "dotenv": "^16.4.7"
+  }
+}
