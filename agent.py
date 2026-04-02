@@ -5,10 +5,11 @@ beingvortex News Agent
 Finds verified AI news and publishes posts to Threads (ES + EN).
 
 Usage:
-  python agent.py --dry-run      # Find news + show posts, do NOT publish
-  python agent.py --once         # Find news + publish once, then exit
-  python agent.py --schedule     # Publish every SCHEDULE_HOURS hours (default: 4)
-  python agent.py --check-auth   # Verify your Threads credentials are working
+  python agent.py --dry-run        # Find news + show posts, do NOT publish
+  python agent.py --once           # Find news + publish once, then exit
+  python agent.py --schedule       # Publish every SCHEDULE_HOURS hours (default: 4)
+  python agent.py --check-auth     # Verify your Threads credentials are working
+  python agent.py --refresh-token  # Renew Threads token before it expires (every 60 days)
 """
 
 import argparse
@@ -153,6 +154,45 @@ def _print_dry_run(item: dict, es_text: str, en_text: str) -> None:
 
 
 # ────────────────────────────────────────────────────────────────────────────
+#  Token refresh
+# ────────────────────────────────────────────────────────────────────────────
+
+def refresh_token() -> None:
+    """
+    Renew the Threads long-lived access token.
+    Tokens expire after 60 days — run this every ~50 days to stay active.
+    Prints the new token so you can update your .env file.
+    """
+    import requests
+
+    token = os.getenv("THREADS_ACCESS_TOKEN", "")
+    if not token:
+        print("ERROR: THREADS_ACCESS_TOKEN not set in .env")
+        sys.exit(1)
+
+    try:
+        response = requests.get(
+            "https://graph.threads.net/refresh_access_token",
+            params={"grant_type": "th_refresh_token", "access_token": token},
+            timeout=30,
+        )
+        response.raise_for_status()
+        data = response.json()
+        new_token = data.get("access_token", "")
+        expires_in = data.get("expires_in", 0)
+        expires_days = expires_in // 86400
+
+        print(f"\nToken refreshed successfully! Valid for ~{expires_days} days.")
+        print(f"\nUpdate your .env file with this new token:")
+        print(f"\nTHREADS_ACCESS_TOKEN={new_token}\n")
+        log.info(f"Token refreshed, expires in {expires_days} days")
+    except requests.HTTPError as exc:
+        print(f"\nERROR: {exc.response.status_code} — {exc.response.text}")
+        print("Your token may already be expired. Generate a new one from developers.facebook.com")
+        sys.exit(1)
+
+
+# ────────────────────────────────────────────────────────────────────────────
 #  Auth check
 # ────────────────────────────────────────────────────────────────────────────
 
@@ -202,12 +242,21 @@ def main() -> None:
         action="store_true",
         help="Verify Threads API credentials",
     )
+    group.add_argument(
+        "--refresh-token",
+        action="store_true",
+        help="Renew your Threads access token (run every ~50 days)",
+    )
     args = parser.parse_args()
 
     # Default to --dry-run if nothing specified (safe default)
-    if not any([args.dry_run, args.once, args.schedule, args.check_auth]):
+    if not any([args.dry_run, args.once, args.schedule, args.check_auth, args.refresh_token]):
         log.info("No mode specified — defaulting to --dry-run (safe mode)")
         args.dry_run = True
+
+    if args.refresh_token:
+        refresh_token()
+        return
 
     if args.check_auth:
         check_auth()

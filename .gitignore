@@ -1,0 +1,13 @@
+# Secrets — NEVER commit these
+.env
+
+# Runtime data
+published_posts.json
+agent.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
