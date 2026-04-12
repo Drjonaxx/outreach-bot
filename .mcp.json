@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "n8n-mcp": {
+      "command": "n8n-mcp",
+      "env": {
+        "N8N_API_URL": "${N8N_API_URL}",
+        "N8N_API_KEY": "${N8N_API_KEY}",
+        "MCP_MODE": "stdio",
+        "LOG_LEVEL": "error"
+      }
+    }
+  }
+}
