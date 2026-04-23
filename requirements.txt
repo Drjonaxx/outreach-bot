@@ -1,0 +1,7 @@
+pytrends==4.9.2
+praw==7.7.1
+google-api-python-client==2.111.0
+newsapi-python==0.2.7
+requests==2.31.0
+python-dotenv==1.0.0
+rich==13.7.0
