@@ -1,3 +1,7 @@
+flask
 pytrends
 requests
 python-dotenv
+newsapi-python
+google-api-python-client
+rich
