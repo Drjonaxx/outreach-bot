@@ -5,36 +5,28 @@ def generate(keyword: str, results: dict) -> list:
     yt = results.get("youtube", {})
     gt = results.get("google_trends", {})
 
-    tags = yt.get("top_tags", []) if not yt.get("error") else []
     top_videos = yt.get("top_videos", []) if not yt.get("error") else []
     rising = gt.get("rising_searches", []) if not gt.get("error") else []
+    rising = [r for r in rising if len(r.split()) >= 2][:3]
 
     year = datetime.now().year
     ideas = []
 
-    t1 = f" ({tags[0]})" if tags else ""
-    ideas.append(f"Cómo empezar con {keyword} desde cero{t1} — guía completa {year}")
+    ideas.append(f"Cómo empezar con {keyword} desde cero — guía completa {year}")
 
     if rising:
-        ideas.append(f"¿Qué es {rising[0]}? Todo lo que necesitas saber")
-    elif len(tags) > 1:
-        ideas.append(f"La verdad sobre {keyword} y {tags[1]} que nadie te dice")
+        ideas.append(f"¿Por qué '{rising[0]}' está arrasando? Todo lo que necesitas saber")
     else:
-        ideas.append(f"Lo que nadie te dice sobre {keyword}")
+        ideas.append(f"Lo que nadie te dice sobre {keyword} (y que cambia todo)")
 
-    n = len(top_videos) if top_videos else 5
-    ideas.append(f"Los {n} errores más comunes en {keyword} (y cómo evitarlos)")
+    ideas.append(f"Probé {keyword} por 30 días — esto fue lo que pasó")
 
     if len(rising) > 1:
-        ideas.append(f"{rising[0]} vs {rising[1]}: ¿cuál es mejor para ti?")
-    elif len(tags) > 2:
-        ideas.append(f"{tags[1]} vs {tags[2]}: la comparativa que nadie hizo")
+        ideas.append(f"'{rising[1]}': guía honesta para principiantes")
     else:
-        ideas.append(f"Hice esto con {keyword} por 30 días — estos son los resultados")
+        ideas.append(f"Los errores más comunes en {keyword} que todos cometen")
 
-    if tags:
-        ideas.append(f"Mis herramientas favoritas de {keyword} en {year} ({', '.join(tags[:3])})")
-    else:
-        ideas.append(f"Todo lo que aprendí sobre {keyword} en un año")
+    n = len(top_videos) if top_videos else 5
+    ideas.append(f"Los {n} mejores {keyword} de {year}: cuál vale la pena")
 
     return ideas[:5]
