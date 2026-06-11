@@ -3,6 +3,8 @@
 Web app (PWA) que muestra un análisis diario de las noticias de IA, generado por
 **Claude** a través de un escenario de **Make.com**.
 
+🔗 **App en vivo:** https://ubiquitous-croquembouche-5c3d14.netlify.app/
+
 ## Cómo funciona
 
 ```
