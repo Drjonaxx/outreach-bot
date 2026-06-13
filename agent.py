@@ -152,6 +152,16 @@ def _print_dry_run(item: dict, es_text: str, en_text: str) -> None:
     print(f"({len(en_text)} chars)")
     print(sep)
 
+    # Also save to a dated Markdown file so posts can be copy-pasted later
+    from datetime import datetime
+    fname = f"posts_{datetime.now().strftime('%Y-%m-%d')}.md"
+    with open(fname, "a", encoding="utf-8") as f:
+        f.write(f"\n## {item['title']}\n")
+        f.write(f"*{item.get('source_name', '')} — {item.get('url', '')}*\n\n")
+        f.write(f"**Español:**\n```\n{es_text}\n```\n\n")
+        f.write(f"**English:**\n```\n{en_text}\n```\n\n---\n")
+    log.info(f"  Posts saved to {fname}")
+
 
 # ────────────────────────────────────────────────────────────────────────────
 #  Token refresh

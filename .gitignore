@@ -4,6 +4,7 @@
 # Runtime data
 published_posts.json
 agent.log
+posts_*.md
 
 # Python
 __pycache__/
