@@ -1,7 +1,7 @@
 # Mensajes para vender Clara
 
 Reemplaza lo que va entre llaves: `{negocio}`, `{municipio}`, `{tu nombre}`,
-`{tu teléfono}`, `{tu email}`, `{tu dirección postal}`, `{enlace web}` (la URL
+`{tu teléfono}`, `{tu email}`, `{tu apartado postal}`, `{enlace web}` (la URL
 donde publiques Clara) y `{enlace demo}` (esa URL más `/demo`). Nada de esto sale solo: se manda a mano,
 uno por uno.
 
@@ -46,7 +46,7 @@ uno por uno.
 >
 > {tu nombre}
 > {tu teléfono} · {tu email}
-> {tu dirección postal}
+> {tu apartado postal}
 >
 > Si prefieren que no les escriba más, contesten "no" y no vuelvo a escribir.
 
@@ -147,8 +147,10 @@ persona el martes o el jueves?"
 
 ## Reglas para no meterte en problemas
 
-- **Email (CAN-SPAM):** asunto honesto, identifícate, incluye tu dirección
-  postal y una forma clara de darse de baja. Si alguien pide que no le escribas,
+- **Email (CAN-SPAM):** asunto honesto, identifícate, incluye una dirección
+  postal válida y una forma clara de darse de baja. No tiene que ser tu casa:
+  sirve un apartado postal del correo (USPS) o un buzón de una tienda de
+  envíos como The UPS Store. Si alguien pide que no le escribas,
   sácalo de la lista en menos de 10 días hábiles.
 - **WhatsApp y SMS (TCPA y políticas de WhatsApp):** solo mensajes manuales, uno
   por uno, al número público del negocio. Nada de envíos masivos ni
