@@ -1,5 +1,9 @@
 # Mensajes para vender Clara
 
+> **En pausa.** No los uses hasta terminar las entrevistas: en la fase 1 solo
+> se pide la entrevista, sin demo (`entrevista.md`). Si las entrevistas dicen
+> que conviene el servicio, usa `oferta-servicio.md`.
+
 Reemplaza lo que va entre llaves: `{negocio}`, `{municipio}`, `{tu nombre}`,
 `{tu teléfono}`, `{tu email}`, `{tu apartado postal}`, `{enlace web}` (la URL
 donde publiques Clara) y `{enlace demo}` (esa URL más `/demo`). Nada de esto sale solo: se manda a mano,

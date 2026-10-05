@@ -7,8 +7,10 @@ estéticas (el producto vive en su propio repositorio, `clara`).
 
 | Archivo | Qué es |
 |---|---|
-| `prospectos/clinicas-pr.csv` | 39 med spas y clínicas estéticas de Puerto Rico con su teléfono, email cuando es público, web y la fuente de cada dato. Prioridad A, B o C, y columnas `estado` y `proximo_paso` para llevar el seguimiento. |
-| `mensajes/plantillas.md` | Tres emails, un WhatsApp, un guion de llamada con objeciones, cómo hacer la visita y las reglas de cumplimiento. |
+| `prospectos/clinicas-pr.csv` | 39 med spas y clínicas estéticas de Puerto Rico con su teléfono, email cuando es público, web y la fuente de cada dato. Prioridad A, B o C. |
+| `mensajes/entrevista.md` | **Fase 1, la de ahora.** Mensajes para pedir la entrevista, las cinco preguntas, el cierre y la regla de decisión. Sin demo. |
+| `mensajes/oferta-servicio.md` | Paquetes y precios para instalar y mantener la recepción digital de una clínica con WhatsApp Business y el AI Concierge de Fresha. |
+| `mensajes/plantillas.md` | Los mensajes para vender Clara. En pausa hasta que las entrevistas digan si vale la pena. |
 
 ## Cómo se armó la lista
 
@@ -25,9 +27,12 @@ en sus webs: se piden por teléfono.
 muchos mensajes, cobran tickets altos y casi todas tienen horario limitado.
 **B (21):** clínicas más pequeñas o más médicas. **C (2):** más salón que clínica.
 
-## Meta de las dos primeras semanas
+## Meta de las próximas cuatro semanas
 
-Cinco demos y dos pilotos. Para cada piloto: llenar `data/clinica.json` de
-Clara con sus servicios y precios (una hora) y conectar su WhatsApp. Mientras
-Meta aprueba el número, la clínica puede usar el chat de la web con un código
-QR en recepción.
+1. Semana 1: 10 entrevistas con clínicas de prioridad A, sin vender ni enseñar
+   la demo.
+2. Semana 2: decidir con la regla de `mensajes/entrevista.md` y volver con una
+   propuesta a quienes aceptaron una segunda reunión.
+3. Semanas 3 y 4: instalar a las primeras dos o tres clínicas cobrando 50% por
+   adelantado.
+4. Día 30: si nadie ha pagado nada, parar.
