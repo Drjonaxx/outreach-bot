@@ -71,6 +71,6 @@ def write_metadata(path: Path, clip: Clip, source_title: str, channel: str, url:
         lines += ["", f"🎙️ Clip de: {credit}"]
     if url:
         lines.append(url)
-    lines += ["", " ".join(f"#{t}" for t in clip.hashtags + ["shorts", "podcast"])]
+    lines += ["", " ".join(f"#{t}" for t in clip.hashtags + ["shorts"])]
     lines += ["", f"(score {clip.score}/10 · {clip.duration:.0f}s) {clip.reason}"]
     path.write_text("\n".join(lines).strip() + "\n", encoding="utf-8")

@@ -1,5 +1,8 @@
 {
-  "name": "prueba",
-  "url": "https://www.youtube.com/watch?v=aqz-KE-bpKQ",
-  "whisper_model": "small"
+  "name": "ac7ionman-1",
+  "url": "https://kick.com/ac7ionman",
+  "language": "en",
+  "whisper_model": "small",
+  "limit_minutes": 150,
+  "vod": 0
 }

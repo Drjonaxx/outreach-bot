@@ -9,11 +9,12 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+from dataclasses import replace
 from pathlib import Path
 
-from .download import fetch
+from .download import fetch, fetch_section, is_url, resolve
 from .highlights import DEFAULT_MODEL, ask_claude, finalize
-from .models import all_words, load_clips, load_segments, save_clips, save_segments
+from .models import Word, all_words, load_clips, load_segments, save_clips, save_segments
 from .reframe import probe
 from .render import DEFAULT_FONT, render_clip, write_metadata
 
@@ -30,7 +31,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--clips", type=int, default=6, help="máximo de clips (default: 6)")
     p.add_argument("--min", dest="min_s", type=float, default=25, help="duración mínima en s (default: 25)")
     p.add_argument("--max", dest="max_s", type=float, default=75, help="duración máxima en s (default: 75)")
-    p.add_argument("--language", default="es", help="idioma del audio (default: es)")
+    p.add_argument("--language", default="es", help="idioma del audio: es, en… o auto (default: es)")
     p.add_argument("--whisper-model", default="small",
                    help="tiny/base/small/medium/large-v3 (default: small; large-v3 si tienes GPU)")
     p.add_argument("--device", default="auto", help="auto/cpu/cuda (default: auto)")
@@ -44,23 +45,33 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--hook-seconds", type=float, default=0,
                    help="segundos que se muestra el texto gancho arriba (0 = todo el clip)")
     p.add_argument("--no-captions", action="store_true", help="no quemar subtítulos")
+    p.add_argument("--max-height", type=int, default=1080, help="calidad máxima a descargar (default: 1080)")
+    p.add_argument("--limit-minutes", type=float, help="procesar solo los primeros N minutos")
+    p.add_argument("--vod", type=int, default=0, help="con un canal de Kick: qué VOD usar (0 = el más reciente)")
+    p.add_argument("--sections", action="store_true",
+                   help="al renderizar, descargar solo el tramo de cada clip (ideal para streams largos)")
     args = p.parse_args(argv)
+    language = None if args.language == "auto" else args.language
+    downloads = Path(args.out) / "_downloads"
+    limit = args.limit_minutes * 60 if args.limit_minutes else None
 
     log("1/4 Obteniendo video…")
-    src = fetch(args.source, Path(args.out) / "_downloads")
-    work = Path(args.out) / (args.name or src.id)
+    url = resolve(args.source, args.vod) if is_url(args.source) else args.source
+    meta = fetch(url, downloads, args.max_height, limit, download=False)
+    work = Path(args.out) / (args.name or meta.id)
     work.mkdir(parents=True, exist_ok=True)
-    (work / "source.json").write_text(json.dumps(src.to_dict(), ensure_ascii=False, indent=2))
-    log(f"    {src.title or src.path}")
+    (work / "source.json").write_text(json.dumps(meta.to_dict(), ensure_ascii=False, indent=2))
+    log(f"    {meta.title or meta.path}")
 
     transcript_path = work / "transcript.json"
     if transcript_path.exists():
         log("2/4 Transcripción en caché")
         segments = load_segments(transcript_path)
     else:
+        src = fetch(url, downloads, args.max_height, limit)
         log(f"2/4 Transcribiendo con Whisper ({args.whisper_model})…")
         from .transcribe import transcribe
-        segments = transcribe(src.path, args.whisper_model, args.language, args.device)
+        segments = transcribe(src.path, args.whisper_model, language, args.device)
         save_segments(segments, transcript_path)
     words = all_words(segments)
     if not words:
@@ -76,7 +87,7 @@ def main(argv: list[str] | None = None) -> int:
         clips = load_clips(clips_path)
     else:
         log(f"3/4 Eligiendo momentos con {args.model}…")
-        context = args.context or " — ".join(x for x in (src.title, src.channel) if x)
+        context = args.context or " — ".join(x for x in (meta.title, meta.channel) if x)
         ideas = ask_claude(words, args.clips, args.min_s, args.max_s, context, args.model)
         clips = finalize(ideas, words, args.min_s, args.max_s, args.clips)
         save_clips(clips, clips_path)
@@ -86,19 +97,30 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     log("4/4 Renderizando clips verticales…")
-    info = probe(src.path)
+    sections = args.sections and is_url(url)
+    if not sections:
+        src = fetch(url, downloads, args.max_height, limit)
+        info = probe(src.path)
     for i, clip in enumerate(clips, 1):
         out_path = work / f"clip_{i:02d}.mp4"
+        if sections:
+            # Grab just this stretch (plus a margin) and shift times onto it.
+            s0, s1 = max(0.0, clip.start - 1.0), clip.end + 1.0
+            path = str(fetch_section(meta.url, downloads, s0, s1, args.max_height))
+            render_info = probe(path)
+            render_clip_ = replace(clip, start=clip.start - s0, end=clip.end - s0)
+            render_words = [Word(w.start - s0, w.end - s0, w.text) for w in words if s0 <= w.start < s1]
+        else:
+            path, render_info, render_clip_, render_words = src.path, info, clip, words
         mode = render_clip(
-            src.path, info, clip, words, out_path,
+            path, render_info, render_clip_, render_words, out_path,
             font=args.font, hook_seconds=args.hook_seconds, captions=not args.no_captions,
         )
-        write_metadata(out_path.with_suffix(".txt"), clip, src.title, src.channel, src.url)
+        write_metadata(out_path.with_suffix(".txt"), clip, meta.title, meta.channel, meta.url)
         log(f"    ✓ {out_path} ({'sigue la cara' if mode == 'crop' else 'plano completo'})")
 
     log(f"\nListo: {len(clips)} clips en {work}/")
     return 0
-
 
 if __name__ == "__main__":
     sys.exit(main())
