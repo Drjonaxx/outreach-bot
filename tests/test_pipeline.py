@@ -129,3 +129,14 @@ def test_censor_only_swears():
     from clipper.captions import _clean
     assert [_clean(w) for w in ["fucking", "shit?", "bitch", "bit", "fun", "shift"]] == \
         ["F*CKING", "SH*T?", "B*TCH", "BIT", "FUN", "SHIFT"]
+
+
+def test_phrase_subs_ass_labels_and_wraps():
+    from clipper.captions import build_subs_ass
+    ass = build_subs_ass([{"start": 0.5, "end": 2.0, "text": "CHAT: Espero que hayas traído tu flotador."},
+                          {"start": 9.0, "end": 12.0, "text": "fuera del clip"}], duration=5.0,
+                         hook="¿Lo dijo mal a propósito?")
+    events = ass.split("[Events]")[1]
+    assert "¿LO DIJO MAL A" in events
+    assert "CHAT:{\\c&H00FFFFFF&} Espero" in events and "\\N" in events
+    assert "fuera del clip" not in events

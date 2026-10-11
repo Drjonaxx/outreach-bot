@@ -113,6 +113,8 @@ def main(argv: list[str] | None = None) -> int:
             render_clip_ = replace(
                 clip, start=clip.start - s0, end=clip.end - s0,
                 keep=[[a - s0, b - s0] for a, b in clip.keep] if clip.keep else None,
+                subs=[{**s, "start": s["start"] - s0, "end": s["end"] - s0} for s in clip.subs]
+                if clip.subs else None,
             )
             render_words = [Word(w.start - s0, w.end - s0, w.text) for w in words if s0 <= w.start < s1]
         else:

@@ -32,6 +32,8 @@ class Clip:
     reason: str
     # Absolute [start, end] pieces to keep; None keeps the whole span.
     keep: list[list[float]] | None = None
+    # Phrase subtitles [{"start", "end", "text"}] in absolute time; replace the word captions.
+    subs: list[dict] | None = None
 
     @property
     def duration(self) -> float:

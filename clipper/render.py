@@ -4,7 +4,7 @@ import shutil
 import subprocess
 from pathlib import Path
 
-from .captions import write_ass
+from .captions import build_subs_ass, write_ass
 from .models import Clip, Word
 from .reframe import VideoInfo, detect_faces, plan_crop, video_filter
 
@@ -72,7 +72,13 @@ def render_clip(
         audio = f"[0:a]aselect='{keep}',asetpts=N/SR/TB,{loudnorm}[a]"
 
     out_dir = out_path.parent
-    if captions:
+    if captions and clip.subs:
+        ass = out_path.with_suffix(".ass")
+        ass.write_text(build_subs_ass(
+            [{**s, "start": remap(s["start"], ranges), "end": remap(s["end"], ranges)} for s in clip.subs],
+            sum(e - s for s, e in ranges), hook=clip.hook, hook_seconds=hook_seconds, font=font,
+        ), encoding="utf-8")
+    elif captions:
         shown = [
             Word(remap(w.start, ranges), remap(w.end, ranges), w.text)
             for w in words if any(s - 0.05 <= w.start and w.end <= e + 0.05 for s, e in ranges)
@@ -81,6 +87,7 @@ def render_clip(
             out_path.with_suffix(".ass"), shown, 0.0, sum(e - s for s, e in ranges),
             hook=clip.hook, hook_seconds=hook_seconds, font=font,
         )
+    if captions:
         # Run ffmpeg from the output dir and pass a bare filename: avoids the
         # escaping mess of drive letters and colons inside filter arguments.
         fonts = out_dir / "_fonts"
