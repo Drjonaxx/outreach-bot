@@ -14,6 +14,9 @@ def transcribe(
     """Transcribe with faster-whisper, keeping word-level timestamps."""
     from faster_whisper import WhisperModel
 
+    if device == "auto":
+        import ctranslate2
+        device = "cuda" if ctranslate2.get_cuda_device_count() > 0 else "cpu"
     compute_type = "int8" if device == "cpu" else "default"
     model = WhisperModel(model_size, device=device, compute_type=compute_type)
     raw_segments, info = model.transcribe(

@@ -76,3 +76,14 @@ YouTube desmonetiza el "contenido reutilizado" sin aporte propio. Los subtítulo
 ```bash
 pip install -e ".[dev]" && pytest
 ```
+
+## Correrlo en GitHub Actions (sin computadora)
+
+El workflow `.github/workflows/clipper.yml` corre el pipeline en los servidores de GitHub cada vez que cambia `job.json` o algo en `jobs/`:
+
+1. Edita `job.json` con `name` (nombre de la carpeta) y `url`. Al hacer push, Actions descarga y transcribe. El resultado queda en la rama `claude/clipper-out`, en `<name>/transcript.json`.
+2. Sube `jobs/<name>/clips.json` con los clips elegidos (a mano, con `clipper --select-only` o pidiéndoselo a Claude). El push dispara el render, y los `.mp4` y `.txt` aparecen en `claude/clipper-out/<name>/`.
+
+Si YouTube pide verificación anti-bots desde los servidores de GitHub, exporta tus cookies de YouTube en formato Netscape y guárdalas en el secreto del repo `YT_COOKIES`.
+
+> Localmente, yt-dlp necesita [Deno](https://deno.com) instalado para descargar de YouTube.

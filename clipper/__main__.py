@@ -15,7 +15,7 @@ from .download import fetch
 from .highlights import DEFAULT_MODEL, ask_claude, finalize
 from .models import all_words, load_clips, load_segments, save_clips, save_segments
 from .reframe import probe
-from .render import render_clip, write_metadata
+from .render import DEFAULT_FONT, render_clip, write_metadata
 
 
 def log(msg: str) -> None:
@@ -37,8 +37,10 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--model", default=DEFAULT_MODEL, help=f"modelo de Claude (default: {DEFAULT_MODEL})")
     p.add_argument("--context", default="", help="contexto opcional: quién habla, de qué trata")
     p.add_argument("--reselect", action="store_true", help="volver a pedir clips a Claude aunque exista clips.json")
+    p.add_argument("--name", help="nombre de la carpeta de trabajo (default: id del video)")
+    p.add_argument("--transcribe-only", action="store_true", help="solo descargar y transcribir")
     p.add_argument("--select-only", action="store_true", help="solo transcribir y elegir clips, sin renderizar")
-    p.add_argument("--font", default="Arial Black", help="fuente de los subtítulos (default: Arial Black)")
+    p.add_argument("--font", default=DEFAULT_FONT, help=f"fuente de los subtítulos (default: {DEFAULT_FONT})")
     p.add_argument("--hook-seconds", type=float, default=0,
                    help="segundos que se muestra el texto gancho arriba (0 = todo el clip)")
     p.add_argument("--no-captions", action="store_true", help="no quemar subtítulos")
@@ -46,7 +48,7 @@ def main(argv: list[str] | None = None) -> int:
 
     log("1/4 Obteniendo video…")
     src = fetch(args.source, Path(args.out) / "_downloads")
-    work = Path(args.out) / src.id
+    work = Path(args.out) / (args.name or src.id)
     work.mkdir(parents=True, exist_ok=True)
     (work / "source.json").write_text(json.dumps(src.to_dict(), ensure_ascii=False, indent=2))
     log(f"    {src.title or src.path}")
@@ -64,6 +66,9 @@ def main(argv: list[str] | None = None) -> int:
     if not words:
         log("No se detectó voz en el video.")
         return 1
+    if args.transcribe_only:
+        log(f"Transcripción lista: {transcript_path}")
+        return 0
 
     clips_path = work / "clips.json"
     if clips_path.exists() and not args.reselect:

@@ -1,11 +1,15 @@
 from __future__ import annotations
 
+import shutil
 import subprocess
 from pathlib import Path
 
 from .captions import write_ass
 from .models import Clip, Word
 from .reframe import VideoInfo, detect_faces, plan_crop, video_filter
+
+FONTS_DIR = Path(__file__).parent / "fonts"
+DEFAULT_FONT = "Montserrat ExtraBold"
 
 
 def render_clip(
@@ -14,7 +18,7 @@ def render_clip(
     clip: Clip,
     words: list[Word],
     out_path: Path,
-    font: str = "Arial Black",
+    font: str = DEFAULT_FONT,
     hook_seconds: float = 0.0,
     captions: bool = True,
     crf: int = 20,
@@ -31,7 +35,10 @@ def render_clip(
         )
         # Run ffmpeg from the output dir and pass a bare filename: avoids the
         # escaping mess of drive letters and colons inside filter arguments.
-        graph += f";[base]ass={ass.name}[v]"
+        fonts = out_dir / "_fonts"
+        if not fonts.exists():
+            shutil.copytree(FONTS_DIR, fonts)
+        graph += f";[base]ass={ass.name}:fontsdir={fonts.name}[v]"
     else:
         graph += ";[base]null[v]"
 

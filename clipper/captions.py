@@ -66,7 +66,7 @@ def build_ass(
     clip_end: float,
     hook: str = "",
     hook_seconds: float = 0.0,
-    font: str = "Arial Black",
+    font: str = "Montserrat ExtraBold",
     font_size: int = 86,
 ) -> str:
     """Return ASS text. Word times are absolute; they get shifted to the clip."""

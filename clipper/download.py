@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 import re
 from dataclasses import asdict, dataclass
 from pathlib import Path
@@ -46,6 +47,8 @@ def fetch(source: str, downloads_dir: Path) -> Source:
         "quiet": True,
         "no_warnings": True,
     }
+    if os.environ.get("YTDLP_COOKIES"):
+        opts["cookiefile"] = os.environ["YTDLP_COOKIES"]
     with yt_dlp.YoutubeDL(opts) as ydl:
         info = ydl.extract_info(source, download=True)
         path = Path(ydl.prepare_filename(info)).with_suffix(".mp4")
