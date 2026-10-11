@@ -6,7 +6,7 @@ from pathlib import Path
 
 from .captions import build_subs_ass, write_ass
 from .models import Clip, Word
-from .reframe import VideoInfo, detect_faces, plan_crop, video_filter
+from .reframe import OUT_H, OUT_W, CropPlan, VideoInfo, detect_faces, plan_crop, video_filter
 
 FONTS_DIR = Path(__file__).parent / "fonts"
 DEFAULT_FONT = "Montserrat ExtraBold"
@@ -54,10 +54,25 @@ def render_clip(
     captions: bool = True,
     crf: int = 20,
     max_gap: float = 3.0,
+    layout: str = "auto",
 ) -> str:
-    """Render one vertical clip. Returns the reframing mode used."""
-    plan = plan_crop(detect_faces(source, clip.start, clip.end), info)
+    """Render one vertical clip. Returns the reframing mode used.
+
+    layout: "auto" follows faces and falls back to the full frame for wide two-shots,
+    "crop" always fills the frame, "fit" always shows the whole 16:9 picture (keeps
+    stream overlays intact) over a blurred background.
+    """
+    if layout == "fit":
+        plan = CropPlan("fit", 0, [(0.0, 0)])
+    else:
+        plan = plan_crop(detect_faces(source, clip.start, clip.end), info)
+        if layout == "crop" and plan.mode == "fit":
+            plan = CropPlan("crop", plan.crop_w, plan.keyframes)
     graph = video_filter(plan, info)
+    band = None
+    if plan.mode == "fit":
+        video_h = round(OUT_W * info.height / info.width / 2) * 2
+        band = ((OUT_H - video_h) // 2, (OUT_H + video_h) // 2)
 
     ranges = keep_ranges(clip, words, max_gap)
     rel = [(s - clip.start, e - clip.start) for s, e in ranges]
@@ -76,7 +91,7 @@ def render_clip(
         ass = out_path.with_suffix(".ass")
         ass.write_text(build_subs_ass(
             [{**s, "start": remap(s["start"], ranges), "end": remap(s["end"], ranges)} for s in clip.subs],
-            sum(e - s for s, e in ranges), hook=clip.hook, hook_seconds=hook_seconds, font=font,
+            sum(e - s for s, e in ranges), hook=clip.hook, hook_seconds=hook_seconds, font=font, band=band,
         ), encoding="utf-8")
     elif captions:
         shown = [
@@ -85,7 +100,7 @@ def render_clip(
         ]
         ass = write_ass(
             out_path.with_suffix(".ass"), shown, 0.0, sum(e - s for s, e in ranges),
-            hook=clip.hook, hook_seconds=hook_seconds, font=font,
+            hook=clip.hook, hook_seconds=hook_seconds, font=font, band=band,
         )
     if captions:
         # Run ffmpeg from the output dir and pass a bare filename: avoids the

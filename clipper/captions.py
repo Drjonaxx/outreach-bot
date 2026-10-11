@@ -73,7 +73,14 @@ def _wrap_hook(text: str, max_chars: int = 22) -> str:
     return r"\N".join(lines)
 
 
-def _header(font: str, font_size: int) -> str:
+def _header(font: str, font_size: int, band: tuple[int, int] | None = None) -> str:
+    """ASS header. `band` = (top, bottom) of the video when it sits in the middle of the
+    frame (fit layout): the hook then goes right above it and captions right below."""
+    if band:
+        top, bottom = band
+        cap_align, cap_v, hook_align, hook_v = 8, bottom + 40, 2, OUT_H - top + 40
+    else:
+        cap_align, cap_v, hook_align, hook_v = 2, 560, 8, 190
     return f"""[Script Info]
 ScriptType: v4.00+
 PlayResX: {OUT_W}
@@ -83,9 +90,9 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Cap,{font},{font_size},{TEXT},{TEXT},&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,2,60,60,560,1
-Style: Hook,{font},64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,8,80,80,190,1
-Style: Sub,{font},70,{TEXT},{TEXT},&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,2,70,70,560,1
+Style: Cap,{font},{font_size},{TEXT},{TEXT},&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,{cap_align},60,60,{cap_v},1
+Style: Hook,{font},64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,{hook_align},80,80,{hook_v},1
+Style: Sub,{font},70,{TEXT},{TEXT},&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,{cap_align},70,70,{cap_v},1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -107,10 +114,11 @@ def build_ass(
     hook_seconds: float = 0.0,
     font: str = "Montserrat ExtraBold",
     font_size: int = 86,
+    band: tuple[int, int] | None = None,
 ) -> str:
     """Word-by-word karaoke captions. Word times are absolute; they get shifted to the clip."""
     duration = clip_end - clip_start
-    header = _header(font, font_size)
+    header = _header(font, font_size, band)
     events = _hook_event(hook, hook_seconds, duration)
 
     clip_words = [w for w in words if w.start >= clip_start - 0.05 and w.end <= clip_end + 0.05]
@@ -144,6 +152,7 @@ def build_subs_ass(
     hook: str = "",
     hook_seconds: float = 0.0,
     font: str = "Montserrat ExtraBold",
+    band: tuple[int, int] | None = None,
 ) -> str:
     """Phrase subtitles (e.g. a translation). `subs` times are already on the clip timeline."""
     events = _hook_event(hook, hook_seconds, duration)
@@ -159,7 +168,7 @@ def build_subs_ass(
             text = text[m.end():]
         body = _wrap_hook(text, max_chars=26)
         events.append(f"Dialogue: 0,{_ts(start)},{_ts(end)},Sub,,0,0,0,,{{\\fad(60,0)}}{label}{body}")
-    return _header(font, 86) + "\n".join(events) + "\n"
+    return _header(font, 86, band) + "\n".join(events) + "\n"
 
 
 def write_ass(path: Path, *args, **kwargs) -> Path:

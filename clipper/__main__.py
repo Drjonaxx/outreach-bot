@@ -45,6 +45,8 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--hook-seconds", type=float, default=0,
                    help="segundos que se muestra el texto gancho arriba (0 = todo el clip)")
     p.add_argument("--no-captions", action="store_true", help="no quemar subtítulos")
+    p.add_argument("--layout", choices=["auto", "crop", "fit"], default="auto",
+                   help="auto: sigue caras; crop: siempre recorta a 9:16; fit: video completo con fondo difuminado")
     p.add_argument("--jumpcut", type=float, default=3.0,
                    help="acortar silencios de más de N segundos (0 = no cortar; default: 3)")
     p.add_argument("--max-height", type=int, default=1080, help="calidad máxima a descargar (default: 1080)")
@@ -122,7 +124,7 @@ def main(argv: list[str] | None = None) -> int:
         mode = render_clip(
             path, render_info, render_clip_, render_words, out_path,
             font=args.font, hook_seconds=args.hook_seconds, captions=not args.no_captions,
-            max_gap=args.jumpcut,
+            max_gap=args.jumpcut, layout=args.layout,
         )
         write_metadata(out_path.with_suffix(".txt"), clip, meta.title, meta.channel, meta.url)
         log(f"    ✓ {out_path} ({'sigue la cara' if mode == 'crop' else 'plano completo'})")
