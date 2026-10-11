@@ -3,7 +3,7 @@ name: clipper
 on:
   push:
     branches: [claude/clipper]
-    paths: [job.json, "jobs/**"]
+    paths: [job.json, "jobs/**", "clipper/**", "ci/**", .github/workflows/clipper.yml]
   workflow_dispatch:
 
 permissions:
@@ -17,6 +17,11 @@ jobs:
   clip:
     runs-on: ubuntu-latest
     timeout-minutes: 300
+    services:
+      # PO token provider for yt-dlp (helps with YouTube's bot check on server IPs).
+      pot:
+        image: brainicism/bgutil-ytdlp-pot-provider
+        ports: ["4416:4416"]
     steps:
       - uses: actions/checkout@v4
 
@@ -34,7 +39,7 @@ jobs:
         run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
 
       - name: Install clipper
-        run: pip install -e .
+        run: pip install -e . bgutil-ytdlp-pot-provider
 
       - name: Read job
         id: job
