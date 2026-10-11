@@ -1,0 +1,25 @@
+[project]
+name = "clipper"
+version = "0.1.0"
+description = "Podcast largo -> clips verticales con subtítulos para YouTube Shorts y TikTok"
+requires-python = ">=3.10"
+dependencies = [
+    "anthropic>=1,<2",
+    "yt-dlp>=2026.8.19",
+    "faster-whisper>=1.2",
+    "opencv-python-headless>=4.10",
+    "pydantic>=2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+clipper = "clipper.__main__:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["clipper"]
