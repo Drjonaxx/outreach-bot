@@ -1,8 +1,8 @@
 {
-  "name": "ac7ionman-1",
+  "name": "ac7ionman-huracan",
   "url": "https://kick.com/ac7ionman",
+  "vod": "LIVE COVERAGE IN PANAMA CITY BEACH",
   "language": "en",
   "whisper_model": "small",
-  "limit_minutes": 150,
-  "vod": 0
+  "limit_minutes": 180
 }

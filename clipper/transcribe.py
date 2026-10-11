@@ -1,8 +1,24 @@
 from __future__ import annotations
 
+import subprocess
 import sys
 
+import numpy as np
+
 from .models import Segment, Word
+
+SAMPLE_RATE = 16000
+
+
+def load_audio(path: str) -> np.ndarray:
+    """Decode to 16 kHz mono float32 with ffmpeg (avoids faster-whisper's PyAV path,
+    which breaks with recent PyAV releases)."""
+    out = subprocess.run(
+        ["ffmpeg", "-nostdin", "-loglevel", "error", "-i", path,
+         "-vn", "-ac", "1", "-ar", str(SAMPLE_RATE), "-f", "f32le", "-"],
+        check=True, capture_output=True,
+    ).stdout
+    return np.frombuffer(out, np.float32)
 
 
 def transcribe(
@@ -20,7 +36,7 @@ def transcribe(
     compute_type = "int8" if device == "cpu" else "default"
     model = WhisperModel(model_size, device=device, compute_type=compute_type)
     raw_segments, info = model.transcribe(
-        media_path,
+        load_audio(media_path),
         language=language,
         word_timestamps=True,
         vad_filter=True,

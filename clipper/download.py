@@ -58,17 +58,28 @@ def kick_vods(channel: str) -> list[dict]:
     return sorted(vods, key=lambda x: x["date"], reverse=True)
 
 
-def resolve(source: str, vod_index: int = 0) -> str:
-    """Turn a Kick channel URL into one of its VOD URLs; anything else passes through."""
+def resolve(source: str, vod: str = "0") -> str:
+    """Turn a Kick channel URL into one of its VOD URLs; anything else passes through.
+
+    `vod` is an index (0 = latest finished broadcast) or part of the broadcast title.
+    """
     m = KICK_CHANNEL.match(source)
     if not m or m.group(1) in ("video", "categories", "search", "auth"):
         return source
-    vods = kick_vods(m.group(1))
+    # A broadcast that is still live shows up with 0 minutes and is incomplete.
+    vods = [v for v in kick_vods(m.group(1)) if v["minutes"] > 0]
     if not vods:
         raise RuntimeError(f"El canal {m.group(1)} no tiene VODs públicos.")
+    if vod.isdigit():
+        chosen = int(vod)
+    else:
+        matches = [i for i, v in enumerate(vods) if vod.lower() in v["title"].lower()]
+        if not matches:
+            raise RuntimeError(f"Ningún VOD de {m.group(1)} tiene «{vod}» en el título.")
+        chosen = matches[0]
     for i, v in enumerate(vods[:10]):
-        print(f"  {'→' if i == vod_index else ' '} [{i}] {v['date'][:10]} {v['minutes']:4d} min  {v['title'][:70]}")
-    return vods[vod_index]["url"]
+        print(f"  {'→' if i == chosen else ' '} [{i}] {v['date'][:10]} {v['minutes']:4d} min  {v['title'][:70]}")
+    return vods[chosen]["url"]
 
 
 def _format(max_height: int) -> str:

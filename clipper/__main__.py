@@ -47,7 +47,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--no-captions", action="store_true", help="no quemar subtítulos")
     p.add_argument("--max-height", type=int, default=1080, help="calidad máxima a descargar (default: 1080)")
     p.add_argument("--limit-minutes", type=float, help="procesar solo los primeros N minutos")
-    p.add_argument("--vod", type=int, default=0, help="con un canal de Kick: qué VOD usar (0 = el más reciente)")
+    p.add_argument("--vod", default="0", help="con un canal de Kick: índice del VOD (0 = el más reciente) o parte de su título")
     p.add_argument("--sections", action="store_true",
                    help="al renderizar, descargar solo el tramo de cada clip (ideal para streams largos)")
     args = p.parse_args(argv)

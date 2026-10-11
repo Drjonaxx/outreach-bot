@@ -92,3 +92,15 @@ def test_ass_timestamps_and_events():
 def test_group_words_breaks_on_punctuation():
     groups = group_words(words_from("hola qué tal, esto es"))
     assert [len(g) for g in groups] == [3, 2]
+
+
+def test_load_audio_decodes_16k_mono(tmp_path):
+    import subprocess
+    from clipper.transcribe import SAMPLE_RATE, load_audio
+    wav = tmp_path / "tone.wav"
+    subprocess.run(["ffmpeg", "-loglevel", "error", "-f", "lavfi", "-i", "sine=frequency=440:duration=2",
+                    "-ac", "2", "-ar", "44100", str(wav)], check=True)
+    audio = load_audio(str(wav))
+    assert audio.dtype.name == "float32"
+    assert abs(len(audio) - 2 * SAMPLE_RATE) < 200
+    assert 0.1 < abs(audio).max() <= 1.0
