@@ -45,6 +45,8 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--hook-seconds", type=float, default=0,
                    help="segundos que se muestra el texto gancho arriba (0 = todo el clip)")
     p.add_argument("--no-captions", action="store_true", help="no quemar subtítulos")
+    p.add_argument("--jumpcut", type=float, default=3.0,
+                   help="acortar silencios de más de N segundos (0 = no cortar; default: 3)")
     p.add_argument("--max-height", type=int, default=1080, help="calidad máxima a descargar (default: 1080)")
     p.add_argument("--limit-minutes", type=float, help="procesar solo los primeros N minutos")
     p.add_argument("--vod", default="0", help="con un canal de Kick: índice del VOD (0 = el más reciente) o parte de su título")
@@ -108,13 +110,17 @@ def main(argv: list[str] | None = None) -> int:
             s0, s1 = max(0.0, clip.start - 1.0), clip.end + 1.0
             path = str(fetch_section(meta.url, downloads, s0, s1, args.max_height))
             render_info = probe(path)
-            render_clip_ = replace(clip, start=clip.start - s0, end=clip.end - s0)
+            render_clip_ = replace(
+                clip, start=clip.start - s0, end=clip.end - s0,
+                keep=[[a - s0, b - s0] for a, b in clip.keep] if clip.keep else None,
+            )
             render_words = [Word(w.start - s0, w.end - s0, w.text) for w in words if s0 <= w.start < s1]
         else:
             path, render_info, render_clip_, render_words = src.path, info, clip, words
         mode = render_clip(
             path, render_info, render_clip_, render_words, out_path,
             font=args.font, hook_seconds=args.hook_seconds, captions=not args.no_captions,
+            max_gap=args.jumpcut,
         )
         write_metadata(out_path.with_suffix(".txt"), clip, meta.title, meta.channel, meta.url)
         log(f"    ✓ {out_path} ({'sigue la cara' if mode == 'crop' else 'plano completo'})")

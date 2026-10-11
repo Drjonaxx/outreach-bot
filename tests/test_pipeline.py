@@ -104,3 +104,28 @@ def test_load_audio_decodes_16k_mono(tmp_path):
     assert audio.dtype.name == "float32"
     assert abs(len(audio) - 2 * SAMPLE_RATE) < 200
     assert 0.1 < abs(audio).max() <= 1.0
+
+
+def test_keep_ranges_jump_cuts_long_silences():
+    from clipper.models import Clip
+    from clipper.render import keep_ranges, remap
+    words = [Word(0.0, 0.5, "a"), Word(0.6, 1.0, "b"), Word(6.0, 6.5, "c"), Word(6.6, 7.0, "d")]
+    clip = Clip(0.0, 7.2, "t", "h", "d", [], 5, "r")
+    ranges = keep_ranges(clip, words, max_gap=3.0, pad=0.5)
+    assert ranges == [(0.0, 1.5), (5.5, 7.2)]
+    assert remap(6.0, ranges) == 2.0
+    assert keep_ranges(clip, words, max_gap=0) == [(0.0, 7.2)]
+
+
+def test_keep_ranges_respects_explicit_pieces():
+    from clipper.models import Clip
+    from clipper.render import keep_ranges
+    words = [Word(0.0, 0.5, "a"), Word(3.0, 3.5, "slur"), Word(6.0, 6.5, "c")]
+    clip = Clip(0.0, 7.0, "t", "h", "d", [], 5, "r", keep=[[0.0, 1.0], [5.8, 7.0]])
+    assert keep_ranges(clip, words, max_gap=3.0) == [(0.0, 1.0), (5.8, 7.0)]
+
+
+def test_censor_only_swears():
+    from clipper.captions import _clean
+    assert [_clean(w) for w in ["fucking", "shit?", "bitch", "bit", "fun", "shift"]] == \
+        ["F*CKING", "SH*T?", "B*TCH", "BIT", "FUN", "SHIFT"]

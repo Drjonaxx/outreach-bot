@@ -30,6 +30,8 @@ class Clip:
     hashtags: list[str]
     score: int
     reason: str
+    # Absolute [start, end] pieces to keep; None keeps the whole span.
+    keep: list[list[float]] | None = None
 
     @property
     def duration(self) -> float:

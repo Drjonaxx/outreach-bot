@@ -21,10 +21,23 @@ def _ts(seconds: float) -> str:
     return f"{h}:{m:02d}:{s:02d}.{cs:02d}"
 
 
+# Swear word stem -> the letter to star out (F*CK, SH*T, B*TCH).
+_SWEARS = re.compile(r"(?i)\b(fu(?=ck)|shi(?=t)|bi(?=tch))(ck|t|tch)(\w*)")
+_STARRED = {"fu": 1, "shi": 2, "bi": 1}
+
+
+def _censor(text: str) -> str:
+    def star(m: re.Match) -> str:
+        stem, rest, tail = m.groups()
+        i = _STARRED[stem.lower()]
+        return stem[:i] + "*" + stem[i + 1:] + rest + tail
+    return _SWEARS.sub(star, text)
+
+
 def _clean(text: str) -> str:
     text = re.sub(r"[{}\\]", "", text)
     text = re.sub(r"^[\"'«“¿¡]+|[\"'»”,.;:…]+$", "", text)
-    return text.upper()
+    return _censor(text).upper()
 
 
 def group_words(words: list[Word], max_words: int = 3, max_gap: float = 0.6, max_span: float = 1.6) -> list[list[Word]]:

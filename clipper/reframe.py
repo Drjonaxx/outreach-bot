@@ -23,6 +23,7 @@ class VideoInfo:
     height: int
     fps: float
     duration: float
+    has_audio: bool = True
 
 
 @dataclass
@@ -46,17 +47,18 @@ class CropPlan:
 
 def probe(path: str) -> VideoInfo:
     out = subprocess.run(
-        ["ffprobe", "-v", "error", "-select_streams", "v:0",
-         "-show_entries", "stream=width,height,r_frame_rate:format=duration",
+        ["ffprobe", "-v", "error",
+         "-show_entries", "stream=codec_type,width,height,r_frame_rate:format=duration",
          "-of", "json", path],
         check=True, capture_output=True, text=True,
     ).stdout
     data = json.loads(out)
-    stream = data["streams"][0]
+    stream = next(s for s in data["streams"] if s["codec_type"] == "video")
     num, den = stream["r_frame_rate"].split("/")
     return VideoInfo(
         int(stream["width"]), int(stream["height"]),
         float(num) / float(den or 1), float(data["format"]["duration"]),
+        has_audio=any(s["codec_type"] == "audio" for s in data["streams"]),
     )
 
 
