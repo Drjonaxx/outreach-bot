@@ -78,13 +78,16 @@ def render_clip(
     rel = [(s - clip.start, e - clip.start) for s, e in ranges]
     cut = not (len(rel) == 1 and rel[0][0] <= 0.01 and rel[0][1] >= clip.duration - 0.01)
     loudnorm = "loudnorm=I=-14:TP=-1.5:LRA=11"
+    # Stream VODs can have audio dropouts; resample against the timestamps so a
+    # gap becomes silence instead of pulling the rest of the audio forward.
+    resync = "aresample=async=1:first_pts=0"
     video = "base"
-    audio = f"[0:a]{loudnorm}[a]"
+    audio = f"[0:a]{resync},{loudnorm}[a]"
     if cut:
         keep = "+".join(f"between(t,{s:.3f},{e:.3f})" for s, e in rel)
         graph += f";[base]select='{keep}',setpts=N/FRAME_RATE/TB[cut]"
         video = "cut"
-        audio = f"[0:a]aselect='{keep}',asetpts=N/SR/TB,{loudnorm}[a]"
+        audio = f"[0:a]{resync},aselect='{keep}',asetpts=N/SR/TB,{loudnorm}[a]"
 
     out_dir = out_path.parent
     if captions and clip.subs:

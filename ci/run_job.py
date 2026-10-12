@@ -36,6 +36,8 @@ clips = Path("jobs") / name / "clips.json"
 if clips.exists():
     shutil.copy(clips, work / "clips.json")
     cmd += ["--sections", "--layout", job.get("layout", "auto")]
+    if job.get("only"):
+        cmd += ["--only", ",".join(str(i) for i in job["only"])]
 else:
     cmd += ["--transcribe-only", "--max-height", "360"]
     if job.get("limit_minutes"):

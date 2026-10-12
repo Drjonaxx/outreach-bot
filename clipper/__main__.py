@@ -47,6 +47,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--no-captions", action="store_true", help="no quemar subtítulos")
     p.add_argument("--layout", choices=["auto", "crop", "fit"], default="auto",
                    help="auto: sigue caras; crop: siempre recorta a 9:16; fit: video completo con fondo difuminado")
+    p.add_argument("--only", help="renderizar solo estos clips, p. ej. 2,5 (numeración 1..N)")
     p.add_argument("--jumpcut", type=float, default=3.0,
                    help="acortar silencios de más de N segundos (0 = no cortar; default: 3)")
     p.add_argument("--max-height", type=int, default=1080, help="calidad máxima a descargar (default: 1080)")
@@ -105,7 +106,10 @@ def main(argv: list[str] | None = None) -> int:
     if not sections:
         src = fetch(url, downloads, args.max_height, limit)
         info = probe(src.path)
+    only = {int(x) for x in args.only.split(",")} if args.only else None
     for i, clip in enumerate(clips, 1):
+        if only and i not in only:
+            continue
         out_path = work / f"clip_{i:02d}.mp4"
         if sections:
             # Grab just this stretch (plus a margin) and shift times onto it.

@@ -140,3 +140,23 @@ def test_phrase_subs_ass_labels_and_wraps():
     assert "¿LO DIJO MAL A" in events
     assert "CHAT:{\\c&H00FFFFFF&} Espero" in events and "\\N" in events
     assert "fuera del clip" not in events
+
+
+def test_render_keeps_sync_across_audio_dropouts(tmp_path):
+    """A VOD with an audio gap must not pull later audio forward after cutting."""
+    import subprocess
+    from clipper.models import Clip
+    from clipper.reframe import probe
+    from clipper.render import render_clip
+    src = tmp_path / "gap.mp4"
+    subprocess.run(["ffmpeg", "-loglevel", "error", "-f", "lavfi", "-i", "testsrc=size=640x360:rate=30:duration=12",
+                    "-f", "lavfi", "-i", "sine=frequency=800:duration=12",
+                    "-filter_complex", "[1:a]aselect='not(between(t,4,6))'[a]",
+                    "-map", "0:v", "-map", "[a]", "-c:v", "libx264", "-c:a", "aac", str(src)], check=True)
+    clip = Clip(2.0, 10.0, "t", "", "", [], 5, "r", keep=[[2.0, 3.5], [5.5, 10.0]])
+    out = tmp_path / "out.mp4"
+    render_clip(str(src), probe(str(src)), clip, [], out, captions=False, layout="fit", max_gap=0)
+    durs = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "stream=duration", "-of", "csv=p=0", str(out)],
+                          capture_output=True, text=True, check=True).stdout.split()
+    video, audio = (float(x) for x in durs)
+    assert abs(video - audio) < 0.15
