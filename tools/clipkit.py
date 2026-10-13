@@ -134,7 +134,8 @@ def cmd_build(transcript: str, keep_path: str, meta_path: str, out: str) -> None
             if not any(x - 0.3 <= s["start"] and s["end"] <= y + 0.3 for x, y in k):
                 raise SystemExit(f"{name}: el subtítulo {s} cae fuera de los tramos {k}")
         clip = Clip(start=k[0][0], end=k[-1][1], reason=name, keep=k, subs=subs, **m)
-        said = [w.text for w in ws if any(s - 0.05 <= w.start and w.end <= e + 0.05 for s, e in keep_ranges(clip, ws))]
+        ranges = keep_ranges(clip, ws)
+        said = [w.text for w in ws if any(s - 0.05 <= w.start and w.end <= e + 0.05 for s, e in ranges)]
         if any(norm(t) in FLAGGED for t in said):
             raise SystemExit(f"{name}: contiene palabras marcadas; recorta esos tramos")
         clips.append(clip)
