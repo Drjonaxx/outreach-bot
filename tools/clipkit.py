@@ -19,7 +19,15 @@
     python tools/clipkit.py package NAME OUT_DIR "N:caption" ...
         Pull rendered clips from origin/claude/clipper-out (run inside the outreach-bot
         clone), number them in the given order, shrink anything over the 30 MiB chat
-        limit, and write captions.txt.
+        limit, write captions.txt and add the clips to the posting queue
+        (posting/queue.json: the next free slots at mediodía / noche, hora de Puerto Rico).
+
+    python tools/clipkit.py due
+        Queued clips whose slot has come, as JSON for tools/social.py (the platforms
+        still to post, from posting/config.json).
+
+    python tools/clipkit.py mark RESULTS.json
+        Record what tools/social.py posted ({"id": {"youtube": {...}, ...}}).
 """
 
 from __future__ import annotations
@@ -28,13 +36,24 @@ import json
 import re
 import subprocess
 import sys
+from datetime import date, datetime, timedelta
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from clipper.highlights import format_transcript, transcript_lines  # noqa: E402
 from clipper.models import Clip, Word, all_words, load_segments  # noqa: E402
 from clipper.render import keep_ranges, remap  # noqa: E402
+
+POSTING = Path(__file__).resolve().parents[1] / "posting"
+RAW = "https://raw.githubusercontent.com/Drjonaxx/outreach-bot/claude/clipper-out"
+PR = ZoneInfo("America/Puerto_Rico")
+# Posting slots (Puerto Rico time; the posting routines fire right at these times) and
+# clips per slot. A clip whose slot passed without posting is still tried for 2 days.
+SLOT_TIMES = ("11:53", "19:56")
+PER_SLOT = 3
+MAX_TRIES = 3
 
 FLAGGED = {
     "nigga", "nigger", "niggas", "niggers", "faggot", "faggots", "fag", "faggotry", "retard",
@@ -160,7 +179,7 @@ def cmd_sync(transcript: str, clips_path: str, folder: str) -> None:
 def cmd_package(name: str, out_dir: str, *items: str) -> None:
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
-    lines = []
+    lines, queued = [], []
     for pos, item in enumerate(items, 1):
         num, caption = item.split(":", 1)
         src = f"origin/claude/clipper-out:{name}/clip_{int(num):02d}.mp4"
@@ -179,12 +198,126 @@ def cmd_package(name: str, out_dir: str, *items: str) -> None:
         if length > 100:
             raise SystemExit(f"Caption de {dest.name} tiene {length} caracteres (máx. 100)")
         lines += [f"{dest.name}  ({length} caracteres)", caption, ""]
+        queued.append(post_fields(name, int(num), caption, read_meta(name, int(num))))
     (out / "captions.txt").write_text("\n".join(lines))
     print("\n".join(lines))
+    queue = load_queue()
+    known = {q["id"] for q in queue}
+    for item in queued:
+        if item["id"] not in known:
+            item["at"] = free_slot(queue, datetime.now(PR))
+            queue.append(item)
+            print(f"en cola: {item['id']} -> {item['at']}")
+    save_queue(queue)
+
+
+def read_meta(name: str, num: int) -> dict:
+    """Description, source link and hashtags from the clip's rendered .txt."""
+    txt = subprocess.run(["git", "show", f"origin/claude/clipper-out:{name}/clip_{num:02d}.txt"],
+                         check=True, capture_output=True, text=True).stdout
+    body = txt.split("DESCRIPCIÓN:", 1)[1].strip()
+    lines = body.splitlines()
+    tags = next((ln.split() for ln in lines if ln.startswith("#") and all(t.startswith("#") for t in ln.split())), [])
+    url = next((ln.strip() for ln in lines if ln.startswith("http")), "")
+    return {"description": body.split("\n\n")[0].strip(), "url": url, "tags": [t.lstrip("#") for t in tags]}
+
+
+def post_fields(name: str, num: int, caption: str, meta: dict) -> dict:
+    """Title/description for YouTube and the Instagram caption. The caption (with the
+    streamer credit) is the title; hashtags it already has aren't repeated."""
+    have = {t.lower() for t in re.findall(r"#(\w+)", caption)}
+    hashtags = " ".join(f"#{t}" for t in meta["tags"] if t.lower() not in have)
+    source = f"\n\n🎥 Stream original: {meta['url']}" if meta["url"] else ""
+    return {
+        "id": f"{name}/{num:02d}",
+        "url": f"{RAW}/{name}/clip_{num:02d}.mp4",
+        "title": re.sub(r"[<>]", "", caption),
+        "description": f"{caption}\n\n{meta['description']}{source}\n\n{hashtags}".strip(),
+        "ig_caption": f"{caption}\n\n{meta['description']}\n\n{hashtags}".strip(),
+        "tags": [t for t in meta["tags"] if t != "shorts"],
+        "results": {},
+    }
+
+
+def load_queue() -> list[dict]:
+    path = POSTING / "queue.json"
+    return json.loads(path.read_text()) if path.exists() else []
+
+
+def save_queue(queue: list[dict]) -> None:
+    POSTING.mkdir(exist_ok=True)
+    (POSTING / "queue.json").write_text(json.dumps(queue, ensure_ascii=False, indent=1) + "\n")
+
+
+def free_slot(queue: list[dict], now: datetime) -> str:
+    """First posting slot that hasn't passed yet and still has room."""
+    day = now.date()
+    while True:
+        for hhmm in SLOT_TIMES:
+            at = f"{day.isoformat()}T{hhmm}"
+            if datetime.fromisoformat(at).replace(tzinfo=PR) > now - timedelta(minutes=5) \
+                    and sum(q["at"] == at for q in queue) < PER_SLOT:
+                return at
+        day += timedelta(days=1)
+
+
+def pending_platforms(item: dict, platforms: list[str]) -> list[str]:
+    """Platforms where the clip isn't posted yet and still has tries left."""
+    res = item.get("results", {})
+    return [p for p in platforms
+            if "id" not in res.get(p, {}) and res.get(p, {}).get("tries", 0) < MAX_TRIES]
+
+
+def due_items(queue: list[dict], platforms: list[str], now: datetime) -> list[dict]:
+    out = []
+    for item in sorted(queue, key=lambda q: q["at"]):
+        at = datetime.fromisoformat(item["at"]).replace(tzinfo=PR)
+        todo = pending_platforms(item, platforms)
+        if todo and now - timedelta(days=2) <= at <= now + timedelta(minutes=15):
+            out.append({**{k: v for k, v in item.items() if k not in ("results", "at")}, "platforms": todo,
+                        "pending": {p: item.get("results", {}).get(p, {}).get("pending") for p in todo}})
+    return out
+
+
+def merge_results(queue: list[dict], results: dict) -> list[str]:
+    by_id = {q["id"]: q for q in queue}
+    notes = []
+    for item_id, per_platform in results.items():
+        item = by_id.get(item_id)
+        if not item:
+            continue
+        for platform, r in per_platform.items():
+            old = item.setdefault("results", {}).get(platform, {})
+            if "id" in old:
+                continue
+            new = {k: v for k, v in r.items() if v is not None}
+            new["tries"] = old.get("tries", 0) + (1 if "error" in new and "pending" not in new else 0)
+            item["results"][platform] = new
+            notes.append(f"{item_id} {platform}: " + (new.get("url") or new.get("id") or
+                                                      ("procesando" if "pending" in new else new.get("error", "?"))))
+    return notes
+
+
+def posting_config() -> dict:
+    path = POSTING / "config.json"
+    return json.loads(path.read_text()) if path.exists() else {"platforms": []}
+
+
+def cmd_due() -> None:
+    cfg = posting_config()
+    print(json.dumps(due_items(load_queue(), cfg.get("platforms", []), datetime.now(PR)), ensure_ascii=False))
+
+
+def cmd_mark(results_path: str) -> None:
+    queue = load_queue()
+    for note in merge_results(queue, json.loads(Path(results_path).read_text())):
+        print(note)
+    save_queue(queue)
 
 
 if __name__ == "__main__":
-    commands = {"lines": cmd_lines, "cues": cmd_cues, "build": cmd_build, "sync": cmd_sync, "package": cmd_package}
+    commands = {"lines": cmd_lines, "cues": cmd_cues, "build": cmd_build, "sync": cmd_sync, "package": cmd_package,
+                "due": cmd_due, "mark": cmd_mark}
     if len(sys.argv) < 2 or sys.argv[1] not in commands:
         raise SystemExit(__doc__)
     commands[sys.argv[1]](*sys.argv[2:])

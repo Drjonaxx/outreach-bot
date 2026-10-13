@@ -160,3 +160,51 @@ def test_render_keeps_sync_across_audio_dropouts(tmp_path):
                           capture_output=True, text=True, check=True).stdout.split()
     video, audio = (float(x) for x in durs)
     assert abs(video - audio) < 0.15
+
+
+def _clipkit():
+    import importlib.util
+    from pathlib import Path
+    spec = importlib.util.spec_from_file_location("clipkit", Path(__file__).parents[1] / "tools" / "clipkit.py")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
+def test_posting_queue_fills_slots_and_retries():
+    from datetime import datetime
+    ck = _clipkit()
+    morning = datetime(2026, 10, 13, 10, 30, tzinfo=ck.PR)
+    queue = []
+    for n in range(8):
+        item = {"id": f"x/{n:02d}", "results": {}}
+        item["at"] = ck.free_slot(queue, morning)
+        queue.append(item)
+    assert [q["at"] for q in queue] == ["2026-10-13T11:53"] * 3 + ["2026-10-13T19:56"] * 3 + ["2026-10-14T11:53"] * 2
+    # Rendered after the noon slot: straight to tonight.
+    assert ck.free_slot([], datetime(2026, 10, 13, 13, 0, tzinfo=ck.PR)) == "2026-10-13T19:56"
+
+    noon = datetime(2026, 10, 13, 11, 53, tzinfo=ck.PR)
+    due = ck.due_items(queue, ["youtube", "instagram"], noon)
+    assert [d["id"] for d in due] == ["x/00", "x/01", "x/02"]
+    ck.merge_results(queue, {"x/00": {"youtube": {"id": "abc", "url": "u"}, "instagram": {"pending": "c1"}},
+                             "x/01": {"youtube": {"error": "boom"}, "instagram": {"id": "m1"}}})
+    due = {d["id"]: d for d in ck.due_items(queue, ["youtube", "instagram"], noon)}
+    assert due["x/00"]["platforms"] == ["instagram"] and due["x/00"]["pending"] == {"instagram": "c1"}
+    assert due["x/01"]["platforms"] == ["youtube"]
+    for _ in range(2):
+        ck.merge_results(queue, {"x/01": {"youtube": {"error": "boom"}}})
+    assert "x/01" not in {d["id"] for d in ck.due_items(queue, ["youtube", "instagram"], noon)}  # gave up
+    # Two days later the old clips are dropped.
+    assert ck.due_items(queue, ["youtube"], datetime(2026, 10, 16, 12, 0, tzinfo=ck.PR)) == []
+
+
+def test_post_fields_reuse_caption_and_skip_repeated_hashtags():
+    ck = _clipkit()
+    meta = {"description": "Se pone raro.", "url": "https://kick.com/x/videos/1",
+            "tags": ["gtarp", "quedijoelgringo", "shorts"]}
+    item = ck.post_fields("lordkebun-1", 6, "Papi Pistone 😂 🎥LordKebun (Kick) #quedijoelgringo", meta)
+    assert item["id"] == "lordkebun-1/06" and item["url"].endswith("/lordkebun-1/clip_06.mp4")
+    assert item["title"].startswith("Papi Pistone")
+    assert item["description"].endswith("#gtarp #shorts") and "kick.com/x/videos/1" in item["description"]
+    assert item["ig_caption"].count("#quedijoelgringo") == 1 and item["tags"] == ["gtarp", "quedijoelgringo"]

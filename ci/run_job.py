@@ -15,6 +15,7 @@ import json
 import shutil
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 job = json.loads(Path("job.json").read_text())
@@ -65,4 +66,8 @@ else:
         cmd += ["--limit-minutes", str(job["limit_minutes"])]
 
 print("+", " ".join(cmd), flush=True)
-sys.exit(subprocess.call(cmd))
+code = subprocess.call(cmd)
+if clips.exists() and code == 0:
+    # The publish step keeps a job's videos for a few days so they can still be posted.
+    (work / "rendered_at").write_text(f"{time.time():.0f}\n")
+sys.exit(code)
