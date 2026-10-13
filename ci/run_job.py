@@ -5,7 +5,10 @@ Stage 2, clips.json present:           download each clip's stretch in 1080p and
                                        -> results/<name>/clip_XX.mp4
 
 job.json fields: name, url, and optionally language ("es"), whisper_model ("small"),
-limit_minutes (only the first N minutes), vod (Kick channel: 0 = latest VOD).
+limit_minutes (only the first N minutes), vod (Kick channel: 0 = latest VOD),
+layout ("auto"/"crop"/"fit"), only (re-render just these clip numbers).
+A new job whose VOD was already processed under another name writes
+results/<name>/status.json {"status": "no_new_vod"} and stops.
 """
 
 import json
@@ -20,11 +23,25 @@ results = Path("results")
 work = results / name
 work.mkdir(parents=True, exist_ok=True)
 
+clips = Path("jobs") / name / "clips.json"
+
 # Once stage 1 has picked a video (e.g. a Kick channel's latest VOD), stick to it.
 url = job["url"]
 source = work / "source.json"
 if source.exists():
     url = json.loads(source.read_text()).get("url") or url
+elif not clips.exists():
+    # New job: resolve the channel to a VOD now, and stop if an earlier job already
+    # processed it (the daily routine runs even when the streamer didn't go live).
+    from clipper.download import resolve
+
+    url = resolve(job["url"], str(job.get("vod", 0)))
+    for seen in results.glob("*/source.json"):
+        if seen.parent != work and json.loads(seen.read_text()).get("url") == url:
+            print(f"Sin VOD nuevo: {url} ya se procesó en {seen.parent.name}", flush=True)
+            (work / "status.json").write_text(json.dumps(
+                {"status": "no_new_vod", "url": url, "seen_in": seen.parent.name}, indent=2))
+            sys.exit(0)
 
 cmd = [
     "clipper", url, "--out", str(results), "--name", name,
@@ -32,7 +49,6 @@ cmd = [
     "--whisper-model", job.get("whisper_model", "small"),
     "--vod", str(job.get("vod", 0)),
 ]
-clips = Path("jobs") / name / "clips.json"
 if clips.exists():
     shutil.copy(clips, work / "clips.json")
     cmd += ["--sections", "--layout", job.get("layout", "auto")]

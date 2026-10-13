@@ -1,0 +1,17 @@
+{
+  "_comment": "Streamers de la rutina diaria (8:47 a.m. hora de Puerto Rico). Para cambiar de streamer o agregar una campaña, edita esta lista.",
+  "streamers": [
+    {
+      "slug": "lordkebun",
+      "url": "https://kick.com/lordkebun",
+      "language": "en",
+      "subtitles": "es",
+      "limit_minutes": 180,
+      "layout": "fit",
+      "clips": "6-8",
+      "credit": "🎥LordKebun (Kick)",
+      "hashtags": ["gtarp", "lordkebun", "gta5", "streamer", "subtitulado", "quedijoelgringo"],
+      "campaign": null
+    }
+  ]
+}
