@@ -35,7 +35,12 @@ elif not clips.exists():
     # processed it (the daily routine runs even when the streamer didn't go live).
     from clipper.download import resolve
 
-    url = resolve(job["url"], str(job.get("vod", 0)))
+    try:
+        url = resolve(job["url"], str(job.get("vod", 0)))
+    except Exception as e:  # noqa: BLE001 - report any failure to the daily routine
+        print(f"No pude obtener un VOD de {job['url']}: {e}", flush=True)
+        (work / "status.json").write_text(json.dumps({"status": "error", "url": job["url"], "error": str(e)}, indent=2))
+        sys.exit(0)
     for seen in results.glob("*/source.json"):
         if seen.parent != work and json.loads(seen.read_text()).get("url") == url:
             print(f"Sin VOD nuevo: {url} ya se procesó en {seen.parent.name}", flush=True)

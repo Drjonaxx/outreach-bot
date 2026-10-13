@@ -1,14 +1,55 @@
 {
-  "_comment": "Streamers de la rutina diaria (8:47 a.m. hora de Puerto Rico). Para cambiar de streamer o agregar una campaña, edita esta lista.",
+  "_comment": "Streamers de la rutina diaria (8:47 a.m. hora de Puerto Rico). Cada uno se procesa solo en sus días ('days', en inglés) para repartir el trabajo y no pasarse de los minutos gratis de GitHub. Si uno tiene campaña pagada, pon sus reglas en 'campaign'.",
   "streamers": [
+    {
+      "slug": "westcol",
+      "url": "https://kick.com/westcol",
+      "days": ["mon", "thu"],
+      "language": "es",
+      "subtitles": "original",
+      "limit_minutes": 150,
+      "layout": "fit",
+      "clips": "4-5",
+      "credit": "🎥Westcol (Kick)",
+      "hashtags": ["westcol", "kick", "streamer", "colombia", "clips", "quedijoelgringo"],
+      "notes": "Hace muchos streams de casino: esos tramos NO se clipean.",
+      "campaign": null
+    },
+    {
+      "slug": "davooxeneize",
+      "url": "https://kick.com/davooxeneize",
+      "days": ["tue", "fri"],
+      "language": "es",
+      "subtitles": "original",
+      "limit_minutes": 150,
+      "layout": "fit",
+      "clips": "4-5",
+      "credit": "🎥Davoo Xeneize (Kick)",
+      "hashtags": ["davooxeneize", "futbol", "kick", "streamer", "clips", "quedijoelgringo"],
+      "campaign": null
+    },
+    {
+      "slug": "spreen",
+      "url": "https://kick.com/spreen",
+      "days": ["wed", "sat"],
+      "language": "es",
+      "subtitles": "original",
+      "limit_minutes": 150,
+      "layout": "fit",
+      "clips": "4-5",
+      "credit": "🎥Spreen (Kick)",
+      "hashtags": ["spreen", "kick", "streamer", "argentina", "clips", "quedijoelgringo"],
+      "campaign": null
+    },
     {
       "slug": "lordkebun",
       "url": "https://kick.com/lordkebun",
+      "days": ["sun", "wed"],
       "language": "en",
       "subtitles": "es",
-      "limit_minutes": 180,
+      "limit_minutes": 150,
       "layout": "fit",
-      "clips": "6-8",
+      "clips": "4-5",
       "credit": "🎥LordKebun (Kick)",
       "hashtags": ["gtarp", "lordkebun", "gta5", "streamer", "subtitulado", "quedijoelgringo"],
       "campaign": null
