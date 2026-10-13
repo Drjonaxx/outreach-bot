@@ -11,6 +11,7 @@
     python tools/clipkit.py build TRANSCRIPT KEEP.json META.json CLIPS_OUT.json
         META.json: {"name": {"hook", "title", "description", "score", "hashtags",
         "subs": [[start, end, "texto"], ...]}} -> clips.json (sorted by time).
+        Leave "subs" out to burn word-by-word captions of the original audio instead.
 
     python tools/clipkit.py sync TRANSCRIPT CLIPS.json DIR
         Audio-vs-subtitle offset of rendered DIR/*clip_NN.mp4 (healthy: about +0.2 s).
@@ -108,8 +109,9 @@ def cmd_build(transcript: str, keep_path: str, meta_path: str, out: str) -> None
     clips = []
     for name, k in keep.items():
         m = dict(meta[name])
-        subs = [{"start": round(a, 2), "end": round(b, 2), "text": t} for a, b, t in m.pop("subs")]
-        for s in subs:
+        # No "subs" (e.g. a Spanish-speaking streamer): word-by-word captions of the original audio.
+        subs = [{"start": round(a, 2), "end": round(b, 2), "text": t} for a, b, t in m.pop("subs", None) or []] or None
+        for s in subs or []:
             if not any(x - 0.3 <= s["start"] and s["end"] <= y + 0.3 for x, y in k):
                 raise SystemExit(f"{name}: el subtítulo {s} cae fuera de los tramos {k}")
         clip = Clip(start=k[0][0], end=k[-1][1], reason=name, keep=k, subs=subs, **m)
