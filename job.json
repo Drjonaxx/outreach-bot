@@ -1,12 +1,1 @@
-{
-  "name": "lordkebun-1",
-  "url": "https://kick.com/lordkebun",
-  "vod": "0",
-  "language": "en",
-  "whisper_model": "small",
-  "limit_minutes": 180,
-  "layout": "fit",
-  "only": [
-    6
-  ]
-}
+{"name": "davooxeneize-2026-10-13", "url": "https://kick.com/davooxeneize", "vod": "0", "language": "es", "whisper_model": "small", "limit_minutes": 150, "layout": "fit"}
