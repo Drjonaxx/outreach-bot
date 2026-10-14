@@ -4,55 +4,96 @@
     {
       "slug": "westcol",
       "url": "https://kick.com/westcol",
-      "days": ["mon", "thu"],
+      "days": [
+        "mon",
+        "thu"
+      ],
       "language": "es",
       "subtitles": "original",
       "limit_minutes": 150,
       "layout": "fit",
       "clips": "4-5",
       "credit": "🎥Westcol (Kick)",
-      "hashtags": ["westcol", "kick", "streamer", "colombia", "clips", "quedijoelgringo"],
+      "hashtags": [
+        "westcol",
+        "kick",
+        "streamer",
+        "colombia",
+        "clips",
+        "quedijoelgringo"
+      ],
       "notes": "Hace muchos streams de casino: esos tramos NO se clipean.",
       "campaign": null
     },
     {
       "slug": "davooxeneize",
       "url": "https://kick.com/davooxeneize",
-      "days": ["tue", "fri"],
+      "days": [
+        "tue",
+        "fri"
+      ],
       "language": "es",
       "subtitles": "original",
       "limit_minutes": 150,
       "layout": "fit",
       "clips": "4-5",
       "credit": "🎥Davoo Xeneize (Kick)",
-      "hashtags": ["davooxeneize", "futbol", "kick", "streamer", "clips", "quedijoelgringo"],
+      "hashtags": [
+        "davooxeneize",
+        "futbol",
+        "kick",
+        "streamer",
+        "clips",
+        "quedijoelgringo"
+      ],
       "campaign": null
     },
     {
       "slug": "spreen",
       "url": "https://kick.com/spreen",
-      "days": ["wed", "sat"],
+      "days": [
+        "wed",
+        "sat"
+      ],
       "language": "es",
       "subtitles": "original",
       "limit_minutes": 150,
       "layout": "fit",
       "clips": "4-5",
       "credit": "🎥Spreen (Kick)",
-      "hashtags": ["spreen", "kick", "streamer", "argentina", "clips", "quedijoelgringo"],
+      "hashtags": [
+        "spreen",
+        "kick",
+        "streamer",
+        "argentina",
+        "clips",
+        "quedijoelgringo"
+      ],
       "campaign": null
     },
     {
       "slug": "lordkebun",
       "url": "https://kick.com/lordkebun",
-      "days": ["sun", "wed"],
+      "days": [
+        "sun",
+        "wed"
+      ],
       "language": "en",
       "subtitles": "es",
       "limit_minutes": 150,
       "layout": "fit",
       "clips": "4-5",
       "credit": "🎥LordKebun (Kick)",
-      "hashtags": ["gtarp", "lordkebun", "gta5", "streamer", "subtitulado", "quedijoelgringo"],
-      "campaign": null
+      "hashtags": [
+        "gtarp",
+        "lordkebun",
+        "gta5",
+        "streamer",
+        "subtitulado",
+        "quedijoelgringo"
+      ],
+      "campaign": null,
+      "notes": "También hace streams de casino (Stake): si el VOD más reciente es de Stake/casino/slots, NO se clipea; usa vod \"RP\" (su último stream de GTA RP) con otro name."
     }
   ]
 }
