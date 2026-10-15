@@ -86,14 +86,14 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           # Videos are only needed until they're posted: keep the current job's and those
-          # rendered in the last 3 days, drop the rest (transcripts, clips.json and
+          # rendered in the last 6 days, drop the rest (transcripts, clips.json and
           # source.json stay), then squash the branch to a single commit so old videos
           # don't pile up in history.
           python3 - "${{ steps.job.outputs.name }}" <<'EOF'
           import pathlib, sys, time
           for d in pathlib.Path(".").iterdir():
               stamp = d / "rendered_at"
-              fresh = stamp.exists() and time.time() - float(stamp.read_text()) < 3 * 86400
+              fresh = stamp.exists() and time.time() - float(stamp.read_text()) < 6 * 86400
               if d.is_dir() and d.name != ".git" and d.name != sys.argv[1] and not fresh:
                   for f in [*d.rglob("*.mp4"), *d.rglob("*.ass")]:
                       f.unlink()

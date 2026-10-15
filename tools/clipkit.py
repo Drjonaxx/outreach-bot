@@ -52,7 +52,7 @@ PR = ZoneInfo("America/Puerto_Rico")
 # Posting slots (Puerto Rico time; the posting routines fire right at these times) and
 # clips per slot. A clip whose slot passed without posting is still tried for 2 days.
 SLOT_TIMES = ("11:53", "19:56")
-PER_SLOT = 3
+PER_SLOT = 4
 MAX_TRIES = 3
 
 FLAGGED = {
@@ -229,6 +229,7 @@ def post_fields(name: str, num: int, caption: str, meta: dict) -> dict:
     have = {t.lower() for t in re.findall(r"#(\w+)", caption)}
     hashtags = " ".join(f"#{t}" for t in meta["tags"] if t.lower() not in have)
     source = f"\n\n🎥 Stream original: {meta['url']}" if meta["url"] else ""
+    streamer = re.search(r"🎥\s*([^()#]+?)\s*\(", caption)
     return {
         "id": f"{name}/{num:02d}",
         "url": f"{RAW}/{name}/clip_{num:02d}.mp4",
@@ -236,6 +237,9 @@ def post_fields(name: str, num: int, caption: str, meta: dict) -> dict:
         "description": f"{caption}\n\n{meta['description']}{source}\n\n{hashtags}".strip(),
         "ig_caption": f"{caption}\n\n{meta['description']}\n\n{hashtags}".strip(),
         "tags": [t for t in meta["tags"] if t != "shorts"],
+        # Posted by the channel under the video to get the conversation going.
+        "comment": "¿Qué opinan? 👇 Clips subtitulados" + (f" de {streamer.group(1)}" if streamer else "")
+                   + " todos los días en el canal.",
         "results": {},
     }
 

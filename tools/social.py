@@ -4,7 +4,7 @@ Runs INSIDE the workbench, where run_composio_tool() and upload_local_file() com
 
     import requests
     exec(requests.get("https://raw.githubusercontent.com/Drjonaxx/outreach-bot/claude/clipper/tools/social.py").text)
-    start(ITEMS, ig_user_id="...")   # stage videos, upload to YouTube, create the Reel containers
+    start(ITEMS, ig_user_id="...", yt_channel_id="UC...")   # upload to YouTube, create the Reel containers
     finish(ig_user_id="...")         # publish the Reels once Instagram has processed them
 
 ITEMS is the output of `clipkit.py due`. Each call prints its results as JSON for
@@ -90,8 +90,15 @@ def _reel_container(item: dict, video: dict, ig_user_id: str) -> dict:
     return {"pending": cid, "tries": 0} if cid else {"error": _failed(res, err) or str(res)[:300]}
 
 
-def start(items: list[dict], ig_user_id: str | None = None) -> dict:
-    """Stage each clip once, upload it to YouTube and create its Reel container (< 1 min)."""
+def _comment(video_id: str, channel_id: str, text: str) -> str | None:
+    res, err = run_composio_tool("YOUTUBE_POST_COMMENT", {  # noqa: F821 - workbench helper
+        "videoId": video_id, "channelId": channel_id, "textOriginal": text}, account=ACCOUNT)
+    return None if _failed(res, err) else _find(res, "id")
+
+
+def start(items: list[dict], ig_user_id: str | None = None, yt_channel_id: str | None = None) -> dict:
+    """Stage each clip once, upload it to YouTube (plus the channel's own comment under it)
+    and create its Reel container (< 1 min)."""
     def one(item: dict):
         done = _ledger().get(item["id"], {})
         # The queue remembers containers created by an earlier run (if the ledger was lost).
@@ -108,7 +115,10 @@ def start(items: list[dict], ig_user_id: str | None = None) -> dict:
             except Exception as e:  # noqa: BLE001 - report and let the next run retry
                 return item["id"], {**out, **{p: {"error": f"descarga: {e}"[:300]} for p in todo}}
             if "youtube" in todo:
-                out["youtube"] = _record(item["id"], "youtube", _youtube(item, video))
+                yt = _youtube(item, video)
+                if "id" in yt and yt_channel_id and item.get("comment"):
+                    yt["comment"] = _comment(yt["id"], yt_channel_id, item["comment"])
+                out["youtube"] = _record(item["id"], "youtube", yt)
             if "instagram" in todo:
                 out["instagram"] = _record(item["id"], "instagram", _reel_container(item, video, ig_user_id))
         return item["id"], out
