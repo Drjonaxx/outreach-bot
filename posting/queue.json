@@ -15,7 +15,14 @@
    "chistes",
    "humor"
   ],
-  "results": {},
+  "results": {
+   "youtube": {
+    "id": "manual"
+   },
+   "instagram": {
+    "id": "manual"
+   }
+  },
   "at": "2026-10-13T11:53"
  },
  {
@@ -36,7 +43,14 @@
    "daddyyankee",
    "donomar"
   ],
-  "results": {},
+  "results": {
+   "youtube": {
+    "id": "manual"
+   },
+   "instagram": {
+    "id": "manual"
+   }
+  },
   "at": "2026-10-13T11:53"
  },
  {
@@ -55,7 +69,14 @@
    "barba",
    "humor"
   ],
-  "results": {},
+  "results": {
+   "youtube": {
+    "id": "manual"
+   },
+   "instagram": {
+    "id": "manual"
+   }
+  },
   "at": "2026-10-13T11:53"
  },
  {
@@ -74,7 +95,14 @@
    "gym",
    "humor"
   ],
-  "results": {},
+  "results": {
+   "youtube": {
+    "id": "manual"
+   },
+   "instagram": {
+    "id": "manual"
+   }
+  },
   "at": "2026-10-13T19:56"
  },
  {
@@ -93,7 +121,14 @@
    "argentina",
    "humor"
   ],
-  "results": {},
+  "results": {
+   "youtube": {
+    "id": "manual"
+   },
+   "instagram": {
+    "id": "manual"
+   }
+  },
   "at": "2026-10-13T19:56"
  },
  {
@@ -111,7 +146,14 @@
    "quedijoelgringo",
    "humor"
   ],
-  "results": {},
+  "results": {
+   "youtube": {
+    "id": "manual"
+   },
+   "instagram": {
+    "id": "manual"
+   }
+  },
   "at": "2026-10-14T11:53"
  },
  {
@@ -130,7 +172,14 @@
    "minecraft",
    "dedsafio"
   ],
-  "results": {},
+  "results": {
+   "youtube": {
+    "id": "manual"
+   },
+   "instagram": {
+    "id": "manual"
+   }
+  },
   "at": "2026-10-14T11:53"
  },
  {
@@ -148,7 +197,14 @@
    "quedijoelgringo",
    "humor"
   ],
-  "results": {},
+  "results": {
+   "youtube": {
+    "id": "manual"
+   },
+   "instagram": {
+    "id": "manual"
+   }
+  },
   "at": "2026-10-14T11:53"
  },
  {
@@ -166,7 +222,14 @@
    "quedijoelgringo",
    "juicio"
   ],
-  "results": {},
+  "results": {
+   "youtube": {
+    "id": "manual"
+   },
+   "instagram": {
+    "id": "manual"
+   }
+  },
   "at": "2026-10-14T19:56"
  },
  {
@@ -184,7 +247,14 @@
    "quedijoelgringo",
    "juicio"
   ],
-  "results": {},
+  "results": {
+   "youtube": {
+    "id": "manual"
+   },
+   "instagram": {
+    "id": "manual"
+   }
+  },
   "at": "2026-10-14T19:56"
  },
  {
@@ -202,7 +272,14 @@
    "quedijoelgringo",
    "juicio"
   ],
-  "results": {},
+  "results": {
+   "youtube": {
+    "id": "manual"
+   },
+   "instagram": {
+    "id": "manual"
+   }
+  },
   "at": "2026-10-14T19:56"
  },
  {
@@ -220,7 +297,14 @@
    "quedijoelgringo",
    "juicio"
   ],
-  "results": {},
+  "results": {
+   "youtube": {
+    "id": "manual"
+   },
+   "instagram": {
+    "id": "manual"
+   }
+  },
   "at": "2026-10-15T11:53"
  },
  {
@@ -240,7 +324,14 @@
    "republicadominicana",
    "merengue"
   ],
-  "results": {},
+  "results": {
+   "youtube": {
+    "id": "manual"
+   },
+   "instagram": {
+    "id": "manual"
+   }
+  },
   "at": "2026-10-15T11:53"
  },
  {
@@ -260,7 +351,14 @@
    "bachata",
    "republicadominicana"
   ],
-  "results": {},
+  "results": {
+   "youtube": {
+    "id": "manual"
+   },
+   "instagram": {
+    "id": "manual"
+   }
+  },
   "at": "2026-10-15T11:53"
  },
  {
@@ -279,7 +377,14 @@
    "comida",
    "santander"
   ],
-  "results": {},
+  "results": {
+   "youtube": {
+    "id": "manual"
+   },
+   "instagram": {
+    "id": "manual"
+   }
+  },
   "at": "2026-10-15T19:56"
  },
  {
@@ -298,7 +403,14 @@
    "vallenato",
    "silvestredangond"
   ],
-  "results": {},
+  "results": {
+   "youtube": {
+    "id": "manual"
+   },
+   "instagram": {
+    "id": "manual"
+   }
+  },
   "at": "2026-10-15T19:56"
  },
  {
@@ -317,7 +429,14 @@
    "vallenato",
    "historia"
   ],
-  "results": {},
+  "results": {
+   "youtube": {
+    "id": "manual"
+   },
+   "instagram": {
+    "id": "manual"
+   }
+  },
   "at": "2026-10-15T19:56"
  }
 ]
