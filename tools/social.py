@@ -4,7 +4,9 @@ Runs INSIDE the workbench, where run_composio_tool() and upload_local_file() com
 
     import requests
     exec(requests.get("https://raw.githubusercontent.com/Drjonaxx/outreach-bot/claude/clipper/tools/social.py").text)
-    start(ITEMS, ig_user_id="...", yt_channel_id="UC...")   # upload to YouTube, create the Reel containers
+    upload_private(UPCOMING)         # early morning: upload to YouTube as private (`clipkit.py upcoming`)
+    start(ITEMS, ig_user_id="...", yt_channel_id="UC...")   # at the slot: make them public (or upload)
+                                     # + the channel's comment, and create the Reel containers
     finish(ig_user_id="...")         # publish the Reels once Instagram has processed them
 
 ITEMS is the output of `clipkit.py due`. Each call prints its results as JSON for
@@ -70,15 +72,26 @@ def _stage(item: dict) -> dict:
     return {"name": path.name, "mimetype": "video/mp4", "s3key": res["s3key"]}
 
 
-def _youtube(item: dict, video: dict) -> dict:
+def _youtube(item: dict, video: dict, privacy: str = "public") -> dict:
     res, err = run_composio_tool("YOUTUBE_UPLOAD_VIDEO", {  # noqa: F821 - workbench helper
         "title": item["title"], "description": item["description"], "tags": item["tags"],
-        "categoryId": "24", "privacyStatus": "public", "videoFilePath": video,
+        "categoryId": "24", "privacyStatus": privacy, "videoFilePath": video,
     }, account=ACCOUNT)
     vid = None if _failed(res, err) else _find(res, "id")
     if not vid:
         return {"error": _failed(res, err) or str(res)[:300]}
-    return {"id": vid, "url": f"https://youtube.com/shorts/{vid}", "privacy": _find(res, "privacyStatus")}
+    if privacy != "public":
+        return {"private_id": vid}
+    return {"id": vid, "url": f"https://youtube.com/shorts/{vid}"}
+
+
+def _release(vid: str) -> dict:
+    """Make a video uploaded earlier as private public."""
+    res, err = run_composio_tool("YOUTUBE_UPDATE_VIDEO", {  # noqa: F821 - workbench helper
+        "video_id": vid, "privacy_status": "public"}, account=ACCOUNT)
+    if _failed(res, err):
+        return {"private_id": vid, "error": _failed(res, err)}
+    return {"id": vid, "url": f"https://youtube.com/shorts/{vid}"}
 
 
 def _reel_container(item: dict, video: dict, ig_user_id: str) -> dict:
@@ -105,25 +118,48 @@ def start(items: list[dict], ig_user_id: str | None = None, yt_channel_id: str |
         for p, cid in (item.get("pending") or {}).items():
             if cid and p not in done:
                 done[p] = _record(item["id"], p, {"pending": cid, "tries": 0})
+        private_id = item.get("youtube_private_id") or done.get("youtube", {}).get("private_id")
         todo = [p for p in item["platforms"] if not ({"id", "pending"} & done.get(p, {}).keys())]
         if "instagram" in todo and not ig_user_id:
             todo.remove("instagram")
         out = {p: done[p] for p in item["platforms"] if p in done and p not in todo}
-        if todo:
+        upload = [p for p in todo if p == "instagram" or (p == "youtube" and not private_id)]
+        video = None
+        if upload:
             try:
                 video = _stage(item)
             except Exception as e:  # noqa: BLE001 - report and let the next run retry
-                return item["id"], {**out, **{p: {"error": f"descarga: {e}"[:300]} for p in todo}}
-            if "youtube" in todo:
-                yt = _youtube(item, video)
-                if "id" in yt and yt_channel_id and item.get("comment"):
-                    yt["comment"] = _comment(yt["id"], yt_channel_id, item["comment"])
-                out["youtube"] = _record(item["id"], "youtube", yt)
-            if "instagram" in todo:
-                out["instagram"] = _record(item["id"], "instagram", _reel_container(item, video, ig_user_id))
+                out.update({p: {"error": f"descarga: {e}"[:300]} for p in upload})
+                todo = [p for p in todo if p not in upload]
+        if "youtube" in todo:
+            yt = _release(private_id) if private_id else _youtube(item, video)
+            if "id" in yt and yt_channel_id and item.get("comment"):
+                yt["comment"] = _comment(yt["id"], yt_channel_id, item["comment"])
+            out["youtube"] = _record(item["id"], "youtube", yt)
+        if "instagram" in todo:
+            out["instagram"] = _record(item["id"], "instagram", _reel_container(item, video, ig_user_id))
         return item["id"], out
 
     with ThreadPoolExecutor(4) as ex:
+        results = dict(ex.map(one, items))
+    print(json.dumps(results, ensure_ascii=False))
+    return results
+
+
+def upload_private(items: list[dict]) -> dict:
+    """Upload clips to YouTube as private ahead of time (the shared upload quota resets at
+    midnight Pacific); start() makes them public at their slot. Output is for `clipkit.py mark`."""
+    def one(item: dict):
+        state = _ledger().get(item["id"], {}).get("youtube", {})
+        if {"id", "private_id"} & state.keys():
+            return item["id"], {"youtube": state}
+        try:
+            video = _stage(item)
+        except Exception as e:  # noqa: BLE001 - report and let the next run retry
+            return item["id"], {"youtube": {"error": f"descarga: {e}"[:300]}}
+        return item["id"], {"youtube": _record(item["id"], "youtube", _youtube(item, video, "private"))}
+
+    with ThreadPoolExecutor(3) as ex:
         results = dict(ex.map(one, items))
     print(json.dumps(results, ensure_ascii=False))
     return results

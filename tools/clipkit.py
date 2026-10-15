@@ -26,6 +26,10 @@
         Queued clips whose slot has come, as JSON for tools/social.py (the platforms
         still to post, from posting/config.json).
 
+    python tools/clipkit.py upcoming [HOURS]
+        Clips due in the next HOURS (default 20) not yet uploaded to YouTube, for
+        social.upload_private() in the early morning when the upload quota resets.
+
     python tools/clipkit.py mark RESULTS.json
         Record what tools/social.py posted ({"id": {"youtube": {...}, ...}}).
 """
@@ -273,15 +277,23 @@ def pending_platforms(item: dict, platforms: list[str]) -> list[str]:
             if "id" not in res.get(p, {}) and res.get(p, {}).get("tries", 0) < MAX_TRIES]
 
 
-def due_items(queue: list[dict], platforms: list[str], now: datetime) -> list[dict]:
+def due_items(queue: list[dict], platforms: list[str], now: datetime,
+              ahead: timedelta = timedelta(minutes=15)) -> list[dict]:
     out = []
     for item in sorted(queue, key=lambda q: q["at"]):
         at = datetime.fromisoformat(item["at"]).replace(tzinfo=PR)
         todo = pending_platforms(item, platforms)
-        if todo and now - timedelta(days=2) <= at <= now + timedelta(minutes=15):
+        if todo and now - timedelta(days=2) <= at <= now + ahead:
+            res = item.get("results", {})
             out.append({**{k: v for k, v in item.items() if k not in ("results", "at")}, "platforms": todo,
-                        "pending": {p: item.get("results", {}).get(p, {}).get("pending") for p in todo}})
+                        "pending": {p: res.get(p, {}).get("pending") for p in todo},
+                        "youtube_private_id": res.get("youtube", {}).get("private_id")})
     return out
+
+
+def upcoming_items(queue: list[dict], now: datetime, hours: float) -> list[dict]:
+    """Clips due in the next `hours` that still need uploading to YouTube."""
+    return [d for d in due_items(queue, ["youtube"], now, timedelta(hours=hours)) if not d["youtube_private_id"]]
 
 
 def merge_results(queue: list[dict], results: dict) -> list[str]:
@@ -296,7 +308,12 @@ def merge_results(queue: list[dict], results: dict) -> list[str]:
             if "id" in old:
                 continue
             new = {k: v for k, v in r.items() if v is not None}
-            new["tries"] = old.get("tries", 0) + (1 if "error" in new and "pending" not in new else 0)
+            if "private_id" in old and "private_id" not in new and "id" not in new:
+                new["private_id"] = old["private_id"]
+            # The shared YouTube upload quota running out (429) is not the clip's fault.
+            quota = "429" in str(new.get("error", "")) or "quota" in str(new.get("error", "")).lower()
+            failed = "error" in new and not ({"pending", "private_id"} & new.keys()) and not quota
+            new["tries"] = old.get("tries", 0) + (1 if failed else 0)
             item["results"][platform] = new
             notes.append(f"{item_id} {platform}: " + (new.get("url") or new.get("id") or
                                                       ("procesando" if "pending" in new else new.get("error", "?"))))
@@ -313,6 +330,12 @@ def cmd_due() -> None:
     print(json.dumps(due_items(load_queue(), cfg.get("platforms", []), datetime.now(PR)), ensure_ascii=False))
 
 
+def cmd_upcoming(hours: str = "20") -> None:
+    cfg = posting_config()
+    items = upcoming_items(load_queue(), datetime.now(PR), float(hours)) if "youtube" in cfg.get("platforms", []) else []
+    print(json.dumps(items, ensure_ascii=False))
+
+
 def cmd_mark(results_path: str) -> None:
     queue = load_queue()
     for note in merge_results(queue, json.loads(Path(results_path).read_text())):
@@ -322,7 +345,7 @@ def cmd_mark(results_path: str) -> None:
 
 if __name__ == "__main__":
     commands = {"lines": cmd_lines, "cues": cmd_cues, "build": cmd_build, "sync": cmd_sync, "package": cmd_package,
-                "due": cmd_due, "mark": cmd_mark}
+                "due": cmd_due, "upcoming": cmd_upcoming, "mark": cmd_mark}
     if len(sys.argv) < 2 or sys.argv[1] not in commands:
         raise SystemExit(__doc__)
     commands[sys.argv[1]](*sys.argv[2:])

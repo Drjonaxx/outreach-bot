@@ -210,3 +210,23 @@ def test_post_fields_reuse_caption_and_skip_repeated_hashtags():
     assert item["description"].endswith("#gtarp #shorts") and "kick.com/x/videos/1" in item["description"]
     assert item["ig_caption"].count("#quedijoelgringo") == 1 and item["tags"] == ["gtarp", "quedijoelgringo"]
     assert "de LordKebun" in item["comment"]
+
+
+def test_youtube_private_upload_then_release():
+    from datetime import datetime
+    ck = _clipkit()
+    queue = [{"id": "x/01", "at": "2026-10-16T11:53", "results": {}},
+             {"id": "x/02", "at": "2026-10-16T19:56", "results": {}}]
+    early = datetime(2026, 10, 16, 4, 7, tzinfo=ck.PR)
+    assert [d["id"] for d in ck.upcoming_items(queue, early, 20)] == ["x/01", "x/02"]
+    assert ck.due_items(queue, ["youtube"], early) == []
+    ck.merge_results(queue, {"x/01": {"youtube": {"private_id": "v1"}},
+                             "x/02": {"youtube": {"error": "Status: 429 Quota exceeded"}}})
+    assert queue[1]["results"]["youtube"]["tries"] == 0  # quota errors don't count
+    assert [d["id"] for d in ck.upcoming_items(queue, early, 20)] == ["x/02"]
+    due = ck.due_items(queue, ["youtube"], datetime(2026, 10, 16, 11, 53, tzinfo=ck.PR))
+    assert due[0]["youtube_private_id"] == "v1"
+    ck.merge_results(queue, {"x/01": {"youtube": {"private_id": "v1", "error": "boom"}}})
+    assert queue[0]["results"]["youtube"]["tries"] == 0
+    ck.merge_results(queue, {"x/01": {"youtube": {"id": "v1", "url": "u"}}})
+    assert ck.due_items(queue, ["youtube"], datetime(2026, 10, 16, 12, 0, tzinfo=ck.PR)) == []
