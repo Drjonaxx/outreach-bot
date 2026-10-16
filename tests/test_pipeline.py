@@ -226,7 +226,31 @@ def test_youtube_private_upload_then_release():
     assert [d["id"] for d in ck.upcoming_items(queue, early, 20)] == ["x/02"]
     due = ck.due_items(queue, ["youtube"], datetime(2026, 10, 16, 11, 53, tzinfo=ck.PR))
     assert due[0]["youtube_private_id"] == "v1"
+    assert due[0]["publish_at"] == "2026-10-16T15:53:00Z"  # AST is UTC-4
     ck.merge_results(queue, {"x/01": {"youtube": {"private_id": "v1", "error": "boom"}}})
     assert queue[0]["results"]["youtube"]["tries"] == 0
     ck.merge_results(queue, {"x/01": {"youtube": {"id": "v1", "url": "u"}}})
     assert ck.due_items(queue, ["youtube"], datetime(2026, 10, 16, 12, 0, tzinfo=ck.PR)) == []
+
+
+def test_social_schedules_private_uploads_so_the_slot_needs_no_quota(tmp_path):
+    from datetime import datetime, timedelta, timezone
+    from pathlib import Path
+    ns, calls = {}, []
+    exec((Path(__file__).parents[1] / "tools" / "social.py").read_text(), ns)  # noqa: S102 - how the workbench loads it
+    ns.update(LEDGER=tmp_path / "ledger.json", _stage=lambda item: {"s3key": "k"},
+              run_composio_tool=lambda slug, args, account=None: (calls.append(slug), ({"data": {"id": "v1"}}, None))[1],
+              proxy_execute=lambda *a, **k: (calls.append("schedule"), ({}, None))[1])
+    soon = (datetime.now(timezone.utc) + timedelta(hours=8)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    item = {"id": "x/01", "title": "t", "description": "d", "tags": [], "platforms": ["youtube"],
+            "publish_at": soon, "comment": "c"}
+    assert ns["upload_private"]([item])["x/01"]["youtube"] == {"private_id": "v1", "scheduled": soon}
+    assert calls == ["YOUTUBE_UPLOAD_VIDEO", "schedule"]
+    calls.clear()
+    # Before its time start() leaves it alone; after it, it only marks it and comments (no release call).
+    assert ns["start"]([{**item, "youtube_private_id": "v1", "youtube_scheduled": soon}], yt_channel_id="UC") == {"x/01": {}}
+    past = {**item, "youtube_private_id": "v1", "youtube_scheduled": "2020-01-01T00:00:00Z"}
+    assert ns["start"]([past], yt_channel_id="UC")["x/01"]["youtube"]["url"] == "https://youtube.com/shorts/v1"
+    assert calls == ["YOUTUBE_POST_COMMENT"]
+    # A slot already too close (or past) is not scheduled: start() makes it public itself.
+    assert ns["_schedule"]("v2", "2020-01-01T00:00:00Z") is None

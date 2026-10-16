@@ -4,7 +4,8 @@ Runs INSIDE the workbench, where run_composio_tool() and upload_local_file() com
 
     import requests
     exec(requests.get("https://raw.githubusercontent.com/Drjonaxx/outreach-bot/claude/clipper/tools/social.py").text)
-    upload_private(UPCOMING)         # early morning: upload to YouTube as private (`clipkit.py upcoming`)
+    upload_private(UPCOMING)         # early morning: upload to YouTube as private, scheduled for its slot
+                                     # (`clipkit.py upcoming`); YouTube then publishes it by itself
     start(ITEMS, ig_user_id="...", yt_channel_id="UC...")   # at the slot: make them public (or upload)
                                      # + the channel's comment, and create the Reel containers
     finish(ig_user_id="...")         # publish the Reels once Instagram has processed them
@@ -17,6 +18,7 @@ Uses the Composio accounts with alias ACCOUNT (the channel's, not any other acco
 import json
 import threading
 from concurrent.futures import ThreadPoolExecutor
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import requests
@@ -94,6 +96,20 @@ def _release(vid: str) -> dict:
     return {"id": vid, "url": f"https://youtube.com/shorts/{vid}"}
 
 
+def _schedule(vid: str, publish_at: str) -> str | None:
+    """Have YouTube publish a private video by itself at `publish_at` (UTC), so its slot needs no
+    API quota (the shared one is often used up by then). Composio has no tool for this, so it goes
+    through the channel's connection (the only YouTube account connected) with proxy_execute."""
+    when = datetime.fromisoformat(publish_at.replace("Z", "+00:00"))
+    if when < datetime.now(timezone.utc) + timedelta(minutes=10):
+        return None
+    _, err = proxy_execute("PUT", "https://www.googleapis.com/youtube/v3/videos", "youtube",  # noqa: F821
+                           query_params={"part": "status"},
+                           body={"id": vid, "status": {"privacyStatus": "private", "publishAt": publish_at,
+                                                       "selfDeclaredMadeForKids": False}})
+    return None if err else publish_at
+
+
 def _reel_container(item: dict, video: dict, ig_user_id: str) -> dict:
     res, err = run_composio_tool("INSTAGRAM_POST_IG_USER_MEDIA", {  # noqa: F821 - workbench helper
         "ig_user_id": ig_user_id, "video_file": video, "caption": item["ig_caption"],
@@ -119,6 +135,9 @@ def start(items: list[dict], ig_user_id: str | None = None, yt_channel_id: str |
             if cid and p not in done:
                 done[p] = _record(item["id"], p, {"pending": cid, "tries": 0})
         private_id = item.get("youtube_private_id") or done.get("youtube", {}).get("private_id")
+        scheduled = item.get("youtube_scheduled") or done.get("youtube", {}).get("scheduled")
+        if scheduled and datetime.fromisoformat(scheduled.replace("Z", "+00:00")) > datetime.now(timezone.utc):
+            item = {**item, "platforms": [p for p in item["platforms"] if p != "youtube"]}  # not out yet
         todo = [p for p in item["platforms"] if not ({"id", "pending"} & done.get(p, {}).keys())]
         if "instagram" in todo and not ig_user_id:
             todo.remove("instagram")
@@ -132,7 +151,10 @@ def start(items: list[dict], ig_user_id: str | None = None, yt_channel_id: str |
                 out.update({p: {"error": f"descarga: {e}"[:300]} for p in upload})
                 todo = [p for p in todo if p not in upload]
         if "youtube" in todo:
-            yt = _release(private_id) if private_id else _youtube(item, video)
+            if private_id and scheduled:  # YouTube already published it at its time
+                yt = {"id": private_id, "url": f"https://youtube.com/shorts/{private_id}"}
+            else:
+                yt = _release(private_id) if private_id else _youtube(item, video)
             if "id" in yt and yt_channel_id and item.get("comment"):
                 yt["comment"] = _comment(yt["id"], yt_channel_id, item["comment"])
             out["youtube"] = _record(item["id"], "youtube", yt)
@@ -148,7 +170,8 @@ def start(items: list[dict], ig_user_id: str | None = None, yt_channel_id: str |
 
 def upload_private(items: list[dict]) -> dict:
     """Upload clips to YouTube as private ahead of time (the shared upload quota resets at
-    midnight Pacific); start() makes them public at their slot. Output is for `clipkit.py mark`."""
+    midnight Pacific), scheduled to go public at their slot; start() then only marks them and
+    comments (or makes them public itself if scheduling failed). Output is for `clipkit.py mark`."""
     def one(item: dict):
         state = _ledger().get(item["id"], {}).get("youtube", {})
         if {"id", "private_id"} & state.keys():
@@ -157,7 +180,10 @@ def upload_private(items: list[dict]) -> dict:
             video = _stage(item)
         except Exception as e:  # noqa: BLE001 - report and let the next run retry
             return item["id"], {"youtube": {"error": f"descarga: {e}"[:300]}}
-        return item["id"], {"youtube": _record(item["id"], "youtube", _youtube(item, video, "private"))}
+        yt = _youtube(item, video, "private")
+        if "private_id" in yt and item.get("publish_at"):
+            yt["scheduled"] = _schedule(yt["private_id"], item["publish_at"])
+        return item["id"], {"youtube": _record(item["id"], "youtube", yt)}
 
     with ThreadPoolExecutor(3) as ex:
         results = dict(ex.map(one, items))

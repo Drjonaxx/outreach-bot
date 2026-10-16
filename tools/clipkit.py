@@ -40,7 +40,7 @@ import json
 import re
 import subprocess
 import sys
-from datetime import date, datetime, timedelta
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -286,8 +286,10 @@ def due_items(queue: list[dict], platforms: list[str], now: datetime,
         if todo and now - timedelta(days=2) <= at <= now + ahead:
             res = item.get("results", {})
             out.append({**{k: v for k, v in item.items() if k not in ("results", "at")}, "platforms": todo,
+                        "publish_at": at.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
                         "pending": {p: res.get(p, {}).get("pending") for p in todo},
-                        "youtube_private_id": res.get("youtube", {}).get("private_id")})
+                        "youtube_private_id": res.get("youtube", {}).get("private_id"),
+                        "youtube_scheduled": res.get("youtube", {}).get("scheduled")})
     return out
 
 
@@ -308,8 +310,9 @@ def merge_results(queue: list[dict], results: dict) -> list[str]:
             if "id" in old:
                 continue
             new = {k: v for k, v in r.items() if v is not None}
-            if "private_id" in old and "private_id" not in new and "id" not in new:
-                new["private_id"] = old["private_id"]
+            for key in ("private_id", "scheduled"):
+                if key in old and key not in new and "id" not in new:
+                    new[key] = old[key]
             # The shared YouTube upload quota running out (429) is not the clip's fault.
             quota = "429" in str(new.get("error", "")) or "quota" in str(new.get("error", "")).lower()
             failed = "error" in new and not ({"pending", "private_id"} & new.keys()) and not quota
