@@ -1,6 +1,6 @@
 # Pendientes
 
-La rutina semanal «Capataz» (tarea programada de Claude) lee este
+La rutina «Capataz» (tarea programada de Claude, lunes y jueves 9:44 am) lee este
 archivo y toma el primer pendiente de **Para Claude** que no esté hecho.
 En este repo **nunca** hace push a `claude/clipper` ni a
 `claude/clipper-out`: esas ramas las mueven las rutinas de clips, y un
@@ -9,8 +9,7 @@ lo deja en la rama `claude/automatizar-tareas-czbut9` y lo avisa.
 
 ## Para Jonathan
 
-- [ ] Fusionar `claude/automatizar-tareas-czbut9` a `main` (así corre la
-      revisión diaria de pruebas del clipper).
+- [x] Fusionar `claude/automatizar-tareas-czbut9` a `main` (17 oct 2026).
 - [ ] Prender en Make «Post Threads IA Diario (a email)» si quieres el
       post de @beingvortex en tu correo cada mañana.
 - [ ] TikTok: subir a mano los clips que dicen los mensajes de la noche.
