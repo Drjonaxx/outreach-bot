@@ -1,0 +1,37 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:56.70,Hook,,0,0,0,,SU AMIGO LO EXPONE POR\NLA BARBA
+Dialogue: 0,0:00:00.12,0:00:01.64,Sub,,0,0,0,,{\fad(60,0)}{\c&H007AD2FF&}AUDIO:{\c&H00FFFFFF&} Hola, Teíto. Hola, amigo.
+Dialogue: 0,0:00:02.04,0:00:06.58,Sub,,0,0,0,,{\fad(60,0)}Es un tema... te lo cuento\Nmejor personalmente.
+Dialogue: 0,0:00:07.62,0:00:09.60,Sub,,0,0,0,,{\fad(60,0)}Davo, desde que tiene\Nbarba... no sé, boludo.
+Dialogue: 0,0:00:10.44,0:00:12.00,Sub,,0,0,0,,{\fad(60,0)}Está cambiado en la\Npersonalidad.
+Dialogue: 0,0:00:12.90,0:00:14.82,Sub,,0,0,0,,{\fad(60,0)}Casi ya no hablamos.
+Dialogue: 0,0:00:15.44,0:00:16.84,Sub,,0,0,0,,{\fad(60,0)}No me contesta, está\Nagrandado.
+Dialogue: 0,0:00:18.38,0:00:19.44,Sub,,0,0,0,,{\fad(60,0)}Se viste diferente.
+Dialogue: 0,0:00:21.22,0:00:23.56,Sub,,0,0,0,,{\fad(60,0)}Terminamos y ni me saluda.
+Dialogue: 0,0:00:24.62,0:00:25.79,Sub,,0,0,0,,{\fad(60,0)}No sé, boludo...
+Dialogue: 0,0:00:27.82,0:00:30.59,Sub,,0,0,0,,{\fad(60,0)}Es otra persona, la\Nverdad.
+Dialogue: 0,0:00:31.32,0:00:33.86,Sub,,0,0,0,,{\fad(60,0)}Ya no parece la persona\Nque conocí, amigo.
+Dialogue: 0,0:00:34.30,0:00:35.60,Sub,,0,0,0,,{\fad(60,0)}Desde que tiene barba.
+Dialogue: 0,0:00:36.46,0:00:38.00,Sub,,0,0,0,,{\fad(60,0)}{\c&H007AD2FF&}DAVO:{\c&H00FFFFFF&} ¡No me interesa!
+Dialogue: 0,0:00:38.24,0:00:39.50,Sub,,0,0,0,,{\fad(60,0)}Yo creo que algo me pasa,\Nde verdad.
+Dialogue: 0,0:00:40.08,0:00:41.30,Sub,,0,0,0,,{\fad(60,0)}Esto es real y la gente no\Nme cree.
+Dialogue: 0,0:00:41.74,0:00:45.06,Sub,,0,0,0,,{\fad(60,0)}Cuando veo clips míos\Nviejos, de Boca o lo que\Nsea...
+Dialogue: 0,0:00:45.46,0:00:46.94,Sub,,0,0,0,,{\fad(60,0)}Sin barba, no me\Nreconozco.
+Dialogue: 0,0:00:47.26,0:00:50.06,Sub,,0,0,0,,{\fad(60,0)}¿Qué carajo? ¿Así era yo\Nhace dos días?
+Dialogue: 0,0:00:50.06,0:00:52.46,Sub,,0,0,0,,{\fad(60,0)}No puede ser, amigo. ¿Cómo\Nfui así?
+Dialogue: 0,0:00:52.80,0:00:55.08,Sub,,0,0,0,,{\fad(60,0)}No me reconozco en las\Nfotos sin barba.
+Dialogue: 0,0:00:55.44,0:00:56.70,Sub,,0,0,0,,{\fad(60,0)}¿Yo era así en serio,\Namigo?

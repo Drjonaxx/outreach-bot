@@ -1,0 +1,26 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:54.00,Hook,,0,0,0,,WESTCOL COME HORMIGAS\NCULONAS
+Dialogue: 0,0:00:00.00,0:00:03.44,Sub,,0,0,0,,{\fad(60,0)}¡Vamos a comer hormiguitas\Nculonas!
+Dialogue: 0,0:00:03.78,0:00:10.06,Sub,,0,0,0,,{\fad(60,0)}Para los que no son de\NColombia: aquí, en\NSantander,
+Dialogue: 0,0:00:10.06,0:00:16.56,Sub,,0,0,0,,{\fad(60,0)}hay unas hormiguitas que\Nse comen fritas.
+Dialogue: 0,0:00:22.46,0:00:26.16,Sub,,0,0,0,,{\fad(60,0)}El que no compró mercado,\Nle toca matar hormigas.
+Dialogue: 0,0:00:26.16,0:00:32.36,Sub,,0,0,0,,{\fad(60,0)}Los indígenas guanes de\NSantander, hace muchos\Naños, comían eso
+Dialogue: 0,0:00:32.36,0:00:37.16,Sub,,0,0,0,,{\fad(60,0)}porque había escasez de\Nmuchas cosas.
+Dialogue: 0,0:00:37.16,0:00:43.66,Sub,,0,0,0,,{\fad(60,0)}Cogían las hormigas, las\Ncalentaban, les echaban\Nsal y esa era su comida.
+Dialogue: 0,0:00:44.46,0:00:46.52,Sub,,0,0,0,,{\fad(60,0)}Y eso sí tiene proteína.
+Dialogue: 0,0:00:46.52,0:00:50.98,Sub,,0,0,0,,{\fad(60,0)}Sabe como a manicito, bro.
+Dialogue: 0,0:00:51.32,0:00:53.82,Sub,,0,0,0,,{\fad(60,0)}Es raro... pero rico.

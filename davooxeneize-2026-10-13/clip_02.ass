@@ -1,0 +1,38 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:51.88,Hook,,0,0,0,,5 MESES ENTRENANDO… Y\NESTÁ PEOR
+Dialogue: 0,0:00:00.12,0:00:03.90,Sub,,0,0,0,,{\fad(60,0)}Yo sigo, pero en abril\Ndije: voy a arrancar a\Nentrenar.
+Dialogue: 0,0:00:04.02,0:00:06.54,Sub,,0,0,0,,{\fad(60,0)}Nunca entrené ni comí sano\Nen mi vida.
+Dialogue: 0,0:00:06.86,0:00:07.68,Sub,,0,0,0,,{\fad(60,0)}Pasaron cinco meses.
+Dialogue: 0,0:00:08.06,0:00:09.90,Sub,,0,0,0,,{\fad(60,0)}Vi la foto y estaba mejor\Nen abril, boludo.
+Dialogue: 0,0:00:10.08,0:00:11.90,Sub,,0,0,0,,{\fad(60,0)}Bueno, algo está fallando.
+Dialogue: 0,0:00:12.30,0:00:15.00,Sub,,0,0,0,,{\fad(60,0)}A ver, pensá qué está\Nfallando.
+Dialogue: 0,0:00:15.12,0:00:17.66,Sub,,0,0,0,,{\fad(60,0)}¿No estás más activo? ¿De\Nmejor humor?
+Dialogue: 0,0:00:17.66,0:00:18.72,Sub,,0,0,0,,{\fad(60,0)}Yo no estoy entrenando\Ntanto.
+Dialogue: 0,0:00:19.34,0:00:20.56,Sub,,0,0,0,,{\fad(60,0)}Ah, bueno, ahí está.
+Dialogue: 0,0:00:20.94,0:00:23.80,Sub,,0,0,0,,{\fad(60,0)}Para mí el entrenamiento\Nno es solo físico...
+Dialogue: 0,0:00:23.80,0:00:28.62,Sub,,0,0,0,,{\fad(60,0)}...también es psicológico,\Nes de presencia.
+Dialogue: 0,0:00:28.94,0:00:33.10,Sub,,0,0,0,,{\fad(60,0)}Supongamos que un\Nmiércoles voy a\Nentrenar...
+Dialogue: 0,0:00:33.10,0:00:34.42,Sub,,0,0,0,,{\fad(60,0)}Me armé un gimnasio...
+Dialogue: 0,0:00:34.42,0:00:35.14,Sub,,0,0,0,,{\fad(60,0)}En tu casa, sí.
+Dialogue: 0,0:00:35.26,0:00:37.14,Sub,,0,0,0,,{\fad(60,0)}Claro, voy a entrenar.
+Dialogue: 0,0:00:37.28,0:00:39.34,Sub,,0,0,0,,{\fad(60,0)}Mis dos hermanos\Nentrenando...
+Dialogue: 0,0:00:39.34,0:00:41.22,Sub,,0,0,0,,{\fad(60,0)}y yo en el sillón con una\NCoca y unas empanadas
+Dialogue: 0,0:00:41.22,0:00:43.14,Sub,,0,0,0,,{\fad(60,0)}mirándolos entrenar una\Nhora y media
+Dialogue: 0,0:00:43.14,0:00:45.82,Sub,,0,0,0,,{\fad(60,0)}sin hacer nada... y cuenta\Ncomo un día que entrené.
+Dialogue: 0,0:00:45.82,0:00:46.86,Sub,,0,0,0,,{\fad(60,0)}¡No, es imposible!
+Dialogue: 0,0:00:47.48,0:00:49.46,Sub,,0,0,0,,{\fad(60,0)}Te digo por qué: ¡no estás\Nentrenando!
+Dialogue: 0,0:00:49.48,0:00:51.84,Sub,,0,0,0,,{\fad(60,0)}Pero simbólicamente estuve\Nhora y media en el\Ngimnasio.

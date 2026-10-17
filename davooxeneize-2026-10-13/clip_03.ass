@@ -1,0 +1,36 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:40.62,Hook,,0,0,0,,LO DESTRUYEN POR PEDIR\NAVOCADO TOAST
+Dialogue: 0,0:00:00.12,0:00:01.78,Sub,,0,0,0,,{\fad(60,0)}¿Cómo se llama eso que\Nviene con palta?
+Dialogue: 0,0:00:01.88,0:00:02.56,Sub,,0,0,0,,{\fad(60,0)}Avocado toast.
+Dialogue: 0,0:00:02.56,0:00:04.84,Sub,,0,0,0,,{\fad(60,0)}¿Me vas a decir que te\Npedís un avocado toast?
+Dialogue: 0,0:00:05.38,0:00:05.88,Sub,,0,0,0,,{\fad(60,0)}¿Por qué no?
+Dialogue: 0,0:00:06.08,0:00:08.88,Sub,,0,0,0,,{\fad(60,0)}¡Hablá bien! ¡Es un\Nsándwich de palta!
+Dialogue: 0,0:00:09.08,0:00:10.26,Sub,,0,0,0,,{\fad(60,0)}¿Cómo se llama, boludo?
+Dialogue: 0,0:00:10.78,0:00:12.44,Sub,,0,0,0,,{\fad(60,0)}Es muy retro lo que te\Npedís.
+Dialogue: 0,0:00:12.58,0:00:14.94,Sub,,0,0,0,,{\fad(60,0)}Yo pensé que eras más\Nmoderno...
+Dialogue: 0,0:00:14.94,0:00:16.46,Sub,,0,0,0,,{\fad(60,0)}¿Querés saber qué me pido\Nyo?
+Dialogue: 0,0:00:17.00,0:00:17.74,Sub,,0,0,0,,{\fad(60,0)}Café con leche.
+Dialogue: 0,0:00:18.50,0:00:20.34,Sub,,0,0,0,,{\fad(60,0)}Con dos medialunas de\Njamón y queso.
+Dialogue: 0,0:00:20.42,0:00:22.40,Sub,,0,0,0,,{\fad(60,0)}Obvio que sí, toda la\Nvida.
+Dialogue: 0,0:00:22.48,0:00:23.38,Sub,,0,0,0,,{\fad(60,0)}Lo dije para joder.
+Dialogue: 0,0:00:24.06,0:00:26.30,Sub,,0,0,0,,{\fad(60,0)}Obvio que el que pide\Navocado toast es un\Npelotudo.
+Dialogue: 0,0:00:26.50,0:00:29.60,Sub,,0,0,0,,{\fad(60,0)}Hay cinco cosas que le\Nagradezco a Dios cada\Nmañana.
+Dialogue: 0,0:00:30.10,0:00:31.76,Sub,,0,0,0,,{\fad(60,0)}Una: ser argentino.
+Dialogue: 0,0:00:32.06,0:00:35.06,Sub,,0,0,0,,{\fad(60,0)}Dos: estar profundamente\Nenamorado de mi novia.
+Dialogue: 0,0:00:35.06,0:00:36.44,Sub,,0,0,0,,{\fad(60,0)}Tres: ser hincha de River.
+Dialogue: 0,0:00:36.90,0:00:37.70,Sub,,0,0,0,,{\fad(60,0)}Cuatro: tener salud.
+Dialogue: 0,0:00:37.90,0:00:40.50,Sub,,0,0,0,,{\fad(60,0)}Y cinco: no ser porteño.\NLa más importante.

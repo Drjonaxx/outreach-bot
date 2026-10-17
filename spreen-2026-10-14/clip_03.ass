@@ -1,0 +1,28 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:33.34,Hook,,0,0,0,,SE CREE EL\NPROTAGONISTA DEL\NEVENTO
+Dialogue: 0,0:00:00.12,0:00:02.08,Sub,,0,0,0,,{\fad(60,0)}Bueno, ¿qué pasó en el\Ndesafío ayer?
+Dialogue: 0,0:00:02.30,0:00:04.18,Sub,,0,0,0,,{\fad(60,0)}Murió todo el mundo y hoy\Nlos revivieron, ¿no?
+Dialogue: 0,0:00:05.38,0:00:07.90,Sub,,0,0,0,,{\fad(60,0)}Claro, como me fui del\Ndesafío,
+Dialogue: 0,0:00:07.90,0:00:11.32,Sub,,0,0,0,,{\fad(60,0)}todo lo que pasó nunca\Nexistió.
+Dialogue: 0,0:00:11.78,0:00:13.86,Sub,,0,0,0,,{\fad(60,0)}Ahí se dan cuenta quién es\Nel prota.
+Dialogue: 0,0:00:14.78,0:00:18.76,Sub,,0,0,0,,{\fad(60,0)}Me fui y le hicieron\Nrollback a todo.
+Dialogue: 0,0:00:18.98,0:00:19.98,Sub,,0,0,0,,{\fad(60,0)}¿Por qué? Porque no estaba\Nyo.
+Dialogue: 0,0:00:21.12,0:00:23.36,Sub,,0,0,0,,{\fad(60,0)}Dijeron: «no, Spreen no\Nparticipó en el evento.
+Dialogue: 0,0:00:23.78,0:00:25.40,Sub,,0,0,0,,{\fad(60,0)}Hagamos rollback, no\Nvalió».
+Dialogue: 0,0:00:25.98,0:00:28.50,Sub,,0,0,0,,{\fad(60,0)}Nada de esto ocurrió,\Nporque Spreen no estaba.
+Dialogue: 0,0:00:28.68,0:00:29.30,Sub,,0,0,0,,{\fad(60,0)}Entonces no pasó.
+Dialogue: 0,0:00:32.00,0:00:33.22,Sub,,0,0,0,,{\fad(60,0)}Estoy jodiendo, nada que\Nver.

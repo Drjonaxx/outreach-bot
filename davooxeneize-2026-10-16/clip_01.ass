@@ -1,0 +1,32 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:36.98,Hook,,0,0,0,,CONSEJOS DE AMOR DE\NDAVO
+Dialogue: 0,0:00:00.12,0:00:02.38,Sub,,0,0,0,,{\fad(60,0)}{\c&H007AD2FF&}CHAT:{\c&H00FFFFFF&} «Puerrito, si existe el\Nsalario mínimo,
+Dialogue: 0,0:00:02.38,0:00:04.06,Sub,,0,0,0,,{\fad(60,0)}¿por qué ella no me dio su\Namor como mínimo?»
+Dialogue: 0,0:00:05.76,0:00:08.42,Sub,,0,0,0,,{\fad(60,0)}Para, amigo. Estás\Nbuscando explicaciones y
+Dialogue: 0,0:00:08.42,0:00:09.96,Sub,,0,0,0,,{\fad(60,0)}mezclando cualquier cosa,\Nporque no podés
+Dialogue: 0,0:00:09.96,0:00:11.92,Sub,,0,0,0,,{\fad(60,0)}aceptar la posibilidad de\Nque una mujer de la
+Dialogue: 0,0:00:11.92,0:00:13.70,Sub,,0,0,0,,{\fad(60,0)}que te enamoraste, a la\Nque le dedicaste mucho\Namor
+Dialogue: 0,0:00:13.70,0:00:16.32,Sub,,0,0,0,,{\fad(60,0)}y mucha dedicación, no te\Nelija como futuro
+Dialogue: 0,0:00:16.32,0:00:18.20,Sub,,0,0,0,,{\fad(60,0)}marido, esposo o novio.
+Dialogue: 0,0:00:18.34,0:00:20.66,Sub,,0,0,0,,{\fad(60,0)}Entonces, no tenés que\Nmezclar el salario mínimo
+Dialogue: 0,0:00:20.66,0:00:22.12,Sub,,0,0,0,,{\fad(60,0)}con el cariño mínimo de\Nuna mujer.
+Dialogue: 0,0:00:22.20,0:00:24.22,Sub,,0,0,0,,{\fad(60,0)}{\c&H007AD2FF&}CHAT:{\c&H00FFFFFF&} «Sofi, volvé. Te rogué\Nhasta por Gmail».
+Dialogue: 0,0:00:24.22,0:00:26.52,Sub,,0,0,0,,{\fad(60,0)}Para, Josué, ¿cómo es eso?
+Dialogue: 0,0:00:26.52,0:00:29.50,Sub,,0,0,0,,{\fad(60,0)}«Sofi, volvé. Te rogué\Nhasta por Gmail».
+Dialogue: 0,0:00:29.50,0:00:32.70,Sub,,0,0,0,,{\fad(60,0)}¿Le mandaste un Gmail a tu\Nex novia
+Dialogue: 0,0:00:32.70,0:00:35.52,Sub,,0,0,0,,{\fad(60,0)}para que vuelva? Amigo, te\Nva a poner una perimetral.
+Dialogue: 0,0:00:35.52,0:00:36.98,Sub,,0,0,0,,{\fad(60,0)}Por favor te lo pido,\Ncalmate.
