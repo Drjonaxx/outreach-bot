@@ -184,6 +184,8 @@ def test_posting_queue_fills_slots_and_retries():
     assert [q["at"] for q in queue] == ["2026-10-13T11:53"] * n + ["2026-10-14T11:53"] * n + ["2026-10-15T11:53"] * 2
     # Rendered after the day's slot: straight to tomorrow.
     assert ck.free_slot([], datetime(2026, 10, 13, 13, 0, tzinfo=ck.PR)) == "2026-10-14T11:53"
+    # Each language has its own clips per day.
+    assert ck.free_slot(queue, morning, "en") == "2026-10-13T11:53"
 
     noon = datetime(2026, 10, 13, 11, 53, tzinfo=ck.PR)
     due = ck.due_items(queue, ["youtube", "instagram"], noon)
@@ -200,7 +202,7 @@ def test_posting_queue_fills_slots_and_retries():
     assert ck.due_items(queue, ["youtube"], datetime(2026, 10, 18, 12, 0, tzinfo=ck.PR)) == []
 
 
-def test_hand_over_gives_four_clips_a_day_oldest_first():
+def test_hand_over_gives_four_clips_a_day_per_language_oldest_first():
     import subprocess
     ck = _clipkit()
     queue = [{"id": f"x/{i:02d}", "at": f"2026-10-{19 + i // 2}T11:53", "results": {}} for i in range(7)]
@@ -220,6 +222,13 @@ def test_hand_over_gives_four_clips_a_day_oldest_first():
     assert [q["id"] for q in ck.hand_over(queue, "2026-10-19", fetch)] == ["x/00", "x/02", "x/03", "x/04"]
     assert [q["id"] for q in ck.hand_over(queue, "2026-10-20", fetch)] == ["x/05", "x/06"]
     assert ck.waiting(queue) == []
+
+    # Spanish- and English-speaking streamers alternate, 4 of each.
+    queue = [{"id": f"{lang}/{i}", "at": "2026-10-21T11:53", "lang": lang, "results": {}}
+             for lang in ("en", "es") for i in range(6)]
+    batch = ck.hand_over(queue, "2026-10-21", fetch)
+    assert [q["id"] for q in batch] == ["es/0", "en/0", "es/1", "en/1", "es/2", "en/2", "es/3", "en/3"]
+    assert len(ck.waiting(queue, "es")) == len(ck.waiting(queue, "en")) == 2
 
 
 def test_post_fields_reuse_caption_and_skip_repeated_hashtags():

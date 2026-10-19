@@ -20,12 +20,14 @@
         Pull rendered clips from origin/claude/clipper-out (run inside the outreach-bot
         clone), number them in the given order, shrink anything over the 30 MiB chat
         limit, write captions.txt and add the clips to the posting queue
-        (posting/queue.json: 4 a day, in the next days that still have room).
+        (posting/queue.json: 4 a day per language the streamer speaks, in the next days
+        that still have room).
 
     python tools/clipkit.py today OUT_DIR
         Today's clips for the user to post by hand (run inside the outreach-bot clone):
-        the next 4 in the queue, oldest first, pulled into OUT_DIR with captions.txt and
-        marked as handed over. Run again the same day, it pulls the same ones.
+        the next 4 of Spanish-speaking streamers and the next 4 of English-speaking ones,
+        oldest first and alternating, pulled into OUT_DIR with captions.txt and marked as
+        handed over. Run again the same day, it pulls the same ones.
 
     python tools/clipkit.py due
         Queued clips whose slot has come, as JSON for tools/social.py (the platforms
@@ -46,6 +48,7 @@ import re
 import subprocess
 import sys
 from datetime import date, datetime, timedelta, timezone
+from itertools import zip_longest
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -56,13 +59,16 @@ from clipper.models import Clip, Word, all_words, load_segments  # noqa: E402
 from clipper.render import keep_ranges, remap  # noqa: E402
 
 POSTING = Path(__file__).resolve().parents[1] / "posting"
+DAILY = Path(__file__).resolve().parents[1] / "daily.json"
 RAW = "https://raw.githubusercontent.com/Drjonaxx/outreach-bot/claude/clipper-out"
 PR = ZoneInfo("America/Puerto_Rico")
 # Posting slots (Puerto Rico time; the posting routines fire right at these times) and
 # clips per slot. A clip whose slot passed without posting is still tried for 2 days.
-# One slot a day: the user posts each day's 4 clips by hand.
+# One slot a day: the user posts each day's clips by hand, PER_SLOT of each language
+# the streamers speak.
 SLOT_TIMES = ("11:53",)
 PER_SLOT = 4
+LANGS = ("es", "en")
 MAX_TRIES = 3
 
 FLAGGED = {
@@ -199,14 +205,14 @@ def cmd_package(name: str, out_dir: str, *items: str) -> None:
         if length > 100:
             raise SystemExit(f"Caption de {dest.name} tiene {length} caracteres (máx. 100)")
         lines += [f"{dest.name}  ({length} caracteres)", caption, ""]
-        queued.append(post_fields(name, int(num), caption, read_meta(name, int(num))))
+        queued.append({**post_fields(name, int(num), caption, read_meta(name, int(num))), "lang": source_lang(name)})
     (out / "captions.txt").write_text("\n".join(lines))
     print("\n".join(lines))
     queue = load_queue()
     known = {q["id"] for q in queue}
     for item in queued:
         if item["id"] not in known:
-            item["at"] = free_slot(queue, datetime.now(PR))
+            item["at"] = free_slot(queue, datetime.now(PR), item["lang"])
             queue.append(item)
             print(f"en cola: {item['id']} -> {item['at']}")
     save_queue(queue)
@@ -225,6 +231,12 @@ def fetch_clip(name: str, num: int, dest: Path) -> None:
                         "-b:v", str(vb), "-maxrate", str(vb * 3 // 2), "-bufsize", str(vb * 2), "-r", "30",
                         "-pix_fmt", "yuv420p", "-c:a", "copy", "-movflags", "+faststart", str(tmp)], check=True)
         tmp.replace(dest)
+
+
+def source_lang(name: str) -> str:
+    """Language the streamer of job NAME speaks ("es" or "en"), from daily.json."""
+    streamers = json.loads(DAILY.read_text())["streamers"] if DAILY.exists() else []
+    return next((s["language"] for s in streamers if name.startswith(s["slug"] + "-")), "es")
 
 
 def read_meta(name: str, num: int) -> dict:
@@ -269,14 +281,14 @@ def save_queue(queue: list[dict]) -> None:
     (POSTING / "queue.json").write_text(json.dumps(queue, ensure_ascii=False, indent=1) + "\n")
 
 
-def free_slot(queue: list[dict], now: datetime) -> str:
-    """First posting slot that hasn't passed yet and still has room."""
+def free_slot(queue: list[dict], now: datetime, lang: str = "es") -> str:
+    """First posting slot that hasn't passed yet and still has room for a clip in LANG."""
     day = now.date()
     while True:
         for hhmm in SLOT_TIMES:
             at = f"{day.isoformat()}T{hhmm}"
             if datetime.fromisoformat(at).replace(tzinfo=PR) > now - timedelta(minutes=5) \
-                    and sum(q["at"] == at for q in queue) < PER_SLOT:
+                    and sum(q["at"] == at and q.get("lang", "es") == lang for q in queue) < PER_SLOT:
                 return at
         day += timedelta(days=1)
 
@@ -350,53 +362,60 @@ def cmd_upcoming(hours: str = "20") -> None:
     print(json.dumps(items, ensure_ascii=False))
 
 
-def waiting(queue: list[dict]) -> list[dict]:
-    """Clips not handed over yet nor already on YouTube, oldest slot first."""
+def waiting(queue: list[dict], lang: str | None = None) -> list[dict]:
+    """Clips (in LANG, if given) not handed over yet nor already on YouTube, oldest slot first."""
     return [q for q in sorted(queue, key=lambda q: q["at"])
-            if not q.get("delivered") and "id" not in q.get("results", {}).get("youtube", {})]
+            if not q.get("delivered") and "id" not in q.get("results", {}).get("youtube", {})
+            and lang in (None, q.get("lang", "es"))]
 
 
 def hand_over(queue: list[dict], today: str, fetch) -> list[dict]:
-    """Today's clips to post by hand: those already handed over today, or else the next
-    PER_SLOT nobody has (oldest slot first). fetch(item) pulls the video; a clip it can't
-    pull (pruned from clipper-out) is marked lost and the next one takes its place."""
-    out = []
-    for item in [q for q in queue if q.get("delivered") == today] or waiting(queue):
-        if len(out) == PER_SLOT:
-            break
-        try:
-            fetch(item)
-        except subprocess.CalledProcessError:
-            item["delivered"] = "perdido"
-            continue
-        item["delivered"] = today
-        out.append(item)
-    return out
+    """Today's clips to post by hand, PER_SLOT of each language alternating: those already
+    handed over today, or else the next ones nobody has (oldest slot first). fetch(item)
+    pulls the video; a clip it can't pull (pruned from clipper-out) is marked lost and
+    the next one takes its place."""
+    per_lang = []
+    for lang in LANGS:
+        out = []
+        for item in [q for q in queue if q.get("delivered") == today and q.get("lang", "es") == lang] \
+                or waiting(queue, lang):
+            if len(out) == PER_SLOT:
+                break
+            try:
+                fetch(item)
+            except subprocess.CalledProcessError:
+                item["delivered"] = "perdido"
+                continue
+            item["delivered"] = today
+            out.append(item)
+        per_lang.append(out)
+    return [item for group in zip_longest(*per_lang) for item in group if item]
 
 
 def cmd_today(out_dir: str) -> None:
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
+    for old in out.glob("*.mp4"):
+        old.unlink()
     queue = load_queue()
-    files = {}
+
+    def path(item: dict) -> Path:
+        name, num = item["id"].rsplit("/", 1)
+        return out / f"{name}_{num}.mp4"
 
     def fetch(item):
         name, num = item["id"].rsplit("/", 1)
-        files[item["id"]] = out / f"{len(files) + 1}_{name}_{num}.mp4"
-        try:
-            fetch_clip(name, int(num), files[item["id"]])
-        except subprocess.CalledProcessError:
-            del files[item["id"]]
-            raise
+        fetch_clip(name, int(num), path(item))
 
     batch = hand_over(queue, datetime.now(PR).date().isoformat(), fetch)
     save_queue(queue)
     lines = []
-    for item in batch:
-        lines += [files[item["id"]].name, item["title"], ""]
+    for pos, item in enumerate(batch, 1):
+        dest = path(item).rename(out / f"{pos}_{path(item).name}")
+        lines += [dest.name, item["title"], ""]
     (out / "captions.txt").write_text("\n".join(lines))
     print("\n".join(lines))
-    print(f"Quedan {len(waiting(queue))} clips en cola.")
+    print(f"Quedan {len(waiting(queue, 'es'))} clips de streamers en español y {len(waiting(queue, 'en'))} en inglés.")
 
 
 def cmd_mark(results_path: str) -> None:

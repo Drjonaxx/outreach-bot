@@ -85,17 +85,24 @@ jobs:
           cd results
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # Videos are only needed until they're posted: keep the current job's and those
-          # rendered in the last 6 days, drop the rest (transcripts, clips.json and
-          # source.json stay), then squash the branch to a single commit so old videos
-          # don't pile up in history.
+          # Videos are only needed until they're handed over to the user (posting/queue.json
+          # "delivered"): keep the current job's, drop those handed over before yesterday and
+          # anything rendered over 10 days ago (transcripts, clips.json and source.json stay),
+          # then squash the branch to a single commit so old videos don't pile up in history.
           python3 - "${{ steps.job.outputs.name }}" <<'EOF'
-          import pathlib, sys, time
+          import json, pathlib, sys, time
+          from datetime import date, timedelta
+          queue = pathlib.Path("../posting/queue.json")
+          before = str(date.today() - timedelta(days=1))
+          done = {q["id"] for q in (json.loads(queue.read_text()) if queue.exists() else [])
+                  if q.get("delivered", "").startswith("20") and q["delivered"] < before}
           for d in pathlib.Path(".").iterdir():
+              if not d.is_dir() or d.name in (".git", sys.argv[1]):
+                  continue
               stamp = d / "rendered_at"
-              fresh = stamp.exists() and time.time() - float(stamp.read_text()) < 6 * 86400
-              if d.is_dir() and d.name != ".git" and d.name != sys.argv[1] and not fresh:
-                  for f in [*d.rglob("*.mp4"), *d.rglob("*.ass")]:
+              fresh = stamp.exists() and time.time() - float(stamp.read_text()) < 10 * 86400
+              for f in [*d.rglob("*.mp4"), *d.rglob("*.ass")]:
+                  if not fresh or f"{d.name}/{f.stem.removeprefix('clip_')}" in done:
                       f.unlink()
           EOF
           git checkout -q --orphan squashed
