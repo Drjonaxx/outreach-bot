@@ -5,8 +5,5 @@
   "language": "en",
   "whisper_model": "small",
   "limit_minutes": 900,
-  "layout": "fit",
-  "only": [
-    4
-  ]
+  "layout": "fit"
 }
