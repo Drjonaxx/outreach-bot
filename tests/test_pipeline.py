@@ -106,6 +106,24 @@ def test_load_audio_decodes_16k_mono(tmp_path):
     assert 0.1 < abs(audio).max() <= 1.0
 
 
+def test_load_audio_keeps_dropouts_as_silence(tmp_path):
+    """Kick VODs have audio gaps: word times must stay on the video's clock."""
+    import subprocess
+
+    import numpy as np
+    from clipper.transcribe import SAMPLE_RATE, load_audio
+    src = tmp_path / "gap.mp4"
+    subprocess.run(["ffmpeg", "-loglevel", "error", "-f", "lavfi", "-i", "testsrc=size=320x180:rate=30:duration=12",
+                    "-f", "lavfi", "-i", "sine=frequency=800:duration=12",
+                    "-filter_complex", "[1:a]aselect='not(between(t,4,6))'[a]",
+                    "-map", "0:v", "-map", "[a]", "-c:v", "libx264", "-c:a", "aac", str(src)], check=True)
+    audio = load_audio(str(src))
+    assert abs(len(audio) / SAMPLE_RATE - 12) < 0.1
+    loud = np.abs(audio[: len(audio) // 1600 * 1600]).reshape(-1, 1600).max(1) > 0.05
+    assert not loud[42:58].any() and loud[62:110].all()  # silent 4-6 s, the tone is back at 6 s
+    assert abs(len(load_audio(str(src), 3.0, 4.0)) / SAMPLE_RATE - 4) < 0.1
+
+
 def test_transcribe_long_media_in_chunks_with_absolute_times(tmp_path, monkeypatch):
     import subprocess
     import sys

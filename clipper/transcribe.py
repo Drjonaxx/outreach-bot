@@ -16,11 +16,13 @@ CHUNK_SECONDS = 20 * 60
 
 def load_audio(path: str, start: float = 0.0, duration: float | None = None) -> np.ndarray:
     """Decode to 16 kHz mono float32 with ffmpeg (avoids faster-whisper's PyAV path,
-    which breaks with recent PyAV releases), optionally only [start, start + duration)."""
+    which breaks with recent PyAV releases), optionally only [start, start + duration).
+    Audio dropouts in the VOD are filled with silence, as the renderer does, so word
+    times stay on the video's clock."""
     window = ["-ss", f"{start:.3f}"] + (["-t", f"{duration:.3f}"] if duration else [])
     out = subprocess.run(
         ["ffmpeg", "-nostdin", "-loglevel", "error", *window, "-i", path,
-         "-vn", "-ac", "1", "-ar", str(SAMPLE_RATE), "-f", "f32le", "-"],
+         "-vn", "-af", "aresample=async=1:first_pts=0", "-ac", "1", "-ar", str(SAMPLE_RATE), "-f", "f32le", "-"],
         check=True, capture_output=True,
     ).stdout
     return np.frombuffer(out, np.float32)
