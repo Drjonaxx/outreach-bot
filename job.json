@@ -1,1 +1,9 @@
-{"name": "lordkebun-2026-10-18", "url": "https://kick.com/lordkebun", "vod": "0", "language": "en", "whisper_model": "small", "limit_minutes": 150, "layout": "fit"}
+{
+  "name": "saab-2026-10-18",
+  "url": "https://kick.com/saab",
+  "vod": "0",
+  "language": "en",
+  "whisper_model": "small",
+  "limit_minutes": 900,
+  "layout": "fit"
+}

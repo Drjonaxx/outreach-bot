@@ -231,7 +231,8 @@
   },
   "at": "2026-10-19T11:53",
   "comment": "¿Le creen a Mateo o es culpable? 👇 Parte 2 ya en el canal.",
-  "lang": "en"
+  "lang": "en",
+  "delivered": "descartado"
  },
  {
   "id": "lordkebun-2026-10-14-rp/02",
@@ -259,7 +260,8 @@
   },
   "at": "2026-10-19T11:53",
   "comment": "¿Una puerta? 😂 ¿Qué excusa le creerían ustedes? 👇",
-  "lang": "en"
+  "lang": "en",
+  "delivered": "descartado"
  },
  {
   "id": "lordkebun-2026-10-14-rp/03",
@@ -283,7 +285,8 @@
   },
   "at": "2026-10-19T11:53",
   "comment": "¿Culpable o inocente? 👇 La sentencia sale mañana al mediodía.",
-  "lang": "en"
+  "lang": "en",
+  "delivered": "descartado"
  },
  {
   "id": "lordkebun-2026-10-14-rp/04",
@@ -307,7 +310,8 @@
   },
   "at": "2026-10-19T11:53",
   "comment": "¿Fue justa la sentencia del juez Mr. K? 👇",
-  "lang": "en"
+  "lang": "en",
+  "delivered": "descartado"
  },
  {
   "id": "westcol-2026-10-15/05",
@@ -653,7 +657,8 @@
   "comment": "¿Qué opinan? 👇 Clips subtitulados de LordKebun todos los días en el canal.",
   "results": {},
   "at": "2026-10-20T11:53",
-  "lang": "en"
+  "lang": "en",
+  "delivered": "descartado"
  },
  {
   "id": "lordkebun-2026-10-18/02",
@@ -673,6 +678,7 @@
   "comment": "¿Qué opinan? 👇 Clips subtitulados de LordKebun todos los días en el canal.",
   "results": {},
   "at": "2026-10-20T11:53",
-  "lang": "en"
+  "lang": "en",
+  "delivered": "descartado"
  }
 ]

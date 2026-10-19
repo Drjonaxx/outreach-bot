@@ -1,5 +1,5 @@
 {
-  "_comment": "Streamers de la rutina diaria (8:47 a.m. hora de Puerto Rico). Cada uno se procesa solo en sus días ('days', en inglés). El usuario sube 8 clips al día: 4 de UN stream de un streamer que habla español y 4 de UN stream de uno que habla inglés (subtitulados al español), repartidos a lo largo del stream completo. Por eso se transcribe el VOD entero (limit_minutes es solo un tope de seguridad para el tiempo de CI). Si uno tiene campaña pagada, pon sus reglas en 'campaign'.",
+  "_comment": "Streamers de la rutina diaria (8:47 a.m. hora de Puerto Rico). Cada uno se procesa solo en sus días ('days', en inglés). El usuario sube 8 clips al día: 4 de UN stream de un streamer que habla español y 4 de UN stream de uno que habla inglés (subtitulados al español), repartidos a lo largo del stream completo. Por eso se transcribe el VOD entero (limit_minutes es solo un tope de seguridad para el tiempo de CI). Solo streamers SIN clipper oficial (ni canal de clips propio o avalado por ellos en YouTube/TikTok). Si uno tiene campaña pagada, pon sus reglas en 'campaign'.",
   "streamers": [
     {
       "slug": "westcol",
@@ -73,60 +73,11 @@
       "campaign": null
     },
     {
-      "slug": "lordkebun",
-      "url": "https://kick.com/lordkebun",
-      "days": [
-        "wed",
-        "sun"
-      ],
-      "language": "en",
-      "subtitles": "es",
-      "limit_minutes": 900,
-      "layout": "fit",
-      "clips": "4",
-      "credit": "🎥LordKebun (Kick)",
-      "hashtags": [
-        "gtarp",
-        "lordkebun",
-        "gta5",
-        "streamer",
-        "subtitulado",
-        "quedijoelgringo"
-      ],
-      "campaign": null,
-      "notes": "También hace streams de casino (Stake): si el VOD más reciente es de Stake/casino/slots, NO se clipea; usa vod \"RP\" (su último stream de GTA RP) con otro name."
-    },
-    {
-      "slug": "xqc",
-      "url": "https://kick.com/xqc",
-      "days": [
-        "mon",
-        "thu",
-        "sat"
-      ],
-      "language": "en",
-      "subtitles": "es",
-      "limit_minutes": 900,
-      "layout": "fit",
-      "clips": "4",
-      "credit": "🎥xQc (Kick)",
-      "hashtags": [
-        "xqc",
-        "gtarp",
-        "nopixel",
-        "kick",
-        "streamer",
-        "subtitulado",
-        "quedijoelgringo"
-      ],
-      "campaign": null,
-      "notes": "Casi siempre GTA RP (NoPixel), pero los primeros minutos del VOD suelen ser reacciones a videos de otros: no clipees tramos donde suena un video, música o TV de terceros (reclamos de copyright); solo él hablando o jugando."
-    },
-    {
       "slug": "kaysan",
       "url": "https://kick.com/kaysan",
       "days": [
-        "tue"
+        "wed",
+        "sat"
       ],
       "language": "en",
       "subtitles": "es",
@@ -144,12 +95,39 @@
         "quedijoelgringo"
       ],
       "campaign": null,
-      "notes": "GTA RP (Windy City RP / NoPixel). A veces hace casino: esos VODs NO se clipean."
+      "notes": "GTA RP (District 10 / NoPixel). A veces hace casino: esos VODs NO se clipean."
     },
     {
-      "slug": "konvy",
-      "url": "https://kick.com/konvy",
+      "slug": "saab",
+      "url": "https://kick.com/saab",
       "days": [
+        "mon",
+        "thu",
+        "sun"
+      ],
+      "language": "en",
+      "subtitles": "es",
+      "limit_minutes": 900,
+      "layout": "fit",
+      "clips": "4",
+      "credit": "🎥Saab (Kick)",
+      "hashtags": [
+        "saab",
+        "gtarp",
+        "nopixel",
+        "gta5",
+        "streamer",
+        "subtitulado",
+        "quedijoelgringo"
+      ],
+      "campaign": null,
+      "notes": "GTA RP en NoPixel: el comisionado Dawson (policía). Streams de 12-15 h."
+    },
+    {
+      "slug": "harry",
+      "url": "https://kick.com/harry",
+      "days": [
+        "tue",
         "fri"
       ],
       "language": "en",
@@ -157,18 +135,18 @@
       "limit_minutes": 900,
       "layout": "fit",
       "clips": "4",
-      "credit": "🎥Konvy (Kick)",
+      "credit": "🎥Harry (Kick)",
       "hashtags": [
-        "konvy",
-        "futbol",
-        "fifa",
-        "kick",
+        "harry",
+        "gtarp",
+        "nopixel",
+        "gta5",
         "streamer",
         "subtitulado",
         "quedijoelgringo"
       ],
       "campaign": null,
-      "notes": "Reacciones de fútbol, FIFA y NBA 2K. Transmite de forma irregular: si no hay VOD nuevo, usa a otro streamer en inglés."
+      "notes": "GTA RP en NoPixel: Harry Brown. Streams de 14-17 h (se transcriben hasta 15 h)."
     }
   ]
 }
