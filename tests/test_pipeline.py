@@ -181,9 +181,9 @@ def test_posting_queue_fills_slots_and_retries():
         item = {"id": f"x/{i:02d}", "results": {}}
         item["at"] = ck.free_slot(queue, morning)
         queue.append(item)
-    assert [q["at"] for q in queue] == ["2026-10-13T11:53"] * n + ["2026-10-13T19:56"] * n + ["2026-10-14T11:53"] * 2
-    # Rendered after the noon slot: straight to tonight.
-    assert ck.free_slot([], datetime(2026, 10, 13, 13, 0, tzinfo=ck.PR)) == "2026-10-13T19:56"
+    assert [q["at"] for q in queue] == ["2026-10-13T11:53"] * n + ["2026-10-14T11:53"] * n + ["2026-10-15T11:53"] * 2
+    # Rendered after the day's slot: straight to tomorrow.
+    assert ck.free_slot([], datetime(2026, 10, 13, 13, 0, tzinfo=ck.PR)) == "2026-10-14T11:53"
 
     noon = datetime(2026, 10, 13, 11, 53, tzinfo=ck.PR)
     due = ck.due_items(queue, ["youtube", "instagram"], noon)
@@ -196,8 +196,30 @@ def test_posting_queue_fills_slots_and_retries():
     for _ in range(2):
         ck.merge_results(queue, {"x/01": {"youtube": {"error": "boom"}}})
     assert "x/01" not in {d["id"] for d in ck.due_items(queue, ["youtube", "instagram"], noon)}  # gave up
-    # Two days later the old clips are dropped.
-    assert ck.due_items(queue, ["youtube"], datetime(2026, 10, 16, 12, 0, tzinfo=ck.PR)) == []
+    # Two days after the last slot the old clips are dropped.
+    assert ck.due_items(queue, ["youtube"], datetime(2026, 10, 18, 12, 0, tzinfo=ck.PR)) == []
+
+
+def test_hand_over_gives_four_clips_a_day_oldest_first():
+    import subprocess
+    ck = _clipkit()
+    queue = [{"id": f"x/{i:02d}", "at": f"2026-10-{19 + i // 2}T11:53", "results": {}} for i in range(7)]
+    queue.insert(0, {"id": "posted/01", "at": "2026-10-18T11:53", "results": {"youtube": {"id": "manual"}}})
+    queue[1]["results"] = {"instagram": {"id": "manual"}}  # Instagram by hand: still to hand over
+    pulled = []
+
+    def fetch(item):
+        if item["id"] == "x/01":  # pruned from clipper-out
+            raise subprocess.CalledProcessError(128, "git show")
+        pulled.append(item["id"])
+
+    batch = ck.hand_over(queue, "2026-10-19", fetch)
+    assert [q["id"] for q in batch] == ["x/00", "x/02", "x/03", "x/04"]
+    assert queue[2]["delivered"] == "perdido"
+    # Same day again (e.g. a restart): the same clips, nothing new handed over.
+    assert [q["id"] for q in ck.hand_over(queue, "2026-10-19", fetch)] == ["x/00", "x/02", "x/03", "x/04"]
+    assert [q["id"] for q in ck.hand_over(queue, "2026-10-20", fetch)] == ["x/05", "x/06"]
+    assert ck.waiting(queue) == []
 
 
 def test_post_fields_reuse_caption_and_skip_repeated_hashtags():

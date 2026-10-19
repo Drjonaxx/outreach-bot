@@ -20,7 +20,12 @@
         Pull rendered clips from origin/claude/clipper-out (run inside the outreach-bot
         clone), number them in the given order, shrink anything over the 30 MiB chat
         limit, write captions.txt and add the clips to the posting queue
-        (posting/queue.json: the next free slots at mediodía / noche, hora de Puerto Rico).
+        (posting/queue.json: 4 a day, in the next days that still have room).
+
+    python tools/clipkit.py today OUT_DIR
+        Today's clips for the user to post by hand (run inside the outreach-bot clone):
+        the next 4 in the queue, oldest first, pulled into OUT_DIR with captions.txt and
+        marked as handed over. Run again the same day, it pulls the same ones.
 
     python tools/clipkit.py due
         Queued clips whose slot has come, as JSON for tools/social.py (the platforms
@@ -55,7 +60,8 @@ RAW = "https://raw.githubusercontent.com/Drjonaxx/outreach-bot/claude/clipper-ou
 PR = ZoneInfo("America/Puerto_Rico")
 # Posting slots (Puerto Rico time; the posting routines fire right at these times) and
 # clips per slot. A clip whose slot passed without posting is still tried for 2 days.
-SLOT_TIMES = ("11:53", "19:56")
+# One slot a day: the user posts each day's 4 clips by hand.
+SLOT_TIMES = ("11:53",)
 PER_SLOT = 4
 MAX_TRIES = 3
 
@@ -187,18 +193,8 @@ def cmd_package(name: str, out_dir: str, *items: str) -> None:
     lines, queued = [], []
     for pos, item in enumerate(items, 1):
         num, caption = item.split(":", 1)
-        src = f"origin/claude/clipper-out:{name}/clip_{int(num):02d}.mp4"
         dest = out / f"{pos:02d}_clip_{int(num):02d}.mp4"
-        dest.write_bytes(subprocess.run(["git", "show", src], check=True, capture_output=True).stdout)
-        if dest.stat().st_size > 29 * 1024 * 1024:
-            dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",
-                                        str(dest)], capture_output=True, text=True).stdout)
-            vb = int(27.5 * 8 * 1024 * 1024 / dur - 160_000)
-            tmp = dest.with_suffix(".tmp.mp4")
-            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(dest), "-c:v", "libx264", "-preset", "medium",
-                            "-b:v", str(vb), "-maxrate", str(vb * 3 // 2), "-bufsize", str(vb * 2), "-r", "30",
-                            "-pix_fmt", "yuv420p", "-c:a", "copy", "-movflags", "+faststart", str(tmp)], check=True)
-            tmp.replace(dest)
+        fetch_clip(name, int(num), dest)
         length = len(caption.encode("utf-16-le")) // 2
         if length > 100:
             raise SystemExit(f"Caption de {dest.name} tiene {length} caracteres (máx. 100)")
@@ -214,6 +210,21 @@ def cmd_package(name: str, out_dir: str, *items: str) -> None:
             queue.append(item)
             print(f"en cola: {item['id']} -> {item['at']}")
     save_queue(queue)
+
+
+def fetch_clip(name: str, num: int, dest: Path) -> None:
+    """Rendered clip from origin/claude/clipper-out, shrunk to fit the 30 MiB chat limit."""
+    src = f"origin/claude/clipper-out:{name}/clip_{num:02d}.mp4"
+    dest.write_bytes(subprocess.run(["git", "show", src], check=True, capture_output=True).stdout)
+    if dest.stat().st_size > 29 * 1024 * 1024:
+        dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",
+                                    str(dest)], capture_output=True, text=True).stdout)
+        vb = int(27.5 * 8 * 1024 * 1024 / dur - 160_000)
+        tmp = dest.with_suffix(".tmp.mp4")
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(dest), "-c:v", "libx264", "-preset", "medium",
+                        "-b:v", str(vb), "-maxrate", str(vb * 3 // 2), "-bufsize", str(vb * 2), "-r", "30",
+                        "-pix_fmt", "yuv420p", "-c:a", "copy", "-movflags", "+faststart", str(tmp)], check=True)
+        tmp.replace(dest)
 
 
 def read_meta(name: str, num: int) -> dict:
@@ -339,6 +350,55 @@ def cmd_upcoming(hours: str = "20") -> None:
     print(json.dumps(items, ensure_ascii=False))
 
 
+def waiting(queue: list[dict]) -> list[dict]:
+    """Clips not handed over yet nor already on YouTube, oldest slot first."""
+    return [q for q in sorted(queue, key=lambda q: q["at"])
+            if not q.get("delivered") and "id" not in q.get("results", {}).get("youtube", {})]
+
+
+def hand_over(queue: list[dict], today: str, fetch) -> list[dict]:
+    """Today's clips to post by hand: those already handed over today, or else the next
+    PER_SLOT nobody has (oldest slot first). fetch(item) pulls the video; a clip it can't
+    pull (pruned from clipper-out) is marked lost and the next one takes its place."""
+    out = []
+    for item in [q for q in queue if q.get("delivered") == today] or waiting(queue):
+        if len(out) == PER_SLOT:
+            break
+        try:
+            fetch(item)
+        except subprocess.CalledProcessError:
+            item["delivered"] = "perdido"
+            continue
+        item["delivered"] = today
+        out.append(item)
+    return out
+
+
+def cmd_today(out_dir: str) -> None:
+    out = Path(out_dir)
+    out.mkdir(parents=True, exist_ok=True)
+    queue = load_queue()
+    files = {}
+
+    def fetch(item):
+        name, num = item["id"].rsplit("/", 1)
+        files[item["id"]] = out / f"{len(files) + 1}_{name}_{num}.mp4"
+        try:
+            fetch_clip(name, int(num), files[item["id"]])
+        except subprocess.CalledProcessError:
+            del files[item["id"]]
+            raise
+
+    batch = hand_over(queue, datetime.now(PR).date().isoformat(), fetch)
+    save_queue(queue)
+    lines = []
+    for item in batch:
+        lines += [files[item["id"]].name, item["title"], ""]
+    (out / "captions.txt").write_text("\n".join(lines))
+    print("\n".join(lines))
+    print(f"Quedan {len(waiting(queue))} clips en cola.")
+
+
 def cmd_mark(results_path: str) -> None:
     queue = load_queue()
     for note in merge_results(queue, json.loads(Path(results_path).read_text())):
@@ -348,7 +408,7 @@ def cmd_mark(results_path: str) -> None:
 
 if __name__ == "__main__":
     commands = {"lines": cmd_lines, "cues": cmd_cues, "build": cmd_build, "sync": cmd_sync, "package": cmd_package,
-                "due": cmd_due, "upcoming": cmd_upcoming, "mark": cmd_mark}
+                "due": cmd_due, "upcoming": cmd_upcoming, "mark": cmd_mark, "today": cmd_today}
     if len(sys.argv) < 2 or sys.argv[1] not in commands:
         raise SystemExit(__doc__)
     commands[sys.argv[1]](*sys.argv[2:])
