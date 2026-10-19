@@ -321,8 +321,8 @@
     ]
   },
   {
-    "start": 21964.69,
-    "end": 22012.6,
+    "start": 21964.29,
+    "end": 22012.2,
     "title": "Le enseñó su pistola para impresionarla y le salió fatal 😂",
     "hook": "Así no se impresiona",
     "description": "Shells (Kaysan) saca su pistola en GTA RP para impresionar a una chica. No funcionó.",
@@ -338,65 +338,65 @@
     "reason": "pistola",
     "keep": [
       [
-        21964.69,
-        21966.27
+        21964.29,
+        21965.87
       ],
       [
-        21979.86,
-        21983.66
+        21979.46,
+        21983.26
       ],
       [
-        21989.09,
-        22000.32
+        21988.69,
+        21999.92
       ],
       [
-        22001.0,
-        22003.4
+        22000.6,
+        22003.0
       ],
       [
-        22007.38,
-        22012.6
+        22006.98,
+        22012.2
       ]
     ],
     "subs": [
       {
-        "start": 21964.81,
-        "end": 21966.03,
+        "start": 21964.41,
+        "end": 21965.63,
         "text": "SHELLS: Te voy a enseñar algo. Ven."
       },
       {
-        "start": 21979.98,
-        "end": 21983.12,
+        "start": 21979.58,
+        "end": 21982.72,
         "text": "Para que sepas: si alguien se mete contigo... mira esto. No estoy jugando."
       },
       {
-        "start": 21989.21,
-        "end": 21990.73,
+        "start": 21988.81,
+        "end": 21990.33,
         "text": "¿Se supone que eso me tiene que emocionar, Shells?"
       },
       {
-        "start": 21991.11,
-        "end": 21997.52,
+        "start": 21990.71,
+        "end": 21997.12,
         "text": "SHELLS: ¡Pues sí! Ojalá no tenga que usarla."
       },
       {
-        "start": 21997.72,
-        "end": 21999.9,
+        "start": 21997.32,
+        "end": 21999.5,
         "text": "Nada de eso debería emocionarme... pero no me importa."
       },
       {
-        "start": 22001.12,
-        "end": 22003.18,
+        "start": 22000.72,
+        "end": 22002.78,
         "text": "¿Qué dices? No me engañas."
       },
       {
-        "start": 22007.5,
-        "end": 22010.06,
+        "start": 22007.1,
+        "end": 22009.66,
         "text": "SHELLS: Yo pensé que ibas a decir: «¡Uy, me vas a proteger!»."
       },
       {
-        "start": 22010.44,
-        "end": 22012.5,
+        "start": 22010.04,
+        "end": 22012.1,
         "text": "¿Eso crees que hace falta para impresionarme?"
       }
     ]
