@@ -106,6 +106,33 @@ def test_load_audio_decodes_16k_mono(tmp_path):
     assert 0.1 < abs(audio).max() <= 1.0
 
 
+def test_transcribe_long_media_in_chunks_with_absolute_times(tmp_path, monkeypatch):
+    import subprocess
+    import sys
+    import types
+    from clipper import transcribe as tr
+    wav = tmp_path / "tone.wav"
+    subprocess.run(["ffmpeg", "-loglevel", "error", "-f", "lavfi", "-i", "sine=frequency=440:duration=2.5",
+                    str(wav)], check=True)
+    assert abs(len(tr.load_audio(str(wav), 1.0, 1.0)) - tr.SAMPLE_RATE) < 200
+    lengths = []
+
+    class FakeModel:
+        def __init__(self, *args, **kwargs):
+            pass
+
+        def transcribe(self, audio, **kwargs):
+            lengths.append(len(audio) / tr.SAMPLE_RATE)
+            word = types.SimpleNamespace(start=0.1, end=0.4, word=" hola")
+            return [types.SimpleNamespace(start=0.1, end=0.4, text=" hola", words=[word])], None
+
+    monkeypatch.setitem(sys.modules, "faster_whisper", types.SimpleNamespace(WhisperModel=FakeModel))
+    monkeypatch.setattr(tr, "CHUNK_SECONDS", 1)
+    segments = tr.transcribe(str(wav), device="cpu")
+    assert [round(n, 1) for n in lengths] == [1.0, 1.0, 0.5]
+    assert [(s.start, s.words[0].start) for s in segments] == [(0.1, 0.1), (1.1, 1.1), (2.1, 2.1)]
+
+
 def test_keep_ranges_jump_cuts_long_silences():
     from clipper.models import Clip
     from clipper.render import keep_ranges, remap
