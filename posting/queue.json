@@ -18,6 +18,10 @@
   "results": {
    "instagram": {
     "id": "manual"
+   },
+   "youtube": {
+    "error": "YouTube API did not provide upload URL. Status: 429. Quota exceeded for quota metric 'Video Uploads' and limit 'Video Uploads per day'",
+    "tries": 0
    }
   },
   "at": "2026-10-18T19:56",
@@ -211,6 +215,10 @@
   "results": {
    "instagram": {
     "id": "manual"
+   },
+   "youtube": {
+    "error": "YouTube API did not provide upload URL. Status: 429. Quota exceeded for quota metric 'Video Uploads' and limit 'Video Uploads per day'",
+    "tries": 0
    }
   },
   "at": "2026-10-18T19:56",
@@ -234,6 +242,10 @@
   "results": {
    "instagram": {
     "id": "manual"
+   },
+   "youtube": {
+    "error": "YouTube API did not provide upload URL. Status: 429. Quota exceeded for quota metric 'Video Uploads' and limit 'Video Uploads per day'",
+    "tries": 0
    }
   },
   "at": "2026-10-18T19:56",
@@ -305,6 +317,10 @@
   "results": {
    "instagram": {
     "id": "manual"
+   },
+   "youtube": {
+    "error": "YouTube API did not provide upload URL. Status: 429. Quota exceeded for quota metric 'Video Uploads' and limit 'Video Uploads per day'",
+    "tries": 0
    }
   },
   "at": "2026-10-18T19:56",
