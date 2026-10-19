@@ -2,8 +2,8 @@
   "_comment": "Streamers de la rutina diaria (8:47 a.m. hora de Puerto Rico). Cada uno se procesa solo en sus días ('days', en inglés). El usuario sube 8 clips al día: 4 de UN stream de un streamer que habla español y 4 de UN stream de uno que habla inglés (subtitulados al español), repartidos a lo largo del stream completo. Por eso se transcribe el VOD entero (limit_minutes es solo un tope de seguridad para el tiempo de CI). Solo streamers SIN clipper oficial (ni canal de clips propio o avalado por ellos en YouTube/TikTok). Si uno tiene campaña pagada, pon sus reglas en 'campaign'.",
   "streamers": [
     {
-      "slug": "westcol",
-      "url": "https://kick.com/westcol",
+      "slug": "cry",
+      "url": "https://kick.com/cry",
       "days": [
         "mon",
         "thu",
@@ -14,21 +14,20 @@
       "limit_minutes": 900,
       "layout": "fit",
       "clips": "4",
-      "credit": "🎥Westcol (Kick)",
+      "credit": "🎥Cry (Kick)",
       "hashtags": [
-        "westcol",
+        "cry",
         "kick",
         "streamer",
-        "colombia",
         "clips",
         "quedijoelgringo"
       ],
-      "notes": "Hace muchos streams de casino: esos tramos NO se clipean.",
-      "campaign": null
+      "campaign": null,
+      "notes": "Español que vive en México: reacciones, Just Chatting, Minecraft/Roblox. Hace reacciones: no clipees tramos donde suena un video, música o TV de terceros (reclamos de copyright)."
     },
     {
-      "slug": "davooxeneize",
-      "url": "https://kick.com/davooxeneize",
+      "slug": "shadoune666",
+      "url": "https://kick.com/shadoune666",
       "days": [
         "tue",
         "fri"
@@ -38,20 +37,21 @@
       "limit_minutes": 900,
       "layout": "fit",
       "clips": "4",
-      "credit": "🎥Davoo Xeneize (Kick)",
+      "credit": "🎥Shadoune666 (Kick)",
       "hashtags": [
-        "davooxeneize",
-        "futbol",
+        "shadoune666",
+        "minecraft",
         "kick",
         "streamer",
         "clips",
         "quedijoelgringo"
       ],
-      "campaign": null
+      "campaign": null,
+      "notes": "Minecraft y Just Chatting. Streams de 11-13 h."
     },
     {
-      "slug": "spreen",
-      "url": "https://kick.com/spreen",
+      "slug": "natalan",
+      "url": "https://kick.com/natalan",
       "days": [
         "wed",
         "sat"
@@ -61,16 +61,37 @@
       "limit_minutes": 900,
       "layout": "fit",
       "clips": "4",
-      "credit": "🎥Spreen (Kick)",
+      "credit": "🎥Natalan (Kick)",
       "hashtags": [
-        "spreen",
+        "natalan",
+        "terror",
         "kick",
         "streamer",
-        "argentina",
         "clips",
         "quedijoelgringo"
       ],
-      "campaign": null
+      "campaign": null,
+      "notes": "Guatemalteco: juegos de terror, mods y reacciones. Hace reacciones: no clipees tramos donde suena un video, música o TV de terceros (reclamos de copyright)."
+    },
+    {
+      "slug": "sramilcar",
+      "url": "https://kick.com/sramilcar",
+      "days": [],
+      "language": "es",
+      "subtitles": "original",
+      "limit_minutes": 900,
+      "layout": "fit",
+      "clips": "4",
+      "credit": "🎥SrAmilcar (Kick)",
+      "hashtags": [
+        "sramilcar",
+        "kick",
+        "streamer",
+        "clips",
+        "quedijoelgringo"
+      ],
+      "campaign": null,
+      "notes": "De respaldo (sin días fijos): variedad, CS2, Minecraft. Argentino."
     },
     {
       "slug": "kaysan",

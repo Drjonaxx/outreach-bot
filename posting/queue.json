@@ -26,7 +26,8 @@
   },
   "at": "2026-10-19T11:53",
   "comment": "Cuenten su peor chiste en los comentarios 👇 (sin miedo al silencio)",
-  "lang": "es"
+  "lang": "es",
+  "delivered": "descartado"
  },
  {
   "id": "davooxeneize-2026-10-13/04",
@@ -53,7 +54,8 @@
   },
   "at": "2026-10-19T11:53",
   "comment": "¿Cuál es su top 3 de reguetón? 👇",
-  "lang": "es"
+  "lang": "es",
+  "delivered": "descartado"
  },
  {
   "id": "davooxeneize-2026-10-13/01",
@@ -78,7 +80,8 @@
   },
   "at": "2026-10-19T11:53",
   "comment": "¿Con barba o sin barba? 👇",
-  "lang": "es"
+  "lang": "es",
+  "delivered": "descartado"
  },
  {
   "id": "davooxeneize-2026-10-13/02",
@@ -103,7 +106,8 @@
   },
   "at": "2026-10-20T11:53",
   "comment": "¿Ustedes también entrenan «simbólicamente»? 😂👇",
-  "lang": "es"
+  "lang": "es",
+  "delivered": "descartado"
  },
  {
   "id": "davooxeneize-2026-10-13/03",
@@ -128,7 +132,8 @@
   },
   "at": "2026-10-21T11:53",
   "comment": "¿Avocado toast o medialunas de jamón y queso? 👇",
-  "lang": "es"
+  "lang": "es",
+  "delivered": "descartado"
  },
  {
   "id": "spreen-2026-10-14/01",
@@ -179,7 +184,8 @@
   },
   "at": "2026-10-20T11:53",
   "comment": "¿Spreen es el protagonista o se lo cree? 👇",
-  "lang": "es"
+  "lang": "es",
+  "delivered": "descartado"
  },
  {
   "id": "spreen-2026-10-14/02",
@@ -203,7 +209,8 @@
   },
   "at": "2026-10-21T11:53",
   "comment": "¿Qué tan tarde han llegado al trabajo por «disfrutar el momento»? 😂👇",
-  "lang": "es"
+  "lang": "es",
+  "delivered": "descartado"
  },
  {
   "id": "lordkebun-2026-10-14-rp/01",
@@ -341,7 +348,8 @@
   },
   "at": "2026-10-19T11:53",
   "comment": "¿Sabían que «Tú vas a volar» era vallenato? 👇 Dominicanos, los leo.",
-  "lang": "es"
+  "lang": "es",
+  "delivered": "descartado"
  },
  {
   "id": "westcol-2026-10-15/04",
@@ -367,7 +375,8 @@
   },
   "at": "2026-10-20T11:53",
   "comment": "¿De acuerdo o no? ¿El 80% de las bachatas son vallenato? 👇",
-  "lang": "es"
+  "lang": "es",
+  "delivered": "descartado"
  },
  {
   "id": "westcol-2026-10-15/01",
@@ -392,7 +401,8 @@
   },
   "at": "2026-10-21T11:53",
   "comment": "¿Se las comerían? 🐜👇",
-  "lang": "es"
+  "lang": "es",
+  "delivered": "descartado"
  },
  {
   "id": "westcol-2026-10-15/03",
@@ -417,7 +427,8 @@
   },
   "at": "2026-10-20T11:53",
   "comment": "¿Silvestre es más show que cantante? 👇",
-  "lang": "es"
+  "lang": "es",
+  "delivered": "descartado"
  },
  {
   "id": "westcol-2026-10-15/02",
@@ -442,7 +453,8 @@
   },
   "at": "2026-10-21T11:53",
   "comment": "¿Ustedes sabían esto? 🪗👇",
-  "lang": "es"
+  "lang": "es",
+  "delivered": "descartado"
  },
  {
   "id": "davooxeneize-2026-10-16/04",
@@ -574,7 +586,8 @@
   "comment": "¿Qué opinan? 👇 Clips subtitulados de Spreen todos los días en el canal.",
   "results": {},
   "at": "2026-10-22T11:53",
-  "lang": "es"
+  "lang": "es",
+  "delivered": "descartado"
  },
  {
   "id": "spreen-2026-10-17/03",
@@ -595,7 +608,8 @@
   "comment": "¿Qué opinan? 👇 Clips subtitulados de Spreen todos los días en el canal.",
   "results": {},
   "at": "2026-10-22T11:53",
-  "lang": "es"
+  "lang": "es",
+  "delivered": "descartado"
  },
  {
   "id": "spreen-2026-10-17/01",
@@ -616,7 +630,8 @@
   "comment": "¿Qué opinan? 👇 Clips subtitulados de Spreen todos los días en el canal.",
   "results": {},
   "at": "2026-10-22T11:53",
-  "lang": "es"
+  "lang": "es",
+  "delivered": "descartado"
  },
  {
   "id": "spreen-2026-10-17/04",
@@ -637,7 +652,8 @@
   "comment": "¿Qué opinan? 👇 Clips subtitulados de Spreen todos los días en el canal.",
   "results": {},
   "at": "2026-10-22T11:53",
-  "lang": "es"
+  "lang": "es",
+  "delivered": "descartado"
  },
  {
   "id": "lordkebun-2026-10-18/01",
