@@ -6,7 +6,8 @@ Stage 2, clips.json present:           download each clip's stretch in 1080p and
 
 job.json fields: name, url, and optionally language ("es"), whisper_model ("small"),
 limit_minutes (only the first N minutes), vod (Kick channel: 0 = latest VOD),
-layout ("auto"/"crop"/"fit"), only (re-render just these clip numbers).
+layout ("auto"/"crop"/"fit"), only (re-render just these clip numbers),
+retranscribe (true: transcribe again even if results/<name>/transcript.json exists).
 A new job whose VOD was already processed under another name writes
 results/<name>/status.json {"status": "no_new_vod"} and stops.
 """
@@ -61,6 +62,8 @@ if clips.exists():
     if job.get("only"):
         cmd += ["--only", ",".join(str(i) for i in job["only"])]
 else:
+    if job.get("retranscribe"):
+        (work / "transcript.json").unlink(missing_ok=True)
     cmd += ["--transcribe-only", "--max-height", "360"]
     if job.get("limit_minutes"):
         cmd += ["--limit-minutes", str(job["limit_minutes"])]
