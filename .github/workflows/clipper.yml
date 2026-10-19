@@ -16,7 +16,7 @@ concurrency:
 jobs:
   clip:
     runs-on: ubuntu-latest
-    timeout-minutes: 300
+    timeout-minutes: 360
     services:
       # PO token provider for yt-dlp (helps with YouTube's bot check on server IPs).
       pot:

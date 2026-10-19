@@ -202,33 +202,34 @@ def test_posting_queue_fills_slots_and_retries():
     assert ck.due_items(queue, ["youtube"], datetime(2026, 10, 18, 12, 0, tzinfo=ck.PR)) == []
 
 
-def test_hand_over_gives_four_clips_a_day_per_language_oldest_first():
+def test_hand_over_gives_four_clips_of_one_stream_per_language():
     import subprocess
     ck = _clipkit()
-    queue = [{"id": f"x/{i:02d}", "at": f"2026-10-{19 + i // 2}T11:53", "results": {}} for i in range(7)]
-    queue.insert(0, {"id": "posted/01", "at": "2026-10-18T11:53", "results": {"youtube": {"id": "manual"}}})
-    queue[1]["results"] = {"instagram": {"id": "manual"}}  # Instagram by hand: still to hand over
-    pulled = []
+    # Queue order within a stream is best first; clip numbers follow the stream.
+    queue = [{"id": f"es-a/{n}", "at": "2026-10-19T11:53", "lang": "es", "results": {}} for n in ("05", "02", "04", "01", "03")]
+    queue += [{"id": "es-b/01", "at": "2026-10-19T11:53", "lang": "es", "results": {}}]  # too short to come first
+    queue += [{"id": f"es-c/0{n}", "at": "2026-10-20T11:53", "lang": "es", "results": {}} for n in range(1, 5)]
+    queue += [{"id": f"en-a/0{n}", "at": "2026-10-19T11:53", "lang": "en", "results": {}} for n in range(1, 5)]
+    queue += [{"id": "posted/01", "at": "2026-10-18T11:53", "lang": "es", "results": {"youtube": {"id": "manual"}},
+               "delivered": "2026-10-18"}]
+    queue[3]["results"] = {"instagram": {"id": "manual"}}  # Instagram by hand: still to hand over
+    lost = {"es-c/02"}
 
     def fetch(item):
-        if item["id"] == "x/01":  # pruned from clipper-out
+        if item["id"] in lost:  # pruned from clipper-out
             raise subprocess.CalledProcessError(128, "git show")
-        pulled.append(item["id"])
 
-    batch = ck.hand_over(queue, "2026-10-19", fetch)
-    assert [q["id"] for q in batch] == ["x/00", "x/02", "x/03", "x/04"]
-    assert queue[2]["delivered"] == "perdido"
-    # Same day again (e.g. a restart): the same clips, nothing new handed over.
-    assert [q["id"] for q in ck.hand_over(queue, "2026-10-19", fetch)] == ["x/00", "x/02", "x/03", "x/04"]
-    assert [q["id"] for q in ck.hand_over(queue, "2026-10-20", fetch)] == ["x/05", "x/06"]
+    ids = [q["id"] for q in ck.hand_over(queue, "2026-10-19", fetch)]
+    # The best 4 of stream es-a in the stream's order, alternating with en-a; es-a/03 is dropped.
+    assert ids == ["es-a/01", "en-a/01", "es-a/02", "en-a/02", "es-a/04", "en-a/03", "es-a/05", "en-a/04"]
+    assert next(q for q in queue if q["id"] == "es-a/03")["delivered"] == "sobrante"
+    # Same day again (e.g. a restart): the same clips.
+    assert [q["id"] for q in ck.hand_over(queue, "2026-10-19", fetch)] == ids
+    # Next day: the next complete stream before the short one; nothing in English.
+    assert [q["id"] for q in ck.hand_over(queue, "2026-10-20", fetch)] == ["es-c/01", "es-c/03", "es-c/04"]
+    assert next(q for q in queue if q["id"] == "es-c/02")["delivered"] == "perdido"
+    assert [q["id"] for q in ck.hand_over(queue, "2026-10-21", fetch)] == ["es-b/01"]
     assert ck.waiting(queue) == []
-
-    # Spanish- and English-speaking streamers alternate, 4 of each.
-    queue = [{"id": f"{lang}/{i}", "at": "2026-10-21T11:53", "lang": lang, "results": {}}
-             for lang in ("en", "es") for i in range(6)]
-    batch = ck.hand_over(queue, "2026-10-21", fetch)
-    assert [q["id"] for q in batch] == ["es/0", "en/0", "es/1", "en/1", "es/2", "en/2", "es/3", "en/3"]
-    assert len(ck.waiting(queue, "es")) == len(ck.waiting(queue, "en")) == 2
 
 
 def test_post_fields_reuse_caption_and_skip_repeated_hashtags():

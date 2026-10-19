@@ -25,9 +25,10 @@
 
     python tools/clipkit.py today OUT_DIR
         Today's clips for the user to post by hand (run inside the outreach-bot clone):
-        the next 4 of Spanish-speaking streamers and the next 4 of English-speaking ones,
-        oldest first and alternating, pulled into OUT_DIR with captions.txt and marked as
-        handed over. Run again the same day, it pulls the same ones.
+        4 from one stream of a Spanish-speaking streamer and 4 from one stream of an
+        English-speaking one (the oldest waiting), each in the stream's order, alternating,
+        pulled into OUT_DIR with captions.txt and marked as handed over. Run again the same
+        day, it pulls the same ones.
 
     python tools/clipkit.py due
         Queued clips whose slot has come, as JSON for tools/social.py (the platforms
@@ -369,18 +370,32 @@ def waiting(queue: list[dict], lang: str | None = None) -> list[dict]:
             and lang in (None, q.get("lang", "es"))]
 
 
+def streams(queue: list[dict], lang: str) -> list[list[dict]]:
+    """Waiting clips in LANG grouped by stream (job), oldest stream first, each stream's
+    clips in queue order (best first)."""
+    jobs: dict[str, list[dict]] = {}
+    for item in waiting(queue, lang):
+        jobs.setdefault(item["id"].rsplit("/", 1)[0], []).append(item)
+    return list(jobs.values())
+
+
 def hand_over(queue: list[dict], today: str, fetch) -> list[dict]:
-    """Today's clips to post by hand, PER_SLOT of each language alternating: those already
-    handed over today, or else the next ones nobody has (oldest slot first). fetch(item)
-    pulls the video; a clip it can't pull (pruned from clipper-out) is marked lost and
-    the next one takes its place."""
+    """Today's clips to post by hand: for each language, PER_SLOT clips of one stream (the
+    oldest with that many waiting, else the oldest with any; its other clips are dropped)
+    in the stream's order, alternating languages. A second run the same day gives the same
+    clips. fetch(item) pulls the video; a clip it can't pull (pruned from clipper-out) is
+    marked lost."""
     per_lang = []
     for lang in LANGS:
+        batch = [q for q in queue if q.get("delivered") == today and q.get("lang", "es") == lang]
+        if not batch:
+            waiting_streams = streams(queue, lang)
+            pick = ([s for s in waiting_streams if len(s) >= PER_SLOT] or waiting_streams or [[]])[0]
+            batch = pick[:PER_SLOT]
+            for item in pick[PER_SLOT:]:
+                item["delivered"] = "sobrante"
         out = []
-        for item in [q for q in queue if q.get("delivered") == today and q.get("lang", "es") == lang] \
-                or waiting(queue, lang):
-            if len(out) == PER_SLOT:
-                break
+        for item in sorted(batch, key=lambda q: q["id"]):  # clip numbers follow the stream
             try:
                 fetch(item)
             except subprocess.CalledProcessError:
@@ -415,7 +430,9 @@ def cmd_today(out_dir: str) -> None:
         lines += [dest.name, item["title"], ""]
     (out / "captions.txt").write_text("\n".join(lines))
     print("\n".join(lines))
-    print(f"Quedan {len(waiting(queue, 'es'))} clips de streamers en español y {len(waiting(queue, 'en'))} en inglés.")
+    for lang, label in (("es", "en español"), ("en", "en inglés")):
+        ready = sum(len(s) >= PER_SLOT for s in streams(queue, lang))
+        print(f"Quedan {ready} streams completos {label} ({len(waiting(queue, lang))} clips).")
 
 
 def cmd_mark(results_path: str) -> None:

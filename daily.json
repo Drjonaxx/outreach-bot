@@ -1,5 +1,5 @@
 {
-  "_comment": "Streamers de la rutina diaria (8:47 a.m. hora de Puerto Rico). Cada uno se procesa solo en sus días ('days', en inglés). El usuario sube 8 clips al día: 4 de streamers que hablan español y 4 de streamers que hablan inglés (subtitulados al español), así que cada día hay uno de cada idioma. Si uno tiene campaña pagada, pon sus reglas en 'campaign'.",
+  "_comment": "Streamers de la rutina diaria (8:47 a.m. hora de Puerto Rico). Cada uno se procesa solo en sus días ('days', en inglés). El usuario sube 8 clips al día: 4 de UN stream de un streamer que habla español y 4 de UN stream de uno que habla inglés (subtitulados al español), repartidos a lo largo del stream completo. Por eso se transcribe el VOD entero (limit_minutes es solo un tope de seguridad para el tiempo de CI). Si uno tiene campaña pagada, pon sus reglas en 'campaign'.",
   "streamers": [
     {
       "slug": "westcol",
@@ -11,9 +11,9 @@
       ],
       "language": "es",
       "subtitles": "original",
-      "limit_minutes": 150,
+      "limit_minutes": 900,
       "layout": "fit",
-      "clips": "4-5",
+      "clips": "4",
       "credit": "🎥Westcol (Kick)",
       "hashtags": [
         "westcol",
@@ -35,9 +35,9 @@
       ],
       "language": "es",
       "subtitles": "original",
-      "limit_minutes": 150,
+      "limit_minutes": 900,
       "layout": "fit",
-      "clips": "4-5",
+      "clips": "4",
       "credit": "🎥Davoo Xeneize (Kick)",
       "hashtags": [
         "davooxeneize",
@@ -58,9 +58,9 @@
       ],
       "language": "es",
       "subtitles": "original",
-      "limit_minutes": 150,
+      "limit_minutes": 900,
       "layout": "fit",
-      "clips": "4-5",
+      "clips": "4",
       "credit": "🎥Spreen (Kick)",
       "hashtags": [
         "spreen",
@@ -81,9 +81,9 @@
       ],
       "language": "en",
       "subtitles": "es",
-      "limit_minutes": 150,
+      "limit_minutes": 900,
       "layout": "fit",
-      "clips": "4-5",
+      "clips": "4",
       "credit": "🎥LordKebun (Kick)",
       "hashtags": [
         "gtarp",
@@ -106,9 +106,9 @@
       ],
       "language": "en",
       "subtitles": "es",
-      "limit_minutes": 150,
+      "limit_minutes": 900,
       "layout": "fit",
-      "clips": "4-5",
+      "clips": "4",
       "credit": "🎥xQc (Kick)",
       "hashtags": [
         "xqc",
@@ -130,9 +130,9 @@
       ],
       "language": "en",
       "subtitles": "es",
-      "limit_minutes": 150,
+      "limit_minutes": 900,
       "layout": "fit",
-      "clips": "4-5",
+      "clips": "4",
       "credit": "🎥Kaysan (Kick)",
       "hashtags": [
         "kaysan",
@@ -154,9 +154,9 @@
       ],
       "language": "en",
       "subtitles": "es",
-      "limit_minutes": 150,
+      "limit_minutes": 900,
       "layout": "fit",
-      "clips": "4-5",
+      "clips": "4",
       "credit": "🎥Konvy (Kick)",
       "hashtags": [
         "konvy",
