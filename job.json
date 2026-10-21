@@ -1,10 +1,9 @@
 {
-  "name": "harry-2026-10-20",
-  "url": "https://kick.com/harry",
+  "name": "cry-2026-10-21",
+  "url": "https://kick.com/cry",
   "vod": "0",
-  "language": "en",
+  "language": "es",
   "whisper_model": "small",
   "limit_minutes": 900,
-  "layout": "fit",
-  "only": [3]
+  "layout": "fit"
 }
