@@ -1,8 +1,8 @@
 {
-  "name": "sramilcar-2026-10-21",
-  "url": "https://kick.com/sramilcar",
+  "name": "kaysan-2026-10-21",
+  "url": "https://kick.com/kaysan",
   "vod": "0",
-  "language": "es",
+  "language": "en",
   "whisper_model": "small",
   "limit_minutes": 900,
   "layout": "fit"
