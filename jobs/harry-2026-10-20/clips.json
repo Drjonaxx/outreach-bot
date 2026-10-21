@@ -211,8 +211,8 @@
     ]
   },
   {
-    "start": 33260.39,
-    "end": 33311.7,
+    "start": 33259.89,
+    "end": 33311.2,
     "title": "Iban a robar un banco… pero estaba encima de un bus 🚌",
     "hook": "Atrapado encima de un bus",
     "description": "En GTA RP (NoPixel), el plan para robar un banco se complica: su compañero está atrapado en el techo de un bus.",
@@ -229,57 +229,57 @@
     "reason": "bus",
     "keep": [
       [
-        33260.39,
-        33264.35
+        33259.89,
+        33263.85
       ],
       [
-        33268.65,
-        33294.82
+        33268.15,
+        33294.32
       ],
       [
-        33299.04,
-        33311.7
+        33298.54,
+        33311.2
       ]
     ],
     "subs": [
       {
-        "start": 33260.37,
-        "end": 33264.37,
+        "start": 33259.87,
+        "end": 33263.87,
         "text": "¡Lo tengo! Ya podemos robar un banco fácil. ¡Vamos a robar un banco!"
       },
       {
-        "start": 33268.77,
-        "end": 33273.47,
+        "start": 33268.27,
+        "end": 33272.97,
         "text": "Pero recógeme, estoy encima de un bus. Empecé a hacer bus surfing."
       },
       {
-        "start": 33277.68,
-        "end": 33280.46,
+        "start": 33277.18,
+        "end": 33279.96,
         "text": "¿Me puedes recoger? No sé cómo bajarme."
       },
       {
-        "start": 33280.46,
-        "end": 33283.0,
+        "start": 33279.96,
+        "end": 33282.5,
         "text": "Además me raspé la rodilla y necesito una curita."
       },
       {
-        "start": 33285.3,
-        "end": 33288.2,
+        "start": 33284.8,
+        "end": 33287.7,
         "text": "Creo que este bus va para el norte. No puedo controlar a dónde va."
       },
       {
-        "start": 33288.4,
-        "end": 33294.84,
+        "start": 33287.9,
+        "end": 33294.34,
         "text": "Ya voy, ya voy… ¡dale, dale! Y después robamos un banco."
       },
       {
-        "start": 33299.16,
-        "end": 33305.72,
+        "start": 33298.66,
+        "end": 33305.22,
         "text": "¿Podemos esperar a mañana? Cuando tengas más energía."
       },
       {
-        "start": 33305.72,
-        "end": 33311.72,
+        "start": 33305.22,
+        "end": 33311.22,
         "text": "Sí, vamos a ser más gente. Bueno, mañana."
       }
     ]
