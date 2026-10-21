@@ -111,11 +111,11 @@
     ]
   },
   {
-    "start": 15206.26,
-    "end": 15265.87,
-    "title": "¿Pagas la cuenta si llega Gordon Ramsay? 🐀",
-    "hook": "¿Pagas la cuenta?",
-    "description": "Cry se imagina cenando tranquilo cuando llega Gordon Ramsay a salvar el restaurante… y tiene una duda muy seria.",
+    "start": 10751.2,
+    "end": 10799.3,
+    "title": "Renuncié al reto de 100 días… y fue para nada 💀",
+    "hook": "Reto de 100 días",
+    "description": "Cry iba por la mitad de un reto de 100 días de stream, pero lo tenían castigado. Renunció para quitarse el castigo… y no funcionó.",
     "hashtags": [
       "cry",
       "kick",
@@ -124,77 +124,81 @@
       "quedijoelgringo"
     ],
     "score": 7,
-    "reason": "ramsay",
+    "reason": "reto",
     "keep": [
       [
-        15206.26,
-        15244.42
+        10751.2,
+        10764.98
       ],
       [
-        15258.23,
-        15265.87
+        10771.82,
+        10790.86
+      ],
+      [
+        10792.64,
+        10799.3
       ]
     ],
     "subs": [
       {
-        "start": 15206.38,
-        "end": 15211.38,
-        "text": "Imagínate estar en un restaurante y que llegue el chef Ramsay…"
+        "start": 10751.32,
+        "end": 10753.3,
+        "text": "Por cada sub, un día de stream."
       },
       {
-        "start": 15211.38,
-        "end": 15215.66,
-        "text": "gritando: «¡Hay una puta rata muerta donde el pollo!»"
+        "start": 10754.68,
+        "end": 10756.88,
+        "text": "Y fueron 100 subs en total."
       },
       {
-        "start": 15219.14,
-        "end": 15222.9,
-        "text": "Y tú así de: «¿Cómo? ¿Qué te pasa?»"
+        "start": 10756.98,
+        "end": 10759.16,
+        "text": "Así que empezó el challenge de 100 días de stream."
       },
       {
-        "start": 15223.28,
-        "end": 15225.48,
-        "text": "O sea, tú cenando de chill, ¿no?"
+        "start": 10761.5,
+        "end": 10764.3,
+        "text": "Llegamos a la mitad, chulas. Como al 50."
       },
       {
-        "start": 15226.6,
-        "end": 15231.1,
-        "text": "Y llega el chef Ramsay a salvar el restaurante de la quiebra."
+        "start": 10771.94,
+        "end": 10774.16,
+        "text": "Y pasa que estábamos mega castigados."
       },
       {
-        "start": 15232.23,
-        "end": 15235.3,
-        "text": "Y se escucha: «¡Están usando aceite de motor para cocinar!»"
+        "start": 10774.78,
+        "end": 10777.4,
+        "text": "Entonces tuve que renunciar al challenge…"
       },
       {
-        "start": 15236.0,
-        "end": 15239.4,
-        "text": "«¡Este aceite venía con el restaurante!»"
+        "start": 10778.5,
+        "end": 10783.06,
+        "text": "…para estar una semana inactivo, a ver si así me quitaban el castigo."
       },
       {
-        "start": 15240.32,
-        "end": 15242.74,
-        "text": "«¡Una puta cucaracha en la res!»"
+        "start": 10783.64,
+        "end": 10784.12,
+        "text": "Y no me lo quitaron."
       },
       {
-        "start": 15243.1,
-        "end": 15244.3,
-        "text": "Y tú con tu hamburguesa."
+        "start": 10784.76,
+        "end": 10785.6,
+        "text": "Así que perdí el challenge."
       },
       {
-        "start": 15258.35,
-        "end": 15259.6,
-        "text": "Y te queda el último bocado…"
+        "start": 10786.18,
+        "end": 10789.9,
+        "text": "Y estuve 15 días seguidos castigado."
       },
       {
-        "start": 15260.53,
-        "end": 15261.73,
-        "text": "y ya no sabes qué hacer."
+        "start": 10792.76,
+        "end": 10795.56,
+        "text": "Imagínate los ánimos, por las nubes."
       },
       {
-        "start": 15262.37,
-        "end": 15265.53,
-        "text": "¿Hay que pagar? ¿Se pide la cuenta? ¿Qué haces en esos casos?"
+        "start": 10796.22,
+        "end": 10799.18,
+        "text": "Y lo hubiera completado al 100%."
       }
     ]
   },
