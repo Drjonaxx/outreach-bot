@@ -1,8 +1,8 @@
 {
-  "name": "saab-2026-10-22",
-  "url": "https://kick.com/saab",
+  "name": "natalan-2026-10-22",
+  "url": "https://kick.com/natalan",
   "vod": "0",
-  "language": "en",
+  "language": "es",
   "whisper_model": "small",
   "limit_minutes": 900,
   "layout": "fit"
