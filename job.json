@@ -1,12 +1,9 @@
 {
-  "name": "shadoune666-2026-10-22b",
-  "url": "https://kick.com/shadoune666",
-  "vod": "1",
+  "name": "cry-2026-10-22b",
+  "url": "https://kick.com/cry",
+  "vod": "0",
   "language": "es",
   "whisper_model": "small",
   "limit_minutes": 900,
-  "layout": "fit",
-  "only": [
-    3
-  ]
+  "layout": "fit"
 }
