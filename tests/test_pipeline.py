@@ -331,3 +331,42 @@ def test_social_schedules_private_uploads_so_the_slot_needs_no_quota(tmp_path):
     assert calls == ["YOUTUBE_POST_COMMENT"]
     # A slot already too close (or past) is not scheduled: start() makes it public itself.
     assert ns["_schedule"]("v2", "2020-01-01T00:00:00Z") is None
+
+
+def test_kick_vod_without_page_falls_back_to_the_channel_playlist(monkeypatch, tmp_path):
+    import yt_dlp
+
+    from clipper import download
+
+    uuid = "67246561-9255-46d0-a8ba-846c7ba43b25"
+    page = f"https://kick.com/saab/videos/{uuid}"
+    playlist = "https://stream.kick.com/ivs/v1/x/master.m3u8"
+    monkeypatch.setattr(download, "kick_listing", lambda channel: [
+        {"source": "https://stream.kick.com/other.m3u8", "video": {"uuid": "nope"}},
+        {"source": playlist, "video": {"uuid": uuid, "status": "ready"}},
+    ])
+    opened = []
+
+    class FakeYDL:
+        def __init__(self, opts):
+            pass
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *exc):
+            return False
+
+        def extract_info(self, url, download):
+            opened.append(url)
+            if url == page:
+                raise yt_dlp.utils.DownloadError(f"ERROR: [kick:vod] {uuid}: NOT_FOUND: Requested resource not found")
+            return {"id": "master", "title": "Commissioner Dawson", "webpage_url": url}
+
+        def prepare_filename(self, info):
+            return str(tmp_path / "master.mp4")
+
+    monkeypatch.setattr(yt_dlp, "YoutubeDL", FakeYDL)
+    src = download.fetch(page, tmp_path, download=False)
+    assert opened == [page, playlist]
+    assert (src.url, src.id) == (page, uuid)

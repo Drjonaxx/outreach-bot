@@ -7,6 +7,7 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 
 KICK_CHANNEL = re.compile(r"^https?://(?:www\.)?kick\.com/([\w-]+)/?(?:[?#].*)?$")
+KICK_VOD = re.compile(r"^https?://(?:www\.)?kick\.com/([\w-]+)/videos/([0-9a-f-]{36})")
 
 
 @dataclass
@@ -30,8 +31,8 @@ def slugify(text: str, max_len: int = 60) -> str:
     return text[:max_len] or "video"
 
 
-def kick_vods(channel: str) -> list[dict]:
-    """List a Kick channel's past broadcasts, newest first."""
+def kick_listing(channel: str) -> list[dict]:
+    """Raw past-broadcast entries of a Kick channel, as its API returns them."""
     import yt_dlp
     from yt_dlp.networking import Request
     from yt_dlp.networking.impersonate import ImpersonateTarget
@@ -41,10 +42,31 @@ def kick_vods(channel: str) -> list[dict]:
             f"https://kick.com/api/v2/channels/{channel}/videos",
             extensions={"impersonate": ImpersonateTarget("chrome")},
         ))
-        data = json.loads(resp.read())
+        return json.loads(resp.read())
 
+
+def kick_vod_stream(url: str) -> str | None:
+    """HLS playlist of a Kick VOD taken from its channel's listing, or None.
+
+    Kick's video page can answer NOT_FOUND for a VOD that its channel still lists; the
+    listing's own playlist URL may still work then.
+    """
+    m = KICK_VOD.match(url)
+    if not m:
+        return None
+    for v in kick_listing(m.group(1)):
+        video = v.get("video") or {}
+        if video.get("uuid") == m.group(2):
+            print(f"  Kick: {url} sin página; estado {video.get('status')!r}, "
+                  f"privado={video.get('is_private')}, borrado={video.get('deleted_at')}")
+            return v.get("source") or None
+    return None
+
+
+def kick_vods(channel: str) -> list[dict]:
+    """List a Kick channel's past broadcasts, newest first."""
     vods = []
-    for v in data:
+    for v in kick_listing(channel):
         video = v.get("video") or {}
         if not video.get("uuid"):
             continue
@@ -108,6 +130,15 @@ def _extract(source: str, opts: dict, download: bool) -> tuple[dict, Path]:
                     path = Path(ydl.prepare_filename(info))
             return info, path
         except yt_dlp.utils.DownloadError as e:
+            if "[kick:vod]" in str(e) and "NOT_FOUND" in str(e):
+                stream = kick_vod_stream(source)
+                if not stream:
+                    raise
+                print("  Usando la lista de reproducción del canal en su lugar.")
+                info, path = _extract(stream, opts, download)
+                info["webpage_url"] = source
+                info["id"] = KICK_VOD.match(source).group(2)
+                return info, path
             if "not a bot" not in str(e):
                 raise
             print(f"  YouTube pidió verificación (cliente {client or 'default'}); probando otro…")
