@@ -1,0 +1,29 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:40.71,Hook,,0,0,0,,PAGÓ 10 DÓLARES POR\NESTO
+Dialogue: 0,0:00:00.12,0:00:02.70,Sub,,0,0,0,,{\fad(60,0)}No, son los stickers del\NCounter, boludo,
+Dialogue: 0,0:00:02.70,0:00:04.96,Sub,,0,0,0,,{\fad(60,0)}pero vienen diminutos.
+Dialogue: 0,0:00:05.08,0:00:08.24,Sub,,0,0,0,,{\fad(60,0)}¡Ah, no! Esto es una\Nlocura. Cuatro
+Dialogue: 0,0:00:08.24,0:00:12.94,Sub,,0,0,0,,{\fad(60,0)}stickers diminutos de\NTitan Holo del Counter.
+Dialogue: 0,0:00:13.18,0:00:16.19,Sub,,0,0,0,,{\fad(60,0)}No, no, no, son diminutos,\Nboludo.
+Dialogue: 0,0:00:16.19,0:00:18.77,Sub,,0,0,0,,{\fad(60,0)}Es una locura. ¿Cuánto me\Ncobraron esto?
+Dialogue: 0,0:00:19.83,0:00:22.35,Sub,,0,0,0,,{\fad(60,0)}No... no quiero ni saber.
+Dialogue: 0,0:00:22.35,0:00:23.21,Sub,,0,0,0,,{\fad(60,0)}Son diminutos
+Dialogue: 0,0:00:23.97,0:00:27.05,Sub,,0,0,0,,{\fad(60,0)}y están mal cortados\Nencima. No lo
+Dialogue: 0,0:00:27.05,0:00:29.87,Sub,,0,0,0,,{\fad(60,0)}puedo creer. Creo que fue\Nla peor compra de todas.
+Dialogue: 0,0:00:29.99,0:00:32.93,Sub,,0,0,0,,{\fad(60,0)}Posta, 10 dólares de\Nstickers.
+Dialogue: 0,0:00:32.93,0:00:35.53,Sub,,0,0,0,,{\fad(60,0)}¡10 dólares eso de\Nstickers! Y yo
+Dialogue: 0,0:00:35.53,0:00:40.59,Sub,,0,0,0,,{\fad(60,0)}me los imaginaba grandes,\Nbien cortados.

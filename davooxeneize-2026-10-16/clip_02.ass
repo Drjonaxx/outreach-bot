@@ -1,0 +1,36 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:49.64,Hook,,0,0,0,,SU VECINO LO DEJÓ SIN\NASADO
+Dialogue: 0,0:00:00.00,0:00:02.48,Sub,,0,0,0,,{\fad(60,0)}Tengo un mini gimnasio en\Nel patio de mi casa.
+Dialogue: 0,0:00:02.48,0:00:04.26,Sub,,0,0,0,,{\fad(60,0)}Los tres días que\Nentrené...
+Dialogue: 0,0:00:05.58,0:00:08.50,Sub,,0,0,0,,{\fad(60,0)}olía el humo del asado que\Nestaba haciendo
+Dialogue: 0,0:00:08.50,0:00:10.88,Sub,,0,0,0,,{\fad(60,0)}mi vecino. El lunes\Nentrené con el humo del
+Dialogue: 0,0:00:10.88,0:00:13.56,Sub,,0,0,0,,{\fad(60,0)}asado: listo, no dije\Nnada. El martes entrené
+Dialogue: 0,0:00:13.56,0:00:15.66,Sub,,0,0,0,,{\fad(60,0)}con el humo del asado:\Nlisto, no dije nada.
+Dialogue: 0,0:00:15.66,0:00:18.42,Sub,,0,0,0,,{\fad(60,0)}Le mando un mensaje: «Che,\N¿qué onda, loco?
+Dialogue: 0,0:00:18.42,0:00:20.40,Sub,,0,0,0,,{\fad(60,0)}La verdad, yo estoy\Nentrenando, estoy
+Dialogue: 0,0:00:20.40,0:00:22.56,Sub,,0,0,0,,{\fad(60,0)}comiendo sano, pero huelo\Nel asado y me dan ganas
+Dialogue: 0,0:00:22.56,0:00:25.04,Sub,,0,0,0,,{\fad(60,0)}de ir. Invitame la\Npróxima, dejo de entrenar.
+Dialogue: 0,0:00:25.32,0:00:27.56,Sub,,0,0,0,,{\fad(60,0)}Invitame al asado». Me\Nmanda un audio
+Dialogue: 0,0:00:27.56,0:00:29.78,Sub,,0,0,0,,{\fad(60,0)}diciendo: «No, no, vos\Ntenés que entrenar y
+Dialogue: 0,0:00:29.78,0:00:31.64,Sub,,0,0,0,,{\fad(60,0)}tenés que comer sano.\NTenés que prepararte para
+Dialogue: 0,0:00:31.64,0:00:33.84,Sub,,0,0,0,,{\fad(60,0)}la revancha contra Luzu\Ndespués del partido
+Dialogue: 0,0:00:33.84,0:00:36.06,Sub,,0,0,0,,{\fad(60,0)}que jugaste el otro día.\NTenés que ponerte bien
+Dialogue: 0,0:00:36.06,0:00:38.02,Sub,,0,0,0,,{\fad(60,0)}futbolística y\Nfísicamente». Bueno...
+Dialogue: 0,0:00:38.02,0:00:40.62,Sub,,0,0,0,,{\fad(60,0)}Bueno, para, era un\Nchiste, vecino.
+Dialogue: 0,0:00:40.62,0:00:43.78,Sub,,0,0,0,,{\fad(60,0)}¡Era un chiste, vecino! Me\Nretiró
+Dialogue: 0,0:00:43.78,0:00:46.56,Sub,,0,0,0,,{\fad(60,0)}la palabra, boludo. Me\Nretiró la palabra mal.
+Dialogue: 0,0:00:46.80,0:00:49.52,Sub,,0,0,0,,{\fad(60,0)}Me retiró la palabra,\Namigo. ¡No se puede así!

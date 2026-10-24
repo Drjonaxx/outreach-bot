@@ -1,0 +1,26 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:37.42,Hook,,0,0,0,,LE ROBAN LA PLANTA
+Dialogue: 0,0:00:00.12,0:00:02.84,Sub,,0,0,0,,{\fad(60,0)}Tenemos una planta en la\Nestación que nos sube la\Nmoral, y se la siguen\Nrobando.
+Dialogue: 0,0:00:03.30,0:00:05.74,Sub,,0,0,0,,{\fad(60,0)}Gilly y yo la compramos en\Nla casa de empeño por mil\Ndólares.
+Dialogue: 0,0:00:05.94,0:00:08.44,Sub,,0,0,0,,{\fad(60,0)}La rescatamos del cuarto\Nde atrás porque no le daba\Nel sol.
+Dialogue: 0,0:00:08.84,0:00:12.24,Sub,,0,0,0,,{\fad(60,0)}La pusimos en la sala de\Nreuniones… y la robaron\Ndos veces.
+Dialogue: 0,0:00:13.20,0:00:15.04,Sub,,0,0,0,,{\fad(60,0)}Esta noche compramos tres\Nmás.
+Dialogue: 0,0:00:15.44,0:00:16.60,Sub,,0,0,0,,{\fad(60,0)}Sí, pero se las siguen\Nrobando.
+Dialogue: 0,0:00:17.14,0:00:22.84,Sub,,0,0,0,,{\fad(60,0)}Hace falta otro anuncio de\N«hagan su trabajo», porque\Nsiguen dejando las puertas\Nsin llave.
+Dialogue: 0,0:00:23.42,0:00:25.98,Sub,,0,0,0,,{\fad(60,0)}Entró un local y se robó\Nla planta.
+Dialogue: 0,0:00:26.40,0:00:33.78,Sub,,0,0,0,,{\fad(60,0)}Imagínate, con toda la\Ngente que nos está\Ndisparando… que puedan\Nentrar así a la estación.
+Dialogue: 0,0:00:34.02,0:00:37.30,Sub,,0,0,0,,{\fad(60,0)}{\c&H007AD2FF&}DAWSON:{\c&H00FFFFFF&} Cierren las puertas. Hagan\Nsu trabajo. ¡Maldita sea!

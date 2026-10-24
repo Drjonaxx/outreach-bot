@@ -1,0 +1,30 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:56.74,Hook,,0,0,0,,ATASCADO POR UN\NSNORLAX
+Dialogue: 0,0:00:00.00,0:00:01.35,Sub,,0,0,0,,{\fad(60,0)}Lo cuento rápido porque a\Nnadie le va a importar.
+Dialogue: 0,0:00:01.46,0:00:06.55,Sub,,0,0,0,,{\fad(60,0)}De pequeño, como estaba\Nbien idiota, como todos\Nlos niños, nunca leía las\Ninstrucciones de nada.
+Dialogue: 0,0:00:07.82,0:00:11.05,Sub,,0,0,0,,{\fad(60,0)}Algo que no ha cambiado a\Ndía de hoy.
+Dialogue: 0,0:00:11.52,0:00:14.45,Sub,,0,0,0,,{\fad(60,0)}Nunca leía nada. Me\Nsaltaba todas las\Nconversaciones de los\Njuegos.
+Dialogue: 0,0:00:15.00,0:00:15.95,Sub,,0,0,0,,{\fad(60,0)}No sabía qué hacer.
+Dialogue: 0,0:00:16.64,0:00:21.65,Sub,,0,0,0,,{\fad(60,0)}En mi primer Pokémon de\Ntoda la vida había un puto\NSnorlax que no me dejaba\Npasar.
+Dialogue: 0,0:00:22.14,0:00:25.15,Sub,,0,0,0,,{\fad(60,0)}No sabía qué flauta tenía\Nque tocar para que se\Nfuera a la verga.
+Dialogue: 0,0:00:25.62,0:00:30.55,Sub,,0,0,0,,{\fad(60,0)}Me quedé como tres meses\Ndando vueltas, subiendo de\Nnivel…
+Dialogue: 0,0:00:30.64,0:00:37.35,Sub,,0,0,0,,{\fad(60,0)}…y llegué a un nivel tan\Nalto con mi Pokémon\Nprincipal que me pasé todo\Nel juego con ataque\Nbásico.
+Dialogue: 0,0:00:37.58,0:00:38.35,Sub,,0,0,0,,{\fad(60,0)}Me los chingaba a todos\Nasí.
+Dialogue: 0,0:00:41.00,0:00:46.95,Sub,,0,0,0,,{\fad(60,0)}Y desde entonces tengo una\Nnorma: pasarme todos los\NPokémon con uno solo, el\Nprincipal.
+Dialogue: 0,0:00:48.20,0:00:50.45,Sub,,0,0,0,,{\fad(60,0)}Solo con ese. No necesito\Nmás.
+Dialogue: 0,0:00:50.70,0:00:51.35,Sub,,0,0,0,,{\fad(60,0)}¿Y has conseguido alguno?
+Dialogue: 0,0:00:51.90,0:00:56.55,Sub,,0,0,0,,{\fad(60,0)}Sí, no mames, voy por el\NY. Ya lo estoy terminando.

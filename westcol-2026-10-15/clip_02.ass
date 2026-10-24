@@ -1,0 +1,23 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:28.28,Hook,,0,0,0,,¿POR QUÉ SE LLAMA\NVALLENATO?
+Dialogue: 0,0:00:00.02,0:00:03.92,Sub,,0,0,0,,{\fad(60,0)}El término «vallenato» era\Ndespectivo.
+Dialogue: 0,0:00:03.92,0:00:10.42,Sub,,0,0,0,,{\fad(60,0)}Hubo una plaga en el sur\Nde La Guajira...
+Dialogue: 0,0:00:10.42,0:00:13.42,Sub,,0,0,0,,{\fad(60,0)}y la gente quedaba con la\Npiel manchada.
+Dialogue: 0,0:00:13.42,0:00:17.92,Sub,,0,0,0,,{\fad(60,0)}Y como las crías de la\Nballena salen manchadas,\Nblanco y negro...
+Dialogue: 0,0:00:17.92,0:00:22.42,Sub,,0,0,0,,{\fad(60,0)}les decían «vallenatos» a\Nlos campesinos que tocaban\Nacordeón.
+Dialogue: 0,0:00:22.42,0:00:26.62,Sub,,0,0,0,,{\fad(60,0)}Porque vivían en el patio\Nde las casas.
+Dialogue: 0,0:00:27.32,0:00:28.22,Sub,,0,0,0,,{\fad(60,0)}¡Ni yo sabía eso!

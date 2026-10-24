@@ -1,0 +1,23 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:32.18,Hook,,0,0,0,,MI BROTHER DE LA\NINFANCIA
+Dialogue: 0,0:00:00.12,0:00:05.24,Sub,,0,0,0,,{\fad(60,0)}Tengo aquí a mi brother\Nviendo mi mano así: ¿será\Nque toca golpe o abrazo?
+Dialogue: 0,0:00:05.80,0:00:09.40,Sub,,0,0,0,,{\fad(60,0)}Quiero agradecerles que lo\Nhayan adoptado…
+Dialogue: 0,0:00:10.30,0:00:11.60,Sub,,0,0,0,,{\fad(60,0)}…de esta forma tan cálida.
+Dialogue: 0,0:00:12.42,0:00:18.06,Sub,,0,0,0,,{\fad(60,0)}Me alegro de que lo hayan\Npodido conocer, que le\Nhayan dado la oportunidad\Ny que les haya caído bien…
+Dialogue: 0,0:00:18.24,0:00:21.96,Sub,,0,0,0,,{\fad(60,0)}…porque es mi brother de\Nla infancia, ¿no?
+Dialogue: 0,0:00:22.38,0:00:28.66,Sub,,0,0,0,,{\fad(60,0)}Desde que yo no era Cry,\Nél estuvo ahí. Y ahora que\Nsoy Cry, aquí sigue.
+Dialogue: 0,0:00:30.36,0:00:31.86,Sub,,0,0,0,,{\fad(60,0)}Así que ahí vamos con\Ntodo.

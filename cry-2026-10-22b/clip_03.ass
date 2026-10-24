@@ -1,0 +1,26 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:37.50,Hook,,0,0,0,,SUSHI CON PLÁTANO
+Dialogue: 0,0:00:00.12,0:00:04.32,Sub,,0,0,0,,{\fad(60,0)}Yo vi sushi con plátano.\NLe pregunté a la mesera:\N«¿Esto es real?»
+Dialogue: 0,0:00:06.90,0:00:10.32,Sub,,0,0,0,,{\fad(60,0)}Me dice: «Sí, ¿gusta?». Y\Nyo: «No…»
+Dialogue: 0,0:00:11.30,0:00:14.42,Sub,,0,0,0,,{\fad(60,0)}«…ahí déjalo». Porque a\Nsaber…
+Dialogue: 0,0:00:15.50,0:00:18.12,Sub,,0,0,0,,{\fad(60,0)}No sabía que aquí se\Ncelebraba el Día de los\NInocentes tan rápido.
+Dialogue: 0,0:00:18.68,0:00:21.26,Sub,,0,0,0,,{\fad(60,0)}Y luego se quejan de la\Npiña en la pizza. ¿Qué\Npedo?
+Dialogue: 0,0:00:23.93,0:00:25.56,Sub,,0,0,0,,{\fad(60,0)}¿Estamos para sabores\Nexóticos o no?
+Dialogue: 0,0:00:25.87,0:00:28.03,Sub,,0,0,0,,{\fad(60,0)}Paso del tema. ¿Plátano en\Nel sushi?
+Dialogue: 0,0:00:30.70,0:00:31.43,Sub,,0,0,0,,{\fad(60,0)}No, no, no.
+Dialogue: 0,0:00:33.02,0:00:35.83,Sub,,0,0,0,,{\fad(60,0)}No sé qué reacción química\Npuede hacer en tu\Nestómago.
+Dialogue: 0,0:00:35.94,0:00:37.03,Sub,,0,0,0,,{\fad(60,0)}La verdad, no sé ni si\Ndeberías.

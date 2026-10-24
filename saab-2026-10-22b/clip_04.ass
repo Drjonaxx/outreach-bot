@@ -1,0 +1,28 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:34.54,Hook,,0,0,0,,ERA SOLO UNA MULTA
+Dialogue: 0,0:00:00.00,0:00:03.02,Sub,,0,0,0,,{\fad(60,0)}No tengo que arrestarte,\Npero te voy a poner una\Nmulta.
+Dialogue: 0,0:00:03.52,0:00:07.00,Sub,,0,0,0,,{\fad(60,0)}Solo una multa por el\Ncarro robado. Es un delito\Nmenor.
+Dialogue: 0,0:00:07.50,0:00:12.14,Sub,,0,0,0,,{\fad(60,0)}Tienes como una herida en\Nel ojo.
+Dialogue: 0,0:00:13.10,0:00:14.34,Sub,,0,0,0,,{\fad(60,0)}Me golpeé la cabeza.
+Dialogue: 0,0:00:14.46,0:00:19.16,Sub,,0,0,0,,{\fad(60,0)}Solo tengo que procesarte,\Nasegurarme de que no\Ntengas nada más encima, y\Nte puedes ir.
+Dialogue: 0,0:00:19.54,0:00:21.28,Sub,,0,0,0,,{\fad(60,0)}Si me procesas, me tienes\Nque revisar los bolsillos.
+Dialogue: 0,0:00:21.82,0:00:25.48,Sub,,0,0,0,,{\fad(60,0)}Sí. ¿Eso es un problema?
+Dialogue: 0,0:00:27.06,0:00:27.78,Sub,,0,0,0,,{\fad(60,0)}Sí, eso es un problema.
+Dialogue: 0,0:00:27.96,0:00:29.48,Sub,,0,0,0,,{\fad(60,0)}¡Oye, no te vayas! ¡Oye,\Noye!
+Dialogue: 0,0:00:30.24,0:00:30.68,Sub,,0,0,0,,{\fad(60,0)}¡Mierda!
+Dialogue: 0,0:00:31.20,0:00:32.88,Sub,,0,0,0,,{\fad(60,0)}¡Nos vemos, hermano!
+Dialogue: 0,0:00:33.48,0:00:34.18,Sub,,0,0,0,,{\fad(60,0)}Se te fue.

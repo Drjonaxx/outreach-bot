@@ -1,0 +1,25 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:33.66,Hook,,0,0,0,,¿80% DE LAS BACHATAS\NSON VALLENATO?
+Dialogue: 0,0:00:00.12,0:00:05.72,Sub,,0,0,0,,{\fad(60,0)}El vallenato romántico...\Nel 80 % de las bachatas\Ndel mundo son música\Nvallenata.
+Dialogue: 0,0:00:06.12,0:00:07.70,Sub,,0,0,0,,{\fad(60,0)}¿Se han inspirado en\Nmúsica vallenata?
+Dialogue: 0,0:00:08.18,0:00:08.64,Sub,,0,0,0,,{\fad(60,0)}Sí.
+Dialogue: 0,0:00:10.22,0:00:17.16,Sub,,0,0,0,,{\fad(60,0)}No solamente se han\Ninspirado: la música\Nvallenata de todos\Nnosotros la han hecho\Nbachata.
+Dialogue: 0,0:00:18.12,0:00:23.30,Sub,,0,0,0,,{\fad(60,0)}Tú ibas allá, escuchabas y\Ndecías: «eso lo hacíamos\Nnosotros»...
+Dialogue: 0,0:00:23.30,0:00:25.28,Sub,,0,0,0,,{\fad(60,0)}«Ay, pero es una bachata.\NEs dominicana».
+Dialogue: 0,0:00:25.58,0:00:28.88,Sub,,0,0,0,,{\fad(60,0)}Es una bachata... pero es\Nun vallenato.
+Dialogue: 0,0:00:29.52,0:00:30.54,Sub,,0,0,0,,{\fad(60,0)}¿Y qué género es ese?
+Dialogue: 0,0:00:31.60,0:00:33.54,Sub,,0,0,0,,{\fad(60,0)}¡El vallenato abachatado!

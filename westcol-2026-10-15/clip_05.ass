@@ -1,0 +1,27 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:01:01.31,Hook,,0,0,0,,EL VALLENATO QUE SE\NVOLVIÓ MERENGUE
+Dialogue: 0,0:00:00.00,0:00:03.17,Sub,,0,0,0,,{\fad(60,0)}Hay un personaje que se\Nllama Fernando Villalona
+Dialogue: 0,0:00:03.17,0:00:08.27,Sub,,0,0,0,,{\fad(60,0)}que se robó una canción\Nvallenata para convertirla\Nen éxito.
+Dialogue: 0,0:00:08.42,0:00:13.72,Sub,,0,0,0,,{\fad(60,0)}Miren: ♪ Cuando pisé\Ntierra patillalera... ♪
+Dialogue: 0,0:00:13.72,0:00:20.82,Sub,,0,0,0,,{\fad(60,0)}♪ ...donde tengo mi\Nfamilia ♪
+Dialogue: 0,0:00:23.42,0:00:28.52,Sub,,0,0,0,,{\fad(60,0)}Y él la cogió: ♪ «Cuando\Npisé tierra dominicana» ♪
+Dialogue: 0,0:00:28.60,0:00:33.90,Sub,,0,0,0,,{\fad(60,0)}{\c&H007AD2FF&}DOMINICANO:{\c&H00FFFFFF&} Yo pido disculpas. De\Nparte de los dominicanos,\Npido disculpas.
+Dialogue: 0,0:00:34.30,0:00:39.60,Sub,,0,0,0,,{\fad(60,0)}Cuando Rubby Pérez grabó\N«Tú vas a volar», que\Nestaba muy pegada...
+Dialogue: 0,0:00:39.87,0:00:46.36,Sub,,0,0,0,,{\fad(60,0)}llegué a Nueva York, a\NQueens, y estaba un\Ndominicano...
+Dialogue: 0,0:00:47.16,0:00:50.76,Sub,,0,0,0,,{\fad(60,0)}Le dije: «Yo soy el\Ncantante original».
+Dialogue: 0,0:00:51.06,0:00:55.16,Sub,,0,0,0,,{\fad(60,0)}Y él me decía: «¡Tú estás\Nloco, chico! ¿Qué tú estás\Nhablando?»
+Dialogue: 0,0:00:55.33,0:01:01.12,Sub,,0,0,0,,{\fad(60,0)}Fuimos al carro y trajimos\Nel CD original de «Tú vas\Na volar». Eso fue en el\N95.

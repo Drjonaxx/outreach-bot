@@ -1,0 +1,27 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:37.94,Hook,,0,0,0,,EL GATO NO LO DEJÓ\NPASAR
+Dialogue: 0,0:00:00.12,0:00:04.89,Sub,,0,0,0,,{\fad(60,0)}Pues el Happy, pinche\Npelón, se puso en las\Nescaleras del segundo\Npiso.
+Dialogue: 0,0:00:06.16,0:00:07.19,Sub,,0,0,0,,{\fad(60,0)}Y no lo dejaba pasar.
+Dialogue: 0,0:00:07.48,0:00:09.23,Sub,,0,0,0,,{\fad(60,0)}«¿Quién eres? ¿Qué haces\Naquí?»
+Dialogue: 0,0:00:11.40,0:00:12.73,Sub,,0,0,0,,{\fad(60,0)}«De aquí no pasas.»
+Dialogue: 0,0:00:13.12,0:00:17.39,Sub,,0,0,0,,{\fad(60,0)}Fue al cuarto… y se\Nencerró en el balcón.
+Dialogue: 0,0:00:18.34,0:00:19.19,Sub,,0,0,0,,{\fad(60,0)}Y no podía salir.
+Dialogue: 0,0:00:19.66,0:00:22.49,Sub,,0,0,0,,{\fad(60,0)}Ya no podía entrar a la\Ncasa porque el Happy se\Npuso en la ventana.
+Dialogue: 0,0:00:23.54,0:00:28.79,Sub,,0,0,0,,{\fad(60,0)}Y le hacía así… en la\Npuerta del balcón.
+Dialogue: 0,0:00:29.36,0:00:31.59,Sub,,0,0,0,,{\fad(60,0)}Se tuvo que dormir en el\Npuff del balcón.
+Dialogue: 0,0:00:34.38,0:00:36.79,Sub,,0,0,0,,{\fad(60,0)}La primera noche la durmió\Nen el puff del balcón.
+Dialogue: 0,0:00:37.32,0:00:37.69,Sub,,0,0,0,,{\fad(60,0)}El pobre Chris.

@@ -1,0 +1,33 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:51.84,Hook,,0,0,0,,EL JUEZ MR. K DICTA\NSENTENCIA
+Dialogue: 0,0:00:00.12,0:00:01.78,Sub,,0,0,0,,{\fad(60,0)}¡Hasta el FBI cree que es\Nculpable!
+Dialogue: 0,0:00:02.02,0:00:07.60,Sub,,0,0,0,,{\fad(60,0)}{\c&H007AD2FF&}JUEZ:{\c&H00FFFFFF&} Y yo los declaro\Nculpables, Mateo y Boom,
+Dialogue: 0,0:00:08.04,0:00:09.84,Sub,,0,0,0,,{\fad(60,0)}porque son unos estúpidos.
+Dialogue: 0,0:00:09.90,0:00:14.32,Sub,,0,0,0,,{\fad(60,0)}¿Creen que soy tan tonto\Ncomo para creer que era\Nuna broma
+Dialogue: 0,0:00:14.32,0:00:16.68,Sub,,0,0,0,,{\fad(60,0)}cuando sabían que había\Nalgo nuevo?
+Dialogue: 0,0:00:16.76,0:00:18.98,Sub,,0,0,0,,{\fad(60,0)}Había construcciones\Nnuevas. Se veía en el\Nmapa.
+Dialogue: 0,0:00:19.12,0:00:21.78,Sub,,0,0,0,,{\fad(60,0)}Se veía en lo que Ramos\Nestuvo haciendo esta\Nsemana.
+Dialogue: 0,0:00:22.02,0:00:25.44,Sub,,0,0,0,,{\fad(60,0)}Sabían lo que pasaba, pero\Nquisieron ir a verlo solos
+Dialogue: 0,0:00:25.44,0:00:27.46,Sub,,0,0,0,,{\fad(60,0)}en vez de esperar a su\Nfamilia.
+Dialogue: 0,0:00:27.70,0:00:31.56,Sub,,0,0,0,,{\fad(60,0)}Por la presente, los\Ndeclaro sin hogar cuando\Nnos mudemos a Little\NSeoul.
+Dialogue: 0,0:00:32.04,0:00:36.52,Sub,,0,0,0,,{\fad(60,0)}Mientras tanto, vivirán en\Nun campamento para\Nindigentes,
+Dialogue: 0,0:00:36.52,0:00:41.40,Sub,,0,0,0,,{\fad(60,0)}y tendrán que mudar todo\Neste almacén a la nueva\Ncuadra,
+Dialogue: 0,0:00:41.40,0:00:44.40,Sub,,0,0,0,,{\fad(60,0)}tú y Boombox.\NAbsolutamente todo.
+Dialogue: 0,0:00:44.64,0:00:45.00,Sub,,0,0,0,,{\fad(60,0)}¡Vergüenza!
+Dialogue: 0,0:00:45.76,0:00:47.08,Sub,,0,0,0,,{\fad(60,0)}¡Llévenselos, federales!
+Dialogue: 0,0:00:47.54,0:00:51.06,Sub,,0,0,0,,{\fad(60,0)}¡Vergüenza! ¡Vergüenza!\N¡Vergüenza!
+Dialogue: 0,0:00:51.44,0:00:51.84,Sub,,0,0,0,,{\fad(60,0)}Muy decepcionado,\Nmuchachos.

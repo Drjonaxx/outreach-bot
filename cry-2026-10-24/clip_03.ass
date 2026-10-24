@@ -1,0 +1,28 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:35.20,Hook,,0,0,0,,¿QUIÉN INVENTÓ EL\NBONELESS?
+Dialogue: 0,0:00:00.12,0:00:01.89,Sub,,0,0,0,,{\fad(60,0)}En España no hay boneless,\N¿verdad?
+Dialogue: 0,0:00:02.24,0:00:02.59,Sub,,0,0,0,,{\fad(60,0)}No, no.
+Dialogue: 0,0:00:02.80,0:00:04.53,Sub,,0,0,0,,{\fad(60,0)}O sea, lo inventó alguien\Nque se llama Les.
+Dialogue: 0,0:00:05.82,0:00:06.33,Sub,,0,0,0,,{\fad(60,0)}Leslie.
+Dialogue: 0,0:00:07.16,0:00:07.93,Sub,,0,0,0,,{\fad(60,0)}No, mentira.
+Dialogue: 0,0:00:08.58,0:00:10.33,Sub,,0,0,0,,{\fad(60,0)}Son alitas, pero sin el\Nhueso.
+Dialogue: 0,0:00:13.74,0:00:14.93,Sub,,0,0,0,,{\fad(60,0)}¿Se puede decir que son\Ncomo nuggets?
+Dialogue: 0,0:00:15.98,0:00:19.63,Sub,,0,0,0,,{\fad(60,0)}No, no tiene nada que ver.\NEs una pieza de pollo.
+Dialogue: 0,0:00:20.38,0:00:22.93,Sub,,0,0,0,,{\fad(60,0)}El nugget es como el pollo\Nrevuelto. Así, triturado.
+Dialogue: 0,0:00:26.46,0:00:27.93,Sub,,0,0,0,,{\fad(60,0)}Yo les digo nuggets\Npremium.
+Dialogue: 0,0:00:28.54,0:00:32.25,Sub,,0,0,0,,{\fad(60,0)}A los nuggets les ponen lo\Nque caiga, ¿no? —Lo que\Ncaiga, a veces.
+Dialogue: 0,0:00:32.76,0:00:34.35,Sub,,0,0,0,,{\fad(60,0)}Pero aquí, full premium.

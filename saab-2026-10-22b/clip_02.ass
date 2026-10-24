@@ -1,0 +1,28 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:28.54,Hook,,0,0,0,,EL PRÓXIMO BANKSY
+Dialogue: 0,0:00:00.00,0:00:03.26,Sub,,0,0,0,,{\fad(60,0)}Me dicen el próximo\NBanksy, así me dicen en la\Ncalle.
+Dialogue: 0,0:00:03.54,0:00:04.02,Sub,,0,0,0,,{\fad(60,0)}{\c&H007AD2FF&}DAWSON:{\c&H00FFFFFF&} No sé qué significa eso.
+Dialogue: 0,0:00:05.42,0:00:08.42,Sub,,0,0,0,,{\fad(60,0)}Significa que hago los\Ngrafitis que van a definir\Nnuestra época, hermano.
+Dialogue: 0,0:00:08.72,0:00:09.82,Sub,,0,0,0,,{\fad(60,0)}Estaba en un techo\Nhaciendo un grafiti.
+Dialogue: 0,0:00:10.18,0:00:11.14,Sub,,0,0,0,,{\fad(60,0)}{\c&H007AD2FF&}DAWSON:{\c&H00FFFFFF&} Ok, pero ¿y la pistola?
+Dialogue: 0,0:00:11.60,0:00:12.54,Sub,,0,0,0,,{\fad(60,0)}No es vandalismo.
+Dialogue: 0,0:00:13.18,0:00:14.04,Sub,,0,0,0,,{\fad(60,0)}No tenía pistola.
+Dialogue: 0,0:00:14.36,0:00:15.52,Sub,,0,0,0,,{\fad(60,0)}{\c&H007AD2FF&}DAWSON:{\c&H00FFFFFF&} Ok, ¿así que eres artista?
+Dialogue: 0,0:00:16.84,0:00:18.72,Sub,,0,0,0,,{\fad(60,0)}—Sí. —¿Tienes alguna obra?
+Dialogue: 0,0:00:20.08,0:00:23.90,Sub,,0,0,0,,{\fad(60,0)}Bueno… ahora mismo no. Me\Nestoy redescubriendo.
+Dialogue: 0,0:00:25.42,0:00:27.70,Sub,,0,0,0,,{\fad(60,0)}{\c&H007AD2FF&}DAWSON:{\c&H00FFFFFF&} Cuando tengas algo,\Navísame, que me encantaría\Nverlo.
+Dialogue: 0,0:00:27.86,0:00:28.30,Sub,,0,0,0,,{\fad(60,0)}Me encanta el arte.

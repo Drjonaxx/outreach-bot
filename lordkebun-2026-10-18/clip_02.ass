@@ -1,0 +1,32 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:46.88,Hook,,0,0,0,,SU REHÉN NO SIGUE\NINSTRUCCIONES
+Dialogue: 0,0:00:00.12,0:00:01.80,Sub,,0,0,0,,{\fad(60,0)}MR. K: Dina, ponte el\Nsoplete en la mano.
+Dialogue: 0,0:00:01.92,0:00:02.96,Sub,,0,0,0,,{\fad(60,0)}{\c&H007AD2FF&}DINA:{\c&H00FFFFFF&} ¿Dónde lo pongo?
+Dialogue: 0,0:00:03.40,0:00:04.44,Sub,,0,0,0,,{\fad(60,0)}¿En la mano, verdad?
+Dialogue: 0,0:00:04.56,0:00:05.46,Sub,,0,0,0,,{\fad(60,0)}MR. K: Eso, agárralo en la\Nmano.
+Dialogue: 0,0:00:05.70,0:00:08.76,Sub,,0,0,0,,{\fad(60,0)}Ahora quiero que corras\Nhacia ese grupo de la\Nizquierda.
+Dialogue: 0,0:00:10.86,0:00:13.52,Sub,,0,0,0,,{\fad(60,0)}Corre hasta allá y quédate\Nquieta. Corre
+Dialogue: 0,0:00:13.52,0:00:16.64,Sub,,0,0,0,,{\fad(60,0)}y quédate quieta. No tires\Nnada. Mantenlo en la mano.
+Dialogue: 0,0:00:16.88,0:00:17.76,Sub,,0,0,0,,{\fad(60,0)}¡Dale al tiro!
+Dialogue: 0,0:00:18.96,0:00:21.70,Sub,,0,0,0,,{\fad(60,0)}—¡Le diste a Dina! —No, es\Nque es tonta. Lo estaba\Nsoltando.
+Dialogue: 0,0:00:23.30,0:00:24.80,Sub,,0,0,0,,{\fad(60,0)}Es tan tonta que no sabe\Nescuchar.
+Dialogue: 0,0:00:25.04,0:00:28.46,Sub,,0,0,0,,{\fad(60,0)}Nadie en esta ciudad sabe\Nseguir instrucciones, ¿me\Nentiendes?
+Dialogue: 0,0:00:28.72,0:00:30.62,Sub,,0,0,0,,{\fad(60,0)}Son todos unos ignorantes.\NSe nota.
+Dialogue: 0,0:00:30.86,0:00:33.32,Sub,,0,0,0,,{\fad(60,0)}Estos desgraciados no\Nescuchan. No escuchan.
+Dialogue: 0,0:00:35.62,0:00:37.14,Sub,,0,0,0,,{\fad(60,0)}Ninguno.
+Dialogue: 0,0:00:39.44,0:00:43.44,Sub,,0,0,0,,{\fad(60,0)}Le dije: «no lo sueltes».\N¿Y qué hacen?
+Dialogue: 0,0:00:44.10,0:00:46.76,Sub,,0,0,0,,{\fad(60,0)}Lo sueltan igual. Corre\Nhasta allá y lo suelta\Nenseguida.

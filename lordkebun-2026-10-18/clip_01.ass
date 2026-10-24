@@ -1,0 +1,31 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:43.18,Hook,,0,0,0,,MR. K SE LLEVA TODO EL\NCRÉDITO
+Dialogue: 0,0:00:00.12,0:00:03.30,Sub,,0,0,0,,{\fad(60,0)}MR. K: He trabajado muy\Nduro en esta gran\Ninversión.
+Dialogue: 0,0:00:03.42,0:00:06.64,Sub,,0,0,0,,{\fad(60,0)}Daily Nut News ha sido mi\Npasión por mucho tiempo.
+Dialogue: 0,0:00:06.80,0:00:11.42,Sub,,0,0,0,,{\fad(60,0)}Levantando Daily Nut News,\Nmatándome a trabajar en\Nlas noticias...
+Dialogue: 0,0:00:11.42,0:00:13.34,Sub,,0,0,0,,{\fad(60,0)}He sido un gran jefe con\Ntodos
+Dialogue: 0,0:00:13.34,0:00:16.20,Sub,,0,0,0,,{\fad(60,0)}y gente como Peanut, aquí\Npresente... tiene suerte.
+Dialogue: 0,0:00:16.32,0:00:20.78,Sub,,0,0,0,,{\fad(60,0)}Hay quienes no han hecho\Ntanto, pero está bien.
+Dialogue: 0,0:00:20.90,0:00:23.74,Sub,,0,0,0,,{\fad(60,0)}¿Quieres decir algo? Unas\Npalabras de\Nagradecimiento.
+Dialogue: 0,0:00:23.96,0:00:24.98,Sub,,0,0,0,,{\fad(60,0)}Este es tu momento.
+Dialogue: 0,0:00:25.22,0:00:27.56,Sub,,0,0,0,,{\fad(60,0)}{\c&H007AD2FF&}PEANUT:{\c&H00FFFFFF&} Damas y caballeros, Mr. K
+Dialogue: 0,0:00:27.64,0:00:31.32,Sub,,0,0,0,,{\fad(60,0)}empezó esto como un sueño\Ny yo era uno de sus\Nempleados de quinta.
+Dialogue: 0,0:00:31.44,0:00:32.74,Sub,,0,0,0,,{\fad(60,0)}Empezamos juntos desde\Nabajo...
+Dialogue: 0,0:00:32.86,0:00:34.42,Sub,,0,0,0,,{\fad(60,0)}MR. K: No lo hicimos\Njuntos.
+Dialogue: 0,0:00:34.80,0:00:36.48,Sub,,0,0,0,,{\fad(60,0)}Yo hice casi todo.
+Dialogue: 0,0:00:36.60,0:00:40.26,Sub,,0,0,0,,{\fad(60,0)}{\c&H007AD2FF&}PEANUT:{\c&H00FFFFFF&} Mr. K hizo mucho trabajo.\NYo no hice
+Dialogue: 0,0:00:40.26,0:00:43.06,Sub,,0,0,0,,{\fad(60,0)}nada. Y le damos las\Ngracias, Mr. K.

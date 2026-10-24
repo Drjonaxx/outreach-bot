@@ -1,0 +1,28 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:42.21,Hook,,0,0,0,,EL CAJERO NI TRABAJA\NAHÍ
+Dialogue: 0,0:00:00.12,0:00:04.50,Sub,,0,0,0,,{\fad(60,0)}Bienvenido a Flubster\NBurger. ¿En qué te puedo\Nayudar?
+Dialogue: 0,0:00:04.64,0:00:05.90,Sub,,0,0,0,,{\fad(60,0)}¿Está el gerente?
+Dialogue: 0,0:00:08.20,0:00:12.50,Sub,,0,0,0,,{\fad(60,0)}No, yo acabo de entrar. No\Nhay nadie aquí. Ni\Nsiquiera trabajo aquí.
+Dialogue: 0,0:00:12.76,0:00:15.20,Sub,,0,0,0,,{\fad(60,0)}Suenas igualito a Donald\NTrump.
+Dialogue: 0,0:00:17.18,0:00:19.20,Sub,,0,0,0,,{\fad(60,0)}¿Perdón?
+Dialogue: 0,0:00:19.86,0:00:21.70,Sub,,0,0,0,,{\fad(60,0)}Suenas igualito a Donald\NTrump, hermano.
+Dialogue: 0,0:00:22.40,0:00:25.10,Sub,,0,0,0,,{\fad(60,0)}Disculpa si te asusta, me\Nlo dicen todo el tiempo.
+Dialogue: 0,0:00:25.40,0:00:28.22,Sub,,0,0,0,,{\fad(60,0)}En fin… estoy buscando\Ntrabajo.
+Dialogue: 0,0:00:31.01,0:00:31.72,Sub,,0,0,0,,{\fad(60,0)}¿Y quién no?
+Dialogue: 0,0:00:31.81,0:00:37.12,Sub,,0,0,0,,{\fad(60,0)}Yo vine por una\Nhamburguesa, esto estaba\Nvacío, me metí atrás y me\Ndi trabajo yo solo.
+Dialogue: 0,0:00:37.25,0:00:40.32,Sub,,0,0,0,,{\fad(60,0)}Ahora hago hamburguesas… y\Nno me las puedo comer.
+Dialogue: 0,0:00:40.93,0:00:41.82,Sub,,0,0,0,,{\fad(60,0)}Pero no hay nadie.
