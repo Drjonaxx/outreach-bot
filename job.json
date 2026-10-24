@@ -1,8 +1,8 @@
 {
-  "name": "cry-2026-10-24",
-  "url": "https://kick.com/cry",
+  "name": "kaysan-2026-10-24",
+  "url": "https://kick.com/kaysan",
   "vod": "0",
-  "language": "es",
+  "language": "en",
   "whisper_model": "small",
   "limit_minutes": 900,
   "layout": "fit"
