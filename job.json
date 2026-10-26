@@ -1,8 +1,8 @@
 {
-  "name": "cry-2026-10-26",
-  "url": "https://kick.com/cry",
-  "vod": "0",
-  "language": "es",
+  "name": "harry-2026-10-26b",
+  "url": "https://kick.com/harry",
+  "vod": "1",
+  "language": "en",
   "whisper_model": "small",
   "limit_minutes": 900,
   "layout": "fit"
