@@ -1,10 +1,10 @@
 [
   {
-    "start": 2751.21,
-    "end": 2791.49,
-    "title": "«Te lo juro» no es lo mismo que «te lo prometo» 🤞",
-    "hook": "¿Jurar o prometer?",
-    "description": "Cry explica la diferencia entre jurar y prometer… y por quién sí jura con los ojos cerrados.",
+    "start": 5316.08,
+    "end": 5385.53,
+    "title": "Puedo dormir 2 horas… depende para qué 😴",
+    "hook": "Duermo 2 horas… depende",
+    "description": "Cry explica por qué dormir dos horas le da igual para el stream… pero no para un trámite.",
     "hashtags": [
       "cry",
       "kick",
@@ -13,292 +13,77 @@
       "quedijoelgringo"
     ],
     "score": 7,
-    "reason": "juro",
+    "reason": "dormir",
     "keep": [
       [
-        2751.21,
-        2758.91
+        5316.08,
+        5339.4
       ],
       [
-        2763.35,
-        2770.57
+        5358.68,
+        5360.12
       ],
       [
-        2776.51,
-        2783.23
-      ],
-      [
-        2785.81,
-        2791.49
+        5368.82,
+        5385.53
       ]
     ],
     "subs": [
       {
-        "start": 2751.19,
-        "end": 2753.81,
-        "text": "Cuando digo «te lo juro», es que estoy diciendo la verdad…"
+        "start": 5316.06,
+        "end": 5318.88,
+        "text": "Es que a mí la emoción me despierta."
       },
       {
-        "start": 2753.81,
-        "end": 2756.33,
-        "text": "…al cien por cien. Si digo «te lo prometo»…"
+        "start": 5318.88,
+        "end": 5321.6,
+        "text": "Yo puedo dormir… yo puedo dormir dos horas…"
       },
       {
-        "start": 2756.33,
-        "end": 2758.93,
-        "text": "…pero no «te lo juro», ahí sí me viste mintiendo."
+        "start": 5321.6,
+        "end": 5324.16,
+        "text": "…y depende para qué."
       },
       {
-        "start": 2763.33,
-        "end": 2766.15,
-        "text": "Todos tenemos límites, ¿no? El…"
+        "start": 5324.76,
+        "end": 5329.9,
+        "text": "Si duermo dos horas para ir a hacer un trámite…"
       },
       {
-        "start": 2766.15,
-        "end": 2770.59,
-        "text": "…«júramelo por tu mamá», jamás en la vida. Jamás en la vida."
+        "start": 5329.9,
+        "end": 5335.64,
+        "text": "…no quiero hablar con nadie. Nadie me hable, nadie me mire."
       },
       {
-        "start": 2776.49,
-        "end": 2783.25,
-        "text": "Mi mamá no entra en ningún tipo de juramento, ni apuesta, ni nada de eso."
+        "start": 5335.64,
+        "end": 5339.42,
+        "text": "No te conozco, no quiero conocerte."
       },
       {
-        "start": 2785.79,
-        "end": 2788.15,
-        "text": "Y perdón, mami, pero si te digo «te lo juro por Happy»…"
+        "start": 5358.66,
+        "end": 5360.14,
+        "text": "Dormí una hora."
       },
       {
-        "start": 2788.15,
-        "end": 2791.51,
-        "text": "…ahí sí, con los ojos cerrados."
+        "start": 5368.8,
+        "end": 5374.56,
+        "text": "Pero configurando, armando, probando, testeando… estoy emocionado…"
+      },
+      {
+        "start": 5374.56,
+        "end": 5380.52,
+        "text": "…y eso me da energía. Dormir extra no importa."
+      },
+      {
+        "start": 5381.93,
+        "end": 5385.55,
+        "text": "Yo necesito el feedback. A mí la dopamina es la que me tiene despierto."
       }
     ]
   },
   {
-    "start": 7201.0,
-    "end": 7243.42,
-    "title": "Soy millonario… pero en amistad 🥹",
-    "hook": "Millonario… pero en amistad",
-    "description": "Cry siempre soñó con ser millonario y tener un chef personal. Resulta que ya lo es… más o menos.",
-    "hashtags": [
-      "cry",
-      "kick",
-      "streamer",
-      "clips",
-      "quedijoelgringo"
-    ],
-    "score": 7,
-    "reason": "millonario",
-    "keep": [
-      [
-        7201.0,
-        7204.7
-      ],
-      [
-        7217.81,
-        7243.42
-      ]
-    ],
-    "subs": [
-      {
-        "start": 7201.12,
-        "end": 7204.58,
-        "text": "No lo he probado, pero sé que me va a gustar."
-      },
-      {
-        "start": 7217.93,
-        "end": 7219.53,
-        "text": "¿Se acuerdan…"
-      },
-      {
-        "start": 7221.16,
-        "end": 7227.34,
-        "text": "…cuando les dije que sería increíble ser millonario un día y tener un chef personal?"
-      },
-      {
-        "start": 7227.34,
-        "end": 7230.02,
-        "text": "Pues…"
-      },
-      {
-        "start": 7230.02,
-        "end": 7234.3,
-        "text": "…al parecer soy millonario. Pero no en dinero: en amistad."
-      },
-      {
-        "start": 7234.68,
-        "end": 7238.88,
-        "text": "Tengo aquí un amigo de millones y de trillones."
-      },
-      {
-        "start": 7240.42,
-        "end": 7243.3,
-        "text": "Creo que aún no se ha inventado esa cifra."
-      }
-    ]
-  },
-  {
-    "start": 7295.45,
-    "end": 7333.5,
-    "title": "Creatividad al 300%… y olvidé lo más importante 🎃",
-    "hook": "Creatividad al 300%",
-    "description": "Cry va a tallar la calabaza más épica de Halloween. Solo le falta un detallito.",
-    "hashtags": [
-      "cry",
-      "kick",
-      "streamer",
-      "clips",
-      "quedijoelgringo"
-    ],
-    "score": 7,
-    "reason": "gato",
-    "keep": [
-      [
-        7295.45,
-        7299.49
-      ],
-      [
-        7302.48,
-        7309.62
-      ],
-      [
-        7311.82,
-        7322.56
-      ],
-      [
-        7322.84,
-        7328.04
-      ],
-      [
-        7329.44,
-        7333.5
-      ]
-    ],
-    "subs": [
-      {
-        "start": 7295.57,
-        "end": 7299.51,
-        "text": "Yo creo que va a ser el gato de Alicia en el País de las Maravillas."
-      },
-      {
-        "start": 7302.6,
-        "end": 7305.8,
-        "text": "Tengo la creatividad al 300%."
-      },
-      {
-        "start": 7305.8,
-        "end": 7309.5,
-        "text": "Entonces va a quedar mega épica."
-      },
-      {
-        "start": 7311.94,
-        "end": 7314.14,
-        "text": "Solo olvidé un detallito, un detalluqui…"
-      },
-      {
-        "start": 7314.7,
-        "end": 7317.78,
-        "text": "…mini mini chiquitito. Nada, una tontería."
-      },
-      {
-        "start": 7318.42,
-        "end": 7322.5,
-        "text": "La pinche esfera que va en el medio…"
-      },
-      {
-        "start": 7322.9,
-        "end": 7327.92,
-        "text": "…pa' que alumbre, ¿no?"
-      },
-      {
-        "start": 7329.56,
-        "end": 7333.38,
-        "text": "Esa se me olvidó. La pinche esfera pa' que alumbre la calabaza."
-      }
-    ]
-  },
-  {
-    "start": 8958.96,
-    "end": 9049.09,
-    "title": "Le di a «NO» medio dormido y me bloquearon la tarjeta 💳",
-    "hook": "Me bloquearon la tarjeta",
-    "description": "El banco le preguntaba a Cry si era él quien compraba. Medio dormido, contestó mal… por culpa de la decoración de Halloween.",
-    "hashtags": [
-      "cry",
-      "kick",
-      "streamer",
-      "clips",
-      "quedijoelgringo"
-    ],
-    "score": 8,
-    "reason": "tarjeta",
-    "keep": [
-      [
-        8958.96,
-        8979.85
-      ],
-      [
-        9034.17,
-        9049.09
-      ]
-    ],
-    "subs": [
-      {
-        "start": 8958.94,
-        "end": 8964.23,
-        "text": "¿Se acuerdan de que me salía todo el rato la notificación de…"
-      },
-      {
-        "start": 8964.66,
-        "end": 8967.59,
-        "text": "«¿Eres tú haciendo esto? ¿Eres tú…"
-      },
-      {
-        "start": 8967.59,
-        "end": 8968.7,
-        "text": "…haciendo esto?»"
-      },
-      {
-        "start": 8968.75,
-        "end": 8973.51,
-        "text": "Pues una noche, con un ojo pegado, medio dormido, le di a «no»…"
-      },
-      {
-        "start": 8973.51,
-        "end": 8976.11,
-        "text": "…en vez de «sí», porque la opción está pegada."
-      },
-      {
-        "start": 8976.91,
-        "end": 8979.73,
-        "text": "Y por seguridad me bloquearon la tarjeta."
-      },
-      {
-        "start": 9034.15,
-        "end": 9035.13,
-        "text": "Te lo juro."
-      },
-      {
-        "start": 9036.19,
-        "end": 9040.19,
-        "text": "Es que fue por toda la decoración de Halloween."
-      },
-      {
-        "start": 9041.95,
-        "end": 9043.79,
-        "text": "Compré un montón porque estaba a mitad de precio."
-      },
-      {
-        "start": 9043.79,
-        "end": 9048.97,
-        "text": "Literal, compré como 20 cosas por 600 pesos."
-      }
-    ]
-  },
-  {
-    "start": 9879.32,
-    "end": 9933.41,
+    "start": 9877.02,
+    "end": 9931.11,
     "title": "Mis duchas de 40 minutos eran para llorar 😢",
     "hook": "Mis duchas de 40 minutos",
     "description": "Cry confiesa por fin por qué tardaba tanto en la ducha.",
@@ -313,52 +98,52 @@
     "reason": "duchas",
     "keep": [
       [
-        9879.32,
-        9882.58
+        9877.02,
+        9880.28
       ],
       [
-        9886.12,
-        9900.96
+        9883.82,
+        9898.66
       ],
       [
-        9923.87,
-        9933.41
+        9921.57,
+        9931.11
       ]
     ],
     "subs": [
       {
-        "start": 9879.3,
-        "end": 9882.6,
+        "start": 9877.0,
+        "end": 9880.3,
         "text": "Dice: «Lo diste todo con el corazoncito apachurrado»."
       },
       {
-        "start": 9886.1,
-        "end": 9891.64,
+        "start": 9883.8,
+        "end": 9889.34,
         "text": "Ahora sí puedo decirlo: las duchas que duraban 40 minutos eran porque…"
       },
       {
-        "start": 9891.64,
-        "end": 9894.72,
+        "start": 9889.34,
+        "end": 9892.42,
         "text": "…estaba llorando como no te lo puedes ni imaginar."
       },
       {
-        "start": 9894.72,
-        "end": 9900.98,
+        "start": 9892.42,
+        "end": 9898.68,
         "text": "Estaba llorando así… nunca en mi vida había llorado tanto. En verdad, te lo confieso."
       },
       {
-        "start": 9923.85,
-        "end": 9926.97,
+        "start": 9921.55,
+        "end": 9924.67,
         "text": "Porque cuando lloro, los ojos se me ponen así…"
       },
       {
-        "start": 9926.97,
-        "end": 9930.05,
+        "start": 9924.67,
+        "end": 9927.75,
         "text": "…como bombos, bien inflamados. Entonces estaba así…"
       },
       {
-        "start": 9930.05,
-        "end": 9933.43,
+        "start": 9927.75,
+        "end": 9931.13,
         "text": "…con agua fría: «Vamos, vamos, que se puede»."
       }
     ]
