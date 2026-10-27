@@ -35,20 +35,36 @@ jobs:
         with:
           deno-version: v2.x
 
-      # The runner's Azure Ubuntu mirror has hung for hours at a time: short network timeouts, capped
-      # tries, then Canonical's own mirror; fail the step (instead of rendering nothing later) if
-      # ffmpeg still isn't there.
+      # The runner's Azure Ubuntu mirror has crawled at a few KB/s for hours at a time, so keep the
+      # downloaded .debs in the Actions cache and install from there; when they must be fetched,
+      # skip the optional extras and drop Azure from the mirror list after a failed try. Fail the
+      # step (instead of rendering nothing later) if ffmpeg still isn't there.
+      - id: debs
+        uses: actions/cache/restore@v4
+        with:
+          path: ~/apt-debs
+          key: ffmpeg-debs-${{ runner.os }}-noble-v1
+
       - name: Install ffmpeg
-        timeout-minutes: 20
+        timeout-minutes: 40
         run: |
-          apt_opts="-o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30 -o Acquire::Retries=2"
+          mkdir -p ~/apt-debs
+          sudo cp ~/apt-debs/*.deb /var/cache/apt/archives/ 2>/dev/null || true
+          apt_opts="-o Acquire::http::Timeout=30 -o Acquire::Retries=3 -o APT::Keep-Downloaded-Packages=true"
           for try in 1 2 3; do
-            sudo timeout 240 apt-get $apt_opts update -q && sudo timeout 240 apt-get $apt_opts install -y -q ffmpeg && break
-            echo "apt try $try failed; switching to archive.ubuntu.com"
-            sudo sed -i 's|azure\.archive\.ubuntu\.com|archive.ubuntu.com|g' /etc/apt/sources.list.d/*.sources /etc/apt/sources.list 2>/dev/null || true
+            sudo apt-get $apt_opts update -q && sudo apt-get $apt_opts install -y -q --no-install-recommends ffmpeg && break
+            echo "apt try $try failed; dropping the Azure mirror"
+            sudo sed -i '/azure\.archive\.ubuntu\.com/d' /etc/apt/apt-mirrors.txt 2>/dev/null || true
             sleep 10
           done
           command -v ffmpeg && command -v ffprobe
+          cp /var/cache/apt/archives/*.deb ~/apt-debs/ 2>/dev/null || true
+
+      - if: steps.debs.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: ~/apt-debs
+          key: ffmpeg-debs-${{ runner.os }}-noble-v1
 
       - name: Install clipper
         run: pip install -e . bgutil-ytdlp-pot-provider
