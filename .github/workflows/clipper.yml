@@ -35,15 +35,17 @@ jobs:
         with:
           deno-version: v2.x
 
-      # apt has hung here for hours on a bad mirror; cap each try and retry instead.
+      # apt has hung here for hours on a bad mirror: short network timeouts, capped retries, and fail
+      # the step (instead of rendering nothing later) if ffmpeg still isn't there.
       - name: Install ffmpeg
         timeout-minutes: 20
         run: |
+          apt_opts="-o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30 -o Acquire::Retries=3"
           for try in 1 2 3; do
-            sudo timeout 300 apt-get update -qq && sudo timeout 300 apt-get install -y -qq ffmpeg && break
+            sudo timeout 240 apt-get $apt_opts update -qq && sudo timeout 240 apt-get $apt_opts install -y -qq ffmpeg && break
             echo "apt try $try failed; retrying"; sleep 15
           done
-          ffmpeg -version | head -1
+          command -v ffmpeg && command -v ffprobe
 
       - name: Install clipper
         run: pip install -e . bgutil-ytdlp-pot-provider
