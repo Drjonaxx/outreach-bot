@@ -64,7 +64,7 @@
     ]
   },
   {
-    "start": 7502.84,
+    "start": 7515.87,
     "end": 7559.48,
     "title": "Me creía los videos de duendes captados en cámara 👽",
     "hook": "Me creía los videos de duendes",
@@ -80,29 +80,15 @@
     "reason": "duende",
     "keep": [
       [
-        7502.84,
-        7509.94
-      ],
-      [
         7515.87,
         7559.48
       ]
     ],
     "subs": [
       {
-        "start": 7502.84,
-        "end": 7507.3,
-        "text": "Desde que tenemos la cámara Full HD, como que andan espantados los fantasmas."
-      },
-      {
-        "start": 7507.4,
-        "end": 7509.94,
-        "text": "No se ven mucho."
-      },
-      {
         "start": 7515.99,
         "end": 7518.4,
-        "text": "Me acuerdo… los videos me los creía, bro."
+        "text": "Los videos me los creía, bro."
       },
       {
         "start": 7518.47,
