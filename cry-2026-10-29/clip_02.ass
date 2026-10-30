@@ -1,0 +1,26 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:41.23,Hook,,0,0,0,,ME CREÍA LOS VIDEOS DE\NDUENDES
+Dialogue: 0,0:00:00.12,0:00:02.53,Sub,,0,0,0,,{\fad(60,0)}Los videos me los creía,\Nbro.
+Dialogue: 0,0:00:02.60,0:00:07.93,Sub,,0,0,0,,{\fad(60,0)}Los videos de duende\Ncaptado en cámara, alien\Ncaptado en cámara…
+Dialogue: 0,0:00:08.04,0:00:13.23,Sub,,0,0,0,,{\fad(60,0)}por ahí del 2008, por ahí\Ndel 2009…
+Dialogue: 0,0:00:14.24,0:00:15.83,Sub,,0,0,0,,{\fad(60,0)}porque nadie habla de\Nesto.
+Dialogue: 0,0:00:18.45,0:00:22.23,Sub,,0,0,0,,{\fad(60,0)}Me acuerdo que vi uno de\Nun alien supuestamente\Ncaptado en cámara,
+Dialogue: 0,0:00:23.09,0:00:27.13,Sub,,0,0,0,,{\fad(60,0)}y me acuerdo que era como\Nque estaban en un pasillo…
+Dialogue: 0,0:00:27.69,0:00:29.83,Sub,,0,0,0,,{\fad(60,0)}y pasaba la gente\Ncorriendo, y luego un\Nalien verde…
+Dialogue: 0,0:00:29.91,0:00:32.23,Sub,,0,0,0,,{\fad(60,0)}y ahí se cortaba el video.
+Dialogue: 0,0:00:32.81,0:00:37.43,Sub,,0,0,0,,{\fad(60,0)}Yo vi ese y dije: «No voy\Na la escuela mañana.\NEstamos muertos todos».
+Dialogue: 0,0:00:38.59,0:00:41.15,Sub,,0,0,0,,{\fad(60,0)}Descubrí que existía la\Nedición.

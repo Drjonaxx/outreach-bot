@@ -1,0 +1,30 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:39.98,Hook,,0,0,0,,¿15 A 20 "MICS"?
+Dialogue: 0,0:00:00.12,0:00:04.16,Sub,,0,0,0,,{\fad(60,0)}Listo, encontré un lugar.\NTe voy a pagar unos 25…
+Dialogue: 0,0:00:04.16,0:00:06.84,Sub,,0,0,0,,{\fad(60,0)}…unos 15 a 20 mics.
+Dialogue: 0,0:00:09.45,0:00:10.05,Sub,,0,0,0,,{\fad(60,0)}Perdón, ¿qué?
+Dialogue: 0,0:00:11.53,0:00:13.83,Sub,,0,0,0,,{\fad(60,0)}Unos 15 a 20 minutos. Te\Npago, ¿sí?
+Dialogue: 0,0:00:14.13,0:00:15.27,Sub,,0,0,0,,{\fad(60,0)}¿Cómo que 15 a 20?
+Dialogue: 0,0:00:15.65,0:00:17.81,Sub,,0,0,0,,{\fad(60,0)}¿Por qué dijiste «mics»?\N¿15 a 20 mics?
+Dialogue: 0,0:00:19.31,0:00:23.91,Sub,,0,0,0,,{\fad(60,0)}Sí, «mics» es del alfabeto\Nfonético militar, ¿me\Nentiendes?
+Dialogue: 0,0:00:24.15,0:00:27.17,Sub,,0,0,0,,{\fad(60,0)}Es «mic»… o sea, minuto. M\Nde minutos.
+Dialogue: 0,0:00:27.39,0:00:29.43,Sub,,0,0,0,,{\fad(60,0)}¿Y por qué no dices\N«minutos» y ya?
+Dialogue: 0,0:00:31.52,0:00:32.32,Sub,,0,0,0,,{\fad(60,0)}Podías decir «minutos».
+Dialogue: 0,0:00:32.32,0:00:35.12,Sub,,0,0,0,,{\fad(60,0)}Mics, mics, minutos, mins,\Nmins, mics, mins, minutos…
+Dialogue: 0,0:00:35.14,0:00:35.72,Sub,,0,0,0,,{\fad(60,0)}Podías simplemente…
+Dialogue: 0,0:00:35.82,0:00:36.82,Sub,,0,0,0,,{\fad(60,0)}Nos vemos en 15 a 20.
+Dialogue: 0,0:00:37.02,0:00:39.92,Sub,,0,0,0,,{\fad(60,0)}Sé que se te están\Nsaltando las venas del\Ncuello.

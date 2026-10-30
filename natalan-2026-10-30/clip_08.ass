@@ -1,0 +1,30 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:48.64,Hook,,0,0,0,,¡QUÉ JUEGO TAN\NINJUSTO!
+Dialogue: 0,0:00:00.00,0:00:01.77,Sub,,0,0,0,,{\fad(60,0)}Creo que me muero, wey. Ya\Nno tengo flashes.
+Dialogue: 0,0:00:02.84,0:00:04.27,Sub,,0,0,0,,{\fad(60,0)}No, ¡qué mamada!
+Dialogue: 0,0:00:05.00,0:00:06.67,Sub,,0,0,0,,{\fad(60,0)}¡Pero qué juego más\Ninjusto!
+Dialogue: 0,0:00:08.00,0:00:10.10,Sub,,0,0,0,,{\fad(60,0)}Ya no tengo flashes. Me\Nmorí.
+Dialogue: 0,0:00:11.34,0:00:12.54,Sub,,0,0,0,,{\fad(60,0)}No lo sé.
+Dialogue: 0,0:00:14.34,0:00:16.94,Sub,,0,0,0,,{\fad(60,0)}No, hermano, ¿qué es este\Njuego?
+Dialogue: 0,0:00:18.46,0:00:20.26,Sub,,0,0,0,,{\fad(60,0)}No, ¿qué es esto?
+Dialogue: 0,0:00:21.86,0:00:25.32,Sub,,0,0,0,,{\fad(60,0)}No entendí nada, wey. No\Nentendí nada, al chile.
+Dialogue: 0,0:00:26.94,0:00:30.32,Sub,,0,0,0,,{\fad(60,0)}Ni siquiera… ni siquiera\Nlo sentí tan chido, wey.
+Dialogue: 0,0:00:32.66,0:00:33.22,Sub,,0,0,0,,{\fad(60,0)}Carajo.
+Dialogue: 0,0:00:34.38,0:00:36.14,Sub,,0,0,0,,{\fad(60,0)}{\c&H007AD2FF&}CHAT:{\c&H00FFFFFF&} «Tenías que inflar un\Nglobo más». Al parecer,\Nsí.
+Dialogue: 0,0:00:38.84,0:00:42.04,Sub,,0,0,0,,{\fad(60,0)}Es que la dinámica es\Nsúper larga y súper\Ncansada.
+Dialogue: 0,0:00:44.12,0:00:47.26,Sub,,0,0,0,,{\fad(60,0)}Verga, soy yo el malo\Ntambién. Es que encima soy\Nmalo, wey.
+Dialogue: 0,0:00:47.34,0:00:48.56,Sub,,0,0,0,,{\fad(60,0)}Me lo ponen así, es\Ncomplicado.

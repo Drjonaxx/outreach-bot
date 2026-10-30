@@ -1,0 +1,34 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:54.96,Hook,,0,0,0,,EL NOVATO QUE LLAMÓ A\NMEDIANOCHE
+Dialogue: 0,0:00:00.12,0:00:01.09,Sub,,0,0,0,,{\fad(60,0)}¡Ay, Dios mío!
+Dialogue: 0,0:00:03.00,0:00:04.14,Sub,,0,0,0,,{\fad(60,0)}Dios mío…
+Dialogue: 0,0:00:04.44,0:00:05.54,Sub,,0,0,0,,{\fad(60,0)}¿La mataste?
+Dialogue: 0,0:00:06.74,0:00:07.20,Sub,,0,0,0,,{\fad(60,0)}¿Okey?
+Dialogue: 0,0:00:07.26,0:00:08.94,Sub,,0,0,0,,{\fad(60,0)}Pues mejor sal de ahí\Nantes de que llegue la\Npolicía.
+Dialogue: 0,0:00:09.10,0:00:10.44,Sub,,0,0,0,,{\fad(60,0)}¿Está sonando la alarma?
+Dialogue: 0,0:00:12.22,0:00:12.64,Sub,,0,0,0,,{\fad(60,0)}¡Corre!
+Dialogue: 0,0:00:12.68,0:00:18.64,Sub,,0,0,0,,{\fad(60,0)}Crucé la calle corriendo y\Nesperé… y esperé…
+Dialogue: 0,0:00:20.84,0:00:21.94,Sub,,0,0,0,,{\fad(60,0)}Y no vino nadie más.
+Dialogue: 0,0:00:22.04,0:00:25.72,Sub,,0,0,0,,{\fad(60,0)}Bueno, como no tienes\Narma, probablemente\Ndeberías…
+Dialogue: 0,0:00:26.64,0:00:31.92,Sub,,0,0,0,,{\fad(60,0)}No sé, buscar casas… ser\Nmedio fisgón, espiar por\Nlas ventanas…
+Dialogue: 0,0:00:31.92,0:00:34.40,Sub,,0,0,0,,{\fad(60,0)}y meterte en las que no\Nhaya nadie.
+Dialogue: 0,0:00:35.92,0:00:37.34,Sub,,0,0,0,,{\fad(60,0)}Creo que debí decirte eso\Nantes.
+Dialogue: 0,0:00:37.56,0:00:43.30,Sub,,0,0,0,,{\fad(60,0)}Me llamas a medianoche…\NEstoy tratando de cenar\Ncon mi esposa y mis hijos.
+Dialogue: 0,0:00:45.78,0:00:48.64,Sub,,0,0,0,,{\fad(60,0)}Así que me tengo que ir.\NVaya hora para llamar a\Nalguien.
+Dialogue: 0,0:00:49.58,0:00:50.50,Sub,,0,0,0,,{\fad(60,0)}¿Te acaban de disparar?
+Dialogue: 0,0:00:53.14,0:00:53.56,Sub,,0,0,0,,{\fad(60,0)}Sí.
+Dialogue: 0,0:00:53.58,0:00:54.84,Sub,,0,0,0,,{\fad(60,0)}Okey, qué mala suerte.

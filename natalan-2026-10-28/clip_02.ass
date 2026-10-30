@@ -1,0 +1,27 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:59.00,Hook,,0,0,0,,LAS SÁBANAS TRENZADAS
+Dialogue: 0,0:00:00.12,0:00:09.86,Sub,,0,0,0,,{\fad(60,0)}Mi mamá, wey, jura y\Nperjura que una vez a ella\Ny a su hermana las\Nespantaron en su casa,\Ndespués de ver una\Npelícula de terror.
+Dialogue: 0,0:00:10.40,0:00:13.10,Sub,,0,0,0,,{\fad(60,0)}Dice que se fueron a\Ndormir después de ver esa\Npelícula…
+Dialogue: 0,0:00:13.68,0:00:18.16,Sub,,0,0,0,,{\fad(60,0)}…y que en la madrugada las\Ndespertó un ruido, a las\Ndos.
+Dialogue: 0,0:00:18.60,0:00:23.74,Sub,,0,0,0,,{\fad(60,0)}Cuando se levantó, porque\Nquiso ir a ver qué estaba\Npasando, encontró…
+Dialogue: 0,0:00:23.74,0:00:29.84,Sub,,0,0,0,,{\fad(60,0)}…que su sábana, con la que\Nse tapaba, estaba hecha\Ncomo trenzas, ¿sabes?
+Dialogue: 0,0:00:29.90,0:00:31.88,Sub,,0,0,0,,{\fad(60,0)}Como en nudo.
+Dialogue: 0,0:00:32.12,0:00:38.40,Sub,,0,0,0,,{\fad(60,0)}En cuanto vio eso, dice\Nque se le heló la sangre y\Nque no podía ni caminar,\Nwey.
+Dialogue: 0,0:00:39.84,0:00:42.92,Sub,,0,0,0,,{\fad(60,0)}Luego escuchó que su\Nhermana empezó a llorar…
+Dialogue: 0,0:00:43.52,0:00:49.18,Sub,,0,0,0,,{\fad(60,0)}…como llora un niño cuando\Nle da miedo algo. Fue a\Nver qué estaba pasando…
+Dialogue: 0,0:00:49.18,0:00:56.18,Sub,,0,0,0,,{\fad(60,0)}…y resulta que las sábanas\Nde su hermana, mi tía,\Ntambién estaban igual,\Nwey.
+Dialogue: 0,0:00:56.24,0:00:58.88,Sub,,0,0,0,,{\fad(60,0)}Hechas una trenza,\Nenredadas, así.

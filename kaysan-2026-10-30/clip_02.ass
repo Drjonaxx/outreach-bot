@@ -1,0 +1,31 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:44.88,Hook,,0,0,0,,EXPOLICÍA CONVERTIDO\NEN GÁNSTER
+Dialogue: 0,0:00:00.12,0:00:02.32,Sub,,0,0,0,,{\fad(60,0)}Ya no eres policía. ¿Qué\Npasó, amigo?
+Dialogue: 0,0:00:02.70,0:00:05.17,Sub,,0,0,0,,{\fad(60,0)}No, espera, espera,\Nespera… no me digas\N«amigo», amigo.
+Dialogue: 0,0:00:06.76,0:00:09.55,Sub,,0,0,0,,{\fad(60,0)}Eh… sonó tan intimidante\Neso.
+Dialogue: 0,0:00:10.22,0:00:16.25,Sub,,0,0,0,,{\fad(60,0)}Es que… me enfrenté a\Ndemasiados gánsteres, así\Nque me volví uno.
+Dialogue: 0,0:00:16.98,0:00:18.05,Sub,,0,0,0,,{\fad(60,0)}¡Al diablo con la policía!
+Dialogue: 0,0:00:18.34,0:00:21.35,Sub,,0,0,0,,{\fad(60,0)}Muy bien. Que se\Ndiviertan, chicos.
+Dialogue: 0,0:00:22.69,0:00:23.10,Sub,,0,0,0,,{\fad(60,0)}Igualmente.
+Dialogue: 0,0:00:23.35,0:00:23.95,Sub,,0,0,0,,{\fad(60,0)}¿Cómo te llamas?
+Dialogue: 0,0:00:26.75,0:00:27.55,Sub,,0,0,0,,{\fad(60,0)}Me llamo DJ.
+Dialogue: 0,0:00:28.71,0:00:29.47,Sub,,0,0,0,,{\fad(60,0)}Mucho gusto.
+Dialogue: 0,0:00:29.53,0:00:29.95,Sub,,0,0,0,,{\fad(60,0)}Igualmente.
+Dialogue: 0,0:00:31.23,0:00:33.45,Sub,,0,0,0,,{\fad(60,0)}Oye, Fred, anota esto.\N¿Viste que dije «mucho\Ngusto»?
+Dialogue: 0,0:00:34.55,0:00:35.75,Sub,,0,0,0,,{\fad(60,0)}Nunca digas eso.
+Dialogue: 0,0:00:42.18,0:00:43.02,Sub,,0,0,0,,{\fad(60,0)}Eso fue un ejemplo.
+Dialogue: 0,0:00:43.38,0:00:44.82,Sub,,0,0,0,,{\fad(60,0)}Estoy tomando notas. Estoy\Ntomando notas.

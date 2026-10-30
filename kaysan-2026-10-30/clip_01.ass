@@ -1,0 +1,33 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:44.92,Hook,,0,0,0,,TARDA TRES DÍAS EN\NRESPONDER
+Dialogue: 0,0:00:00.12,0:00:02.97,Sub,,0,0,0,,{\fad(60,0)}Pero bueno, podemos salir\Nmás tarde si quieres.
+Dialogue: 0,0:00:03.92,0:00:05.82,Sub,,0,0,0,,{\fad(60,0)}Claro, podemos hacer eso.\NSí, podemos.
+Dialogue: 0,0:00:06.16,0:00:06.77,Sub,,0,0,0,,{\fad(60,0)}Eso.
+Dialogue: 0,0:00:08.66,0:00:10.77,Sub,,0,0,0,,{\fad(60,0)}Tienes muchísima aura. Es\Nincreíble.
+Dialogue: 0,0:00:11.92,0:00:12.97,Sub,,0,0,0,,{\fad(60,0)}Es como bien tranquila.
+Dialogue: 0,0:00:13.10,0:00:14.37,Sub,,0,0,0,,{\fad(60,0)}Sí, de verdad.
+Dialogue: 0,0:00:14.64,0:00:17.32,Sub,,0,0,0,,{\fad(60,0)}¿Pero te has fijado que\Ntodas sus respuestas son\Ncomo bien…?
+Dialogue: 0,0:00:17.42,0:00:18.27,Sub,,0,0,0,,{\fad(60,0)}Es tan cool.
+Dialogue: 0,0:00:18.94,0:00:19.97,Sub,,0,0,0,,{\fad(60,0)}Son muy tranquilas.
+Dialogue: 0,0:00:20.10,0:00:21.02,Sub,,0,0,0,,{\fad(60,0)}No, son con retraso.
+Dialogue: 0,0:00:21.10,0:00:23.17,Sub,,0,0,0,,{\fad(60,0)}Es como si tuviera lag.\NSí, tiene lag.
+Dialogue: 0,0:00:23.36,0:00:26.27,Sub,,0,0,0,,{\fad(60,0)}Se tarda tres días hábiles\Nen responder.
+Dialogue: 0,0:00:26.38,0:00:27.77,Sub,,0,0,0,,{\fad(60,0)}No, es que ella es así…
+Dialogue: 0,0:00:28.42,0:00:31.52,Sub,,0,0,0,,{\fad(60,0)}Mira. Todavía está\Nprocesando lo que le\Ndijiste, y luego va a\Nresponder.
+Dialogue: 0,0:00:31.62,0:00:34.72,Sub,,0,0,0,,{\fad(60,0)}Espera. Espera. Espera…
+Dialogue: 0,0:00:38.91,0:00:39.77,Sub,,0,0,0,,{\fad(60,0)}Nada.
+Dialogue: 0,0:00:43.80,0:00:44.92,Sub,,0,0,0,,{\fad(60,0)}{\c&H007AD2FF&}SWAN:{\c&H00FFFFFF&} En fin, suena encantador.

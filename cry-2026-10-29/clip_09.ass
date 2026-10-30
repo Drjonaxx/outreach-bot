@@ -1,0 +1,22 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:23.34,Hook,,0,0,0,,NADIE SOSPECHÓ NADA
+Dialogue: 0,0:00:00.12,0:00:01.72,Sub,,0,0,0,,{\fad(60,0)}Alguien de aquí no tiene\Nllenadera.
+Dialogue: 0,0:00:01.96,0:00:08.40,Sub,,0,0,0,,{\fad(60,0)}Realmente debieron\Nsospecharlo en cuanto hice\Ncomo tres días seguidos de\N14 horas diarias, ¿no?
+Dialogue: 0,0:00:08.54,0:00:10.20,Sub,,0,0,0,,{\fad(60,0)}Ok, o nadie sospechó ahí.
+Dialogue: 0,0:00:11.80,0:00:14.40,Sub,,0,0,0,,{\fad(60,0)}En plan, nadie sospechó…\Nhasta la verga.
+Dialogue: 0,0:00:16.82,0:00:18.90,Sub,,0,0,0,,{\fad(60,0)}El de 12 horas fueron 13,\Nasí, por mis huevos.
+Dialogue: 0,0:00:20.58,0:00:23.20,Sub,,0,0,0,,{\fad(60,0)}Nadie dijo: «Bueno, aquí\Nalgo andaba mal», ¿no?

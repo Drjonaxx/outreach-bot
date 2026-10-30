@@ -1,0 +1,33 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:55.90,Hook,,0,0,0,,ESCONDÍ EL SETUP… Y\NLOS VECINOS
+Dialogue: 0,0:00:00.12,0:00:02.48,Sub,,0,0,0,,{\fad(60,0)}Me acuerdo el primer día\Nque nos mudamos allá.
+Dialogue: 0,0:00:04.60,0:00:07.78,Sub,,0,0,0,,{\fad(60,0)}Estábamos armando el\Nescritorio, el setup…
+Dialogue: 0,0:00:08.12,0:00:09.78,Sub,,0,0,0,,{\fad(60,0)}y se escuchaban silbidos.
+Dialogue: 0,0:00:12.05,0:00:16.58,Sub,,0,0,0,,{\fad(60,0)}Y literalmente estuvimos\Ncomo… una hora.
+Dialogue: 0,0:00:17.99,0:00:19.98,Sub,,0,0,0,,{\fad(60,0)}Porque yo quería ese\Nfondo.
+Dialogue: 0,0:00:20.93,0:00:22.78,Sub,,0,0,0,,{\fad(60,0)}Pero: «No mames, te vas a\Ndoxear».
+Dialogue: 0,0:00:24.65,0:00:26.78,Sub,,0,0,0,,{\fad(60,0)}¿Sabes? Y yo: «Sí, es\Ncierto».
+Dialogue: 0,0:00:26.97,0:00:29.08,Sub,,0,0,0,,{\fad(60,0)}¿Cómo ponemos el\Nescritorio? Hay que\Nponerlo aquí.
+Dialogue: 0,0:00:29.59,0:00:32.18,Sub,,0,0,0,,{\fad(60,0)}Y el muro este, ¿se\Nacuerdan? Tenemos que ir\Nen la esquina.
+Dialogue: 0,0:00:32.65,0:00:34.48,Sub,,0,0,0,,{\fad(60,0)}El muro va a tapar un poco\Ny no se va a ver.
+Dialogue: 0,0:00:34.83,0:00:36.18,Sub,,0,0,0,,{\fad(60,0)}Bueno, estamos armando, y…
+Dialogue: 0,0:00:37.37,0:00:39.08,Sub,,0,0,0,,{\fad(60,0)}Y yo así de: «¿Qué pedo?\N¿Quién chifla?»
+Dialogue: 0,0:00:39.19,0:00:42.18,Sub,,0,0,0,,{\fad(60,0)}Me asomo por la ventana, y\Nen el balcón del edificio\Nde enfrente…
+Dialogue: 0,0:00:43.25,0:00:44.18,Sub,,0,0,0,,{\fad(60,0)}«¡CRY!». Como siete.
+Dialogue: 0,0:00:45.93,0:00:46.78,Sub,,0,0,0,,{\fad(60,0)}«¡CRY!»
+Dialogue: 0,0:00:48.56,0:00:49.28,Sub,,0,0,0,,{\fad(60,0)}Y yo así…
+Dialogue: 0,0:00:53.14,0:00:55.85,Sub,,0,0,0,,{\fad(60,0)}Pon el escritorio donde yo\Nlo quería.

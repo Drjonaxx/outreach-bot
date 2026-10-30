@@ -1,0 +1,28 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:54.80,Hook,,0,0,0,,JAPÓN CON UN AMIGO\NGAMER
+Dialogue: 0,0:00:00.00,0:00:05.64,Sub,,0,0,0,,{\fad(60,0)}Si ustedes creen que yo\Nsoy freaky, adicto a los\Nvideojuegos, es porque no\Nlo conocen a él, wey.
+Dialogue: 0,0:00:05.88,0:00:11.24,Sub,,0,0,0,,{\fad(60,0)}Es un adicto a los\Nvideojuegos, cabrón. Pero\Nun adicto así mal, mal,\Nmal, wey.
+Dialogue: 0,0:00:11.36,0:00:12.26,Sub,,0,0,0,,{\fad(60,0)}Fuimos a Japón, ¿no?
+Dialogue: 0,0:00:12.42,0:00:20.94,Sub,,0,0,0,,{\fad(60,0)}«Vámonos a un mercado a\Nuna hora de Tokio, donde\Nno va ningún extranjero,\Nen un lugar llamado\NChiba».
+Dialogue: 0,0:00:21.18,0:00:25.64,Sub,,0,0,0,,{\fad(60,0)}Fuimos a todos lados\Nporque ese wey nada más\Nquería ver juegos y juegos\Ny juegos y juegos…
+Dialogue: 0,0:00:26.36,0:00:29.42,Sub,,0,0,0,,{\fad(60,0)}Y yo, en todo momento,\Nestaba que me llevaba la\Ncalaca.
+Dialogue: 0,0:00:30.18,0:00:34.36,Sub,,0,0,0,,{\fad(60,0)}Literal, wey. La huesuda\Nme estaba soplando aquí en\Nla espalda.
+Dialogue: 0,0:00:34.60,0:00:39.38,Sub,,0,0,0,,{\fad(60,0)}A cada rato sentía que la\Nmuerte estaba aquí al lado\Nde mí, wey.
+Dialogue: 0,0:00:39.54,0:00:42.74,Sub,,0,0,0,,{\fad(60,0)}Y yo así… desmayado, bien\Nmuerto, cabrón.
+Dialogue: 0,0:00:42.98,0:00:46.62,Sub,,0,0,0,,{\fad(60,0)}Mientras íbamos a Chiba…\Nyo nunca en mi perra vida\Nhabía ido a Chiba.
+Dialogue: 0,0:00:47.04,0:00:51.76,Sub,,0,0,0,,{\fad(60,0)}Who? Who? Where the f*ck?\NWhere?
+Dialogue: 0,0:00:52.00,0:00:54.68,Sub,,0,0,0,,{\fad(60,0)}¿Dónde está eso, cabrón?\N¿Dónde está Chiba?

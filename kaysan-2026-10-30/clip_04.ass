@@ -1,0 +1,36 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:45.84,Hook,,0,0,0,,PAGÓ 500 MIL POR\NDECORAR
+Dialogue: 0,0:00:00.12,0:00:01.92,Sub,,0,0,0,,{\fad(60,0)}Muy bien, vamos a ver\Ncuánto de la casa está\Nlisto.
+Dialogue: 0,0:00:04.70,0:00:05.17,Sub,,0,0,0,,{\fad(60,0)}Sí…
+Dialogue: 0,0:00:06.14,0:00:06.85,Sub,,0,0,0,,{\fad(60,0)}Está igual.
+Dialogue: 0,0:00:07.04,0:00:09.25,Sub,,0,0,0,,{\fad(60,0)}De verdad no puedo creer\Nque le di todo ese dinero.
+Dialogue: 0,0:00:09.40,0:00:10.65,Sub,,0,0,0,,{\fad(60,0)}Le di 500 mil.
+Dialogue: 0,0:00:11.58,0:00:13.05,Sub,,0,0,0,,{\fad(60,0)}Le di 500 mil…
+Dialogue: 0,0:00:14.48,0:00:15.17,Sub,,0,0,0,,{\fad(60,0)}500 mil.
+Dialogue: 0,0:00:15.66,0:00:17.27,Sub,,0,0,0,,{\fad(60,0)}Y sigue igual.
+Dialogue: 0,0:00:18.70,0:00:19.90,Sub,,0,0,0,,{\fad(60,0)}O espera, esto es nuevo.
+Dialogue: 0,0:00:19.92,0:00:20.50,Sub,,0,0,0,,{\fad(60,0)}Espera. Espera.
+Dialogue: 0,0:00:20.68,0:00:22.00,Sub,,0,0,0,,{\fad(60,0)}A lo mejor está cocinando\Nalgo…
+Dialogue: 0,0:00:22.02,0:00:23.50,Sub,,0,0,0,,{\fad(60,0)}Espera. Espera…
+Dialogue: 0,0:00:23.94,0:00:25.20,Sub,,0,0,0,,{\fad(60,0)}Okey, le puso unas luces.
+Dialogue: 0,0:00:26.86,0:00:27.80,Sub,,0,0,0,,{\fad(60,0)}Y nada más.
+Dialogue: 0,0:00:28.06,0:00:30.07,Sub,,0,0,0,,{\fad(60,0)}Oye, por cierto, ¿puedes\Nterminar la casa, por el\Namor de Dios?
+Dialogue: 0,0:00:31.04,0:00:33.82,Sub,,0,0,0,,{\fad(60,0)}¿Crees que quiero pasarme\Nel día en la casa\Ndecorando?
+Dialogue: 0,0:00:34.20,0:00:36.02,Sub,,0,0,0,,{\fad(60,0)}No, pero te pagué 500 mil\Ndólares.
+Dialogue: 0,0:00:37.02,0:00:39.22,Sub,,0,0,0,,{\fad(60,0)}¿No ves cómo está la casa?
+Dialogue: 0,0:00:39.50,0:00:42.52,Sub,,0,0,0,,{\fad(60,0)}Te juro por Dios que si\Nsigues quejándote de esta\Ncasa…
+Dialogue: 0,0:00:42.72,0:00:45.62,Sub,,0,0,0,,{\fad(60,0)}Las cosas se hacen, solo\Nque cuando no estás.

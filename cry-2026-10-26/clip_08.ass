@@ -1,0 +1,27 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:30.92,Hook,,0,0,0,,MI PELUCA DE EINSTEIN
+Dialogue: 0,0:00:00.12,0:00:02.20,Sub,,0,0,0,,{\fad(60,0)}Ahora sí parezco el… ¿cómo\Nse llama?
+Dialogue: 0,0:00:03.30,0:00:03.98,Sub,,0,0,0,,{\fad(60,0)}El Einstein.
+Dialogue: 0,0:00:04.22,0:00:05.20,Sub,,0,0,0,,{\fad(60,0)}¿Te parece Einstein?
+Dialogue: 0,0:00:07.44,0:00:09.14,Sub,,0,0,0,,{\fad(60,0)}Es Einstein. No mames.
+Dialogue: 0,0:00:09.26,0:00:12.12,Sub,,0,0,0,,{\fad(60,0)}Quiero pensar que se\Nequivocó, ¿no?
+Dialogue: 0,0:00:12.36,0:00:16.46,Sub,,0,0,0,,{\fad(60,0)}¿No hay ningún cosplayer\Nen el chat que me confirme\Nsi también batallan así…
+Dialogue: 0,0:00:16.46,0:00:19.12,Sub,,0,0,0,,{\fad(60,0)}…con las pelucas y con\Ntodo?
+Dialogue: 0,0:00:19.36,0:00:21.22,Sub,,0,0,0,,{\fad(60,0)}Es que el pelo de la\Npeluca es diferente.
+Dialogue: 0,0:00:21.46,0:00:25.72,Sub,,0,0,0,,{\fad(60,0)}Es como un f*cking pelo de\Nalambre de espino.
+Dialogue: 0,0:00:25.96,0:00:29.24,Sub,,0,0,0,,{\fad(60,0)}Bueno, de hecho así sería\Nmi pelo si me lo\Ndecolorara, ¿no?
+Dialogue: 0,0:00:29.48,0:00:30.80,Sub,,0,0,0,,{\fad(60,0)}Me quiero quitar la peluca\Nde mierda.

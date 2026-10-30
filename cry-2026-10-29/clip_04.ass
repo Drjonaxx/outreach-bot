@@ -1,0 +1,28 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:48.64,Hook,,0,0,0,,¿POR QUÉ SE LLAMABA\NPLASMA?
+Dialogue: 0,0:00:00.12,0:00:03.95,Sub,,0,0,0,,{\fad(60,0)}Les prometo que estaba\Nhablando solo como idiota.
+Dialogue: 0,0:00:04.18,0:00:08.35,Sub,,0,0,0,,{\fad(60,0)}Estaba preguntando… o sea,\N¿por qué las teles tienen\Ntantos nombres?
+Dialogue: 0,0:00:08.46,0:00:11.45,Sub,,0,0,0,,{\fad(60,0)}Para empezar, no sé por\Nqué: televisión, TV…
+Dialogue: 0,0:00:13.38,0:00:15.41,Sub,,0,0,0,,{\fad(60,0)}pantallas… ¿Por qué tantos\Nnombres?
+Dialogue: 0,0:00:16.20,0:00:18.91,Sub,,0,0,0,,{\fad(60,0)}Y luego, ¿cómo se llamaban\Nlas teles…
+Dialogue: 0,0:00:19.14,0:00:25.71,Sub,,0,0,0,,{\fad(60,0)}que salieron después de\Nlas de tubo? Tienen un\Nnombre bien raro que no me\Nacuerdo.
+Dialogue: 0,0:00:27.87,0:00:30.21,Sub,,0,0,0,,{\fad(60,0)}Me acuerdo que salieron\Nlas 3D, que le valió verga\Na todo el mundo.
+Dialogue: 0,0:00:32.67,0:00:37.01,Sub,,0,0,0,,{\fad(60,0)}Pero se llamaban\N«televisión de plasma».\N¡Ríanse!
+Dialogue: 0,0:00:38.31,0:00:40.21,Sub,,0,0,0,,{\fad(60,0)}¿Por qué verga se llamaba\Nde plasma?
+Dialogue: 0,0:00:40.31,0:00:43.31,Sub,,0,0,0,,{\fad(60,0)}El plasma… ¿de dónde sale\Neso?
+Dialogue: 0,0:00:44.25,0:00:45.81,Sub,,0,0,0,,{\fad(60,0)}¿No es como lo que le hace\Ndaño a Superman?
+Dialogue: 0,0:00:48.10,0:00:48.64,Sub,,0,0,0,,{\fad(60,0)}Y plana… no entiendo.
