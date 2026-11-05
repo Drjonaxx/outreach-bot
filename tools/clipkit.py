@@ -223,10 +223,13 @@ def fetch_clip(name: str, num: int, dest: Path) -> None:
     """Rendered clip from origin/claude/clipper-out, shrunk to fit the 30 MiB chat limit."""
     src = f"origin/claude/clipper-out:{name}/clip_{num:02d}.mp4"
     dest.write_bytes(subprocess.run(["git", "show", src], check=True, capture_output=True).stdout)
-    if dest.stat().st_size > 29 * 1024 * 1024:
+    # The encoder can overshoot its target bitrate, so aim lower each time until the clip fits.
+    for target_mib in (27.5, 24, 20):
+        if dest.stat().st_size <= 29 * 1024 * 1024:
+            break
         dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",
                                     str(dest)], capture_output=True, text=True).stdout)
-        vb = int(27.5 * 8 * 1024 * 1024 / dur - 160_000)
+        vb = int(target_mib * 8 * 1024 * 1024 / dur - 160_000)
         tmp = dest.with_suffix(".tmp.mp4")
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(dest), "-c:v", "libx264", "-preset", "medium",
                         "-b:v", str(vb), "-maxrate", str(vb * 3 // 2), "-bufsize", str(vb * 2), "-r", "30",
