@@ -267,8 +267,8 @@
     ]
   },
   {
-    "start": 48971.6,
-    "end": 49006.48,
+    "start": 48970.4,
+    "end": 49005.28,
     "title": "Papá comisario vs. el chico que quiere mudarse con su hija 😤",
     "hook": "Su hija se quiere mudar",
     "description": "En GTA RP, la hija del comisario Dawson le cuenta que un chico la invitó a vivir con él. Mala idea contárselo.",
@@ -285,74 +285,74 @@
     "reason": "papa",
     "keep": [
       [
-        48971.6,
-        49006.48
+        48970.4,
+        49005.28
       ]
     ],
     "subs": [
       {
-        "start": 48971.72,
-        "end": 48973.75,
+        "start": 48970.52,
+        "end": 48972.55,
         "text": "Guppy quiere que me mude a una casa con él."
       },
       {
-        "start": 48974.58,
-        "end": 48975.05,
+        "start": 48973.38,
+        "end": 48973.85,
         "text": "¡Ni loco!"
       },
       {
-        "start": 48975.54,
-        "end": 48976.85,
+        "start": 48974.34,
+        "end": 48975.65,
         "text": "¿Y qué le respondiste?"
       },
       {
-        "start": 48978.86,
-        "end": 48979.7,
+        "start": 48977.66,
+        "end": 48978.5,
         "text": "No le dije que sí."
       },
       {
-        "start": 48980.08,
-        "end": 48980.75,
+        "start": 48978.88,
+        "end": 48979.55,
         "text": "Fue como: «Ah, ok»."
       },
       {
-        "start": 48981.08,
-        "end": 48981.95,
+        "start": 48979.88,
+        "end": 48980.75,
         "text": "¿Y no le dijiste que no?"
       },
       {
-        "start": 48986.96,
-        "end": 48988.05,
+        "start": 48985.76,
+        "end": 48986.85,
         "text": "Nines, ¿qué estás haciendo?"
       },
       {
-        "start": 48989.16,
-        "end": 48990.1,
+        "start": 48987.96,
+        "end": 48988.9,
         "text": "¿Cómo que qué estoy haciendo?"
       },
       {
-        "start": 48991.3,
-        "end": 48993.8,
+        "start": 48990.1,
+        "end": 48992.6,
         "text": "¿Qué tal si le dices: «No, Guppy, no voy a vivir contigo»?"
       },
       {
-        "start": 48995.18,
-        "end": 48996.9,
+        "start": 48993.98,
+        "end": 48995.7,
         "text": "Ok, se lo digo la próxima vez."
       },
       {
-        "start": 49001.06,
-        "end": 49001.9,
+        "start": 48999.86,
+        "end": 49000.7,
         "text": "¿Por qué tiene que ser la próxima vez?"
       },
       {
-        "start": 49002.74,
-        "end": 49004.6,
+        "start": 49001.54,
+        "end": 49003.4,
         "text": "¿O sea que piensas que te lo va a volver a pedir?"
       },
       {
-        "start": 49005.12,
-        "end": 49006.3,
+        "start": 49003.92,
+        "end": 49005.1,
         "text": "Ah, no… no realmente."
       }
     ]
