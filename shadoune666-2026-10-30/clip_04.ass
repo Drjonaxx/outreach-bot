@@ -1,0 +1,24 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:28.94,Hook,,0,0,0,,MÁS GANAS DE ZELDA QUE\NGTA
+Dialogue: 0,0:00:00.00,0:00:02.72,Sub,,0,0,0,,{\fad(60,0)}Tengo más ganas de jugar\Nel Zelda que el GTA, y de\Nlejos.
+Dialogue: 0,0:00:03.50,0:00:05.62,Sub,,0,0,0,,{\fad(60,0)}O sea…
+Dialogue: 0,0:00:06.34,0:00:09.72,Sub,,0,0,0,,{\fad(60,0)}El GTA es el juego de la\Ndécada, 100 %,
+Dialogue: 0,0:00:09.80,0:00:13.12,Sub,,0,0,0,,{\fad(60,0)}pero no lo veo tanto como\Nel Zelda.
+Dialogue: 0,0:00:14.12,0:00:16.42,Sub,,0,0,0,,{\fad(60,0)}El Zelda es el remake del\Nmejor Zelda de la\Nhistoria,
+Dialogue: 0,0:00:17.34,0:00:21.57,Sub,,0,0,0,,{\fad(60,0)}el Ocarina of Time,\Nconsiderado el mejor juego\Nde la historia.
+Dialogue: 0,0:00:25.14,0:00:26.92,Sub,,0,0,0,,{\fad(60,0)}Siempre fui muy, muy fan\Nde Zelda.
+Dialogue: 0,0:00:27.28,0:00:28.92,Sub,,0,0,0,,{\fad(60,0)}Sí, me emocionan\Nmuchísimo.

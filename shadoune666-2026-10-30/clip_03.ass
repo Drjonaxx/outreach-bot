@@ -1,0 +1,30 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:50.71,Hook,,0,0,0,,ESPERABA UN EQUIPO DE\NMUDANZA
+Dialogue: 0,0:00:00.00,0:00:01.99,Sub,,0,0,0,,{\fad(60,0)}Llega el bro.
+Dialogue: 0,0:00:02.48,0:00:05.49,Sub,,0,0,0,,{\fad(60,0)}Y yo me estaba imaginando\Nun equipo de mudanza,
+Dialogue: 0,0:00:07.20,0:00:12.04,Sub,,0,0,0,,{\fad(60,0)}tres personas mazadísimas\Nque iban a subir, nos iban\Na ayudar a bajar todo
+Dialogue: 0,0:00:12.30,0:00:14.99,Sub,,0,0,0,,{\fad(60,0)}en un camión gigante.
+Dialogue: 0,0:00:15.14,0:00:18.04,Sub,,0,0,0,,{\fad(60,0)}No, no, no. Era una\Ncamioneta toda pequeña.
+Dialogue: 0,0:00:18.34,0:00:19.69,Sub,,0,0,0,,{\fad(60,0)}Llega un bro
+Dialogue: 0,0:00:19.74,0:00:22.64,Sub,,0,0,0,,{\fad(60,0)}y está como: «Bueno,\Nchicos, os espero aquí».
+Dialogue: 0,0:00:22.76,0:00:26.14,Sub,,0,0,0,,{\fad(60,0)}«Os espero aquí abajo».
+Dialogue: 0,0:00:28.34,0:00:29.49,Sub,,0,0,0,,{\fad(60,0)}Y yo como: «Puta madre».
+Dialogue: 0,0:00:29.82,0:00:32.99,Sub,,0,0,0,,{\fad(60,0)}No está listo nada.
+Dialogue: 0,0:00:34.85,0:00:37.74,Sub,,0,0,0,,{\fad(60,0)}Era… era un desastre.
+Dialogue: 0,0:00:39.25,0:00:43.04,Sub,,0,0,0,,{\fad(60,0)}Yo subo y digo: «Ok, ok,\Nahora terminamos y\Nbajamos».
+Dialogue: 0,0:00:43.21,0:00:45.64,Sub,,0,0,0,,{\fad(60,0)}Empiezo a bajar las PCs\Nque ya tenemos listas,
+Dialogue: 0,0:00:46.03,0:00:50.71,Sub,,0,0,0,,{\fad(60,0)}y el bro vio que íbamos a\Ntardar 30 mil años y dijo:\N«Bueno, os ayudo».

@@ -1,0 +1,30 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:48.08,Hook,,0,0,0,,CANCELÉ AL NUTRIÓLOGO\NPOR ZELDA
+Dialogue: 0,0:00:00.12,0:00:01.17,Sub,,0,0,0,,{\fad(60,0)}Y bueno…
+Dialogue: 0,0:00:01.22,0:00:03.52,Sub,,0,0,0,,{\fad(60,0)}y el 5…
+Dialogue: 0,0:00:03.56,0:00:04.47,Sub,,0,0,0,,{\fad(60,0)}¡Nooo!
+Dialogue: 0,0:00:04.56,0:00:07.77,Sub,,0,0,0,,{\fad(60,0)}Tengo cita con el\Nnutriólogo el 5 de\Nnoviembre. La cambio.
+Dialogue: 0,0:00:09.18,0:00:14.37,Sub,,0,0,0,,{\fad(60,0)}Zelda… preparar la Switch\N2.
+Dialogue: 0,0:00:16.52,0:00:19.17,Sub,,0,0,0,,{\fad(60,0)}No, no. GG, nutriólogo:\Ncancelamos.
+Dialogue: 0,0:00:19.52,0:00:22.37,Sub,,0,0,0,,{\fad(60,0)}No fui al gym hace un mes.
+Dialogue: 0,0:00:22.38,0:00:28.72,Sub,,0,0,0,,{\fad(60,0)}La idea del nutriólogo es\Nir habiendo ido al gym y\Ncomido bien,
+Dialogue: 0,0:00:28.86,0:00:31.17,Sub,,0,0,0,,{\fad(60,0)}para que diga: «Ok, está\Nbien».
+Dialogue: 0,0:00:31.34,0:00:35.27,Sub,,0,0,0,,{\fad(60,0)}Si voy sin ir al gym,\Ncomiendo una puta mierda,
+Dialogue: 0,0:00:35.62,0:00:40.17,Sub,,0,0,0,,{\fad(60,0)}me va a decir: «Che, ¿por\Nqué bajaste 10 kilos de\Nmúsculo? ¿Qué pasó?»
+Dialogue: 0,0:00:41.42,0:00:42.57,Sub,,0,0,0,,{\fad(60,0)}No va a salir nada bien.
+Dialogue: 0,0:00:43.20,0:00:45.92,Sub,,0,0,0,,{\fad(60,0)}No quiero. Estoy en mi\Nprime, bro.
+Dialogue: 0,0:00:46.00,0:00:48.07,Sub,,0,0,0,,{\fad(60,0)}Bueno, en mi prime, pero…

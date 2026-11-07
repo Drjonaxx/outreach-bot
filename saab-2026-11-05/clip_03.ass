@@ -1,0 +1,27 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:43.34,Hook,,0,0,0,,¿DÓNDE ESTÁN TUS\NZAPATOS, OFICIAL?
+Dialogue: 0,0:00:00.12,0:00:01.45,Sub,,0,0,0,,{\fad(60,0)}Judy, ¿dónde están tus\Nmalditos zapatos?
+Dialogue: 0,0:00:03.62,0:00:06.90,Sub,,0,0,0,,{\fad(60,0)}Eh, hay que dejar que las\Nplantas de los pies\Nrespiren después de un\Nlargo día de trabajo.
+Dialogue: 0,0:00:08.20,0:00:09.30,Sub,,0,0,0,,{\fad(60,0)}No uso calcetines.
+Dialogue: 0,0:00:10.22,0:00:11.05,Sub,,0,0,0,,{\fad(60,0)}Ok, está bien.
+Dialogue: 0,0:00:15.56,0:00:17.55,Sub,,0,0,0,,{\fad(60,0)}…así dejo que el sudor se\Nacumule en los zapatos.
+Dialogue: 0,0:00:24.68,0:00:25.65,Sub,,0,0,0,,{\fad(60,0)}Cómprate unas sandalias.
+Dialogue: 0,0:00:28.16,0:00:30.45,Sub,,0,0,0,,{\fad(60,0)}Espera, no, este es mi\Nmodo relax.
+Dialogue: 0,0:00:31.30,0:00:34.65,Sub,,0,0,0,,{\fad(60,0)}Pues vete a tu casa,\Nquítate los zapatos y sube\Nlos pies.
+Dialogue: 0,0:00:34.68,0:00:37.35,Sub,,0,0,0,,{\fad(60,0)}Necesito estar conectado a\Nla tierra con mis pies.\NEsta es mi casa.
+Dialogue: 0,0:00:39.04,0:00:40.35,Sub,,0,0,0,,{\fad(60,0)}¿No tienes apartamento?
+Dialogue: 0,0:00:41.16,0:00:43.25,Sub,,0,0,0,,{\fad(60,0)}Estoy justo donde tengo\Nque estar, comisario.

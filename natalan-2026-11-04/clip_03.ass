@@ -1,0 +1,29 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:45.34,Hook,,0,0,0,,MI EXCUSA PARA NO\NFELICITARLO
+Dialogue: 0,0:00:00.12,0:00:03.48,Sub,,0,0,0,,{\fad(60,0)}Mira, yo tengo una muy\Nbuena excusa, ¿vale? Una\Nmuy buena excusa.
+Dialogue: 0,0:00:04.24,0:00:05.23,Sub,,0,0,0,,{\fad(60,0)}A ver, a ver, a ver.
+Dialogue: 0,0:00:05.72,0:00:09.23,Sub,,0,0,0,,{\fad(60,0)}Quizás no te pusiste a\Npensar que yo también soy\Nhumano,
+Dialogue: 0,0:00:09.96,0:00:11.68,Sub,,0,0,0,,{\fad(60,0)}y yo estaba enfermo hace\Ndos semanas.
+Dialogue: 0,0:00:13.04,0:00:15.93,Sub,,0,0,0,,{\fad(60,0)}Yo estaba muy enfermo hace\Ndos semanas y no te\Npreocupaste por mí.
+Dialogue: 0,0:00:16.04,0:00:17.38,Sub,,0,0,0,,{\fad(60,0)}Claro. Nunca vi ni un\Nmensaje de nadie.
+Dialogue: 0,0:00:19.56,0:00:20.48,Sub,,0,0,0,,{\fad(60,0)}Y yo estaba muy enfermo.
+Dialogue: 0,0:00:23.50,0:00:25.53,Sub,,0,0,0,,{\fad(60,0)}Mientras yo me estaba\Nmuriendo, güey, tú estabas\Ncelebrando.
+Dialogue: 0,0:00:27.00,0:00:29.33,Sub,,0,0,0,,{\fad(60,0)}Sí. Creo que tú estabas en\NChina de nuevo.
+Dialogue: 0,0:00:29.82,0:00:33.48,Sub,,0,0,0,,{\fad(60,0)}No, me fui a Japón, pero\Nestaba enfermo en Japón.
+Dialogue: 0,0:00:39.22,0:00:40.23,Sub,,0,0,0,,{\fad(60,0)}En tus historias te veías\Nfeliz.
+Dialogue: 0,0:00:40.54,0:00:42.18,Sub,,0,0,0,,{\fad(60,0)}No, no subí historias.\NEstaba muriéndome.
+Dialogue: 0,0:00:43.92,0:00:44.88,Sub,,0,0,0,,{\fad(60,0)}Me estaba muriendo.

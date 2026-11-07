@@ -1,0 +1,27 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:50.48,Hook,,0,0,0,,NADA ME PUEDE ARRUINAR\NEL DÍA
+Dialogue: 0,0:00:00.12,0:00:03.33,Sub,,0,0,0,,{\fad(60,0)}Estoy, en verdad, mira…\Nhonestamente, nada me\Npuede cagar el palo.
+Dialogue: 0,0:00:04.34,0:00:07.83,Sub,,0,0,0,,{\fad(60,0)}Bueno, bueno, bueno.
+Dialogue: 0,0:00:09.02,0:00:12.98,Sub,,0,0,0,,{\fad(60,0)}A ver, anotamos. Mufa.\NHey, todo mundo de la\Nmano.
+Dialogue: 0,0:00:13.28,0:00:16.83,Sub,,0,0,0,,{\fad(60,0)}Todos los poderes: saquen\Nlas macumbas, los cuarzos,
+Dialogue: 0,0:00:17.16,0:00:19.43,Sub,,0,0,0,,{\fad(60,0)}saquen lo que sea.
+Dialogue: 0,0:00:23.00,0:00:25.83,Sub,,0,0,0,,{\fad(60,0)}Vamos a rezar un poco por\Nlo que acabo de decir.
+Dialogue: 0,0:00:27.10,0:00:33.83,Sub,,0,0,0,,{\fad(60,0)}Puta madre. O sea, qué\Nhuevote, con el año que\Ntraemos, decir algo así,\N¿no?
+Dialogue: 0,0:00:34.88,0:00:38.13,Sub,,0,0,0,,{\fad(60,0)}Me refería… es que aparte\Nera algo lindo.
+Dialogue: 0,0:00:38.90,0:00:42.63,Sub,,0,0,0,,{\fad(60,0)}Quería decir que estoy tan\Nfeliz de ver a mis papás\Ndespués de tantos meses
+Dialogue: 0,0:00:42.70,0:00:45.63,Sub,,0,0,0,,{\fad(60,0)}que nada me puede arruinar\Nel día,
+Dialogue: 0,0:00:46.16,0:00:50.33,Sub,,0,0,0,,{\fad(60,0)}pero pues, verga, hay\Ntantas cosas que pueden\Narruinar el día.

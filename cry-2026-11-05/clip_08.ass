@@ -1,0 +1,26 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:30.28,Hook,,0,0,0,,¿RELOJ? PARA ESO TENGO\NCELULAR
+Dialogue: 0,0:00:00.00,0:00:02.04,Sub,,0,0,0,,{\fad(60,0)}Para el día a día no puedo\Nusar reloj.
+Dialogue: 0,0:00:03.36,0:00:03.64,Sub,,0,0,0,,{\fad(60,0)}No puedo.
+Dialogue: 0,0:00:04.72,0:00:05.34,Sub,,0,0,0,,{\fad(60,0)}Y mi papá…
+Dialogue: 0,0:00:06.14,0:00:08.24,Sub,,0,0,0,,{\fad(60,0)}si les conté, mi papá ama\Nsu Apple Watch.
+Dialogue: 0,0:00:08.94,0:00:15.04,Sub,,0,0,0,,{\fad(60,0)}Es como… o sea, así de\Nque: «Apple Watch».
+Dialogue: 0,0:00:17.02,0:00:19.24,Sub,,0,0,0,,{\fad(60,0)}«Mira. Las pulsaciones».
+Dialogue: 0,0:00:20.32,0:00:21.94,Sub,,0,0,0,,{\fad(60,0)}«Y te llega un mensaje».
+Dialogue: 0,0:00:22.48,0:00:26.44,Sub,,0,0,0,,{\fad(60,0)}Para ver mensajes, lo que\Nhago es agarrar el móvil.
+Dialogue: 0,0:00:27.36,0:00:27.64,Sub,,0,0,0,,{\fad(60,0)}El celular.
+Dialogue: 0,0:00:28.80,0:00:30.24,Sub,,0,0,0,,{\fad(60,0)}Y aquí me aparecen los\Nmensajes.

@@ -1,0 +1,24 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:32.30,Hook,,0,0,0,,PASÓ POR DEBAJO DEL\NCAMIÓN
+Dialogue: 0,0:00:00.12,0:00:01.03,Sub,,0,0,0,,{\fad(60,0)}Ay, la cagué.
+Dialogue: 0,0:00:01.32,0:00:02.33,Sub,,0,0,0,,{\fad(60,0)}La cagué, espera.
+Dialogue: 0,0:00:02.92,0:00:04.23,Sub,,0,0,0,,{\fad(60,0)}Me metí en un callejón sin\Nsalida.
+Dialogue: 0,0:00:05.88,0:00:08.63,Sub,,0,0,0,,{\fad(60,0)}Eh… garaje rojo, garaje\Nrojo.
+Dialogue: 0,0:00:08.74,0:00:10.13,Sub,,0,0,0,,{\fad(60,0)}Soy un idiota. Soy un\Nidiota.
+Dialogue: 0,0:00:24.68,0:00:29.23,Sub,,0,0,0,,{\fad(60,0)}No sé cómo, pasé por\Ndebajo de su carro y sigo\Nhuyendo.
+Dialogue: 0,0:00:29.36,0:00:30.83,Sub,,0,0,0,,{\fad(60,0)}Pasé por debajo de su\Ncamión.
+Dialogue: 0,0:00:31.02,0:00:32.23,Sub,,0,0,0,,{\fad(60,0)}Ni lo cuestionaría.

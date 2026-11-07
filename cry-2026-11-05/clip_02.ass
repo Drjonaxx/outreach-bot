@@ -1,0 +1,33 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:52.94,Hook,,0,0,0,,PERDÍ UN VUELO POR EL\NAM/PM
+Dialogue: 0,0:00:00.12,0:00:01.96,Sub,,0,0,0,,{\fad(60,0)}¿Y quién fue el hijo de\Nputa que inventó el AM y\NPM?
+Dialogue: 0,0:00:02.38,0:00:04.96,Sub,,0,0,0,,{\fad(60,0)}¿Por qué no se usa del 1\Nal 24, que nos toman por\Nculo?
+Dialogue: 0,0:00:06.98,0:00:07.96,Sub,,0,0,0,,{\fad(60,0)}Literal, perdí un vuelo.
+Dialogue: 0,0:00:09.78,0:00:10.76,Sub,,0,0,0,,{\fad(60,0)}Fue el de Colombia.
+Dialogue: 0,0:00:12.12,0:00:13.96,Sub,,0,0,0,,{\fad(60,0)}Perdí el vuelo porque era\Na la 1.
+Dialogue: 0,0:00:16.10,0:00:17.22,Sub,,0,0,0,,{\fad(60,0)}Y no decía AM o PM.
+Dialogue: 0,0:00:17.34,0:00:19.32,Sub,,0,0,0,,{\fad(60,0)}Entonces dije: «Ah, bueno.\NA la 1».
+Dialogue: 0,0:00:20.18,0:00:22.82,Sub,,0,0,0,,{\fad(60,0)}Llego a la 1… de Chile… al\Naeropuerto.
+Dialogue: 0,0:00:22.94,0:00:25.42,Sub,,0,0,0,,{\fad(60,0)}«¡Cry! ¡Hola! ¿Qué tal?\N¿Foto?». «¡Claro!».
+Dialogue: 0,0:00:25.58,0:00:28.52,Sub,,0,0,0,,{\fad(60,0)}«A ver, ¿qué vuelo es? Te\Nllevamos las maletas».
+Dialogue: 0,0:00:29.24,0:00:34.22,Sub,,0,0,0,,{\fad(60,0)}Dos chicas y un chico del\Naeropuerto, de lo más\Nlindos.
+Dialogue: 0,0:00:35.36,0:00:40.12,Sub,,0,0,0,,{\fad(60,0)}«A ver, ¿a qué puerta vas?\NPara documentarte, y te\Nllevamos».
+Dialogue: 0,0:00:40.44,0:00:41.82,Sub,,0,0,0,,{\fad(60,0)}Y yo: «¡Qué lindo!\N¡Gracias!».
+Dialogue: 0,0:00:42.40,0:00:43.32,Sub,,0,0,0,,{\fad(60,0)}Y me mira el vuelo y me\Ndice…
+Dialogue: 0,0:00:44.44,0:00:45.72,Sub,,0,0,0,,{\fad(60,0)}«Cry…». «¿Y yo qué?».
+Dialogue: 0,0:00:47.48,0:00:50.12,Sub,,0,0,0,,{\fad(60,0)}«Tu vuelo fue a la 1 de la\Nmañana».
+Dialogue: 0,0:00:50.56,0:00:52.82,Sub,,0,0,0,,{\fad(60,0)}Yo: «¡Hombre! No, no, no,\Nno».

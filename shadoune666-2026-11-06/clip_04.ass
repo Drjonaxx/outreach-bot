@@ -1,0 +1,28 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:35.58,Hook,,0,0,0,,ROBLOX ME ESTÁ\NEMPEZANDO A OFENDER
+Dialogue: 0,0:00:00.12,0:00:02.14,Sub,,0,0,0,,{\fad(60,0)}Ay, no, no, no. Roblox me\Nestá empezando a ofender\Nya.
+Dialogue: 0,0:00:02.32,0:00:03.30,Sub,,0,0,0,,{\fad(60,0)}Ahora me dicen que no soy\Nhumano.
+Dialogue: 0,0:00:03.46,0:00:05.98,Sub,,0,0,0,,{\fad(60,0)}Ayer me empezaban a decir:\N«¿Te puedes alejar de la\Ncámara, por favor?».
+Dialogue: 0,0:00:07.08,0:00:07.44,Sub,,0,0,0,,{\fad(60,0)}Superofensivo.
+Dialogue: 0,0:00:08.60,0:00:12.54,Sub,,0,0,0,,{\fad(60,0)}Desde el captcha, la\Nverdad, era una locura.
+Dialogue: 0,0:00:13.86,0:00:17.96,Sub,,0,0,0,,{\fad(60,0)}El captcha me insulta, me\Nllama feo…
+Dialogue: 0,0:00:19.64,0:00:22.20,Sub,,0,0,0,,{\fad(60,0)}No te preocupes, así nos\Ntratan los\Nmultimillonarios.
+Dialogue: 0,0:00:22.82,0:00:25.24,Sub,,0,0,0,,{\fad(60,0)}Y luego nosotros les\Ncompramos sus juegos, sus\Ncositas ahí.
+Dialogue: 0,0:00:26.28,0:00:27.54,Sub,,0,0,0,,{\fad(60,0)}Se acabó: compro Roblox.
+Dialogue: 0,0:00:27.54,0:00:29.10,Sub,,0,0,0,,{\fad(60,0)}¿Cuánto vale Roblox en\Ntotal?
+Dialogue: 0,0:00:30.08,0:00:30.74,Sub,,0,0,0,,{\fad(60,0)}No, no se compra.
+Dialogue: 0,0:00:32.18,0:00:35.46,Sub,,0,0,0,,{\fad(60,0)}Ah, bueno, Roblox… la\Nempresa, la empresa.
