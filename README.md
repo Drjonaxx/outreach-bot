@@ -9,6 +9,7 @@ Este repo junta varios proyectos, cada uno en su propia rama. `main` es el
 |------|--------|----------------|
 | `claude/clipper` | **¿Qué Dijo El Gringo?** Clips verticales con subtítulos de streamers para YouTube Shorts, Instagram Reels y TikTok. | Cuatro tareas programadas de Claude: clips diarios (8:47 am), subida de madrugada a YouTube (3 y 4 am), publicación al mediodía (11:53 am) y en la noche (7:56 pm). TikTok es manual. El render corre en `clipper.yml` con cada push del trabajo. |
 | `claude/clipper-out` | Resultados del clipper (transcripciones y clips). | La escribe `clipper.yml`. No se toca a mano. |
+| `claude/angry-birds-game-a4n8y9` | **Gomera Boricua**: juego de gomera con física (frutas contra iguanas, 8 niveles). Se juega en https://claude.ai/artifact/Ea8orVGCgJBaNP6UNJeYa7. | Nada: es una página. Código en `gomera-boricua/`. |
 | `claude/kit-ventas-clara` | Kit para vender **Clara**: 39 clínicas de Puerto Rico, guion de entrevistas, oferta y plantillas. | Nada: las entrevistas son en persona. |
 
 En `main`, `.github/workflows/clipper-pruebas.yml` corre todos los días las
