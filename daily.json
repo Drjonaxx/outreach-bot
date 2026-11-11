@@ -1,5 +1,5 @@
 {
-  "_comment": "Streamers de la rutina diaria (8:47 a.m. hora de Puerto Rico). Cada uno se procesa solo en sus días ('days', en inglés). El usuario sube 8 clips al día: 4 de UN stream de un streamer que habla español y 4 de UN stream de uno que habla inglés (subtitulados al español), repartidos a lo largo del stream completo. Por eso se transcribe el VOD entero (limit_minutes es solo un tope de seguridad para el tiempo de CI). Solo streamers SIN clipper oficial (ni canal de clips propio o avalado por ellos en YouTube/TikTok). Si uno tiene campaña pagada, pon sus reglas en 'campaign'.",
+  "_comment": "Streamers de la rutina diaria (8:47 a.m. hora de Puerto Rico). Cada uno se procesa solo en sus días ('days', en inglés). El usuario sube 8 clips al día: 4 de UN stream de un streamer que habla español y 4 de UN stream de uno que habla inglés (subtitulados al español), repartidos a lo largo del stream completo. Por eso se transcribe el VOD entero (limit_minutes es solo un tope de seguridad para el tiempo de CI). Solo streamers SIN clipper oficial (ni canal de clips propio o avalado por ellos en YouTube/TikTok). Si uno tiene campaña pagada, pon sus reglas en 'campaign'. 'blur' (opcional): recuadros [x, y, w, h] en fracciones del video que se difuminan (p. ej. el chat del stream); cópialo al job.json.",
   "streamers": [
     {
       "slug": "cry",
@@ -142,7 +142,15 @@
         "quedijoelgringo"
       ],
       "campaign": null,
-      "notes": "GTA RP en NoPixel: el comisionado Dawson (policía). Streams de 12-15 h."
+      "notes": "GTA RP en NoPixel: el comisionado Dawson (policía). Streams de 12-15 h. Su stream muestra el chat arriba a la izquierda (nombres y mensajes de desconocidos, a veces insultos): por eso 'blur' lo difumina; pásalo al job.json al renderizar. A veces sale un anuncio de Netflix/NFL abajo a la derecha: descarta esos clips.",
+      "blur": [
+        [
+          0,
+          0.06,
+          0.23,
+          0.36
+        ]
+      ]
     },
     {
       "slug": "harry",

@@ -207,19 +207,37 @@ def x_expression(keyframes: list[tuple[float, int]]) -> str:
     return expr
 
 
-def video_filter(plan: CropPlan, info: VideoInfo) -> str:
+def blur_filter(boxes: list[tuple[float, float, float, float]] | None) -> tuple[str, str]:
+    """Blur boxes (x, y, w, h as fractions of the source frame), e.g. a stream's chat
+    overlay with viewers' names and messages. Returns (filter prefix, label to read)."""
+    if not boxes:
+        return "", "[0:v]"
+    chain, src = "", "[0:v]"
+    for i, (x, y, w, h) in enumerate(boxes):
+        chain += (
+            f"{src}split[bm{i}][bs{i}];"
+            f"[bs{i}]crop=trunc(iw*{w}/2)*2:trunc(ih*{h}/2)*2:trunc(iw*{x}):trunc(ih*{y}),"
+            f"gblur=sigma=18[bb{i}];"
+            f"[bm{i}][bb{i}]overlay=trunc(W*{x}):trunc(H*{y})[bo{i}];"
+        )
+        src = f"[bo{i}]"
+    return chain, src
+
+
+def video_filter(plan: CropPlan, info: VideoInfo, blur: list | None = None) -> str:
     """Filter chain from [0:v] to a 1080x1920 stream labelled [base]."""
+    pre, src = blur_filter(blur)
     if plan.mode == "fit":
-        return (
-            f"[0:v]split[bgsrc][fgsrc];"
+        return pre + (
+            f"{src}split[bgsrc][fgsrc];"
             f"[bgsrc]scale={OUT_W}:{OUT_H}:force_original_aspect_ratio=increase,"
             f"crop={OUT_W}:{OUT_H},gblur=sigma=40,eq=brightness=-0.08[bg];"
             f"[fgsrc]scale={OUT_W}:-2[fg];"
             f"[bg][fg]overlay=(W-w)/2:(H-h)/2,setsar=1[base]"
         )
     x = x_expression(plan.keyframes)
-    return (
-        f"[0:v]crop={plan.crop_w}:{info.height}:'{x}':0,"
+    return pre + (
+        f"{src}crop={plan.crop_w}:{info.height}:'{x}':0,"
         f"scale={OUT_W}:{OUT_H}:force_original_aspect_ratio=increase,"
         f"crop={OUT_W}:{OUT_H},setsar=1[base]"
     )

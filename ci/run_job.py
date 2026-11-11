@@ -6,7 +6,8 @@ Stage 2, clips.json present:           download each clip's stretch in 1080p and
 
 job.json fields: name, url, and optionally language ("es"), whisper_model ("small"),
 limit_minutes (only the first N minutes), vod (Kick channel: 0 = latest VOD),
-layout ("auto"/"crop"/"fit"), only (re-render just these clip numbers),
+layout ("auto"/"crop"/"fit"), blur (boxes [x, y, w, h] as fractions of the frame to blur,
+e.g. a stream's chat overlay), only (re-render just these clip numbers),
 retranscribe (true: transcribe again even if results/<name>/transcript.json exists).
 A new job whose VOD was already processed under another name writes
 results/<name>/status.json {"status": "no_new_vod"} and stops.
@@ -59,6 +60,8 @@ cmd = [
 if clips.exists():
     shutil.copy(clips, work / "clips.json")
     cmd += ["--sections", "--layout", job.get("layout", "auto")]
+    for box in job.get("blur") or []:
+        cmd += ["--blur", ",".join(str(v) for v in box)]
     if job.get("only"):
         cmd += ["--only", ",".join(str(i) for i in job["only"])]
 else:

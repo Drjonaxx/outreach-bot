@@ -47,6 +47,8 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--no-captions", action="store_true", help="no quemar subtítulos")
     p.add_argument("--layout", choices=["auto", "crop", "fit"], default="auto",
                    help="auto: sigue caras; crop: siempre recorta a 9:16; fit: video completo con fondo difuminado")
+    p.add_argument("--blur", action="append", default=[], metavar="X,Y,W,H",
+                   help="difuminar este recuadro (fracciones del video original, p. ej. el chat: 0,0.06,0.23,0.36); se puede repetir")
     p.add_argument("--only", help="renderizar solo estos clips, p. ej. 2,5 (numeración 1..N)")
     p.add_argument("--jumpcut", type=float, default=3.0,
                    help="acortar silencios de más de N segundos (0 = no cortar; default: 3)")
@@ -129,6 +131,7 @@ def main(argv: list[str] | None = None) -> int:
             path, render_info, render_clip_, render_words, out_path,
             font=args.font, hook_seconds=args.hook_seconds, captions=not args.no_captions,
             max_gap=args.jumpcut, layout=args.layout,
+            blur=[tuple(float(v) for v in b.split(",")) for b in args.blur],
         )
         write_metadata(out_path.with_suffix(".txt"), clip, meta.title, meta.channel, meta.url)
         log(f"    ✓ {out_path} ({'sigue la cara' if mode == 'crop' else 'plano completo'})")

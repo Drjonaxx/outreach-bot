@@ -55,12 +55,14 @@ def render_clip(
     crf: int = 20,
     max_gap: float = 3.0,
     layout: str = "auto",
+    blur: list | None = None,
 ) -> str:
     """Render one vertical clip. Returns the reframing mode used.
 
     layout: "auto" follows faces and falls back to the full frame for wide two-shots,
     "crop" always fills the frame, "fit" always shows the whole 16:9 picture (keeps
     stream overlays intact) over a blurred background.
+    blur: boxes (x, y, w, h as fractions of the source frame) to blur, e.g. a chat overlay.
     """
     if layout == "fit":
         plan = CropPlan("fit", 0, [(0.0, 0)])
@@ -68,7 +70,7 @@ def render_clip(
         plan = plan_crop(detect_faces(source, clip.start, clip.end), info)
         if layout == "crop" and plan.mode == "fit":
             plan = CropPlan("crop", plan.crop_w, plan.keyframes)
-    graph = video_filter(plan, info)
+    graph = video_filter(plan, info, blur)
     band = None
     if plan.mode == "fit":
         video_h = round(OUT_W * info.height / info.width / 2) * 2
