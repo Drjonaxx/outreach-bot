@@ -1,24 +1,9 @@
 {
-  "name": "saab-2026-11-11",
-  "url": "https://kick.com/saab",
+  "name": "cry-2026-11-12",
+  "url": "https://kick.com/cry",
   "vod": "0",
-  "language": "en",
+  "language": "es",
   "whisper_model": "small",
   "limit_minutes": 900,
-  "layout": "fit",
-  "blur": [
-    [
-      0,
-      0.06,
-      0.23,
-      0.36
-    ]
-  ],
-  "only": [
-    1,
-    3,
-    6,
-    7,
-    8
-  ]
+  "layout": "fit"
 }
