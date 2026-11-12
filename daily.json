@@ -23,7 +23,15 @@
         "quedijoelgringo"
       ],
       "campaign": null,
-      "notes": "Español que vive en México: reacciones, Just Chatting, Minecraft/Roblox. Hace reacciones: no clipees tramos donde suena un video, música o TV de terceros (reclamos de copyright)."
+      "notes": "Español que vive en México: reacciones, Just Chatting, Minecraft/Roblox. Hace reacciones: no clipees tramos donde suena un video, música o TV de terceros (reclamos de copyright). Su stream muestra el chat a la izquierda (arriba o abajo según la escena), con nombres de desconocidos: 'blur' difumina toda la franja izquierda; pásalo al job.json al renderizar. En IRL a veces suena música de fondo (sesiones de fotos): descarta esos clips.",
+      "blur": [
+        [
+          0,
+          0,
+          0.32,
+          1.0
+        ]
+      ]
     },
     {
       "slug": "shadoune666",
