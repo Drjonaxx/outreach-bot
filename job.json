@@ -1,16 +1,17 @@
 {
-  "name": "harry-2026-11-12",
-  "url": "https://kick.com/harry",
+  "name": "shadoune666-2026-11-13",
+  "url": "https://kick.com/shadoune666",
   "vod": "0",
-  "language": "en",
+  "language": "es",
   "whisper_model": "small",
   "limit_minutes": 900,
   "layout": "fit",
-  "only": [
-    7,
-    8,
-    9,
-    10,
-    11
+  "blur": [
+    [
+      0.62,
+      0.6,
+      0.38,
+      0.4
+    ]
   ]
 }

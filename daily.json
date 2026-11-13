@@ -55,7 +55,15 @@
         "quedijoelgringo"
       ],
       "campaign": null,
-      "notes": "Minecraft y Just Chatting. Streams de 11-13 h."
+      "notes": "Minecraft y Just Chatting. Streams de 11-13 h. Su stream muestra el chat abajo a la derecha (nombres de desconocidos): 'blur' lo difumina; pásalo al job.json.",
+      "blur": [
+        [
+          0.62,
+          0.6,
+          0.38,
+          0.4
+        ]
+      ]
     },
     {
       "slug": "natalan",
@@ -79,7 +87,15 @@
         "quedijoelgringo"
       ],
       "campaign": null,
-      "notes": "Guatemalteco: juegos de terror, mods y reacciones. Hace reacciones: no clipees tramos donde suena un video, música o TV de terceros (reclamos de copyright)."
+      "notes": "Guatemalteco: juegos de terror, mods y reacciones. Hace reacciones: no clipees tramos donde suena un video, música o TV de terceros (reclamos de copyright). Su stream muestra el chat abajo a la derecha (nombres de desconocidos): 'blur' lo difumina; pásalo al job.json.",
+      "blur": [
+        [
+          0.66,
+          0.6,
+          0.34,
+          0.4
+        ]
+      ]
     },
     {
       "slug": "sramilcar",
