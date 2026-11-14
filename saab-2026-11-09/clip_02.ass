@@ -1,0 +1,24 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:34.86,Hook,,0,0,0,,LE DOY 30 MINUTOS
+Dialogue: 0,0:00:00.12,0:00:04.88,Sub,,0,0,0,,{\fad(60,0)}{\c&H007AD2FF&}ABOGADO:{\c&H00FFFFFF&} Lo que puedo hacer es\Ndarle unos 30 minutos, que\Nes más tiempo del que les\Ndieron a otros
+Dialogue: 0,0:00:06.64,0:00:10.32,Sub,,0,0,0,,{\fad(60,0)}antes de presentar una\Nqueja formal contra usted,\Nseñor.
+Dialogue: 0,0:00:10.70,0:00:14.48,Sub,,0,0,0,,{\fad(60,0)}Vuelvo a llamar en unos 30\Nminutos.
+Dialogue: 0,0:00:14.72,0:00:18.16,Sub,,0,0,0,,{\fad(60,0)}{\c&H007AD2FF&}DAWSON:{\c&H00FFFFFF&} Por favor, ponme la queja.\NMe encantaría ir a esa\Naudiencia.
+Dialogue: 0,0:00:20.00,0:00:21.52,Sub,,0,0,0,,{\fad(60,0)}No creo que te puedan\Nponer una queja.
+Dialogue: 0,0:00:22.72,0:00:28.32,Sub,,0,0,0,,{\fad(60,0)}—Bueno, sí se puede, pero\Nel comisionado y el fiscal\Ngeneral estarían en la\Naudiencia
+Dialogue: 0,0:00:28.32,0:00:30.92,Sub,,0,0,0,,{\fad(60,0)}para decidir. ¿O sea que\Ndecidirías sobre tu propia\Nqueja?
+Dialogue: 0,0:00:31.74,0:00:34.74,Sub,,0,0,0,,{\fad(60,0)}En cuyo caso, nos\Ninvestigamos a nosotros\Nmismos y encontramos…

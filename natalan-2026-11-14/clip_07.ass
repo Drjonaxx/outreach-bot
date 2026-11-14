@@ -1,0 +1,27 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:31.84,Hook,,0,0,0,,¡HAY UN CHINGO DE\NSANGRE!
+Dialogue: 0,0:00:00.12,0:00:02.32,Sub,,0,0,0,,{\fad(60,0)}¡A la verga, hay un chingo\Nde sangre! Oh…
+Dialogue: 0,0:00:03.52,0:00:04.84,Sub,,0,0,0,,{\fad(60,0)}¡Coño! Oh…
+Dialogue: 0,0:00:07.60,0:00:09.78,Sub,,0,0,0,,{\fad(60,0)}No sé ni qué está pasando.\NWhat…
+Dialogue: 0,0:00:10.98,0:00:12.54,Sub,,0,0,0,,{\fad(60,0)}Hermano… pero, oh…
+Dialogue: 0,0:00:13.74,0:00:16.78,Sub,,0,0,0,,{\fad(60,0)}Ese wey está huyendo, wey.\N¡A la verga!
+Dialogue: 0,0:00:16.78,0:00:18.42,Sub,,0,0,0,,{\fad(60,0)}No mames, cabrón.
+Dialogue: 0,0:00:19.62,0:00:20.96,Sub,,0,0,0,,{\fad(60,0)}No pegó ninguna, bro.
+Dialogue: 0,0:00:22.16,0:00:22.78,Sub,,0,0,0,,{\fad(60,0)}Me mataron.
+Dialogue: 0,0:00:23.80,0:00:25.00,Sub,,0,0,0,,{\fad(60,0)}¡Carajo! Pero…
+Dialogue: 0,0:00:26.20,0:00:27.60,Sub,,0,0,0,,{\fad(60,0)}entonces, ¿cuál es la\Ngracia de esto?
+Dialogue: 0,0:00:29.08,0:00:31.72,Sub,,0,0,0,,{\fad(60,0)}No respawnea… Hermano,\N¿qué estás haciendo?

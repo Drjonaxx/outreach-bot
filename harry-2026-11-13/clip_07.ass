@@ -1,0 +1,35 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:54.30,Hook,,0,0,0,,NINO, ME DAS\NESCALOFRÍOS
+Dialogue: 0,0:00:00.12,0:00:02.04,Sub,,0,0,0,,{\fad(60,0)}—¿Y eso de qué se trata,\Nbaby?
+Dialogue: 0,0:00:02.54,0:00:06.18,Sub,,0,0,0,,{\fad(60,0)}—No tengo ni la menor\Nidea.
+Dialogue: 0,0:00:06.46,0:00:09.46,Sub,,0,0,0,,{\fad(60,0)}Un día me llamó…
+Dialogue: 0,0:00:09.46,0:00:12.30,Sub,,0,0,0,,{\fad(60,0)}y estuvimos como 45\Nminutos en el teléfono.
+Dialogue: 0,0:00:15.56,0:00:18.20,Sub,,0,0,0,,{\fad(60,0)}Yo le dije: «No sé ni cómo\Nhablarte».
+Dialogue: 0,0:00:18.20,0:00:21.90,Sub,,0,0,0,,{\fad(60,0)}«No sé por qué, pero cada\Nvez que hablo contigo…»
+Dialogue: 0,0:00:21.90,0:00:25.06,Sub,,0,0,0,,{\fad(60,0)}«siento que te quieres\Nmeter en mi cabeza».
+Dialogue: 0,0:00:25.06,0:00:29.34,Sub,,0,0,0,,{\fad(60,0)}Ya sabes, esa gente que te\Nda mala espina…
+Dialogue: 0,0:00:29.34,0:00:31.98,Sub,,0,0,0,,{\fad(60,0)}como que están tramando\Nalgo. Y se lo dije en su\Ncara.
+Dialogue: 0,0:00:31.98,0:00:34.70,Sub,,0,0,0,,{\fad(60,0)}Le dije: «Nino, me das\Nescalofríos».
+Dialogue: 0,0:00:34.86,0:00:37.24,Sub,,0,0,0,,{\fad(60,0)}Y él: «¿Pero por qué? No\Nentiendo. ¿Qué te hice?»
+Dialogue: 0,0:00:37.32,0:00:39.86,Sub,,0,0,0,,{\fad(60,0)}Y quería que lo\Npsicoanalizara.
+Dialogue: 0,0:00:40.06,0:00:42.38,Sub,,0,0,0,,{\fad(60,0)}Y como a los 45 minutos de\Nconversación…
+Dialogue: 0,0:00:42.38,0:00:46.20,Sub,,0,0,0,,{\fad(60,0)}me dice: «¡Wow! Ya sé por\Nqué la gente te cuenta\Ntodo».
+Dialogue: 0,0:00:46.24,0:00:47.08,Sub,,0,0,0,,{\fad(60,0)}«Eres bien inteligente».
+Dialogue: 0,0:00:47.08,0:00:48.40,Sub,,0,0,0,,{\fad(60,0)}Quedó en shock.
+Dialogue: 0,0:00:49.06,0:00:50.52,Sub,,0,0,0,,{\fad(60,0)}Y ahora que lo llamé, me\Ndice:
+Dialogue: 0,0:00:50.52,0:00:53.50,Sub,,0,0,0,,{\fad(60,0)}«Quedé con estrés\Npostraumático. No sé qué\Nhacer».
+Dialogue: 0,0:00:53.62,0:00:54.18,Sub,,0,0,0,,{\fad(60,0)}«Estoy hablando con\NHarry».

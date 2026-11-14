@@ -1,0 +1,24 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:34.08,Hook,,0,0,0,,QUE NO SE ENTERE
+Dialogue: 0,0:00:00.12,0:00:04.60,Sub,,0,0,0,,{\fad(60,0)}Vamos a esconder el\Nseñuelo para que no se\Nentere. A ver qué me das\Npor 66, bro.
+Dialogue: 0,0:00:05.80,0:00:11.40,Sub,,0,0,0,,{\fad(60,0)}«La última vez tuvimos un\Ndescanso de lluvia, aunque\Nlos peces pican más cuando\Nllueve…»
+Dialogue: 0,0:00:12.06,0:00:16.56,Sub,,0,0,0,,{\fad(60,0)}«…si estás con ese modo de\Npescar, te voy a dar un\Npremio».
+Dialogue: 0,0:00:17.00,0:00:21.10,Sub,,0,0,0,,{\fad(60,0)}Mi premio, mi premio. A\Nver qué me traes. Mire\Neste pez:
+Dialogue: 0,0:00:21.98,0:00:22.54,Sub,,0,0,0,,{\fad(60,0)}66.
+Dialogue: 0,0:00:23.62,0:00:27.04,Sub,,0,0,0,,{\fad(60,0)}«¿Cómo? ¿Has usado un\Nseñuelo de fondo? Te\Nquedas sin premio».
+Dialogue: 0,0:00:27.78,0:00:29.66,Sub,,0,0,0,,{\fad(60,0)}Puta, ¿cómo se dio cuenta?
+Dialogue: 0,0:00:30.86,0:00:33.96,Sub,,0,0,0,,{\fad(60,0)}No… ¿cómo sabía? Rata de\Nmierda.

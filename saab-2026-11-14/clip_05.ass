@@ -1,0 +1,26 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:27.90,Hook,,0,0,0,,NO VAMOS A COMETER NI\NUN ERROR
+Dialogue: 0,0:00:00.12,0:00:03.64,Sub,,0,0,0,,{\fad(60,0)}¡Para! Vas a quedar en\Nridículo.
+Dialogue: 0,0:00:05.16,0:00:07.66,Sub,,0,0,0,,{\fad(60,0)}Muy bien, Skinny Delarini,\Nun gusto conocerlos a\Ntodos. Hola.
+Dialogue: 0,0:00:07.66,0:00:10.74,Sub,,0,0,0,,{\fad(60,0)}Este soy yo. Somos Danny y\Nyo, vamos a estar en el\Ndespacho de radio.
+Dialogue: 0,0:00:10.94,0:00:11.72,Sub,,0,0,0,,{\fad(60,0)}Va a ser genial.
+Dialogue: 0,0:00:11.98,0:00:14.24,Sub,,0,0,0,,{\fad(60,0)}Vamos a hacer un trabajo\Nmaravilloso. No vamos a\Ncometer
+Dialogue: 0,0:00:14.24,0:00:17.40,Sub,,0,0,0,,{\fad(60,0)}ningún error. Ni uno solo.\NY si hay
+Dialogue: 0,0:00:17.40,0:00:18.98,Sub,,0,0,0,,{\fad(60,0)}un error, lo cometió él,\Nno yo.
+Dialogue: 0,0:00:19.38,0:00:21.66,Sub,,0,0,0,,{\fad(60,0)}Perdón. Eso no fue muy de\Nequipo. Mentí.
+Dialogue: 0,0:00:23.96,0:00:26.32,Sub,,0,0,0,,{\fad(60,0)}Sí, perdón, me asusté. Me\Nasusté.
+Dialogue: 0,0:00:26.44,0:00:27.78,Sub,,0,0,0,,{\fad(60,0)}Hay mucha gente mirándome.\NEstoy nervioso.

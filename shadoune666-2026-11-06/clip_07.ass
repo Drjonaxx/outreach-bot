@@ -1,0 +1,26 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:34.83,Hook,,0,0,0,,¿TODO ESTO PARA 15\NRUPIAS?
+Dialogue: 0,0:00:00.00,0:00:00.50,Sub,,0,0,0,,{\fad(60,0)}¿Esto, de 15?
+Dialogue: 0,0:00:02.32,0:00:06.26,Sub,,0,0,0,,{\fad(60,0)}Bro, bro, bro, no, no, no.\N¿Cómo que esto de 15?
+Dialogue: 0,0:00:08.35,0:00:13.87,Sub,,0,0,0,,{\fad(60,0)}«Qué bueno que podemos\Nencontrar a alguien que la\Nquisiera»…
+Dialogue: 0,0:00:15.07,0:00:18.15,Sub,,0,0,0,,{\fad(60,0)}Bro, bro, bro, no.
+Dialogue: 0,0:00:18.25,0:00:20.89,Sub,,0,0,0,,{\fad(60,0)}¿Hice todo esto para 15
+Dialogue: 0,0:00:20.89,0:00:23.11,Sub,,0,0,0,,{\fad(60,0)}rupias? Además, voy a\Ntener que devolver 10.
+Dialogue: 0,0:00:24.05,0:00:25.53,Sub,,0,0,0,,{\fad(60,0)}Ah, bro, este tipo… ¡son\N5!
+Dialogue: 0,0:00:27.11,0:00:28.35,Sub,,0,0,0,,{\fad(60,0)}No, no, no.
+Dialogue: 0,0:00:29.55,0:00:31.41,Sub,,0,0,0,,{\fad(60,0)}Todo esto para 5 rupias.
+Dialogue: 0,0:00:32.61,0:00:34.71,Sub,,0,0,0,,{\fad(60,0)}Me estafó, pero duro,\Nduro, ¿eh?

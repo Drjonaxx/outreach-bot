@@ -1,0 +1,31 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:35.12,Hook,,0,0,0,,OTRA TORRE DE BABEL…\NPERO MÁS GRANDE
+Dialogue: 0,0:00:00.12,0:00:01.34,Sub,,0,0,0,,{\fad(60,0)}Y de base, ¿qué vas a\Nhacer?
+Dialogue: 0,0:00:03.06,0:00:03.76,Sub,,0,0,0,,{\fad(60,0)}La torre de Babel.
+Dialogue: 0,0:00:03.92,0:00:07.14,Sub,,0,0,0,,{\fad(60,0)}No, no.
+Dialogue: 0,0:00:07.82,0:00:09.86,Sub,,0,0,0,,{\fad(60,0)}La torre de Babel más\Ngrande que has visto en\NMinecraft.
+Dialogue: 0,0:00:12.30,0:00:13.12,Sub,,0,0,0,,{\fad(60,0)}Una más grande.
+Dialogue: 0,0:00:15.46,0:00:18.14,Sub,,0,0,0,,{\fad(60,0)}Va a ser cuatro veces más\Ngrande que la otra.
+Dialogue: 0,0:00:18.98,0:00:19.34,Sub,,0,0,0,,{\fad(60,0)}Prepárense.
+Dialogue: 0,0:00:19.42,0:00:20.62,Sub,,0,0,0,,{\fad(60,0)}Estoy muy emocionado,\NShadoune.
+Dialogue: 0,0:00:20.82,0:00:22.68,Sub,,0,0,0,,{\fad(60,0)}Es como una torre de\NBabel, pero más grande.
+Dialogue: 0,0:00:23.38,0:00:23.76,Sub,,0,0,0,,{\fad(60,0)}Sí, sí.
+Dialogue: 0,0:00:24.00,0:00:25.16,Sub,,0,0,0,,{\fad(60,0)}¿Y tú qué vas a hacer?
+Dialogue: 0,0:00:25.70,0:00:26.26,Sub,,0,0,0,,{\fad(60,0)}Otro inodoro.
+Dialogue: 0,0:00:28.78,0:00:31.54,Sub,,0,0,0,,{\fad(60,0)}Shadoune, yo he tenido\Ntres bases diferentes,
+Dialogue: 0,0:00:31.68,0:00:33.88,Sub,,0,0,0,,{\fad(60,0)}y tú has tenido tres\Ntorres de Babel, una más\Ngrande que otra.
+Dialogue: 0,0:00:34.24,0:00:35.00,Sub,,0,0,0,,{\fad(60,0)}No, es verdad.

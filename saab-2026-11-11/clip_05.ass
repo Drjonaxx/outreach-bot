@@ -1,0 +1,32 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:48.01,Hook,,0,0,0,,¿NO TRAES ARMAS?
+Dialogue: 0,0:00:00.12,0:00:02.44,Sub,,0,0,0,,{\fad(60,0)}¿Me puedo ir contigo?\NPuedes decir que no.
+Dialogue: 0,0:00:02.98,0:00:04.14,Sub,,0,0,0,,{\fad(60,0)}Sí. ¿No tienes armas\Nencima?
+Dialogue: 0,0:00:05.74,0:00:11.20,Sub,,0,0,0,,{\fad(60,0)}¿Te las doy? Tengo un\Nmontón.
+Dialogue: 0,0:00:11.20,0:00:12.84,Sub,,0,0,0,,{\fad(60,0)}A ver, esto es un\Ncuchillo.
+Dialogue: 0,0:00:14.04,0:00:15.14,Sub,,0,0,0,,{\fad(60,0)}Este es otro cuchillo.
+Dialogue: 0,0:00:16.96,0:00:17.68,Sub,,0,0,0,,{\fad(60,0)}¡Ay, no, hombre!
+Dialogue: 0,0:00:19.48,0:00:21.60,Sub,,0,0,0,,{\fad(60,0)}Ten. —Gracias.
+Dialogue: 0,0:00:22.80,0:00:24.24,Sub,,0,0,0,,{\fad(60,0)}Y esto es una pistola.
+Dialogue: 0,0:00:24.42,0:00:25.62,Sub,,0,0,0,,{\fad(60,0)}¿Una linterna cuenta como\Narma?
+Dialogue: 0,0:00:27.10,0:00:28.52,Sub,,0,0,0,,{\fad(60,0)}No, te las puedes quedar.
+Dialogue: 0,0:00:29.70,0:00:31.12,Sub,,0,0,0,,{\fad(60,0)}Eso es todo. ¿Me quieres\Nregistrar?
+Dialogue: 0,0:00:33.78,0:00:34.52,Sub,,0,0,0,,{\fad(60,0)}Así estás bien.
+Dialogue: 0,0:00:36.47,0:00:38.63,Sub,,0,0,0,,{\fad(60,0)}También tengo una pala de\Njardín. ¿Eso es un arma?
+Dialogue: 0,0:00:39.55,0:00:40.75,Sub,,0,0,0,,{\fad(60,0)}Sí, puedes quedártela,\Nestá bien.
+Dialogue: 0,0:00:42.31,0:00:44.37,Sub,,0,0,0,,{\fad(60,0)}¿Y un detector de metales?\NEs plegable.
+Dialogue: 0,0:00:47.09,0:00:47.89,Sub,,0,0,0,,{\fad(60,0)}Eso también está bien.

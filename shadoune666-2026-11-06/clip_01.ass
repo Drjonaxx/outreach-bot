@@ -1,0 +1,25 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:53.30,Hook,,0,0,0,,NADIE SABE QUE ESTE\NBRO ES BUENO
+Dialogue: 0,0:00:00.00,0:00:04.78,Sub,,0,0,0,,{\fad(60,0)}Yo le dije: «Mira, hay un\Namigo de Churro que se\Nllama Daniboy».
+Dialogue: 0,0:00:05.80,0:00:11.90,Sub,,0,0,0,,{\fad(60,0)}Y ya estaba como: «Ya\Nestá, voy a entrar al\Nteam. Ganamos».
+Dialogue: 0,0:00:11.90,0:00:17.66,Sub,,0,0,0,,{\fad(60,0)}Yo, Churro y Daniboy\Njuntos… nos va a ir feo,\Npero pues yo:
+Dialogue: 0,0:00:17.66,0:00:21.48,Sub,,0,0,0,,{\fad(60,0)}«Un timazo, un equipazo y\Nganamos full».
+Dialogue: 0,0:00:23.14,0:00:31.98,Sub,,0,0,0,,{\fad(60,0)}Y yo dije: «Es imposible,\Nimposible que te acepten».
+Dialogue: 0,0:00:31.98,0:00:38.42,Sub,,0,0,0,,{\fad(60,0)}Pero mira: buscas a\NDaniboy en YouTube, bro,
+Dialogue: 0,0:00:38.42,0:00:44.74,Sub,,0,0,0,,{\fad(60,0)}te sale esto, le das clic:\Npuro contenido de shorts\Ncon su novia.
+Dialogue: 0,0:00:45.54,0:00:50.98,Sub,,0,0,0,,{\fad(60,0)}No puedes encontrar nada\Nde PvP. Es imposible
+Dialogue: 0,0:00:50.98,0:00:53.30,Sub,,0,0,0,,{\fad(60,0)}que entiendas que este bro\Nes bueno en Minecraft.

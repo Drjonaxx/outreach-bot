@@ -1,0 +1,33 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:44.33,Hook,,0,0,0,,¡DETÉNGASE O\NDISPARAMOS!
+Dialogue: 0,0:00:00.12,0:00:01.52,Sub,,0,0,0,,{\fad(60,0)}{\c&H007AD2FF&}POLICÍA:{\c&H00FFFFFF&} ¡Deténgase ya, señor!
+Dialogue: 0,0:00:02.08,0:00:04.16,Sub,,0,0,0,,{\fad(60,0)}¡Es su única advertencia!\N¡Le vamos a disparar!
+Dialogue: 0,0:00:04.96,0:00:06.24,Sub,,0,0,0,,{\fad(60,0)}Necesito ayuda. ¡Deténgase\Nya!
+Dialogue: 0,0:00:07.44,0:00:08.70,Sub,,0,0,0,,{\fad(60,0)}¡Deje de correr!
+Dialogue: 0,0:00:11.61,0:00:13.73,Sub,,0,0,0,,{\fad(60,0)}¡Oh! ¡Oh! ¡Señor!
+Dialogue: 0,0:00:14.03,0:00:15.23,Sub,,0,0,0,,{\fad(60,0)}Pudimos haber hecho algo.
+Dialogue: 0,0:00:15.61,0:00:16.51,Sub,,0,0,0,,{\fad(60,0)}Uno abajo. Uno abajo.
+Dialogue: 0,0:00:16.89,0:00:19.21,Sub,,0,0,0,,{\fad(60,0)}Estamos en el piso 25.\NTengan a los paramédicos\Nlistos.
+Dialogue: 0,0:00:20.67,0:00:21.99,Sub,,0,0,0,,{\fad(60,0)}No puede ser.
+Dialogue: 0,0:00:24.79,0:00:25.69,Sub,,0,0,0,,{\fad(60,0)}Dios mío.
+Dialogue: 0,0:00:26.79,0:00:28.81,Sub,,0,0,0,,{\fad(60,0)}Asegúrense de que esté\Nbien.
+Dialogue: 0,0:00:30.01,0:00:32.69,Sub,,0,0,0,,{\fad(60,0)}Está despejado. Vamos a\Nsacarlo… Espera.
+Dialogue: 0,0:00:33.15,0:00:34.05,Sub,,0,0,0,,{\fad(60,0)}¡Maldita sea, John!
+Dialogue: 0,0:00:36.75,0:00:38.59,Sub,,0,0,0,,{\fad(60,0)}{\c&H007AD2FF&}KAYSAN:{\c&H00FFFFFF&} Ya sé que aquí disparan al\Ninstante.
+Dialogue: 0,0:00:38.79,0:00:41.11,Sub,,0,0,0,,{\fad(60,0)}Pensé que lo iban a\Nrolear, ¿me entienden?
+Dialogue: 0,0:00:41.31,0:00:42.59,Sub,,0,0,0,,{\fad(60,0)}Sé que por regla podían\Ndispararme.
+Dialogue: 0,0:00:42.67,0:00:44.21,Sub,,0,0,0,,{\fad(60,0)}Pensé que tal vez querían\Nhacer una película.

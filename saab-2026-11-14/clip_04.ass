@@ -1,0 +1,34 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:51.16,Hook,,0,0,0,,DENÚNCIENME. HÁGANLO
+Dialogue: 0,0:00:00.12,0:00:04.60,Sub,,0,0,0,,{\fad(60,0)}Usted mismo dijo antes que\Nel profesionalismo no es\Nalgo que exijamos.
+Dialogue: 0,0:00:04.70,0:00:08.56,Sub,,0,0,0,,{\fad(60,0)}Hay un nivel de\Nprofesionalismo. No les va\Na pedir cuentas por ser\Npoco profesionales.
+Dialogue: 0,0:00:09.02,0:00:11.34,Sub,,0,0,0,,{\fad(60,0)}Solo va a hablar con ellos\Ny decirles: «sean más\Nprofesionales, por favor».
+Dialogue: 0,0:00:11.78,0:00:12.82,Sub,,0,0,0,,{\fad(60,0)}¿Y qué le dije antes?
+Dialogue: 0,0:00:12.96,0:00:16.98,Sub,,0,0,0,,{\fad(60,0)}Lo único que puedo hacer\Nes darles un manotazo,\Nporque no estoy ahí para\Ntener esa conversación.
+Dialogue: 0,0:00:17.04,0:00:20.02,Sub,,0,0,0,,{\fad(60,0)}¿De verdad les quitaría la\Nlicencia de abogado así de\Nrápido si quisiera?
+Dialogue: 0,0:00:20.36,0:00:22.08,Sub,,0,0,0,,{\fad(60,0)}Que presenten una queja.\NNo pasa nada.
+Dialogue: 0,0:00:22.44,0:00:25.34,Sub,,0,0,0,,{\fad(60,0)}Háganlo. Por favor.\NDenúncienme. Háganlo.\N¿Dónde está?
+Dialogue: 0,0:00:26.54,0:00:28.72,Sub,,0,0,0,,{\fad(60,0)}Ok. ¿Entonces quiere que\Npresentemos algo? Solo\Npara que quede claro.
+Dialogue: 0,0:00:29.54,0:00:30.88,Sub,,0,0,0,,{\fad(60,0)}Sí. ¿Dónde está?
+Dialogue: 0,0:00:31.20,0:00:32.34,Sub,,0,0,0,,{\fad(60,0)}Porque yo no veo nada.
+Dialogue: 0,0:00:33.12,0:00:35.02,Sub,,0,0,0,,{\fad(60,0)}Bueno, venimos a hablarlo\Ncon usted y luego se\Npresenta.
+Dialogue: 0,0:00:36.22,0:00:36.96,Sub,,0,0,0,,{\fad(60,0)}Muy bien.
+Dialogue: 0,0:00:37.76,0:00:39.44,Sub,,0,0,0,,{\fad(60,0)}¿Acabo de esquivar todas\Nsus preguntas?
+Dialogue: 0,0:00:39.66,0:00:42.18,Sub,,0,0,0,,{\fad(60,0)}Si ya terminamos, por\Nfavor salgan de la\Noficina. Gracias.
+Dialogue: 0,0:00:42.90,0:00:44.78,Sub,,0,0,0,,{\fad(60,0)}Esta es mi oficina… pero\Nsí, nos vamos.
+Dialogue: 0,0:00:47.20,0:00:48.62,Sub,,0,0,0,,{\fad(60,0)}Oh, con gusto salgo.
+Dialogue: 0,0:00:49.40,0:00:51.04,Sub,,0,0,0,,{\fad(60,0)}Cuídese. Que tenga buen\Ndía.

@@ -1,0 +1,27 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:32.85,Hook,,0,0,0,,KNUCKLES, DEJA DE\NTROLLEAR
+Dialogue: 0,0:00:00.00,0:00:02.14,Sub,,0,0,0,,{\fad(60,0)}¡Pero no, no choquen!\N¡Buena, buena, buena!
+Dialogue: 0,0:00:02.14,0:00:04.94,Sub,,0,0,0,,{\fad(60,0)}Knuckles, ¡pero no, no\Nchoques!
+Dialogue: 0,0:00:04.94,0:00:07.50,Sub,,0,0,0,,{\fad(60,0)}Deja de trollear, por\Nfavor.
+Dialogue: 0,0:00:07.50,0:00:10.66,Sub,,0,0,0,,{\fad(60,0)}Vale, vale.
+Dialogue: 0,0:00:10.66,0:00:13.32,Sub,,0,0,0,,{\fad(60,0)}Knuckles, deja de hacer\Neso y ven.
+Dialogue: 0,0:00:13.32,0:00:16.42,Sub,,0,0,0,,{\fad(60,0)}Knuckles… no, ya…
+Dialogue: 0,0:00:16.42,0:00:18.07,Sub,,0,0,0,,{\fad(60,0)}¡Se desconectó este hijo\Nde perro!
+Dialogue: 0,0:00:19.27,0:00:22.99,Sub,,0,0,0,,{\fad(60,0)}Knuckles, así no…
+Dialogue: 0,0:00:24.19,0:00:27.21,Sub,,0,0,0,,{\fad(60,0)}Hermano, se fue a quitar\Nel…
+Dialogue: 0,0:00:28.41,0:00:30.63,Sub,,0,0,0,,{\fad(60,0)}Hombre, no…
+Dialogue: 0,0:00:31.83,0:00:32.85,Sub,,0,0,0,,{\fad(60,0)}¡Mierda!

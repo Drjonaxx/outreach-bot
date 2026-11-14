@@ -1,0 +1,25 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:29.30,Hook,,0,0,0,,PREGUNTA RANDOM, HARRY
+Dialogue: 0,0:00:00.12,0:00:04.44,Sub,,0,0,0,,{\fad(60,0)}—Harry, pregunta random.\N¿Te invitaron a un\Nhackatón? Dime la verdad.
+Dialogue: 0,0:00:04.68,0:00:06.94,Sub,,0,0,0,,{\fad(60,0)}—¿Me invitaron a un qué,\Nbro?
+Dialogue: 0,0:00:08.20,0:00:10.14,Sub,,0,0,0,,{\fad(60,0)}—¿Te invitaron a un\Nhackatón?
+Dialogue: 0,0:00:11.16,0:00:14.50,Sub,,0,0,0,,{\fad(60,0)}—No, a ningún hackatón.
+Dialogue: 0,0:00:15.90,0:00:20.00,Sub,,0,0,0,,{\fad(60,0)}—Ya sé, ya sé. Solo\Ninvitaron a los mejores\Nhackers.
+Dialogue: 0,0:00:20.20,0:00:22.40,Sub,,0,0,0,,{\fad(60,0)}—Ah, sí, eso me hace\Nsentir mal. Gracias, bro.
+Dialogue: 0,0:00:23.84,0:00:24.84,Sub,,0,0,0,,{\fad(60,0)}—A mí tampoco me\Ninvitaron.
+Dialogue: 0,0:00:25.16,0:00:27.90,Sub,,0,0,0,,{\fad(60,0)}—Ah, no, bro, yo no soy\Nhacker.
+Dialogue: 0,0:00:28.22,0:00:29.18,Sub,,0,0,0,,{\fad(60,0)}Yo soy el músculo.

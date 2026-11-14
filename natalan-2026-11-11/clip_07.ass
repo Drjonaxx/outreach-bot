@@ -1,0 +1,29 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:53.16,Hook,,0,0,0,,¡ME ESTÁS ACOSANDO!
+Dialogue: 0,0:00:00.12,0:00:03.22,Sub,,0,0,0,,{\fad(60,0)}¡Hey, esta tipa, hey! Me\Nestás acosando, por favor.
+Dialogue: 0,0:00:03.22,0:00:06.06,Sub,,0,0,0,,{\fad(60,0)}Déjame tomarme una foto\Ncon mi hija. Dios.
+Dialogue: 0,0:00:07.84,0:00:11.44,Sub,,0,0,0,,{\fad(60,0)}«Perdone, ¿podría cargarla\Nun momentito? Solo una\Nvez». Ah, sí.
+Dialogue: 0,0:00:13.48,0:00:16.34,Sub,,0,0,0,,{\fad(60,0)}«Qué ligera». Uy, se me\Nolvidó que mi hija es\Nmujer.
+Dialogue: 0,0:00:16.34,0:00:19.14,Sub,,0,0,0,,{\fad(60,0)}Cabrón. Bueno, el azul\Ntambién puede ser para\Nmujer.
+Dialogue: 0,0:00:19.88,0:00:21.76,Sub,,0,0,0,,{\fad(60,0)}«El año pasado yo también\Nesperaba uno.
+Dialogue: 0,0:00:22.52,0:00:28.34,Sub,,0,0,0,,{\fad(60,0)}Llegué a los 5 meses. Un\Ndía dejó de latirle su\Ncorazoncito… y ya».
+Dialogue: 0,0:00:29.64,0:00:32.80,Sub,,0,0,0,,{\fad(60,0)}Ah… Lo siento.
+Dialogue: 0,0:00:34.14,0:00:36.80,Sub,,0,0,0,,{\fad(60,0)}«No tiene por qué. Por eso\Nhago este trabajo,
+Dialogue: 0,0:00:36.80,0:00:40.18,Sub,,0,0,0,,{\fad(60,0)}para poder cargar así a un\Nbebé, aunque sea ajeno».
+Dialogue: 0,0:00:41.24,0:00:44.40,Sub,,0,0,0,,{\fad(60,0)}Hostia, esa es una red\Nflag.
+Dialogue: 0,0:00:44.40,0:00:47.66,Sub,,0,0,0,,{\fad(60,0)}La está cargando demasiado\Ntiempo.
+Dialogue: 0,0:00:49.26,0:00:53.16,Sub,,0,0,0,,{\fad(60,0)}¿Me la das? Ah, démela ya,\Npor favor.

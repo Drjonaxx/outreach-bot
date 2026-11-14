@@ -1,0 +1,27 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:38.51,Hook,,0,0,0,,¿LE DISTE PERMISO?
+Dialogue: 0,0:00:00.12,0:00:01.62,Sub,,0,0,0,,{\fad(60,0)}Hablando del Buffalo, algo\Nrápido, cambiando de tema.
+Dialogue: 0,0:00:01.84,0:00:06.04,Sub,,0,0,0,,{\fad(60,0)}¿Le diste permiso para\Nmanejar uno el otro día?\N—No.
+Dialogue: 0,0:00:08.21,0:00:09.33,Sub,,0,0,0,,{\fad(60,0)}—¿Dijiste mi nombre otra\Nvez?
+Dialogue: 0,0:00:10.53,0:00:11.35,Sub,,0,0,0,,{\fad(60,0)}No a mí.
+Dialogue: 0,0:00:12.17,0:00:16.09,Sub,,0,0,0,,{\fad(60,0)}Lo vi en una persecución\Nen un Buffalo ayer.
+Dialogue: 0,0:00:18.59,0:00:19.63,Sub,,0,0,0,,{\fad(60,0)}Ay, Dios mío.
+Dialogue: 0,0:00:19.97,0:00:25.77,Sub,,0,0,0,,{\fad(60,0)}Sí, Shiesty pierde su\Narma. Vuelve a la pistola.
+Dialogue: 0,0:00:26.97,0:00:28.51,Sub,,0,0,0,,{\fad(60,0)}Patrulla en bici.
+Dialogue: 0,0:00:29.47,0:00:32.15,Sub,,0,0,0,,{\fad(60,0)}Está a punto de perderlo\Ntodo. A punto.
+Dialogue: 0,0:00:32.21,0:00:35.25,Sub,,0,0,0,,{\fad(60,0)}Necesitamos scooters de\Nalquiler para la policía\Ncon luces.
+Dialogue: 0,0:00:36.45,0:00:38.39,Sub,,0,0,0,,{\fad(60,0)}Shiesty tiene que dejar de\Nhacer tonterías.

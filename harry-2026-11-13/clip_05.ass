@@ -1,0 +1,32 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:52.36,Hook,,0,0,0,,ESTOY EN LA PRISIÓN\NFEDERAL
+Dialogue: 0,0:00:00.00,0:00:02.10,Sub,,0,0,0,,{\fad(60,0)}—Perdón, es que estoy en\Nla prisión federal.
+Dialogue: 0,0:00:02.10,0:00:04.56,Sub,,0,0,0,,{\fad(60,0)}—¡No puede ser, Brandon!\N¿Qué pasó, bro?
+Dialogue: 0,0:00:05.36,0:00:08.36,Sub,,0,0,0,,{\fad(60,0)}—Mira, mira, no entiendo\Nesto de las esposas, bro.
+Dialogue: 0,0:00:08.62,0:00:10.60,Sub,,0,0,0,,{\fad(60,0)}Me esposan facilísimo.
+Dialogue: 0,0:00:10.92,0:00:13.30,Sub,,0,0,0,,{\fad(60,0)}Ya estoy acabado, bro. Ya\Npasó mi momento.
+Dialogue: 0,0:00:13.58,0:00:15.60,Sub,,0,0,0,,{\fad(60,0)}No sé qué me pasa.
+Dialogue: 0,0:00:15.84,0:00:18.86,Sub,,0,0,0,,{\fad(60,0)}Estoy hecho polvo. Dios,\Nbro, hecho polvo.
+Dialogue: 0,0:00:18.86,0:00:21.36,Sub,,0,0,0,,{\fad(60,0)}Me han atrapado tres veces\Nen tres días.
+Dialogue: 0,0:00:21.36,0:00:27.68,Sub,,0,0,0,,{\fad(60,0)}Quedé tirado en medio de\Nla calle, como un perrito\Nperdido…
+Dialogue: 0,0:00:27.68,0:00:33.32,Sub,,0,0,0,,{\fad(60,0)}con el taser encima, y un\Ntipo poniéndome las\Nesposas.
+Dialogue: 0,0:00:33.32,0:00:36.24,Sub,,0,0,0,,{\fad(60,0)}Estoy harto de esto, bro.\NYa me cansé.
+Dialogue: 0,0:00:36.36,0:00:38.08,Sub,,0,0,0,,{\fad(60,0)}—Parece que tienes que\Naprender a manejar, bro.
+Dialogue: 0,0:00:38.08,0:00:40.04,Sub,,0,0,0,,{\fad(60,0)}Aunque sé que no siempre\Nes fácil.
+Dialogue: 0,0:00:41.06,0:00:42.40,Sub,,0,0,0,,{\fad(60,0)}—Bueno, es que yo no iba\Nmanejando.
+Dialogue: 0,0:00:42.40,0:00:45.02,Sub,,0,0,0,,{\fad(60,0)}—¿Y cómo terminaste en\Nmedio de la calle?
+Dialogue: 0,0:00:46.16,0:00:52.24,Sub,,0,0,0,,{\fad(60,0)}—Porque el carro se salió…\Nporque el que manejaba lo\Nchocó.

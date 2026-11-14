@@ -1,0 +1,24 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:32.74,Hook,,0,0,0,,FILTRÓ LA FECHA SIN\NQUERER
+Dialogue: 0,0:00:00.10,0:00:06.86,Sub,,0,0,0,,{\fad(60,0)}—«Chicos, cuidado, la\Nserie que hacemos con\NConter empieza el 7 de\Ndiciembre».
+Dialogue: 0,0:00:08.06,0:00:10.04,Sub,,0,0,0,,{\fad(60,0)}—O sea, pero tú dijiste\Neso, imbécil.
+Dialogue: 0,0:00:10.94,0:00:13.02,Sub,,0,0,0,,{\fad(60,0)}Sí, ¿no viste? Ahora no lo\Npuedes decir, Shadoune.
+Dialogue: 0,0:00:14.20,0:00:16.34,Sub,,0,0,0,,{\fad(60,0)}—Wey, pero es que… ¿por\Nqué?
+Dialogue: 0,0:00:16.58,0:00:21.32,Sub,,0,0,0,,{\fad(60,0)}No fue filtrarlo… —Tú\Ntienes la ley.
+Dialogue: 0,0:00:21.40,0:00:25.30,Sub,,0,0,0,,{\fad(60,0)}—Shadoune me confesó que\Nél también la filtró sin\Nquerer. —Sí. —¿Y nadie se\Ndio cuenta?
+Dialogue: 0,0:00:25.56,0:00:29.22,Sub,,0,0,0,,{\fad(60,0)}—Porque la filtré y no\Npasó nada.
+Dialogue: 0,0:00:30.42,0:00:32.62,Sub,,0,0,0,,{\fad(60,0)}Nadie se dio cuenta, nadie\Nse dio cuenta.

@@ -1,0 +1,28 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:41.14,Hook,,0,0,0,,HAY ALGO NUEVO EN LAS\NCALLES
+Dialogue: 0,0:00:00.02,0:00:02.96,Sub,,0,0,0,,{\fad(60,0)}Hay algo nuevo en las\Ncalles. No sé muy bien qué\Nes.
+Dialogue: 0,0:00:03.02,0:00:05.96,Sub,,0,0,0,,{\fad(60,0)}Tiene que ver con carros\Ny, creo, con carreras.
+Dialogue: 0,0:00:06.08,0:00:10.50,Sub,,0,0,0,,{\fad(60,0)}Vi una carrera, hermano.\NTe juro que vi una carrera\Npasando por Grapeseed.
+Dialogue: 0,0:00:10.50,0:00:13.84,Sub,,0,0,0,,{\fad(60,0)}No sé mucho del tema, pero\Nse veía muy organizada.
+Dialogue: 0,0:00:15.62,0:00:18.16,Sub,,0,0,0,,{\fad(60,0)}¿Sabes qué hora es? —¿Qué?
+Dialogue: 0,0:00:19.64,0:00:21.44,Sub,,0,0,0,,{\fad(60,0)}Hora de armar un desastre.
+Dialogue: 0,0:00:21.56,0:00:24.32,Sub,,0,0,0,,{\fad(60,0)}Me voy a robar una barra\Nde clavos de la policía y\Nvoy a poncharles una\Ncarrera.
+Dialogue: 0,0:00:24.52,0:00:25.44,Sub,,0,0,0,,{\fad(60,0)}—Ay, Dios.
+Dialogue: 0,0:00:26.94,0:00:28.74,Sub,,0,0,0,,{\fad(60,0)}¿Qué diablos te hicieron\Nlas carreras, hermano?
+Dialogue: 0,0:00:30.32,0:00:33.14,Sub,,0,0,0,,{\fad(60,0)}—Nada, nada…
+Dialogue: 0,0:00:33.14,0:00:36.18,Sub,,0,0,0,,{\fad(60,0)}Solo quiero arruinarle el\Ndía a alguien. Arruinarle\Nla carrera a alguien.
+Dialogue: 0,0:00:38.60,0:00:41.02,Sub,,0,0,0,,{\fad(60,0)}—¿Verdad? Esa energía. Me\Ngusta.

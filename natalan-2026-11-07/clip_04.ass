@@ -1,0 +1,29 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:34.99,Hook,,0,0,0,,¿ME LA VENDES?
+Dialogue: 0,0:00:00.12,0:00:02.16,Sub,,0,0,0,,{\fad(60,0)}—Bueno, si no es mucho\Npedir, ¿podrías\Nvendérmela?
+Dialogue: 0,0:00:03.18,0:00:04.26,Sub,,0,0,0,,{\fad(60,0)}—No quiero venderla.
+Dialogue: 0,0:00:05.46,0:00:05.96,Sub,,0,0,0,,{\fad(60,0)}Te la vendo.
+Dialogue: 0,0:00:08.65,0:00:09.95,Sub,,0,0,0,,{\fad(60,0)}—¿De verdad me la vendes?
+Dialogue: 0,0:00:10.71,0:00:11.39,Sub,,0,0,0,,{\fad(60,0)}¡Eres el mejor!
+Dialogue: 0,0:00:12.85,0:00:14.47,Sub,,0,0,0,,{\fad(60,0)}Bien, pues toma lo que te\Ndebo.
+Dialogue: 0,0:00:15.53,0:00:16.83,Sub,,0,0,0,,{\fad(60,0)}—Gracias, señor héroe.
+Dialogue: 0,0:00:18.03,0:00:21.65,Sub,,0,0,0,,{\fad(60,0)}«A mi hijo le va a\Nencantar. Estoy deseando\Nllegar a casa y mostrarle\Nla máscara».
+Dialogue: 0,0:00:23.01,0:00:25.01,Sub,,0,0,0,,{\fad(60,0)}«Qué bueno que encontramos\Na alguien que la quisiera.
+Dialogue: 0,0:00:25.01,0:00:29.53,Sub,,0,0,0,,{\fad(60,0)}Y seguro que el encargado\Ntambién se alegrará cuando\Nle lleve las rupias».
+Dialogue: 0,0:00:30.73,0:00:31.17,Sub,,0,0,0,,{\fad(60,0)}Vamos.
+Dialogue: 0,0:00:32.37,0:00:33.25,Sub,,0,0,0,,{\fad(60,0)}¿Cuáles rupias?
+Dialogue: 0,0:00:33.55,0:00:34.87,Sub,,0,0,0,,{\fad(60,0)}Yo ya no voy a regresar,\Ncabrón.

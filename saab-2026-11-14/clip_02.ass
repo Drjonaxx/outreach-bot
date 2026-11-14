@@ -1,0 +1,28 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:55.76,Hook,,0,0,0,,¿CREES QUE SOY UN\NPERRO?
+Dialogue: 0,0:00:00.00,0:00:00.80,Sub,,0,0,0,,{\fad(60,0)}Una pregunta más para ti.
+Dialogue: 0,0:00:02.56,0:00:04.98,Sub,,0,0,0,,{\fad(60,0)}¿Crees que soy un perro?
+Dialogue: 0,0:00:06.18,0:00:06.74,Sub,,0,0,0,,{\fad(60,0)}Oh…
+Dialogue: 0,0:00:09.59,0:00:14.63,Sub,,0,0,0,,{\fad(60,0)}Oh, ya veo. Sí, eso se lo\Nmencionó…
+Dialogue: 0,0:00:15.83,0:00:17.89,Sub,,0,0,0,,{\fad(60,0)}…el señor Breakwood. No es\Nmuy listo.
+Dialogue: 0,0:00:19.97,0:00:25.29,Sub,,0,0,0,,{\fad(60,0)}Comisionado, entré a esa\Nreunión con el señor\NBreakwood con la única\Nintención
+Dialogue: 0,0:00:25.29,0:00:28.13,Sub,,0,0,0,,{\fad(60,0)}de hablar pestes de usted\Nal máximo,
+Dialogue: 0,0:00:28.13,0:00:33.87,Sub,,0,0,0,,{\fad(60,0)}para ver si estas\Nentrevistas «privadas»
+Dialogue: 0,0:00:33.87,0:00:39.87,Sub,,0,0,0,,{\fad(60,0)}no iban a salir de ahí… y\Nmire, aquí estamos.
+Dialogue: 0,0:00:42.85,0:00:45.83,Sub,,0,0,0,,{\fad(60,0)}Ya veo. Querías comprobar\Ntu punto. Ya veo, ya veo.
+Dialogue: 0,0:00:45.83,0:00:50.11,Sub,,0,0,0,,{\fad(60,0)}Ya veo lo que haces. No\Nera falta de respeto, solo\Nestabas tanteando el\Nterreno.
+Dialogue: 0,0:00:52.14,0:00:55.76,Sub,,0,0,0,,{\fad(60,0)}Y supongo que él corrió\Ndirecto a contártelo, ¿no?\N— Sí, claro que sí.

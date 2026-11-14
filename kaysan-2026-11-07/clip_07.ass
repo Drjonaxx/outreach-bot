@@ -1,0 +1,30 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:46.34,Hook,,0,0,0,,¿Y SI LO REVIVIMOS?
+Dialogue: 0,0:00:00.02,0:00:01.84,Sub,,0,0,0,,{\fad(60,0)}Lleva muerto por lo menos\Nuna hora.
+Dialogue: 0,0:00:02.92,0:00:05.64,Sub,,0,0,0,,{\fad(60,0)}¿Qué tan épico sería si\Ndespertara ahora mismo?
+Dialogue: 0,0:00:06.00,0:00:09.52,Sub,,0,0,0,,{\fad(60,0)}Si hiciéramos algo loco y\Nlo reviviéramos, ¿no?
+Dialogue: 0,0:00:10.20,0:00:12.10,Sub,,0,0,0,,{\fad(60,0)}¿Qué tan genial sería eso?
+Dialogue: 0,0:00:13.30,0:00:17.60,Sub,,0,0,0,,{\fad(60,0)}—Cuatro balazos: en el\Nabdomen, uno en el pecho y\Nuno en la cabeza. Dios\Nmío.
+Dialogue: 0,0:00:17.60,0:00:18.78,Sub,,0,0,0,,{\fad(60,0)}¿Qué le pasó a este tipo?
+Dialogue: 0,0:00:19.02,0:00:20.28,Sub,,0,0,0,,{\fad(60,0)}¿Cuántas veces te han\Ndisparado?
+Dialogue: 0,0:00:20.50,0:00:21.62,Sub,,0,0,0,,{\fad(60,0)}—Bueno, a todos nos han\Ndisparado.
+Dialogue: 0,0:00:23.46,0:00:24.94,Sub,,0,0,0,,{\fad(60,0)}De hecho, a mí me\Ndispararon en la cabeza.
+Dialogue: 0,0:00:29.66,0:00:33.72,Sub,,0,0,0,,{\fad(60,0)}—No quiero meterte en\Nproblemas ni nada.
+Dialogue: 0,0:00:34.20,0:00:36.96,Sub,,0,0,0,,{\fad(60,0)}Ah, ¿o sea que me estás\Nechando? Me estás echando,\N¿eh?
+Dialogue: 0,0:00:37.04,0:00:41.32,Sub,,0,0,0,,{\fad(60,0)}—Bueno, solo me preocupo,\Npor lo que se oye…
+Dialogue: 0,0:00:41.54,0:00:43.16,Sub,,0,0,0,,{\fad(60,0)}¿Crees que a él le importa\Nperder su trabajo?
+Dialogue: 0,0:00:43.24,0:00:46.22,Sub,,0,0,0,,{\fad(60,0)}Es doctor. Tiene que\Ntrabajar en un lugar sin\Nventanas.

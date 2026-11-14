@@ -1,0 +1,25 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:33.26,Hook,,0,0,0,,LE NEGUÉ UNA PC GAMER\NA UN NIÑO
+Dialogue: 0,0:00:00.12,0:00:02.34,Sub,,0,0,0,,{\fad(60,0)}«Estoy trabajando en un\Nproyecto increíble, pero
+Dialogue: 0,0:00:02.34,0:00:07.62,Sub,,0,0,0,,{\fad(60,0)}me va a tomar tiempo\Nterminarlo. Si te esperas\Nunos cuantos años, lo\Ntendré listo».
+Dialogue: 0,0:00:08.30,0:00:10.60,Sub,,0,0,0,,{\fad(60,0)}Era como el bro que me\Ndecía
+Dialogue: 0,0:00:11.22,0:00:14.10,Sub,,0,0,0,,{\fad(60,0)}que le invirtiera\Ncomprándole una\Ncomputadora gamer
+Dialogue: 0,0:00:14.10,0:00:16.54,Sub,,0,0,0,,{\fad(60,0)}para jugar Free Fire, y\Nque cuando creciera
+Dialogue: 0,0:00:16.54,0:00:20.74,Sub,,0,0,0,,{\fad(60,0)}y fuera famoso, me daría\Nel 60 % de sus ganancias\Nmensuales.
+Dialogue: 0,0:00:22.02,0:00:25.56,Sub,,0,0,0,,{\fad(60,0)}El niño creció y se volvió
+Dialogue: 0,0:00:27.54,0:00:30.38,Sub,,0,0,0,,{\fad(60,0)}un streamer, un youtuber\Nfamosísimo, wey.
+Dialogue: 0,0:00:30.50,0:00:33.14,Sub,,0,0,0,,{\fad(60,0)}Y yo no le tuve fe, wey.

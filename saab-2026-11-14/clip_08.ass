@@ -1,0 +1,32 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:49.42,Hook,,0,0,0,,¡MATAPERROS!\N¡MATAPERROS!
+Dialogue: 0,0:00:00.12,0:00:04.02,Sub,,0,0,0,,{\fad(60,0)}¡Mataperros! ¡Mataperros!\N¡Es un mataperros!
+Dialogue: 0,0:00:04.34,0:00:05.90,Sub,,0,0,0,,{\fad(60,0)}Oh, sí.
+Dialogue: 0,0:00:07.14,0:00:09.04,Sub,,0,0,0,,{\fad(60,0)}Retira eso ahora mismo.\N¿Cómo te atreves?
+Dialogue: 0,0:00:09.28,0:00:13.46,Sub,,0,0,0,,{\fad(60,0)}Le di con el taser a ese\Nperro y lo pateé porque\Ntenía rabia y estaba\Natacando a alguien.
+Dialogue: 0,0:00:14.56,0:00:16.30,Sub,,0,0,0,,{\fad(60,0)}O sea que sí mataste a un\Nperro.
+Dialogue: 0,0:00:16.58,0:00:17.22,Sub,,0,0,0,,{\fad(60,0)}No, yo…
+Dialogue: 0,0:00:18.60,0:00:21.06,Sub,,0,0,0,,{\fad(60,0)}Solo lo dejé inconsciente\Ny luego lo llevaron al\Nveterinario.
+Dialogue: 0,0:00:21.64,0:00:23.10,Sub,,0,0,0,,{\fad(60,0)}Así que técnicamente no\Nmurió.
+Dialogue: 0,0:00:23.30,0:00:26.02,Sub,,0,0,0,,{\fad(60,0)}Amo a los perros, porque\Nyo mismo soy un perro\Ngrande.
+Dialogue: 0,0:00:26.90,0:00:29.62,Sub,,0,0,0,,{\fad(60,0)}No, no, no, aquí está la\Ncosa:
+Dialogue: 0,0:00:29.62,0:00:33.68,Sub,,0,0,0,,{\fad(60,0)}amas a los perros porque\Nlos matas a todos.
+Dialogue: 0,0:00:33.80,0:00:37.36,Sub,,0,0,0,,{\fad(60,0)}No. No, yo amo… amo a los\Nperros
+Dialogue: 0,0:00:38.36,0:00:39.98,Sub,,0,0,0,,{\fad(60,0)}del pasado, presente y\Nfuturo.
+Dialogue: 0,0:00:41.72,0:00:44.40,Sub,,0,0,0,,{\fad(60,0)}No, no, no, tú te aseguras\Nde que ni tengan futuro,\Nbro.
+Dialogue: 0,0:00:44.40,0:00:48.20,Sub,,0,0,0,,{\fad(60,0)}Te aseguras de que todos\Nlos perros vayan al cielo,\Nporque estás enfermo.
+Dialogue: 0,0:00:48.60,0:00:49.34,Sub,,0,0,0,,{\fad(60,0)}¡Claro que no!

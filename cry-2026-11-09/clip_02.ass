@@ -1,0 +1,28 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:41.57,Hook,,0,0,0,,HOODIES PARA\NEMBARAZADAS
+Dialogue: 0,0:00:00.12,0:00:03.96,Sub,,0,0,0,,{\fad(60,0)}Yo antes les decía\N«hoodies para\Nembarazadas», ¿no?
+Dialogue: 0,0:00:06.38,0:00:08.18,Sub,,0,0,0,,{\fad(60,0)}Pero… no sé cómo sería.
+Dialogue: 0,0:00:09.76,0:00:12.62,Sub,,0,0,0,,{\fad(60,0)}No, «grande» no.\N«Oversize» tampoco.\N¿Bomber?
+Dialogue: 0,0:00:12.70,0:00:13.74,Sub,,0,0,0,,{\fad(60,0)}Es que sí es bomber, ¿no?
+Dialogue: 0,0:00:14.54,0:00:17.36,Sub,,0,0,0,,{\fad(60,0)}Pero si yo pienso en\Nbomber, me acuerdo del\NBomberman.
+Dialogue: 0,0:00:17.92,0:00:20.26,Sub,,0,0,0,,{\fad(60,0)}¡Juegazo! ¡Juegazo!
+Dialogue: 0,0:00:24.21,0:00:26.45,Sub,,0,0,0,,{\fad(60,0)}Hoy me desperté súper de\Nboxy fit.
+Dialogue: 0,0:00:26.65,0:00:28.41,Sub,,0,0,0,,{\fad(60,0)}Ese es el término\Ncorrecto, yo creo.
+Dialogue: 0,0:00:28.53,0:00:32.25,Sub,,0,0,0,,{\fad(60,0)}Me escuchaste decirlo a mí\Ny dijiste: «¿Tiene\Nsentido?».
+Dialogue: 0,0:00:33.75,0:00:35.51,Sub,,0,0,0,,{\fad(60,0)}Le vas a decir que sí,\N¿no? Me diste el avión.
+Dialogue: 0,0:00:36.51,0:00:37.79,Sub,,0,0,0,,{\fad(60,0)}«Era boxy fit,\Nexactamente».
+Dialogue: 0,0:00:38.75,0:00:41.45,Sub,,0,0,0,,{\fad(60,0)}Me diste el avión, me\Ndiste el avión. Está bien,\Nestá chido.

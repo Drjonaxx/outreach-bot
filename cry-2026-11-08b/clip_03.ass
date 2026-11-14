@@ -1,0 +1,30 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:58.12,Hook,,0,0,0,,¡ESTE CARRO NO SE\NROMPE!
+Dialogue: 0,0:00:00.12,0:00:02.38,Sub,,0,0,0,,{\fad(60,0)}¡Pinche carro! Qué bueno\Nme salió, no mames.
+Dialogue: 0,0:00:03.54,0:00:06.04,Sub,,0,0,0,,{\fad(60,0)}No sé cuántas veces lo he\Nllevado a checar.
+Dialogue: 0,0:00:07.92,0:00:11.48,Sub,,0,0,0,,{\fad(60,0)}Y nada. Le digo: «Seguro,\Nbúscale algo, no mames».
+Dialogue: 0,0:00:12.26,0:00:15.82,Sub,,0,0,0,,{\fad(60,0)}Tantos años… ¿algo tiene\Nque cambiarse? ¿Algo tiene\Nque fallar?
+Dialogue: 0,0:00:16.02,0:00:18.10,Sub,,0,0,0,,{\fad(60,0)}«No, nada, todo bien».\N¡Puta madre!
+Dialogue: 0,0:00:21.28,0:00:23.14,Sub,,0,0,0,,{\fad(60,0)}Y me metí en inundaciones\Ncon él.
+Dialogue: 0,0:00:23.28,0:00:26.72,Sub,,0,0,0,,{\fad(60,0)}O sea, inundación de que\Nel agua llega a la puerta,\Nporque es bajito.
+Dialogue: 0,0:00:27.36,0:00:31.32,Sub,,0,0,0,,{\fad(60,0)}Y yo iba sin frenar para\Nque no le diera chance de\Ncalarse el motor
+Dialogue: 0,0:00:31.92,0:00:37.42,Sub,,0,0,0,,{\fad(60,0)}y quedarme ahí tirado.
+Dialogue: 0,0:00:37.72,0:00:41.56,Sub,,0,0,0,,{\fad(60,0)}Porque estaba lleno de\Ncarros, camiones, así,\Nwey, parados.
+Dialogue: 0,0:00:42.28,0:00:44.04,Sub,,0,0,0,,{\fad(60,0)}Y me estaban viendo, y yo\Nasí, como lancha.
+Dialogue: 0,0:00:45.90,0:00:50.60,Sub,,0,0,0,,{\fad(60,0)}Con el culo bien cerrado,\Ny hasta mi casa no paré.\NNo solté el acelerador.
+Dialogue: 0,0:00:51.68,0:00:56.38,Sub,,0,0,0,,{\fad(60,0)}Y al día siguiente vino el\Nmecánico a revisar si le\Nhabía entrado agua al\Nmotor.
+Dialogue: 0,0:00:56.92,0:00:58.00,Sub,,0,0,0,,{\fad(60,0)}Y me dijo: «No, todo\Nbien».

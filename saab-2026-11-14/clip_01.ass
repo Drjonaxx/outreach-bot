@@ -1,0 +1,26 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:32.50,Hook,,0,0,0,,ESTABA EN EL SUELO… Y\NLO VIO TODO
+Dialogue: 0,0:00:00.12,0:00:01.98,Sub,,0,0,0,,{\fad(60,0)}Escribí el testimonio de\NHelen como testigo.
+Dialogue: 0,0:00:01.98,0:00:04.98,Sub,,0,0,0,,{\fad(60,0)}Básicamente dijo que\NChatterbox empezó todo\Natacándolo con una\Npalanca.
+Dialogue: 0,0:00:05.98,0:00:07.02,Sub,,0,0,0,,{\fad(60,0)}No sé…
+Dialogue: 0,0:00:07.04,0:00:09.98,Sub,,0,0,0,,{\fad(60,0)}Bueno, el problema es que\Nsi lees la primera línea,\Ndice:
+Dialogue: 0,0:00:09.98,0:00:13.04,Sub,,0,0,0,,{\fad(60,0)}«Me electrocutaron tres\Nveces
+Dialogue: 0,0:00:13.04,0:00:16.14,Sub,,0,0,0,,{\fad(60,0)}y quedé incapacitada en el\Nsuelo». Y luego
+Dialogue: 0,0:00:16.14,0:00:19.32,Sub,,0,0,0,,{\fad(60,0)}nos da un párrafo entero\Nde información
+Dialogue: 0,0:00:19.32,0:00:22.56,Sub,,0,0,0,,{\fad(60,0)}que vio mientras estaba\Nincapacitada en el suelo.
+Dialogue: 0,0:00:24.30,0:00:27.00,Sub,,0,0,0,,{\fad(60,0)}Y como dijo Faulkner, eso\Nlo descartan de inmediato.
+Dialogue: 0,0:00:28.38,0:00:32.38,Sub,,0,0,0,,{\fad(60,0)}Sí, claro. Es un\Ntestimonio débil total.

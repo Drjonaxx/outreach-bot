@@ -1,0 +1,28 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:48.55,Hook,,0,0,0,,FINGÍA ESGUINCES PARA\NNO IR
+Dialogue: 0,0:00:00.12,0:00:02.79,Sub,,0,0,0,,{\fad(60,0)}«Mami, yo estoy pasando\Npor el infierno ahora\Nmismo, de dolor y\Ncircunstancia,
+Dialogue: 0,0:00:03.54,0:00:06.34,Sub,,0,0,0,,{\fad(60,0)}y tú me haces daño con tus\Npalabras, dudando de mí».
+Dialogue: 0,0:00:07.10,0:00:10.59,Sub,,0,0,0,,{\fad(60,0)}Y ya, se ve… «Rómpete,\Nrómpete, rómpete, hijo de\Nputa madre».
+Dialogue: 0,0:00:11.08,0:00:15.19,Sub,,0,0,0,,{\fad(60,0)}No mames, nuestra vida\Ndepende de los dos.
+Dialogue: 0,0:00:17.29,0:00:20.89,Sub,,0,0,0,,{\fad(60,0)}Y ya estoy con el doctor,\Nbuscándole la mirada…
+Dialogue: 0,0:00:26.41,0:00:29.40,Sub,,0,0,0,,{\fad(60,0)}Nada: esguince. Esguince.
+Dialogue: 0,0:00:29.79,0:00:33.35,Sub,,0,0,0,,{\fad(60,0)}Y ese día ni me pusieron\Nnada. Nada.
+Dialogue: 0,0:00:33.49,0:00:37.45,Sub,,0,0,0,,{\fad(60,0)}Mi mamá se la sabía, y le\Ndijo: «¿Es necesario poner\Nel vendaje?».
+Dialogue: 0,0:00:37.49,0:00:40.05,Sub,,0,0,0,,{\fad(60,0)}Y dijo: «Realmente no, es\Npor precaución».
+Dialogue: 0,0:00:40.19,0:00:41.45,Sub,,0,0,0,,{\fad(60,0)}«Ah, pues no se lo ponga».
+Dialogue: 0,0:00:44.25,0:00:46.85,Sub,,0,0,0,,{\fad(60,0)}Mami, tú eres diabólica.
+Dialogue: 0,0:00:47.03,0:00:48.45,Sub,,0,0,0,,{\fad(60,0)}Mami, tú eres\Nmaquiavélica.

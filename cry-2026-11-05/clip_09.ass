@@ -1,0 +1,33 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:50.35,Hook,,0,0,0,,CUANDO DICEN «ESTOY A\N5 MINUTOS
+Dialogue: 0,0:00:00.12,0:00:03.49,Sub,,0,0,0,,{\fad(60,0)}También me sabe mal\Ntenerlas aquí así, ¿no?,
+Dialogue: 0,0:00:04.14,0:00:05.59,Sub,,0,0,0,,{\fad(60,0)}esperando que suceda algo\Ninteresante.
+Dialogue: 0,0:00:05.50,0:00:05.99,Sub,,0,0,0,,{\fad(60,0)}Pero…
+Dialogue: 0,0:00:08.14,0:00:09.29,Sub,,0,0,0,,{\fad(60,0)}¿Qué dices, Doc?
+Dialogue: 0,0:00:12.21,0:00:12.99,Sub,,0,0,0,,{\fad(60,0)}Nada.
+Dialogue: 0,0:00:14.29,0:00:16.99,Sub,,0,0,0,,{\fad(60,0)}Aquí de chill. ¿Tú qué?\N¿Qué plan hoy o qué?
+Dialogue: 0,0:00:17.47,0:00:18.79,Sub,,0,0,0,,{\fad(60,0)}Teníamos algo, creo.
+Dialogue: 0,0:00:19.73,0:00:22.81,Sub,,0,0,0,,{\fad(60,0)}Y desde hace… o sea, ¿hace\Ncuánto?
+Dialogue: 0,0:00:22.97,0:00:23.51,Sub,,0,0,0,,{\fad(60,0)}¿Cómo vas?
+Dialogue: 0,0:00:24.71,0:00:26.49,Sub,,0,0,0,,{\fad(60,0)}«5 minutos». O sea, que\Nunos 15, ¿no?
+Dialogue: 0,0:00:27.65,0:00:28.38,Sub,,0,0,0,,{\fad(60,0)}Bueno, ¿qué?
+Dialogue: 0,0:00:29.53,0:00:34.68,Sub,,0,0,0,,{\fad(60,0)}Pregúntale a Amjad si ya…\Ncierro maletas, todo, y\Npara bajar yo solo, con\Ntodo…
+Dialogue: 0,0:00:36.73,0:00:38.65,Sub,,0,0,0,,{\fad(60,0)}Pero no sé. ¿Estáis a 5\Nminutos o a 15?
+Dialogue: 0,0:00:39.85,0:00:40.61,Sub,,0,0,0,,{\fad(60,0)}Ok, pues…
+Dialogue: 0,0:00:42.09,0:00:44.62,Sub,,0,0,0,,{\fad(60,0)}Vale, vale, vale, pues\Ncierro todo y te espero.
+Dialogue: 0,0:00:44.75,0:00:47.46,Sub,,0,0,0,,{\fad(60,0)}Tan como a 15…
+Dialogue: 0,0:00:48.43,0:00:50.26,Sub,,0,0,0,,{\fad(60,0)}Pero voy a fingir que les\Ncreo.

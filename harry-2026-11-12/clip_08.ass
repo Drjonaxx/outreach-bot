@@ -1,0 +1,28 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:37.70,Hook,,0,0,0,,¿POR QUÉ TU MAMÁ ESTÁ\NAQUÍ?
+Dialogue: 0,0:00:00.12,0:00:04.32,Sub,,0,0,0,,{\fad(60,0)}Oye, ¿por qué… por qué tu\Nmamá está en el escondite,\Nbro?
+Dialogue: 0,0:00:05.52,0:00:06.94,Sub,,0,0,0,,{\fad(60,0)}¡Saca a tu mamá de aquí,\Nbro!
+Dialogue: 0,0:00:08.14,0:00:09.76,Sub,,0,0,0,,{\fad(60,0)}—Es solo el escondite.\NElla está bien.
+Dialogue: 0,0:00:10.08,0:00:12.66,Sub,,0,0,0,,{\fad(60,0)}Era una emergencia.
+Dialogue: 0,0:00:13.06,0:00:14.42,Sub,,0,0,0,,{\fad(60,0)}No es que… Hola.
+Dialogue: 0,0:00:16.90,0:00:17.48,Sub,,0,0,0,,{\fad(60,0)}—¿Quién es esa?
+Dialogue: 0,0:00:19.56,0:00:24.42,Sub,,0,0,0,,{\fad(60,0)}—Sí, este es mi amigo\NHarry. Esta es mi mamá,\NMoxie.
+Dialogue: 0,0:00:24.82,0:00:27.18,Sub,,0,0,0,,{\fad(60,0)}—Yo pensaba que esto iba a\Nser una reunión más\Ntranquila.
+Dialogue: 0,0:00:28.28,0:00:28.74,Sub,,0,0,0,,{\fad(60,0)}Sí…
+Dialogue: 0,0:00:29.94,0:00:32.18,Sub,,0,0,0,,{\fad(60,0)}Mucho gusto, mamá de\NGoldie. Muchísimo gusto.
+Dialogue: 0,0:00:32.34,0:00:34.14,Sub,,0,0,0,,{\fad(60,0)}Así que… nos vemos pronto.
+Dialogue: 0,0:00:35.70,0:00:37.58,Sub,,0,0,0,,{\fad(60,0)}Las cosas están intensas\Nahorita.

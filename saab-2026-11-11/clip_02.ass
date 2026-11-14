@@ -1,0 +1,27 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:31.42,Hook,,0,0,0,,VA A SALIR NEGATIVA
+Dialogue: 0,0:00:00.12,0:00:04.50,Sub,,0,0,0,,{\fad(60,0)}Te voy a hacer una prueba\Nde pólvora en los dedos y\Nla ropa.
+Dialogue: 0,0:00:06.10,0:00:07.06,Sub,,0,0,0,,{\fad(60,0)}¿Va a salir positiva?
+Dialogue: 0,0:00:08.60,0:00:09.98,Sub,,0,0,0,,{\fad(60,0)}Va a salir negativa,\Nseñor.
+Dialogue: 0,0:00:11.54,0:00:13.50,Sub,,0,0,0,,{\fad(60,0)}¿Estás seguro de eso?
+Dialogue: 0,0:00:14.76,0:00:17.58,Sub,,0,0,0,,{\fad(60,0)}—Cien por ciento. Lo juro\Npor Dios.
+Dialogue: 0,0:00:17.66,0:00:21.84,Sub,,0,0,0,,{\fad(60,0)}Muy bien. Espérate aquí.
+Dialogue: 0,0:00:21.98,0:00:25.38,Sub,,0,0,0,,{\fad(60,0)}Saliste positivo en\Npólvora. Te voy a detener;\Nte pongo las esposas.
+Dialogue: 0,0:00:25.62,0:00:27.22,Sub,,0,0,0,,{\fad(60,0)}¿Cómo que positivo?
+Dialogue: 0,0:00:28.42,0:00:29.60,Sub,,0,0,0,,{\fad(60,0)}Ahora hablamos.
+Dialogue: 0,0:00:29.74,0:00:30.66,Sub,,0,0,0,,{\fad(60,0)}¡No corras! ¡No corras!
+Dialogue: 0,0:00:30.86,0:00:31.30,Sub,,0,0,0,,{\fad(60,0)}¡No puede ser!

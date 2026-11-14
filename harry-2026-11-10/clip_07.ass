@@ -1,0 +1,23 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:27.15,Hook,,0,0,0,,IBA A TACLEAR AL\NPOLICÍA
+Dialogue: 0,0:00:00.12,0:00:03.20,Sub,,0,0,0,,{\fad(60,0)}¿Te acuerdas cuando\Nchocamos? Yo iba a taclear\Nal policía,
+Dialogue: 0,0:00:03.20,0:00:06.12,Sub,,0,0,0,,{\fad(60,0)}pero entonces tú me\Ntacleaste a mí.
+Dialogue: 0,0:00:06.12,0:00:10.60,Sub,,0,0,0,,{\fad(60,0)}—Te tacleé a ti en vez de\Na él, y luego quise\Ncompensarlo,
+Dialogue: 0,0:00:10.60,0:00:12.18,Sub,,0,0,0,,{\fad(60,0)}y casi le pego un puñetazo\Nal maldito policía.
+Dialogue: 0,0:00:13.24,0:00:17.98,Sub,,0,0,0,,{\fad(60,0)}—Vi que el otro tipo\Ntambién me quería taclear,\Ny me pasó por encima.
+Dialogue: 0,0:00:19.48,0:00:24.61,Sub,,0,0,0,,{\fad(60,0)}Así que me ayudaste al\Ntaclearme, porque me\Nsacaste del camino.
+Dialogue: 0,0:00:25.41,0:00:27.03,Sub,,0,0,0,,{\fad(60,0)}—Claro que sí, lo hice a\Npropósito.

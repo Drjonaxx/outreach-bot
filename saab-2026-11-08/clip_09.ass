@@ -1,0 +1,24 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:33.70,Hook,,0,0,0,,NO HUBO NINGUNA FALLA
+Dialogue: 0,0:00:00.12,0:00:02.40,Sub,,0,0,0,,{\fad(60,0)}¿Qué pasó? No hubo ninguna\Nfalla…
+Dialogue: 0,0:00:02.40,0:00:05.86,Sub,,0,0,0,,{\fad(60,0)}La única falla fue su\Nsargento, señor.
+Dialogue: 0,0:00:06.08,0:00:10.36,Sub,,0,0,0,,{\fad(60,0)}No sé. No sé qué pasó.\NOjalá pudiera\Nexplicárselo.
+Dialogue: 0,0:00:10.36,0:00:13.28,Sub,,0,0,0,,{\fad(60,0)}Tuve que hacer un giro muy\Ncerrado en Las Lagunas.
+Dialogue: 0,0:00:14.26,0:00:17.26,Sub,,0,0,0,,{\fad(60,0)}No sé si la puerta estaba\Nabierta o si no tenía bien\Npuesto el arnés.
+Dialogue: 0,0:00:18.46,0:00:22.50,Sub,,0,0,0,,{\fad(60,0)}Cross no tuvo chance de\Nagarrarlo porque íbamos\Nmuy bajo… simplemente\Npasó.
+Dialogue: 0,0:00:25.34,0:00:30.86,Sub,,0,0,0,,{\fad(60,0)}Sí, no fue a propósito.
+Dialogue: 0,0:00:30.86,0:00:33.58,Sub,,0,0,0,,{\fad(60,0)}No era mi intención\Ndejarlos a todos a 300\Npies de altura.

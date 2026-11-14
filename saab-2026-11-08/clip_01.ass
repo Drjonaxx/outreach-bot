@@ -1,0 +1,25 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:30.32,Hook,,0,0,0,,¿GOLPE AL MALETERO O A\NÉL?
+Dialogue: 0,0:00:00.12,0:00:03.28,Sub,,0,0,0,,{\fad(60,0)}Shields vio a alguien\Njunto a su maletero.
+Dialogue: 0,0:00:03.72,0:00:06.12,Sub,,0,0,0,,{\fad(60,0)}Se acercó y le dio una\Npalmada al maletero.
+Dialogue: 0,0:00:06.12,0:00:09.32,Sub,,0,0,0,,{\fad(60,0)}Pero la persona que estaba\Njunto al maletero,
+Dialogue: 0,0:00:09.92,0:00:13.58,Sub,,0,0,0,,{\fad(60,0)}desde su perspectiva,\Nrecibió una cachetada de\NShields.
+Dialogue: 0,0:00:14.78,0:00:18.82,Sub,,0,0,0,,{\fad(60,0)}Y por eso se armó…
+Dialogue: 0,0:00:18.82,0:00:21.88,Sub,,0,0,0,,{\fad(60,0)}una pelea, y al final\Nterminó en disparos.
+Dialogue: 0,0:00:22.78,0:00:25.80,Sub,,0,0,0,,{\fad(60,0)}Y no me gustan…
+Dialogue: 0,0:00:25.80,0:00:29.40,Sub,,0,0,0,,{\fad(60,0)}las situaciones que\Nempiezan con «le pegó al\Nmaletero» y «a este tipo\Nle pegó Shields»…
+Dialogue: 0,0:00:29.40,0:00:30.20,Sub,,0,0,0,,{\fad(60,0)}y los dos tienen razón.

@@ -1,0 +1,27 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:31.56,Hook,,0,0,0,,MI CEL YA NO PRENDE
+Dialogue: 0,0:00:00.12,0:00:01.76,Sub,,0,0,0,,{\fad(60,0)}Bueno, chat, mi cel ya no\Nprende.
+Dialogue: 0,0:00:02.00,0:00:04.28,Sub,,0,0,0,,{\fad(60,0)}Se le hace un reinicio\Nforzado en casa, pero\Nocupa
+Dialogue: 0,0:00:04.28,0:00:09.10,Sub,,0,0,0,,{\fad(60,0)}un cable. Es lo de\Nconectarlo, conectarlo,\Nconectarlo… manteniendo\Npulsado el
+Dialogue: 0,0:00:09.10,0:00:11.40,Sub,,0,0,0,,{\fad(60,0)}botón de este. Si alguna\Nvez tu iPhone ya no
+Dialogue: 0,0:00:11.40,0:00:14.54,Sub,,0,0,0,,{\fad(60,0)}prende, no se jodió. Usa\Nun cable conectado a la\Ncompu
+Dialogue: 0,0:00:14.54,0:00:17.06,Sub,,0,0,0,,{\fad(60,0)}y conecta, desconecta,\Nconecta, conecta,
+Dialogue: 0,0:00:17.06,0:00:20.62,Sub,,0,0,0,,{\fad(60,0)}manteniendo pulsado el de\Nprender, y prenderá. Se\Nreinicia solo.
+Dialogue: 0,0:00:22.96,0:00:24.36,Sub,,0,0,0,,{\fad(60,0)}Truquitos.
+Dialogue: 0,0:00:24.48,0:00:27.64,Sub,,0,0,0,,{\fad(60,0)}Diez minutos, ¿ves?
+Dialogue: 0,0:00:27.64,0:00:29.24,Sub,,0,0,0,,{\fad(60,0)}¡Opa! Revivió.
+Dialogue: 0,0:00:30.42,0:00:31.44,Sub,,0,0,0,,{\fad(60,0)}Revivió, brother.
