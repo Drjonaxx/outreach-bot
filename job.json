@@ -1,10 +1,1 @@
-{
-  "name": "natalan-2026-11-14",
-  "url": "https://kick.com/natalan",
-  "vod": "0",
-  "language": "es",
-  "whisper_model": "small",
-  "limit_minutes": 900,
-  "layout": "fit",
-  "blur": [[0.66, 0.6, 0.34, 0.4]]
-}
+{"name": "natalan-2026-11-14", "url": "https://kick.com/natalan", "vod": "0", "language": "es", "whisper_model": "small", "limit_minutes": 900, "layout": "fit", "blur": [[0.69, 0.0, 0.31, 0.42]], "only": [2, 3, 6]}
