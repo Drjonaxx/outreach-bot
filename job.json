@@ -1,9 +1,10 @@
 {
-  "name": "harry-2026-11-13",
-  "url": "https://kick.com/harry",
+  "name": "natalan-2026-11-14",
+  "url": "https://kick.com/natalan",
   "vod": "0",
-  "language": "en",
+  "language": "es",
   "whisper_model": "small",
   "limit_minutes": 900,
-  "layout": "fit"
+  "layout": "fit",
+  "blur": [[0.66, 0.6, 0.34, 0.4]]
 }
