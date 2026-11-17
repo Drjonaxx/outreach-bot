@@ -563,7 +563,7 @@
   },
   {
     "start": 23615.39,
-    "end": 23644.64,
+    "end": 23640.76,
     "title": "«Salto de ahí todos los días»… sí, claro 🪂",
     "hook": "Salto de ahí todos los días",
     "description": "En GTA RP (NoPixel), un amigo de Harry terminó en el hospital por saltar en paracaídas.",
@@ -581,7 +581,7 @@
     "keep": [
       [
         23615.39,
-        23644.64
+        23640.76
       ]
     ],
     "subs": [
@@ -617,13 +617,8 @@
       },
       {
         "start": 23638.34,
-        "end": 23640.44,
+        "end": 23640.8,
         "text": "Sí, sí, claro que sí… mentiroso."
-      },
-      {
-        "start": 23640.44,
-        "end": 23644.52,
-        "text": "No me dejes tirarme ahora mismo, caerte encima y aplastarte la cabeza como a un Goomba."
       }
     ]
   },
