@@ -87,7 +87,7 @@
         "quedijoelgringo"
       ],
       "campaign": null,
-      "notes": "Guatemalteco: juegos de terror, mods y reacciones. Hace reacciones: no clipees tramos donde suena un video, música o TV de terceros (reclamos de copyright). Su stream muestra el chat abajo a la derecha (nombres de desconocidos): 'blur' lo difumina; pásalo al job.json. En algunas escenas (juegos de plataformas y de terror) el chat sale arriba a la derecha: entonces usa blur [[0.69, 0.0, 0.31, 0.42]].",
+      "notes": "Guatemalteco: juegos de terror, mods y reacciones. Hace reacciones: no clipees tramos donde suena un video, música o TV de terceros (reclamos de copyright). Su stream muestra el chat abajo a la derecha (nombres de desconocidos): 'blur' lo difumina; pásalo al job.json. En algunas escenas (juegos de plataformas y de terror) el chat sale arriba a la derecha: entonces usa blur [[0.69, 0.0, 0.31, 0.42]]. Si el stream es casi todo reacciones a videos (17 nov), no sirve: aunque pause, el video queda en pantalla; usar otro streamer.",
       "blur": [
         [
           0.66,
@@ -115,7 +115,21 @@
         "quedijoelgringo"
       ],
       "campaign": null,
-      "notes": "De respaldo (sin días fijos): variedad, CS2, Minecraft. Argentino."
+      "notes": "De respaldo (sin días fijos): variedad, CS2, Minecraft. Argentino. En Minecraft el chat del juego (abajo a la izquierda, junto a la cámara) muestra nombres de jugadores: va difuminado. Su cámara está a la izquierda (x 0-0.24, y 0.37-0.68).",
+      "blur": [
+        [
+          0.24,
+          0.42,
+          0.27,
+          0.56
+        ],
+        [
+          0.0,
+          0.68,
+          0.24,
+          0.3
+        ]
+      ]
     },
     {
       "slug": "kaysan",
