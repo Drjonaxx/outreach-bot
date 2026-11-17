@@ -1,1 +1,1 @@
-{"name": "harry-2026-11-17", "url": "https://kick.com/harry", "vod": "0", "language": "en", "whisper_model": "small", "limit_minutes": 900, "layout": "fit"}
+{"name": "sramilcar-2026-11-17", "url": "https://kick.com/sramilcar", "vod": "0", "language": "es", "whisper_model": "small", "limit_minutes": 900, "layout": "fit", "blur": [[0.24, 0.42, 0.27, 0.56], [0.0, 0.68, 0.24, 0.30]], "only": [2, 3, 5, 7]}
