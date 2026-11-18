@@ -154,7 +154,7 @@
         "quedijoelgringo"
       ],
       "campaign": null,
-      "notes": "GTA RP (District 10 / NoPixel). A veces hace casino: esos VODs NO se clipean. En el juego de supervivencia del desierto (early access, 18 nov) el chat del juego con nombres de jugadores sale abajo a la izquierda: usa blur [[0.0, 0.33, 0.22, 0.47]]. En el inventario hay jeringas y un frasco naranja (parecen curaciones del juego): si se ven de cerca, revisa."
+      "notes": "GTA RP (District 10 / NoPixel). A veces hace casino: esos VODs NO se clipean. En el juego de supervivencia del desierto (early access, 18 nov) el chat del juego con nombres de jugadores sale abajo a la izquierda: usa blur [[0.0, 0.33, 0.22, 0.64]] (cubre también la lista del equipo). En el inventario hay jeringas y un frasco naranja (parecen curaciones del juego): si se ven de cerca, revisa. Su compañero Cornelius se llama «Pornelius» en el juego: evita clips donde su etiqueta salga grande (p. ej. el cartel «[MONK] PORNELIUS» de Interact)."
     },
     {
       "slug": "saab",
