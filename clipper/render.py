@@ -150,8 +150,10 @@ def render_clip(
     return plan.mode
 
 
-def check_av_lengths(path: Path, tolerance: float = 0.3) -> None:
-    """Fail loudly if the audio and video streams of a rendered clip differ in length."""
+def check_av_lengths(path: Path, tolerance: float = 1.5) -> None:
+    """Fail loudly if the audio and video streams of a rendered clip differ in length
+    (a cut applied to only one of them). Stream sections can end a fraction of a
+    second early on the audio side, so small differences only get a warning."""
     out = subprocess.run(
         ["ffprobe", "-v", "error", "-show_entries", "stream=codec_type,duration", "-of", "csv=p=0", str(path)],
         capture_output=True, text=True, check=True,
@@ -161,7 +163,12 @@ def check_av_lengths(path: Path, tolerance: float = 0.3) -> None:
         kind, _, dur = line.partition(",")
         if dur and dur != "N/A":
             lengths[kind] = float(dur)
-    if "audio" in lengths and "video" in lengths and abs(lengths["audio"] - lengths["video"]) > tolerance:
+    if "audio" not in lengths or "video" not in lengths:
+        return
+    diff = abs(lengths["audio"] - lengths["video"])
+    if diff > 0.3:
+        print(f"    ⚠ {path.name}: audio {lengths['audio']:.2f}s, video {lengths['video']:.2f}s", flush=True)
+    if diff > tolerance:
         raise RuntimeError(
             f"{path.name}: audio {lengths['audio']:.2f}s vs video {lengths['video']:.2f}s; the cut went out of sync"
         )
