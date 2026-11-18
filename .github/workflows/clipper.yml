@@ -58,6 +58,7 @@ jobs:
             sleep 10
           done
           command -v ffmpeg && command -v ffprobe
+          ffmpeg -version | head -1
           cp /var/cache/apt/archives/*.deb ~/apt-debs/ 2>/dev/null || true
 
       - if: steps.debs.outputs.cache-hit != 'true'

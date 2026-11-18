@@ -89,7 +89,17 @@ def render_clip(
         keep = "+".join(f"between(t,{s:.3f},{e:.3f})" for s, e in rel)
         graph += f";[base]select='{keep}',setpts=N/FRAME_RATE/TB[cut]"
         video = "cut"
-        audio = f"[0:a]{resync},aselect='{keep}',asetpts=N/SR/TB,{loudnorm}[a]"
+        # Cut the audio by sample count, not by timestamp: with the newer ffmpeg on the
+        # CI runner, aselect on `t` let every frame through (uncut audio under cut video).
+        sr, n = 48000, len(rel)
+        trims = "".join(
+            f";[as{i}]atrim=start_sample={round(s * sr)}:end_sample={round(e * sr)},asetpts=N/SR/TB[at{i}]"
+            for i, (s, e) in enumerate(rel)
+        )
+        audio = (
+            f"[0:a]{resync},aresample={sr},asplit={n}{''.join(f'[as{i}]' for i in range(n))}{trims}"
+            f";{''.join(f'[at{i}]' for i in range(n))}concat=n={n}:v=0:a=1,{loudnorm}[a]"
+        )
 
     out_dir = out_path.parent
     if captions and clip.subs:
@@ -135,7 +145,26 @@ def render_clip(
         out_path.name,
     ]
     subprocess.run(cmd, check=True, cwd=out_dir)
+    if info.has_audio:
+        check_av_lengths(out_path)
     return plan.mode
+
+
+def check_av_lengths(path: Path, tolerance: float = 0.3) -> None:
+    """Fail loudly if the audio and video streams of a rendered clip differ in length."""
+    out = subprocess.run(
+        ["ffprobe", "-v", "error", "-show_entries", "stream=codec_type,duration", "-of", "csv=p=0", str(path)],
+        capture_output=True, text=True, check=True,
+    ).stdout
+    lengths = {}
+    for line in out.splitlines():
+        kind, _, dur = line.partition(",")
+        if dur and dur != "N/A":
+            lengths[kind] = float(dur)
+    if "audio" in lengths and "video" in lengths and abs(lengths["audio"] - lengths["video"]) > tolerance:
+        raise RuntimeError(
+            f"{path.name}: audio {lengths['audio']:.2f}s vs video {lengths['video']:.2f}s; the cut went out of sync"
+        )
 
 
 def write_metadata(path: Path, clip: Clip, source_title: str, channel: str, url: str) -> None:
