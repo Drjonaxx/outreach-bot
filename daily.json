@@ -180,7 +180,7 @@
         "quedijoelgringo"
       ],
       "campaign": null,
-      "notes": "GTA RP en NoPixel: el comisionado Dawson (policía). Streams de 12-15 h. Su stream muestra el chat arriba a la izquierda (nombres y mensajes de desconocidos, a veces insultos): por eso 'blur' lo difumina; pásalo al job.json al renderizar. A veces sale un anuncio de Netflix/NFL abajo a la derecha: descarta esos clips. En la computadora de la patrulla (MDT) a veces salen reportes con «Pixel Casino» en pantalla: descarta esos clips. Desde el 19 nov juega también GTA 6 (modo historia): las escenas son del juego (actores de Rockstar, no Saab) y la radio trae anuncios de apuestas y música; usa solo la parte de NoPixel.",
+      "notes": "GTA RP en NoPixel: el comisionado Dawson (policía). Streams de 12-15 h. Su stream muestra el chat arriba a la izquierda (nombres y mensajes de desconocidos, a veces insultos): por eso 'blur' lo difumina; pásalo al job.json al renderizar. A veces sale un anuncio de Netflix/NFL abajo a la derecha: descarta esos clips. En la computadora de la patrulla (MDT) a veces salen reportes con «Pixel Casino» en pantalla: descarta esos clips. Desde el 19 nov juega también GTA 6 (modo historia): sirven sus propias reacciones, pero no las escenas del juego (actores de Rockstar) ni la radio (anuncios de apuestas y música). Durante parte de NoPixel salió un sorteo en pantalla ('Type TWBTF/Jason in Chat...'): descarta esos clips.",
       "blur": [
         [
           0,
