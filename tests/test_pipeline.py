@@ -264,17 +264,33 @@ def test_hand_over_gives_four_clips_of_one_stream_per_language():
         if item["id"] in lost:  # pruned from clipper-out
             raise subprocess.CalledProcessError(128, "git show")
 
-    ids = [q["id"] for q in ck.hand_over(queue, "2026-10-19", fetch)]
+    ids = [q["id"] for q in ck.hand_over(queue, "2026-10-19", fetch, per_day=1)]
     # The best 4 of stream es-a in the stream's order, alternating with en-a; es-a/03 is dropped.
     assert ids == ["es-a/01", "en-a/01", "es-a/02", "en-a/02", "es-a/04", "en-a/03", "es-a/05", "en-a/04"]
     assert next(q for q in queue if q["id"] == "es-a/03")["delivered"] == "sobrante"
     # Same day again (e.g. a restart): the same clips.
-    assert [q["id"] for q in ck.hand_over(queue, "2026-10-19", fetch)] == ids
+    assert [q["id"] for q in ck.hand_over(queue, "2026-10-19", fetch, per_day=1)] == ids
     # Next day: the next complete stream before the short one; nothing in English.
-    assert [q["id"] for q in ck.hand_over(queue, "2026-10-20", fetch)] == ["es-c/01", "es-c/03", "es-c/04"]
+    assert [q["id"] for q in ck.hand_over(queue, "2026-10-20", fetch, per_day=1)] == ["es-c/01", "es-c/03", "es-c/04"]
     assert next(q for q in queue if q["id"] == "es-c/02")["delivered"] == "perdido"
-    assert [q["id"] for q in ck.hand_over(queue, "2026-10-21", fetch)] == ["es-b/01"]
+    assert [q["id"] for q in ck.hand_over(queue, "2026-10-21", fetch, per_day=1)] == ["es-b/01"]
     assert ck.waiting(queue) == []
+
+
+def test_hand_over_two_streams_per_language():
+    ck = _clipkit()
+    queue = [{"id": f"es-a/0{n}", "at": "2026-11-20T11:53", "lang": "es", "results": {}} for n in range(1, 5)]
+    queue += [{"id": f"es-b/0{n}", "at": "2026-11-21T11:53", "lang": "es", "results": {}} for n in range(1, 5)]
+    queue += [{"id": f"en-a/0{n}", "at": "2026-11-20T11:53", "lang": "en", "results": {}} for n in range(1, 5)]
+    ids = [q["id"] for q in ck.hand_over(queue, "2026-11-20", lambda item: None, per_day=2)]
+    # 4 of each Spanish stream in order, alternating with the only English one.
+    assert ids == ["es-a/01", "en-a/01", "es-a/02", "en-a/02", "es-a/03", "en-a/03", "es-a/04", "en-a/04",
+                   "es-b/01", "es-b/02", "es-b/03", "es-b/04"]
+    # English stock that lands later the same day tops up to 2 streams; the rest stays the same.
+    queue += [{"id": f"en-b/0{n}", "at": "2026-11-21T11:53", "lang": "en", "results": {}} for n in range(1, 5)]
+    again = [q["id"] for q in ck.hand_over(queue, "2026-11-20", lambda item: None, per_day=2)]
+    assert again[:8] == ids[:8] and sorted(again) == sorted(ids + [f"en-b/0{n}" for n in range(1, 5)])
+    assert [q["id"] for q in ck.hand_over(queue, "2026-11-20", lambda item: None, per_day=2)] == again
 
 
 def test_post_fields_reuse_caption_and_skip_repeated_hashtags():

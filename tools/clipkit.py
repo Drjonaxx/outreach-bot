@@ -69,6 +69,8 @@ PR = ZoneInfo("America/Puerto_Rico")
 # the streamers speak.
 SLOT_TIMES = ("11:53",)
 PER_SLOT = 4
+# Streams handed over per language each day (PER_SLOT clips each): 2 = 16 clips a day.
+STREAMS_PER_DAY = 2
 LANGS = ("es", "en")
 MAX_TRIES = 3
 
@@ -382,23 +384,28 @@ def streams(queue: list[dict], lang: str) -> list[list[dict]]:
     return list(jobs.values())
 
 
-def hand_over(queue: list[dict], today: str, fetch) -> list[dict]:
-    """Today's clips to post by hand: for each language, PER_SLOT clips of one stream (the
-    oldest with that many waiting, else the oldest with any; its other clips are dropped)
-    in the stream's order, alternating languages. A second run the same day gives the same
-    clips. fetch(item) pulls the video; a clip it can't pull (pruned from clipper-out) is
-    marked lost."""
+def hand_over(queue: list[dict], today: str, fetch, per_day: int | None = None) -> list[dict]:
+    """Today's clips to post by hand: for each language, PER_SLOT clips from each of up to
+    `per_day` streams (complete streams first, oldest first; else the oldest with any; a
+    stream's other clips are dropped), each stream in its own order, alternating languages.
+    A second run the same day gives the same clips, plus more streams of a language that
+    got fewer than `per_day` earlier if new ones are ready. fetch(item) pulls the video; a
+    clip it can't pull (pruned from clipper-out) is marked lost."""
+    per_day = STREAMS_PER_DAY if per_day is None else per_day
     per_lang = []
     for lang in LANGS:
         batch = [q for q in queue if q.get("delivered") == today and q.get("lang", "es") == lang]
-        if not batch:
+        have = {q["id"].rsplit("/", 1)[0] for q in batch}
+        if len(have) < per_day:
             waiting_streams = streams(queue, lang)
-            pick = ([s for s in waiting_streams if len(s) >= PER_SLOT] or waiting_streams or [[]])[0]
-            batch = pick[:PER_SLOT]
-            for item in pick[PER_SLOT:]:
-                item["delivered"] = "sobrante"
+            ranked = [s for s in waiting_streams if len(s) >= PER_SLOT] + [s for s in waiting_streams if len(s) < PER_SLOT]
+            for pick in ranked[:per_day - len(have)]:
+                batch += pick[:PER_SLOT]
+                for item in pick[PER_SLOT:]:
+                    item["delivered"] = "sobrante"
+        order = list(dict.fromkeys(q["id"].rsplit("/", 1)[0] for q in batch))  # earlier streams first
         out = []
-        for item in sorted(batch, key=lambda q: q["id"]):  # clip numbers follow the stream
+        for item in sorted(batch, key=lambda q: (order.index(q["id"].rsplit("/", 1)[0]), q["id"])):
             try:
                 fetch(item)
             except subprocess.CalledProcessError:
