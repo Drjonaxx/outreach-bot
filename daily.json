@@ -87,7 +87,7 @@
         "quedijoelgringo"
       ],
       "campaign": null,
-      "notes": "Guatemalteco: juegos de terror, mods y reacciones. Hace reacciones: no clipees tramos donde suena un video, música o TV de terceros (reclamos de copyright). Su stream muestra el chat abajo a la derecha (nombres de desconocidos): 'blur' lo difumina; pásalo al job.json. En algunas escenas (juegos de plataformas y de terror) el chat sale arriba a la derecha: entonces usa blur [[0.69, 0.0, 0.31, 0.42]]. Si el stream es casi todo reacciones a videos (17 nov), no sirve: aunque pause, el video queda en pantalla; usar otro streamer. El 18 nov el chat salió arriba a la izquierda en Minecraft y abajo a la izquierda en el juego de dinosaurios: se usó blur [[0.0, 0.0, 0.32, 0.31], [0.0, 0.62, 0.32, 0.38]]. Revisa siempre dónde está el chat antes de renderizar.",
+      "notes": "Guatemalteco: juegos de terror, mods y reacciones. Hace reacciones: no clipees tramos donde suena un video, música o TV de terceros (reclamos de copyright). Su stream muestra el chat abajo a la derecha (nombres de desconocidos): 'blur' lo difumina; pásalo al job.json. En algunas escenas (juegos de plataformas y de terror) el chat sale arriba a la derecha: entonces usa blur [[0.69, 0.0, 0.31, 0.42]]. Si el stream es casi todo reacciones a videos (17 nov), no sirve: aunque pause, el video queda en pantalla; usar otro streamer. El 18 nov el chat salió arriba a la izquierda en Minecraft y abajo a la izquierda en el juego de dinosaurios: se usó blur [[0.0, 0.0, 0.32, 0.31], [0.0, 0.62, 0.32, 0.38]]. Revisa siempre dónde está el chat antes de renderizar. El 19 nov (GTA 6) el chat salió abajo a la derecha (y desde 0.83) bajo su cámara: se usó blur [[0.66, 0.82, 0.34, 0.18]].",
       "blur": [
         [
           0.66,
@@ -154,7 +154,7 @@
         "quedijoelgringo"
       ],
       "campaign": null,
-      "notes": "GTA RP (District 10 / NoPixel). A veces hace casino: esos VODs NO se clipean. En el juego de supervivencia del desierto (early access, 18 nov) el chat del juego con nombres de jugadores sale abajo a la izquierda: usa blur [[0.0, 0.33, 0.22, 0.64]] (cubre también la lista del equipo). En el inventario hay jeringas y un frasco naranja (parecen curaciones del juego): si se ven de cerca, revisa. Su compañero Cornelius se llama «Pornelius» en el juego: evita clips donde su etiqueta salga grande (p. ej. el cartel «[MONK] PORNELIUS» de Interact)."
+      "notes": "GTA RP (District 10 / NoPixel). A veces hace casino: esos VODs NO se clipean. En el juego de supervivencia del desierto (early access, 18 nov) el chat del juego con nombres de jugadores sale abajo a la izquierda: usa blur [[0.0, 0.33, 0.22, 0.64]] (cubre también la lista del equipo). En el inventario hay jeringas y un frasco naranja (parecen curaciones del juego): si se ven de cerca, revisa. Su compañero Cornelius se llama «Pornelius» en el juego: evita clips donde su etiqueta salga grande (p. ej. el cartel «[MONK] PORNELIUS» de Interact). En GTA 6 (19 nov) muestra fijo abajo a la derecha un código QR de Kalshi (apuestas, «GET $55»): ponle blur [[0.9, 0.82, 0.1, 0.18]] en job.json; también hace Kalshi en pantalla: esos tramos no se clipean."
     },
     {
       "slug": "saab",
