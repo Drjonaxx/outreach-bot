@@ -115,7 +115,7 @@
         "quedijoelgringo"
       ],
       "campaign": null,
-      "notes": "De respaldo (sin días fijos): variedad, CS2, Minecraft. Argentino. En Minecraft el chat del juego (abajo a la izquierda, junto a la cámara) muestra nombres de jugadores: va difuminado. Su cámara está a la izquierda (x 0-0.24, y 0.37-0.68).",
+      "notes": "De respaldo (sin días fijos): variedad, CS2, Minecraft. Argentino. En Minecraft el chat del juego (abajo a la izquierda, junto a la cámara) muestra nombres de jugadores: va difuminado. Su cámara está a la izquierda (x 0-0.24, y 0.37-0.68). En GTA 6 (desde el 19 nov) la cámara queda a la izquierda y no se ve el chat: no hace falta 'blur'. Su GTA 6 trae muchas escenas del juego y radio; sirven solo sus propias reacciones.",
       "blur": [
         [
           0.24,
