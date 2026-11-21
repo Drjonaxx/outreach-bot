@@ -1,0 +1,25 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:32.32,Hook,,0,0,0,,¿BEN, BILLY, BO O BOB?
+Dialogue: 0,0:00:00.12,0:00:03.72,Sub,,0,0,0,,{\fad(60,0)}¿Conoces a un tipo que se\Nllama Ben, o Billy, o Bo,\No Bob?
+Dialogue: 0,0:00:05.54,0:00:08.84,Sub,,0,0,0,,{\fad(60,0)}—Ok, esos son los nombres\Nmás genéricos que he oído\Nen mi vida.
+Dialogue: 0,0:00:09.08,0:00:11.96,Sub,,0,0,0,,{\fad(60,0)}—Le pregunté cómo se\Nllamaba y eso fue\Nexactamente lo que dijo.
+Dialogue: 0,0:00:12.04,0:00:16.18,Sub,,0,0,0,,{\fad(60,0)}Dice que es de Sandy.\NHuele a basura y no sabe\Ndónde queda nada.
+Dialogue: 0,0:00:16.42,0:00:17.92,Sub,,0,0,0,,{\fad(60,0)}Anda en overol.
+Dialogue: 0,0:00:17.94,0:00:21.40,Sub,,0,0,0,,{\fad(60,0)}Tiene el pelo largo, medio\Nrubio, y huele a…
+Dialogue: 0,0:00:24.04,0:00:25.12,Sub,,0,0,0,,{\fad(60,0)}—No, no conozco a ese\Ntipo.
+Dialogue: 0,0:00:28.52,0:00:29.56,Sub,,0,0,0,,{\fad(60,0)}¿Él me conoce a mí?
+Dialogue: 0,0:00:30.36,0:00:32.26,Sub,,0,0,0,,{\fad(60,0)}—Pues… no sé. No creo.

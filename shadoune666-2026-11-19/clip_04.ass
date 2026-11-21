@@ -1,0 +1,43 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:49.18,Hook,,0,0,0,,EL PERRO SE MATÓ SOLO
+Dialogue: 0,0:00:00.12,0:00:01.34,Sub,,0,0,0,,{\fad(60,0)}Creo que le maté el perro\Na Vandal.
+Dialogue: 0,0:00:01.94,0:00:03.26,Sub,,0,0,0,,{\fad(60,0)}—No, ¿cómo que le mataste?
+Dialogue: 0,0:00:05.22,0:00:06.48,Sub,,0,0,0,,{\fad(60,0)}Es una guerra por eso.
+Dialogue: 0,0:00:07.22,0:00:08.92,Sub,,0,0,0,,{\fad(60,0)}—Para que vean que no es\Nmi culpa.
+Dialogue: 0,0:00:09.16,0:00:10.62,Sub,,0,0,0,,{\fad(60,0)}Voy a tener que traerle\Nmucho hueso.
+Dialogue: 0,0:00:10.80,0:00:13.08,Sub,,0,0,0,,{\fad(60,0)}Voy a traer un perro en\Nbarco y todo
+Dialogue: 0,0:00:13.08,0:00:14.02,Sub,,0,0,0,,{\fad(60,0)}para que lo…
+Dialogue: 0,0:00:15.76,0:00:16.72,Sub,,0,0,0,,{\fad(60,0)}—¿Cómo se murió?
+Dialogue: 0,0:00:17.54,0:00:18.40,Sub,,0,0,0,,{\fad(60,0)}¿Cómo lo mataste?
+Dialogue: 0,0:00:19.04,0:00:20.32,Sub,,0,0,0,,{\fad(60,0)}—Es que me quiso atacar.
+Dialogue: 0,0:00:20.88,0:00:21.40,Sub,,0,0,0,,{\fad(60,0)}—No.
+Dialogue: 0,0:00:22.12,0:00:23.40,Sub,,0,0,0,,{\fad(60,0)}¿Y lo mataste?
+Dialogue: 0,0:00:23.88,0:00:25.78,Sub,,0,0,0,,{\fad(60,0)}—No, no, no lo maté yo.
+Dialogue: 0,0:00:25.88,0:00:27.72,Sub,,0,0,0,,{\fad(60,0)}Es que es imbécil y se\Ntiró a un agujero.
+Dialogue: 0,0:00:27.96,0:00:29.36,Sub,,0,0,0,,{\fad(60,0)}—¿El perro murió?
+Dialogue: 0,0:00:29.50,0:00:30.36,Sub,,0,0,0,,{\fad(60,0)}—El perro murió.
+Dialogue: 0,0:00:30.86,0:00:32.18,Sub,,0,0,0,,{\fad(60,0)}¡Los dos han muerto!
+Dialogue: 0,0:00:33.56,0:00:34.52,Sub,,0,0,0,,{\fad(60,0)}—¡Imposible, imposible!
+Dialogue: 0,0:00:34.68,0:00:35.56,Sub,,0,0,0,,{\fad(60,0)}—Los dos han muerto.
+Dialogue: 0,0:00:35.72,0:00:36.30,Sub,,0,0,0,,{\fad(60,0)}Ha vuelto a morir.
+Dialogue: 0,0:00:36.56,0:00:37.48,Sub,,0,0,0,,{\fad(60,0)}Han muerto dos veces.
+Dialogue: 0,0:00:37.72,0:00:39.06,Sub,,0,0,0,,{\fad(60,0)}—No creo que se haya\Nmuerto.
+Dialogue: 0,0:00:40.88,0:00:41.36,Sub,,0,0,0,,{\fad(60,0)}—No.
+Dialogue: 0,0:00:43.12,0:00:43.56,Sub,,0,0,0,,{\fad(60,0)}¿Vandal?
+Dialogue: 0,0:00:43.80,0:00:45.20,Sub,,0,0,0,,{\fad(60,0)}—Sí, sí.
+Dialogue: 0,0:00:45.64,0:00:47.86,Sub,,0,0,0,,{\fad(60,0)}—En mi defensa, le tengo\Nque decir que el perro
+Dialogue: 0,0:00:47.86,0:00:49.06,Sub,,0,0,0,,{\fad(60,0)}se mató solo.

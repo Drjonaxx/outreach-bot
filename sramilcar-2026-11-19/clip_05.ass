@@ -1,0 +1,26 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:26.65,Hook,,0,0,0,,¿GTA 6 MANEJA COMO GTA\NIV?
+Dialogue: 0,0:00:00.12,0:00:02.98,Sub,,0,0,0,,{\fad(60,0)}«¿Te acostumbraste al\Nmanejo de este pedazo? Con\Ntodo,
+Dialogue: 0,0:00:02.98,0:00:05.92,Sub,,0,0,0,,{\fad(60,0)}¿no se guardó un poco el\Nmanejo del GTA IV?»
+Dialogue: 0,0:00:06.04,0:00:08.04,Sub,,0,0,0,,{\fad(60,0)}Es difícil de dominar,\Npero cuando lo dominás
+Dialogue: 0,0:00:08.04,0:00:09.02,Sub,,0,0,0,,{\fad(60,0)}sos el puto dios.
+Dialogue: 0,0:00:11.05,0:00:12.33,Sub,,0,0,0,,{\fad(60,0)}Obviamente, yo no lo\Ndominé.
+Dialogue: 0,0:00:13.53,0:00:16.23,Sub,,0,0,0,,{\fad(60,0)}Lo digo así: los autos se\Nrompen muy rápido.
+Dialogue: 0,0:00:18.09,0:00:19.65,Sub,,0,0,0,,{\fad(60,0)}Tipo, se rompen a la\Nmínima.
+Dialogue: 0,0:00:20.85,0:00:23.15,Sub,,0,0,0,,{\fad(60,0)}O sea, se nota mucho el\Npeso de los autos ahora.
+Dialogue: 0,0:00:24.35,0:00:26.15,Sub,,0,0,0,,{\fad(60,0)}Está andando a tres\Ncilindros este auto,
+Dialogue: 0,0:00:26.35,0:00:26.53,Sub,,0,0,0,,{\fad(60,0)}boludo.

@@ -1,0 +1,40 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:49.36,Hook,,0,0,0,,¿SOSPECHOSO? TENGO\NNOMBRE
+Dialogue: 0,0:00:00.12,0:00:02.26,Sub,,0,0,0,,{\fad(60,0)}—Pero tú me tiraste la\Ncerveza el otro día.
+Dialogue: 0,0:00:03.78,0:00:04.60,Sub,,0,0,0,,{\fad(60,0)}—¿Quién te dijo eso?
+Dialogue: 0,0:00:06.20,0:00:08.16,Sub,,0,0,0,,{\fad(60,0)}—¿Me tiraste la cerveza o\Nno?
+Dialogue: 0,0:00:09.60,0:00:10.52,Sub,,0,0,0,,{\fad(60,0)}—¿Por qué asumes eso?
+Dialogue: 0,0:00:11.90,0:00:13.86,Sub,,0,0,0,,{\fad(60,0)}¿Quién dice que te tiré la\Ncerveza?
+Dialogue: 0,0:00:14.22,0:00:15.28,Sub,,0,0,0,,{\fad(60,0)}—Nadie me dijo nada.
+Dialogue: 0,0:00:15.38,0:00:15.94,Sub,,0,0,0,,{\fad(60,0)}—¿Quién te lo dijo?
+Dialogue: 0,0:00:16.96,0:00:17.84,Sub,,0,0,0,,{\fad(60,0)}—Solo dímelo.
+Dialogue: 0,0:00:17.88,0:00:18.80,Sub,,0,0,0,,{\fad(60,0)}¿Me tiraste la cerveza?
+Dialogue: 0,0:00:18.92,0:00:20.30,Sub,,0,0,0,,{\fad(60,0)}—Te digo si me dices quién\Nte lo dijo.
+Dialogue: 0,0:00:21.36,0:00:22.60,Sub,,0,0,0,,{\fad(60,0)}—Yo no trabajo así.
+Dialogue: 0,0:00:22.84,0:00:25.40,Sub,,0,0,0,,{\fad(60,0)}—Hazte a un lado, viene un\Nsospechoso.
+Dialogue: 0,0:00:26.60,0:00:28.44,Sub,,0,0,0,,{\fad(60,0)}—¿Sospechoso? Tengo\Nnombre, imbécil.
+Dialogue: 0,0:00:29.84,0:00:30.86,Sub,,0,0,0,,{\fad(60,0)}—Es que no sé tu nombre.
+Dialogue: 0,0:00:30.94,0:00:32.34,Sub,,0,0,0,,{\fad(60,0)}No quería decirte\Nsospechoso.
+Dialogue: 0,0:00:32.48,0:00:33.38,Sub,,0,0,0,,{\fad(60,0)}—Soy más que un\Nsospechoso.
+Dialogue: 0,0:00:33.56,0:00:36.02,Sub,,0,0,0,,{\fad(60,0)}—Eres un sospechoso bajo\Ncustodia.
+Dialogue: 0,0:00:36.02,0:00:37.56,Sub,,0,0,0,,{\fad(60,0)}Cuando digo sospechoso,
+Dialogue: 0,0:00:37.80,0:00:39.34,Sub,,0,0,0,,{\fad(60,0)}no intento degradarte como\Nser humano.
+Dialogue: 0,0:00:39.34,0:00:40.32,Sub,,0,0,0,,{\fad(60,0)}—Tienes razón.
+Dialogue: 0,0:00:40.42,0:00:41.58,Sub,,0,0,0,,{\fad(60,0)}Es un maldito imbécil.
+Dialogue: 0,0:00:41.76,0:00:43.02,Sub,,0,0,0,,{\fad(60,0)}Está degradando a este\Nhombre.
+Dialogue: 0,0:00:44.22,0:00:46.49,Sub,,0,0,0,,{\fad(60,0)}Oye, para mí tú eres una\Npersona, ¡maldita sea!
+Dialogue: 0,0:00:47.92,0:00:49.24,Sub,,0,0,0,,{\fad(60,0)}—Muchas gracias.

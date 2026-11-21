@@ -1,0 +1,29 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:23.17,Hook,,0,0,0,,ENCONTRÉ A PIE GRANDE\NEN GTA 6
+Dialogue: 0,0:00:00.12,0:00:00.98,Sub,,0,0,0,,{\fad(60,0)}¡Ah, me encontré…!
+Dialogue: 0,0:00:01.22,0:00:02.16,Sub,,0,0,0,,{\fad(60,0)}¡Ah, pará!
+Dialogue: 0,0:00:02.24,0:00:03.36,Sub,,0,0,0,,{\fad(60,0)}¡Me encontré a Pie Grande!
+Dialogue: 0,0:00:04.96,0:00:05.66,Sub,,0,0,0,,{\fad(60,0)}¡No es joda!
+Dialogue: 0,0:00:07.73,0:00:08.81,Sub,,0,0,0,,{\fad(60,0)}Me encontré a Pie Grande.
+Dialogue: 0,0:00:10.61,0:00:11.29,Sub,,0,0,0,,{\fad(60,0)}Sin contexto.
+Dialogue: 0,0:00:12.49,0:00:13.07,Sub,,0,0,0,,{\fad(60,0)}¡Posta!
+Dialogue: 0,0:00:13.23,0:00:14.23,Sub,,0,0,0,,{\fad(60,0)}¡No es joda!
+Dialogue: 0,0:00:14.27,0:00:15.47,Sub,,0,0,0,,{\fad(60,0)}Me lo crucé de pura\Ncasualidad.
+Dialogue: 0,0:00:17.85,0:00:18.71,Sub,,0,0,0,,{\fad(60,0)}Te juro que no es joda.
+Dialogue: 0,0:00:18.83,0:00:20.77,Sub,,0,0,0,,{\fad(60,0)}Uno nunca sabe cuándo\Ntiene que llevar la\Nescopeta
+Dialogue: 0,0:00:20.77,0:00:21.43,Sub,,0,0,0,,{\fad(60,0)}por las dudas.
+Dialogue: 0,0:00:21.67,0:00:23.05,Sub,,0,0,0,,{\fad(60,0)}Ay, este es el clip de Pie\NGrande.

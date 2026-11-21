@@ -1,0 +1,26 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:37.82,Hook,,0,0,0,,AHORA QUE NO ESTAMOS\NGRABANDO
+Dialogue: 0,0:00:00.12,0:00:01.76,Sub,,0,0,0,,{\fad(60,0)}Ahora que no estamos\Ngrabando…
+Dialogue: 0,0:00:03.86,0:00:06.84,Sub,,0,0,0,,{\fad(60,0)}Está en un lugar muy\Nseguro. —Ok.
+Dialogue: 0,0:00:06.86,0:00:10.28,Sub,,0,0,0,,{\fad(60,0)}Lo vamos moviendo cada\Ntanto para que no caiga en\Nmalas manos.
+Dialogue: 0,0:00:10.28,0:00:15.62,Sub,,0,0,0,,{\fad(60,0)}Porque se va a usar en una\Nmisión muy especial:\Nejecutar a alguien.
+Dialogue: 0,0:00:15.62,0:00:21.24,Sub,,0,0,0,,{\fad(60,0)}Y cuando lo haga, le dejo\Nel rifle encima del cuerpo\Ny llamo al 911
+Dialogue: 0,0:00:21.24,0:00:25.82,Sub,,0,0,0,,{\fad(60,0)}para que ustedes lo\Nrecojan y no caiga en\Nmalas manos. Así que\Nseguro
+Dialogue: 0,0:00:25.82,0:00:28.40,Sub,,0,0,0,,{\fad(60,0)}no cae en malas manos, y\Nel que tiene que morir,\Nmuere.
+Dialogue: 0,0:00:28.78,0:00:30.40,Sub,,0,0,0,,{\fad(60,0)}Todos felices, todos\Nganan.
+Dialogue: 0,0:00:31.80,0:00:32.72,Sub,,0,0,0,,{\fad(60,0)}No lo creo.
+Dialogue: 0,0:00:34.24,0:00:37.70,Sub,,0,0,0,,{\fad(60,0)}Bueno, no se trata de lo\Nque usted cree, sino de lo\Nque sabe.

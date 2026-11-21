@@ -1,0 +1,35 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:52.95,Hook,,0,0,0,,CONFÍA EN MÍ, ES UN\NATAJO
+Dialogue: 0,0:00:00.12,0:00:01.99,Sub,,0,0,0,,{\fad(60,0)}Creo que el dinosaurio me\Nvolteó y no me di cuenta.
+Dialogue: 0,0:00:02.10,0:00:04.30,Sub,,0,0,0,,{\fad(60,0)}¡No mames, cabrón!
+Dialogue: 0,0:00:06.15,0:00:08.31,Sub,,0,0,0,,{\fad(60,0)}Uf… Eso estuvo muy cerca.
+Dialogue: 0,0:00:08.31,0:00:11.99,Sub,,0,0,0,,{\fad(60,0)}Solo porque manejé moto en\Nla vida real me salvé de\Nesa, bro.
+Dialogue: 0,0:00:12.17,0:00:17.39,Sub,,0,0,0,,{\fad(60,0)}Si no, no salía de esta.
+Dialogue: 0,0:00:17.39,0:00:18.47,Sub,,0,0,0,,{\fad(60,0)}¡Uy!
+Dialogue: 0,0:00:19.67,0:00:21.37,Sub,,0,0,0,,{\fad(60,0)}Confía en mí, esto es un\Natajo. No…
+Dialogue: 0,0:00:22.57,0:00:24.27,Sub,,0,0,0,,{\fad(60,0)}…veo nada. ¡Uy, a la\Nverga!
+Dialogue: 0,0:00:26.29,0:00:28.37,Sub,,0,0,0,,{\fad(60,0)}O sea, no vi nada por un\Nsegundo.
+Dialogue: 0,0:00:29.81,0:00:32.45,Sub,,0,0,0,,{\fad(60,0)}¿Es por acá?
+Dialogue: 0,0:00:32.45,0:00:37.40,Sub,,0,0,0,,{\fad(60,0)}Me maté yo solo. Nadie me\Nmató.
+Dialogue: 0,0:00:37.40,0:00:40.41,Sub,,0,0,0,,{\fad(60,0)}Me estrellé.
+Dialogue: 0,0:00:40.53,0:00:42.67,Sub,,0,0,0,,{\fad(60,0)}Lo bueno es que manejé\Nmoto en la vida real,
+Dialogue: 0,0:00:42.67,0:00:44.09,Sub,,0,0,0,,{\fad(60,0)}si no, no hubiera podido.\NOtra vez.
+Dialogue: 0,0:00:44.33,0:00:45.25,Sub,,0,0,0,,{\fad(60,0)}¡Ah, la mierda!
+Dialogue: 0,0:00:46.21,0:00:47.59,Sub,,0,0,0,,{\fad(60,0)}Casi me mato, wey.
+Dialogue: 0,0:00:47.59,0:00:48.63,Sub,,0,0,0,,{\fad(60,0)}¡Pero lo hice!
+Dialogue: 0,0:00:48.63,0:00:49.55,Sub,,0,0,0,,{\fad(60,0)}¡Escapé!
+Dialogue: 0,0:00:51.77,0:00:52.85,Sub,,0,0,0,,{\fad(60,0)}¡Escapé de Sunnybrook!

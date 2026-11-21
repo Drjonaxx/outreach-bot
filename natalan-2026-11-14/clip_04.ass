@@ -1,0 +1,25 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:28.62,Hook,,0,0,0,,EL SONIC ES EL MÁS\NINÚTIL
+Dialogue: 0,0:00:00.00,0:00:04.30,Sub,,0,0,0,,{\fad(60,0)}El Sonic es el más inútil,\Nwey. Todos tienen poderes\Ncheteados menos el mío.
+Dialogue: 0,0:00:05.50,0:00:06.26,Sub,,0,0,0,,{\fad(60,0)}Planea sin miedo.
+Dialogue: 0,0:00:08.02,0:00:10.48,Sub,,0,0,0,,{\fad(60,0)}Súbete así, mira. ¡Suelta\Nmi gata!
+Dialogue: 0,0:00:11.54,0:00:14.38,Sub,,0,0,0,,{\fad(60,0)}Así, mira. Ponte a volar,\Nponte a volar, Pulga.
+Dialogue: 0,0:00:15.68,0:00:19.98,Sub,,0,0,0,,{\fad(60,0)}No, espérense, espérense…\N¡Espérense!
+Dialogue: 0,0:00:19.98,0:00:22.92,Sub,,0,0,0,,{\fad(60,0)}No, hombre…
+Dialogue: 0,0:00:22.92,0:00:24.38,Sub,,0,0,0,,{\fad(60,0)}¿Saben qué? Que hagan lo\Nque se les dé
+Dialogue: 0,0:00:24.38,0:00:27.42,Sub,,0,0,0,,{\fad(60,0)}la rechingada. Ya no les\Nvoy a decir nada, wey.
+Dialogue: 0,0:00:27.42,0:00:28.50,Sub,,0,0,0,,{\fad(60,0)}Ya está bien. Ya fue.

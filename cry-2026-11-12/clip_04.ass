@@ -1,0 +1,24 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:31.44,Hook,,0,0,0,,HAY QUE HABLAR REAL
+Dialogue: 0,0:00:00.12,0:00:03.24,Sub,,0,0,0,,{\fad(60,0)}Es que tengo mucho pelo,\Nbro. Hay que hablar real.
+Dialogue: 0,0:00:03.34,0:00:05.60,Sub,,0,0,0,,{\fad(60,0)}Hasta prefiero que me lo\Ncorte y luego me tiño el\Npelo.
+Dialogue: 0,0:00:06.28,0:00:10.14,Sub,,0,0,0,,{\fad(60,0)}Porque si me tiño el pelo\Ny luego me lo corta, se me\Nva la teñición.
+Dialogue: 0,0:00:12.04,0:00:13.56,Sub,,0,0,0,,{\fad(60,0)}Como la otra vez, que no\Nme duró nada.
+Dialogue: 0,0:00:15.79,0:00:19.13,Sub,,0,0,0,,{\fad(60,0)}O me lo corta, no me lo\Ntiño, y me lo tiño luego\Nde blanco.
+Dialogue: 0,0:00:19.37,0:00:25.06,Sub,,0,0,0,,{\fad(60,0)}El pelo blanco tuvo su\Népoca, pero…
+Dialogue: 0,0:00:26.04,0:00:29.38,Sub,,0,0,0,,{\fad(60,0)}No va a regresar. Lo\Nsiento mucho.
+Dialogue: 0,0:00:30.08,0:00:31.32,Sub,,0,0,0,,{\fad(60,0)}Ya tenemos una edad.

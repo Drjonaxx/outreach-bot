@@ -1,0 +1,39 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:48.58,Hook,,0,0,0,,LLAMADA DEL FUTURO\NCONSUEGRO
+Dialogue: 0,0:00:00.12,0:00:04.68,Sub,,0,0,0,,{\fad(60,0)}—¿Hola? —Habla el, eh...\Nseñor Guppy.
+Dialogue: 0,0:00:05.42,0:00:07.24,Sub,,0,0,0,,{\fad(60,0)}¡Ay, Dios mío, señor\NDawson!
+Dialogue: 0,0:00:07.26,0:00:07.76,Sub,,0,0,0,,{\fad(60,0)}—Sí, sí.
+Dialogue: 0,0:00:07.84,0:00:08.40,Sub,,0,0,0,,{\fad(60,0)}—¿Cómo está, señor?
+Dialogue: 0,0:00:08.68,0:00:09.86,Sub,,0,0,0,,{\fad(60,0)}—Eh, ¿lo puedo llamar en\Nun rato?
+Dialogue: 0,0:00:09.92,0:00:11.08,Sub,,0,0,0,,{\fad(60,0)}Estoy en una reunión, nada\Nmás.
+Dialogue: 0,0:00:11.84,0:00:13.66,Sub,,0,0,0,,{\fad(60,0)}—Pues yo también estoy en\Nuna reunión de negocios
+Dialogue: 0,0:00:13.66,0:00:16.20,Sub,,0,0,0,,{\fad(60,0)}ahora mismo. Hay millones\Nde dólares sobre la mesa,
+Dialogue: 0,0:00:16.20,0:00:18.82,Sub,,0,0,0,,{\fad(60,0)}en juego ahora mismo.\NPiscinas.
+Dialogue: 0,0:00:18.96,0:00:21.02,Sub,,0,0,0,,{\fad(60,0)}Vendo piscinas, señor
+Dialogue: 0,0:00:21.16,0:00:23.34,Sub,,0,0,0,,{\fad(60,0)}Dawson. —Pues no tengo\Nespacio para una.
+Dialogue: 0,0:00:23.72,0:00:25.88,Sub,,0,0,0,,{\fad(60,0)}No tengo espacio. —No le\Nquiero vender
+Dialogue: 0,0:00:25.88,0:00:27.06,Sub,,0,0,0,,{\fad(60,0)}ninguna, señor Dawson.
+Dialogue: 0,0:00:27.22,0:00:29.20,Sub,,0,0,0,,{\fad(60,0)}Eso es lo que trato de\Ndecir. Lo que quiero
+Dialogue: 0,0:00:29.20,0:00:30.16,Sub,,0,0,0,,{\fad(60,0)}decir, en resumen,
+Dialogue: 0,0:00:30.30,0:00:32.50,Sub,,0,0,0,,{\fad(60,0)}es que me gustaría\Nconocerlo algún día.\NHablar
+Dialogue: 0,0:00:32.50,0:00:35.36,Sub,,0,0,0,,{\fad(60,0)}de mi niño bueno, mi\Nprincipito, con usted
+Dialogue: 0,0:00:35.36,0:00:36.14,Sub,,0,0,0,,{\fad(60,0)}un ratito, ¿sí?
+Dialogue: 0,0:00:36.66,0:00:39.38,Sub,,0,0,0,,{\fad(60,0)}—Sí, sí, nos vemos y\Nhablamos de su hombrecito.
+Dialogue: 0,0:00:39.48,0:00:42.36,Sub,,0,0,0,,{\fad(60,0)}Deme unos 10 minutos y le\Ndevuelvo la llamada.
+Dialogue: 0,0:00:43.56,0:00:44.96,Sub,,0,0,0,,{\fad(60,0)}—Me tengo que ir. Se está\Ncortando.
+Dialogue: 0,0:00:44.98,0:00:46.44,Sub,,0,0,0,,{\fad(60,0)}Gracias, señor Dawson. Yo\Nle llamo.
+Dialogue: 0,0:00:47.54,0:00:48.46,Sub,,0,0,0,,{\fad(60,0)}—¿Qué demonios fue eso?

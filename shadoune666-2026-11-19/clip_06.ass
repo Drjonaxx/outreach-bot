@@ -1,0 +1,33 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:35.00,Hook,,0,0,0,,GRACIAS A MI EX
+Dialogue: 0,0:00:00.12,0:00:03.12,Sub,,0,0,0,,{\fad(60,0)}Yo entré en Elite 1 en\Nparte porque mi novia
+Dialogue: 0,0:00:03.12,0:00:03.84,Sub,,0,0,0,,{\fad(60,0)}rompió conmigo.
+Dialogue: 0,0:00:04.66,0:00:05.80,Sub,,0,0,0,,{\fad(60,0)}Mi novia de 2019.
+Dialogue: 0,0:00:06.88,0:00:07.60,Sub,,0,0,0,,{\fad(60,0)}Y por ende,
+Dialogue: 0,0:00:08.30,0:00:09.96,Sub,,0,0,0,,{\fad(60,0)}a esta chica se lo tengo\Nque agradecer toda mi\Nvida,
+Dialogue: 0,0:00:09.96,0:00:10.86,Sub,,0,0,0,,{\fad(60,0)}porque me cambió la vida.
+Dialogue: 0,0:00:11.12,0:00:13.70,Sub,,0,0,0,,{\fad(60,0)}Rompiendo conmigo, volví a\Nla comunidad hispana.
+Dialogue: 0,0:00:15.32,0:00:17.46,Sub,,0,0,0,,{\fad(60,0)}Y si no hubiera roto\Nconmigo,
+Dialogue: 0,0:00:18.30,0:00:20.98,Sub,,0,0,0,,{\fad(60,0)}me quedaba en su casa para\Nsacarme el carnet.
+Dialogue: 0,0:00:21.54,0:00:23.78,Sub,,0,0,0,,{\fad(60,0)}Me quedaba en mi trabajo.
+Dialogue: 0,0:00:24.02,0:00:26.16,Sub,,0,0,0,,{\fad(60,0)}No fue gol, porque me\Ncortó y lloré un
+Dialogue: 0,0:00:26.16,0:00:26.44,Sub,,0,0,0,,{\fad(60,0)}montón.
+Dialogue: 0,0:00:28.38,0:00:29.04,Sub,,0,0,0,,{\fad(60,0)}De hecho, por ella,
+Dialogue: 0,0:00:29.46,0:00:29.92,Sub,,0,0,0,,{\fad(60,0)}por su culpa,
+Dialogue: 0,0:00:30.12,0:00:30.76,Sub,,0,0,0,,{\fad(60,0)}no tengo mi carnet.
+Dialogue: 0,0:00:30.94,0:00:31.74,Sub,,0,0,0,,{\fad(60,0)}Nunca tuve mi carnet.
+Dialogue: 0,0:00:31.94,0:00:34.88,Sub,,0,0,0,,{\fad(60,0)}Porque rompió conmigo a\Nmitad de las clases.

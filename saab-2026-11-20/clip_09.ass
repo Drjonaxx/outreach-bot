@@ -1,0 +1,33 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:39.61,Hook,,0,0,0,,LOS PERROS NO LO\NSUELTAN
+Dialogue: 0,0:00:00.12,0:00:02.22,Sub,,0,0,0,,{\fad(60,0)}¡No puede ser!
+Dialogue: 0,0:00:03.42,0:00:06.44,Sub,,0,0,0,,{\fad(60,0)}¡No puede ser! Me llevó\Ncon un montón
+Dialogue: 0,0:00:06.44,0:00:09.36,Sub,,0,0,0,,{\fad(60,0)}de perros más. ¡Qué perro\Ntan genial!
+Dialogue: 0,0:00:09.60,0:00:10.78,Sub,,0,0,0,,{\fad(60,0)}Oigan, ¿quieren jugar a la\Npelota?
+Dialogue: 0,0:00:11.98,0:00:13.02,Sub,,0,0,0,,{\fad(60,0)}¡Ve por ella!
+Dialogue: 0,0:00:13.10,0:00:13.90,Sub,,0,0,0,,{\fad(60,0)}¡Ve por ella!
+Dialogue: 0,0:00:15.73,0:00:16.29,Sub,,0,0,0,,{\fad(60,0)}¡Buen chico!
+Dialogue: 0,0:00:17.23,0:00:18.53,Sub,,0,0,0,,{\fad(60,0)}¡Tráela para acá, amigo!
+Dialogue: 0,0:00:18.77,0:00:20.57,Sub,,0,0,0,,{\fad(60,0)}Me siento mal, bro.
+Dialogue: 0,0:00:21.41,0:00:23.15,Sub,,0,0,0,,{\fad(60,0)}Me siento mal, bro.
+Dialogue: 0,0:00:23.41,0:00:24.73,Sub,,0,0,0,,{\fad(60,0)}Los voy a dejar a todos.
+Dialogue: 0,0:00:25.93,0:00:28.39,Sub,,0,0,0,,{\fad(60,0)}Me siguen todos al agua,\Nbro.
+Dialogue: 0,0:00:28.39,0:00:29.47,Sub,,0,0,0,,{\fad(60,0)}Chicos...
+Dialogue: 0,0:00:30.91,0:00:33.03,Sub,,0,0,0,,{\fad(60,0)}Váyanse a casa, chicos.
+Dialogue: 0,0:00:34.79,0:00:36.11,Sub,,0,0,0,,{\fad(60,0)}Chicos, váyanse a casa.
+Dialogue: 0,0:00:36.33,0:00:36.71,Sub,,0,0,0,,{\fad(60,0)}¡A casa!
+Dialogue: 0,0:00:38.25,0:00:39.49,Sub,,0,0,0,,{\fad(60,0)}Tengo que trabajar, bro.

@@ -1,0 +1,26 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:34.39,Hook,,0,0,0,,CON GASTOS, CON DEUDAS
+Dialogue: 0,0:00:00.12,0:00:03.64,Sub,,0,0,0,,{\fad(60,0)}¿Qué mierda? Brad, ¿estás\Nbien? Brad, ¿estás bien?
+Dialogue: 0,0:00:03.88,0:00:05.76,Sub,,0,0,0,,{\fad(60,0)}El amigo valió verga y yo\Nseguí robando.
+Dialogue: 0,0:00:05.76,0:00:09.22,Sub,,0,0,0,,{\fad(60,0)}No, no, les dije: yo no\Ndecidí hacer esto. Yo no\Ndecidí.
+Dialogue: 0,0:00:10.42,0:00:11.80,Sub,,0,0,0,,{\fad(60,0)}Chamba, chamba, wey.
+Dialogue: 0,0:00:11.80,0:00:14.94,Sub,,0,0,0,,{\fad(60,0)}Soy un hombre responsable,\Ncon gastos, con deudas.
+Dialogue: 0,0:00:16.14,0:00:17.72,Sub,,0,0,0,,{\fad(60,0)}Mierda, mierda, mierda.
+Dialogue: 0,0:00:20.64,0:00:22.64,Sub,,0,0,0,,{\fad(60,0)}¿Qué vergas…?
+Dialogue: 0,0:00:23.84,0:00:27.20,Sub,,0,0,0,,{\fad(60,0)}¿Qué demonios? ¿Eso es un\Nmaldito T-Rex?
+Dialogue: 0,0:00:27.36,0:00:29.68,Sub,,0,0,0,,{\fad(60,0)}¿Qué vergas, hermano?
+Dialogue: 0,0:00:31.99,0:00:34.27,Sub,,0,0,0,,{\fad(60,0)}¡Es un maldito T-Rex!

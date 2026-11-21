@@ -1,0 +1,32 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:29.42,Hook,,0,0,0,,NO PUEDE ENTRAR AL\NBAÑO
+Dialogue: 0,0:00:00.12,0:00:01.98,Sub,,0,0,0,,{\fad(60,0)}Ni siquiera puedo entrar\Nal maldito baño.
+Dialogue: 0,0:00:02.10,0:00:03.66,Sub,,0,0,0,,{\fad(60,0)}Me siguen diciendo:\Ncórtate el pelo y la barba\Nen el
+Dialogue: 0,0:00:03.66,0:00:03.84,Sub,,0,0,0,,{\fad(60,0)}baño.
+Dialogue: 0,0:00:03.94,0:00:04.90,Sub,,0,0,0,,{\fad(60,0)}¡No puedo entrar al baño!
+Dialogue: 0,0:00:05.78,0:00:06.68,Sub,,0,0,0,,{\fad(60,0)}Ya lo intenté.
+Dialogue: 0,0:00:09.12,0:00:09.52,Sub,,0,0,0,,{\fad(60,0)}—Bueno.
+Dialogue: 0,0:00:10.20,0:00:11.50,Sub,,0,0,0,,{\fad(60,0)}Me voy a cambiar para el\Ntrabajo.
+Dialogue: 0,0:00:12.18,0:00:12.58,Sub,,0,0,0,,{\fad(60,0)}—¿Qué?
+Dialogue: 0,0:00:12.68,0:00:13.76,Sub,,0,0,0,,{\fad(60,0)}¿Me dejas por el trabajo?
+Dialogue: 0,0:00:14.28,0:00:15.04,Sub,,0,0,0,,{\fad(60,0)}¿Viéndote así?
+Dialogue: 0,0:00:17.08,0:00:18.06,Sub,,0,0,0,,{\fad(60,0)}—Una vez más.
+Dialogue: 0,0:00:19.70,0:00:20.48,Sub,,0,0,0,,{\fad(60,0)}No puedo entrar.
+Dialogue: 0,0:00:21.04,0:00:22.26,Sub,,0,0,0,,{\fad(60,0)}De verdad no puedo entrar.
+Dialogue: 0,0:00:24.92,0:00:27.60,Sub,,0,0,0,,{\fad(60,0)}Lo intento, literal, con\Ntodas mis fuerzas.
+Dialogue: 0,0:00:27.84,0:00:28.94,Sub,,0,0,0,,{\fad(60,0)}¡Ella sí puede entrar!
+Dialogue: 0,0:00:29.08,0:00:29.30,Sub,,0,0,0,,{\fad(60,0)}Genial.

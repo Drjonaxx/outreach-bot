@@ -1,0 +1,27 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:32.96,Hook,,0,0,0,,NACÍ A LAS 11:59 DE LA\NNOCHE
+Dialogue: 0,0:00:00.12,0:00:02.08,Sub,,0,0,0,,{\fad(60,0)}Chicos, no es fake, ¿eh?
+Dialogue: 0,0:00:03.24,0:00:07.42,Sub,,0,0,0,,{\fad(60,0)}Nací a las 11:59 de la\Nnoche.
+Dialogue: 0,0:00:11.40,0:00:11.74,Sub,,0,0,0,,{\fad(60,0)}Tiempo.
+Dialogue: 0,0:00:12.54,0:00:15.62,Sub,,0,0,0,,{\fad(60,0)}Me van a estar como… no sé\Nsi «partiendo».
+Dialogue: 0,0:00:16.52,0:00:17.42,Sub,,0,0,0,,{\fad(60,0)}No sé cómo se dice…
+Dialogue: 0,0:00:19.50,0:00:21.56,Sub,,0,0,0,,{\fad(60,0)}¿Pariendo? ¿Cuál es el\Nverbo?
+Dialogue: 0,0:00:22.54,0:00:24.88,Sub,,0,0,0,,{\fad(60,0)}¿Pariendo? ¿Pariendo?
+Dialogue: 0,0:00:25.32,0:00:26.30,Sub,,0,0,0,,{\fad(60,0)}Me van a estar pariendo.
+Dialogue: 0,0:00:27.08,0:00:29.46,Sub,,0,0,0,,{\fad(60,0)}Y yo vi la hora y dije:\N«No, no, no, no, no,
+Dialogue: 0,0:00:29.46,0:00:30.80,Sub,,0,0,0,,{\fad(60,0)}no, ¡rápido, rápido,\Nrápido, rápido!».
+Dialogue: 0,0:00:30.96,0:00:32.84,Sub,,0,0,0,,{\fad(60,0)}Y pa, llegué un minuto\Nantes del 15 de noviembre.

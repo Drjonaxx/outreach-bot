@@ -1,0 +1,42 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:34.98,Hook,,0,0,0,,INSULTÓ AL PERRO SIN\NQUERER
+Dialogue: 0,0:00:00.12,0:00:00.96,Sub,,0,0,0,,{\fad(60,0)}Ven acá, perrito.
+Dialogue: 0,0:00:01.70,0:00:02.54,Sub,,0,0,0,,{\fad(60,0)}Tengo un premio para ti.
+Dialogue: 0,0:00:03.62,0:00:05.02,Sub,,0,0,0,,{\fad(60,0)}Un premio para ti, amigo.
+Dialogue: 0,0:00:06.22,0:00:07.38,Sub,,0,0,0,,{\fad(60,0)}—Eres un maldito perro feo\Ny gigante.
+Dialogue: 0,0:00:07.66,0:00:09.22,Sub,,0,0,0,,{\fad(60,0)}—Ay, mierda, no quise\Nhacer eso.
+Dialogue: 0,0:00:10.16,0:00:11.34,Sub,,0,0,0,,{\fad(60,0)}No fue a propósito.
+Dialogue: 0,0:00:11.52,0:00:12.18,Sub,,0,0,0,,{\fad(60,0)}Perdón, perdón.
+Dialogue: 0,0:00:12.26,0:00:13.10,Sub,,0,0,0,,{\fad(60,0)}No, no, vuelve, vuelve.
+Dialogue: 0,0:00:13.16,0:00:13.74,Sub,,0,0,0,,{\fad(60,0)}Lo siento mucho.
+Dialogue: 0,0:00:13.86,0:00:14.18,Sub,,0,0,0,,{\fad(60,0)}¿Por qué?
+Dialogue: 0,0:00:14.40,0:00:15.56,Sub,,0,0,0,,{\fad(60,0)}Me dio la espalda.
+Dialogue: 0,0:00:16.62,0:00:17.60,Sub,,0,0,0,,{\fad(60,0)}Perdóname.
+Dialogue: 0,0:00:17.74,0:00:19.06,Sub,,0,0,0,,{\fad(60,0)}Quería, quería elogiarlo.
+Dialogue: 0,0:00:19.14,0:00:19.96,Sub,,0,0,0,,{\fad(60,0)}Quería elogiarlo.
+Dialogue: 0,0:00:20.02,0:00:20.82,Sub,,0,0,0,,{\fad(60,0)}Lo siento mucho.
+Dialogue: 0,0:00:21.02,0:00:21.56,Sub,,0,0,0,,{\fad(60,0)}¿Quieres un premio?
+Dialogue: 0,0:00:21.72,0:00:22.06,Sub,,0,0,0,,{\fad(60,0)}¿Quieres otro?
+Dialogue: 0,0:00:22.80,0:00:23.54,Sub,,0,0,0,,{\fad(60,0)}Te doy otro premio.
+Dialogue: 0,0:00:24.16,0:00:24.86,Sub,,0,0,0,,{\fad(60,0)}Te doy otro premio, amigo.
+Dialogue: 0,0:00:24.94,0:00:25.42,Sub,,0,0,0,,{\fad(60,0)}Perdón.
+Dialogue: 0,0:00:25.52,0:00:26.22,Sub,,0,0,0,,{\fad(60,0)}Lo siento, amigo.
+Dialogue: 0,0:00:26.34,0:00:26.82,Sub,,0,0,0,,{\fad(60,0)}Te pido disculpas.
+Dialogue: 0,0:00:28.28,0:00:28.92,Sub,,0,0,0,,{\fad(60,0)}Perdóname.
+Dialogue: 0,0:00:30.94,0:00:31.88,Sub,,0,0,0,,{\fad(60,0)}Ese no está bien.
+Dialogue: 0,0:00:32.16,0:00:32.62,Sub,,0,0,0,,{\fad(60,0)}Bueno, está bien.
+Dialogue: 0,0:00:34.28,0:00:34.98,Sub,,0,0,0,,{\fad(60,0)}Perdón, amigo.

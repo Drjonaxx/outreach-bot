@@ -1,0 +1,31 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:43.20,Hook,,0,0,0,,1.600 POR UN TINTE\NNEGRO
+Dialogue: 0,0:00:00.12,0:00:03.70,Sub,,0,0,0,,{\fad(60,0)}Me acabas de cobrar 1,600\Npor un tinte negro de\Ncabello.
+Dialogue: 0,0:00:04.40,0:00:07.84,Sub,,0,0,0,,{\fad(60,0)}¿Me vas a retener aquí 20\Nminutos para grabarme y\Nsacarme fotos
+Dialogue: 0,0:00:08.84,0:00:09.38,Sub,,0,0,0,,{\fad(60,0)}para las redes?
+Dialogue: 0,0:00:11.02,0:00:12.56,Sub,,0,0,0,,{\fad(60,0)}Y sí me enojé, la verdad.
+Dialogue: 0,0:00:12.80,0:00:14.28,Sub,,0,0,0,,{\fad(60,0)}1,600 por un tinte.
+Dialogue: 0,0:00:14.64,0:00:16.98,Sub,,0,0,0,,{\fad(60,0)}Sí, porque también te\Naplican la de…
+Dialogue: 0,0:00:17.70,0:00:19.14,Sub,,0,0,0,,{\fad(60,0)}«Te ponemos el sellado\Npremium».
+Dialogue: 0,0:00:20.16,0:00:21.18,Sub,,0,0,0,,{\fad(60,0)}Y no sé qué.
+Dialogue: 0,0:00:22.18,0:00:23.50,Sub,,0,0,0,,{\fad(60,0)}«Protección para que dure\Nmás».
+Dialogue: 0,0:00:23.96,0:00:25.32,Sub,,0,0,0,,{\fad(60,0)}Y uno que no sabe decir\Nque no…
+Dialogue: 0,0:00:25.56,0:00:30.08,Sub,,0,0,0,,{\fad(60,0)}Pero lowkey sí es el lugar\Ndonde más me ha durado el\Ntinte.
+Dialogue: 0,0:00:30.72,0:00:32.50,Sub,,0,0,0,,{\fad(60,0)}Así que full blackout.
+Dialogue: 0,0:00:33.44,0:00:35.36,Sub,,0,0,0,,{\fad(60,0)}No sé qué tan cierta sea\Nesa madre,
+Dialogue: 0,0:00:36.08,0:00:38.72,Sub,,0,0,0,,{\fad(60,0)}pero sí es el sitio donde\Nmás me ha durado.
+Dialogue: 0,0:00:41.38,0:00:43.08,Sub,,0,0,0,,{\fad(60,0)}Sí, me apena decir que no,\Nte lo juro.

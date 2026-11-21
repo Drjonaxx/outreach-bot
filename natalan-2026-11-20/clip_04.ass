@@ -1,0 +1,40 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:49.28,Hook,,0,0,0,,HACIENDO PESAS EN GTA\N6
+Dialogue: 0,0:00:00.12,0:00:01.82,Sub,,0,0,0,,{\fad(60,0)}Ah, tengo que ejercitar\Npara mantener el cuerpo,
+Dialogue: 0,0:00:01.82,0:00:02.50,Sub,,0,0,0,,{\fad(60,0)}porque si no,
+Dialogue: 0,0:00:03.56,0:00:06.38,Sub,,0,0,0,,{\fad(60,0)}me pongo todo flaco y\Nescuálido. ¡Es verdad!
+Dialogue: 0,0:00:06.62,0:00:08.22,Sub,,0,0,0,,{\fad(60,0)}Oye, casi no la saco, wey.
+Dialogue: 0,0:00:10.54,0:00:11.38,Sub,,0,0,0,,{\fad(60,0)}Casi que no.
+Dialogue: 0,0:00:11.62,0:00:12.28,Sub,,0,0,0,,{\fad(60,0)}Me hago daño.
+Dialogue: 0,0:00:12.44,0:00:13.54,Sub,,0,0,0,,{\fad(60,0)}¿Cómo lo bajo así,\Nsuavecito?
+Dialogue: 0,0:00:14.74,0:00:16.46,Sub,,0,0,0,,{\fad(60,0)}Ah, la estoy sudando, wey.
+Dialogue: 0,0:00:17.66,0:00:18.36,Sub,,0,0,0,,{\fad(60,0)}Oye, wey, wey.
+Dialogue: 0,0:00:18.38,0:00:19.42,Sub,,0,0,0,,{\fad(60,0)}Todavía me falta un poco,\N¡esperen!
+Dialogue: 0,0:00:20.62,0:00:21.66,Sub,,0,0,0,,{\fad(60,0)}Esta no la termino, eh.
+Dialogue: 0,0:00:22.86,0:00:23.56,Sub,,0,0,0,,{\fad(60,0)}Esta no la termino.
+Dialogue: 0,0:00:24.52,0:00:25.54,Sub,,0,0,0,,{\fad(60,0)}Nunca logro terminar\Nestas.
+Dialogue: 0,0:00:26.74,0:00:27.48,Sub,,0,0,0,,{\fad(60,0)}No, no la termino.
+Dialogue: 0,0:00:30.21,0:00:31.55,Sub,,0,0,0,,{\fad(60,0)}No, no la hice, wey.
+Dialogue: 0,0:00:31.55,0:00:32.47,Sub,,0,0,0,,{\fad(60,0)}Ya…
+Dialogue: 0,0:00:33.67,0:00:34.23,Sub,,0,0,0,,{\fad(60,0)}…casi lo lleno.
+Dialogue: 0,0:00:35.55,0:00:36.03,Sub,,0,0,0,,{\fad(60,0)}¡Últimas!
+Dialogue: 0,0:00:37.23,0:00:37.53,Sub,,0,0,0,,{\fad(60,0)}¡Listo!
+Dialogue: 0,0:00:40.32,0:00:41.88,Sub,,0,0,0,,{\fad(60,0)}Proteína completa. Ahora a\Ndescansar,
+Dialogue: 0,0:00:41.88,0:00:42.48,Sub,,0,0,0,,{\fad(60,0)}a recuperarse.
+Dialogue: 0,0:00:44.80,0:00:45.24,Sub,,0,0,0,,{\fad(60,0)}Vamos.
+Dialogue: 0,0:00:46.44,0:00:47.26,Sub,,0,0,0,,{\fad(60,0)}¿Por qué no puedo correr?
+Dialogue: 0,0:00:48.12,0:00:49.16,Sub,,0,0,0,,{\fad(60,0)}¿Me voy a desmayar o qué?

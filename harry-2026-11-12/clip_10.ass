@@ -1,0 +1,22 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:18.80,Hook,,0,0,0,,ESPERA… ME ESTÁN\NDISPARANDO
+Dialogue: 0,0:00:00.00,0:00:03.72,Sub,,0,0,0,,{\fad(60,0)}Creo que tú y yo… creo que\Nahí va a salir algo bueno.
+Dialogue: 0,0:00:03.82,0:00:05.30,Sub,,0,0,0,,{\fad(60,0)}Me están disparando.\NEspera.
+Dialogue: 0,0:00:06.50,0:00:08.44,Sub,,0,0,0,,{\fad(60,0)}Espera, Zeke. Déjame\Nterminar con esta casa.
+Dialogue: 0,0:00:08.68,0:00:12.32,Sub,,0,0,0,,{\fad(60,0)}Ya, Zeke. No estoy muerto,\Nhermano, solo estoy\Nrobando una casa.
+Dialogue: 0,0:00:13.52,0:00:15.36,Sub,,0,0,0,,{\fad(60,0)}Oye, creo que le robé el\Ncarro a ese tipo.
+Dialogue: 0,0:00:15.44,0:00:18.68,Sub,,0,0,0,,{\fad(60,0)}Me estuvo buscando por\Nhoras por toda la ciudad y\Npor fin me alcanzó.

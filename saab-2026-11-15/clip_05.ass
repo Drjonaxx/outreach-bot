@@ -1,0 +1,26 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:26.50,Hook,,0,0,0,,TE CAÍSTE SOBRE ESA\NBALA
+Dialogue: 0,0:00:00.10,0:00:01.40,Sub,,0,0,0,,{\fad(60,0)}Ay, ¿me tropecé con algo?
+Dialogue: 0,0:00:02.46,0:00:03.78,Sub,,0,0,0,,{\fad(60,0)}Sí, te caíste sobre esa\Nbala.
+Dialogue: 0,0:00:04.62,0:00:05.72,Sub,,0,0,0,,{\fad(60,0)}¿Cómo es eso posible?
+Dialogue: 0,0:00:06.98,0:00:09.78,Sub,,0,0,0,,{\fad(60,0)}No sé, viejo. El policía\Neres tú.
+Dialogue: 0,0:00:10.86,0:00:11.88,Sub,,0,0,0,,{\fad(60,0)}Ese no es mi trabajo.
+Dialogue: 0,0:00:12.28,0:00:13.08,Sub,,0,0,0,,{\fad(60,0)}Sí, claro…
+Dialogue: 0,0:00:14.84,0:00:17.88,Sub,,0,0,0,,{\fad(60,0)}La gente no se cae sobre\Nlas balas. Normalmente\Nalguien les apunta.
+Dialogue: 0,0:00:18.12,0:00:21.64,Sub,,0,0,0,,{\fad(60,0)}Y luego esas balas vuelan\Nhacia el cuerpo y entran\Nasí.
+Dialogue: 0,0:00:21.74,0:00:24.98,Sub,,0,0,0,,{\fad(60,0)}Ok, ahora tenemos un\Nexperto en balas. Qué\Nbien. Qué maravilla.
+Dialogue: 0,0:00:24.98,0:00:26.38,Sub,,0,0,0,,{\fad(60,0)}Un experto en balística,\Npero bueno.

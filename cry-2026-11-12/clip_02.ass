@@ -1,0 +1,27 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:44.36,Hook,,0,0,0,,¿CUÁL ES MI ÁNGULO,\NCHULAS?
+Dialogue: 0,0:00:00.12,0:00:02.80,Sub,,0,0,0,,{\fad(60,0)}No mames, me veo bien\Ndemacrado, la verga.
+Dialogue: 0,0:00:05.15,0:00:08.43,Sub,,0,0,0,,{\fad(60,0)}Estos van a ser los clips\Nsin comentarios que te\Ndecía.
+Dialogue: 0,0:00:08.67,0:00:12.47,Sub,,0,0,0,,{\fad(60,0)}Ahora sí, a buscar el\Nángulo. ¿Cuál dirían que\Nes mi ángulo, chulas?
+Dialogue: 0,0:00:13.67,0:00:15.19,Sub,,0,0,0,,{\fad(60,0)}¿Contrapicado, como de\Narriba abajo?
+Dialogue: 0,0:00:15.81,0:00:21.47,Sub,,0,0,0,,{\fad(60,0)}¿Este horrible, o este que\Nes peor? ¿Cuál prefieren?
+Dialogue: 0,0:00:22.65,0:00:25.33,Sub,,0,0,0,,{\fad(60,0)}No hay un ángulo donde\Ntodo el mundo se vea bien,\Nque es desde arriba para\Nabajo.
+Dialogue: 0,0:00:26.21,0:00:29.87,Sub,,0,0,0,,{\fad(60,0)}Yo creo que no. A ver cómo\Nestá ahora mismo.
+Dialogue: 0,0:00:32.09,0:00:33.17,Sub,,0,0,0,,{\fad(60,0)}A ver, voltea la pantalla.
+Dialogue: 0,0:00:35.38,0:00:38.30,Sub,,0,0,0,,{\fad(60,0)}Ahora está muy de frente,\Npero si quitamos…
+Dialogue: 0,0:00:38.80,0:00:40.96,Sub,,0,0,0,,{\fad(60,0)}O sea, si le alejas al\Nmáximo, pegado a la\Nventana…
+Dialogue: 0,0:00:41.20,0:00:44.24,Sub,,0,0,0,,{\fad(60,0)}Claro, ese es el truco\Npara verse más guapo:\Nalejar la cámara lo máximo\Nposible.

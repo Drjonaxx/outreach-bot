@@ -1,0 +1,38 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:49.74,Hook,,0,0,0,,¿ARCADE? NO,\NMAQUINITAS
+Dialogue: 0,0:00:00.04,0:00:00.86,Sub,,0,0,0,,{\fad(60,0)}Es que ni siquiera es un\Narcade.
+Dialogue: 0,0:00:01.00,0:00:01.90,Sub,,0,0,0,,{\fad(60,0)}O sea, eran tienditas.
+Dialogue: 0,0:00:02.48,0:00:04.60,Sub,,0,0,0,,{\fad(60,0)}Nosotros le llamábamos\Nmaquinitas, no le\Nllamábamos
+Dialogue: 0,0:00:04.60,0:00:05.96,Sub,,0,0,0,,{\fad(60,0)}arcade.
+Dialogue: 0,0:00:06.28,0:00:09.30,Sub,,0,0,0,,{\fad(60,0)}Eran básicamente tienditas\Nen donde tú ibas
+Dialogue: 0,0:00:09.30,0:00:11.98,Sub,,0,0,0,,{\fad(60,0)}a comprar… bueno, no el\Nsúper, sino que de
+Dialogue: 0,0:00:11.98,0:00:14.28,Sub,,0,0,0,,{\fad(60,0)}niño ibas a comprar un\Nrefresco, papitas y cosas
+Dialogue: 0,0:00:14.28,0:00:14.58,Sub,,0,0,0,,{\fad(60,0)}así.
+Dialogue: 0,0:00:15.06,0:00:16.94,Sub,,0,0,0,,{\fad(60,0)}Y había cinco maquinitas.
+Dialogue: 0,0:00:17.90,0:00:19.24,Sub,,0,0,0,,{\fad(60,0)}Había dos Xbox.
+Dialogue: 0,0:00:20.96,0:00:23.26,Sub,,0,0,0,,{\fad(60,0)}Había, no sé, dos Plays y\Nasí.
+Dialogue: 0,0:00:25.68,0:00:28.58,Sub,,0,0,0,,{\fad(60,0)}Entonces era muy normal\Nahí jugar
+Dialogue: 0,0:00:28.58,0:00:29.84,Sub,,0,0,0,,{\fad(60,0)}el GTA.
+Dialogue: 0,0:00:30.08,0:00:30.48,Sub,,0,0,0,,{\fad(60,0)}—¡Qué loco!
+Dialogue: 0,0:00:30.78,0:00:31.72,Sub,,0,0,0,,{\fad(60,0)}No, pues sí.
+Dialogue: 0,0:00:31.80,0:00:34.50,Sub,,0,0,0,,{\fad(60,0)}En Francia no había nada\Nde esto.
+Dialogue: 0,0:00:34.62,0:00:37.76,Sub,,0,0,0,,{\fad(60,0)}—Yo recuerdo lo típico: te\Nmanda tu mamá por, no
+Dialogue: 0,0:00:37.76,0:00:40.92,Sub,,0,0,0,,{\fad(60,0)}sé, tortillas, y tú\Nvolvías después de una\Nhora y
+Dialogue: 0,0:00:40.92,0:00:43.26,Sub,,0,0,0,,{\fad(60,0)}media porque estabas\Njugando retas contra
+Dialogue: 0,0:00:43.26,0:00:46.28,Sub,,0,0,0,,{\fad(60,0)}otras personas de KOF\N2002, les ganabas
+Dialogue: 0,0:00:46.28,0:00:49.14,Sub,,0,0,0,,{\fad(60,0)}a todas y regresabas una\Nhora y media después y te
+Dialogue: 0,0:00:49.14,0:00:49.62,Sub,,0,0,0,,{\fad(60,0)}regañaban.

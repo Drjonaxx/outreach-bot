@@ -1,0 +1,40 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:41.35,Hook,,0,0,0,,ESTO DEBERÍA SER\NILEGAL
+Dialogue: 0,0:00:01.71,0:00:03.27,Sub,,0,0,0,,{\fad(60,0)}¿Qué estoy jugando?
+Dialogue: 0,0:00:04.33,0:00:04.91,Sub,,0,0,0,,{\fad(60,0)}¡Ah, verga!
+Dialogue: 0,0:00:04.95,0:00:05.95,Sub,,0,0,0,,{\fad(60,0)}Creí que era una\Ncinemática.
+Dialogue: 0,0:00:06.19,0:00:07.01,Sub,,0,0,0,,{\fad(60,0)}¡A la madre, bro!
+Dialogue: 0,0:00:08.81,0:00:09.13,Sub,,0,0,0,,{\fad(60,0)}¡Ala!
+Dialogue: 0,0:00:09.21,0:00:10.49,Sub,,0,0,0,,{\fad(60,0)}¿Así son los baños en la\Nprisión?
+Dialogue: 0,0:00:11.95,0:00:12.27,Sub,,0,0,0,,{\fad(60,0)}¡No, hombre!
+Dialogue: 0,0:00:12.35,0:00:13.97,Sub,,0,0,0,,{\fad(60,0)}Con la ventana ahí, donde\Ntodos te pueden ver
+Dialogue: 0,0:00:13.97,0:00:14.49,Sub,,0,0,0,,{\fad(60,0)}cagar.
+Dialogue: 0,0:00:15.69,0:00:16.55,Sub,,0,0,0,,{\fad(60,0)}¡Terrible, bro!
+Dialogue: 0,0:00:16.63,0:00:17.51,Sub,,0,0,0,,{\fad(60,0)}No quiero terminar ahí.
+Dialogue: 0,0:00:17.75,0:00:19.65,Sub,,0,0,0,,{\fad(60,0)}¡A la, qué bien se ve\Nesto!
+Dialogue: 0,0:00:20.71,0:00:21.35,Sub,,0,0,0,,{\fad(60,0)}¡A la madre, hermano!
+Dialogue: 0,0:00:21.67,0:00:22.13,Sub,,0,0,0,,{\fad(60,0)}¡Ey, no!
+Dialogue: 0,0:00:22.43,0:00:23.79,Sub,,0,0,0,,{\fad(60,0)}¡Un momento! ¡Qué bien se\Nve, wey!
+Dialogue: 0,0:00:23.79,0:00:25.99,Sub,,0,0,0,,{\fad(60,0)}Creo que tengo que\Nterminar el stream y\Napagar
+Dialogue: 0,0:00:25.99,0:00:26.55,Sub,,0,0,0,,{\fad(60,0)}la consola.
+Dialogue: 0,0:00:26.59,0:00:28.05,Sub,,0,0,0,,{\fad(60,0)}No podemos estar jugando\Nun juego tan bueno.
+Dialogue: 0,0:00:28.69,0:00:29.59,Sub,,0,0,0,,{\fad(60,0)}No se puede, bro.
+Dialogue: 0,0:00:30.07,0:00:31.83,Sub,,0,0,0,,{\fad(60,0)}Y creo que nadie tiene que\Nver esto, wey.
+Dialogue: 0,0:00:32.07,0:00:33.69,Sub,,0,0,0,,{\fad(60,0)}Esto tiene que ser top\Nsecret, cabrón.
+Dialogue: 0,0:00:34.31,0:00:35.99,Sub,,0,0,0,,{\fad(60,0)}No podemos seguir así,\Nlocos.
+Dialogue: 0,0:00:35.99,0:00:38.01,Sub,,0,0,0,,{\fad(60,0)}Se tiene que cerrar,\N¿vale?
+Dialogue: 0,0:00:39.27,0:00:41.23,Sub,,0,0,0,,{\fad(60,0)}Esto debería ser ilegal,\Nbro.

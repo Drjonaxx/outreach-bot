@@ -1,0 +1,30 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:36.94,Hook,,0,0,0,,LE PREGUNTÉ A LA IA\NPOR EL APAGÓN MUNDIAL
+Dialogue: 0,0:00:00.12,0:00:02.52,Sub,,0,0,0,,{\fad(60,0)}Hola, oye, ¿es verdad que\Nmañana va a haber un
+Dialogue: 0,0:00:02.52,0:00:03.50,Sub,,0,0,0,,{\fad(60,0)}apagón en todo el mundo?
+Dialogue: 0,0:00:05.38,0:00:06.16,Sub,,0,0,0,,{\fad(60,0)}{\c&H007AD2FF&}IA:{\c&H00FFFFFF&} Buena pregunta.
+Dialogue: 0,0:00:06.46,0:00:08.52,Sub,,0,0,0,,{\fad(60,0)}Voy a ver rápido antes de\Ndecirte algo.
+Dialogue: 0,0:00:09.72,0:00:11.98,Sub,,0,0,0,,{\fad(60,0)}Sigo revisando, espera un\Npoquito más.
+Dialogue: 0,0:00:13.44,0:00:15.86,Sub,,0,0,0,,{\fad(60,0)}No, tranqui, no hay\Nninguna evidencia de que
+Dialogue: 0,0:00:15.86,0:00:18.00,Sub,,0,0,0,,{\fad(60,0)}mañana vaya a pasar un\Napagón mundial.
+Dialogue: 0,0:00:18.72,0:00:21.10,Sub,,0,0,0,,{\fad(60,0)}Es un rumor viral que ya\Nfue desmentido.
+Dialogue: 0,0:00:21.46,0:00:24.96,Sub,,0,0,0,,{\fad(60,0)}Nada apunta a que vaya a\Npasar en Corea, México ni\Nen ningún lado.
+Dialogue: 0,0:00:25.70,0:00:28.32,Sub,,0,0,0,,{\fad(60,0)}Si te sirve, antes de\Npreocuparte por estas\Ncosas,
+Dialogue: 0,0:00:28.32,0:00:30.98,Sub,,0,0,0,,{\fad(60,0)}pásame la fuente y la\Nrevisamos juntas.
+Dialogue: 0,0:00:31.34,0:00:31.84,Sub,,0,0,0,,{\fad(60,0)}Soy hombre.
+Dialogue: 0,0:00:33.12,0:00:35.24,Sub,,0,0,0,,{\fad(60,0)}{\c&H007AD2FF&}IA:{\c&H00FFFFFF&} Ah, perdón, gracias por\Ncorregirme.
+Dialogue: 0,0:00:35.56,0:00:36.82,Sub,,0,0,0,,{\fad(60,0)}Vamos de nuevo: no hay\Nnada.

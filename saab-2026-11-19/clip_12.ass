@@ -1,0 +1,36 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:41.15,Hook,,0,0,0,,SU NOVIA FALSA EN GTA\N6
+Dialogue: 0,0:00:00.12,0:00:02.86,Sub,,0,0,0,,{\fad(60,0)}«Algunas tareas ayudarán a\Ntu relación
+Dialogue: 0,0:00:02.86,0:00:03.52,Sub,,0,0,0,,{\fad(60,0)}con Lucía»
+Dialogue: 0,0:00:05.30,0:00:07.00,Sub,,0,0,0,,{\fad(60,0)}Ay, Dios mío.
+Dialogue: 0,0:00:07.82,0:00:08.98,Sub,,0,0,0,,{\fad(60,0)}Dios mío.
+Dialogue: 0,0:00:09.96,0:00:13.08,Sub,,0,0,0,,{\fad(60,0)}Uno ni hace quehaceres
+Dialogue: 0,0:00:13.08,0:00:14.46,Sub,,0,0,0,,{\fad(60,0)}por su novia de verdad...
+Dialogue: 0,0:00:14.76,0:00:17.08,Sub,,0,0,0,,{\fad(60,0)}¡y yo aquí por la falsa de\NGTA, bro!
+Dialogue: 0,0:00:17.32,0:00:18.68,Sub,,0,0,0,,{\fad(60,0)}«Deja de hacer en el juego
+Dialogue: 0,0:00:18.78,0:00:19.56,Sub,,0,0,0,,{\fad(60,0)}lo que no sabe hacer en la\Nvida»
+Dialogue: 0,0:00:19.62,0:00:20.74,Sub,,0,0,0,,{\fad(60,0)}Lo puedo hacer fácil, bro.
+Dialogue: 0,0:00:21.90,0:00:24.44,Sub,,0,0,0,,{\fad(60,0)}Con el poder de la IA y\NYouTube, todo
+Dialogue: 0,0:00:24.44,0:00:24.90,Sub,,0,0,0,,{\fad(60,0)}es posible.
+Dialogue: 0,0:00:26.10,0:00:27.06,Sub,,0,0,0,,{\fad(60,0)}Dios mío.
+Dialogue: 0,0:00:28.00,0:00:30.08,Sub,,0,0,0,,{\fad(60,0)}O sea, cada vez que sale\Nel corazón, Lucía
+Dialogue: 0,0:00:30.08,0:00:31.30,Sub,,0,0,0,,{\fad(60,0)}me quiere más, ¿verdad?
+Dialogue: 0,0:00:31.54,0:00:33.50,Sub,,0,0,0,,{\fad(60,0)}¿Hay que lavar? No me\Ndigas cómo lavar
+Dialogue: 0,0:00:33.50,0:00:34.94,Sub,,0,0,0,,{\fad(60,0)}mi maldita ropa, bro.
+Dialogue: 0,0:00:35.04,0:00:35.62,Sub,,0,0,0,,{\fad(60,0)}Por favor, bro.
+Dialogue: 0,0:00:36.08,0:00:37.36,Sub,,0,0,0,,{\fad(60,0)}Por favor, no quiero lavar\Nropa.
+Dialogue: 0,0:00:39.47,0:00:41.03,Sub,,0,0,0,,{\fad(60,0)}Eso ya lo hago en la vida\Nreal.

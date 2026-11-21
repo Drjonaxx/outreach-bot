@@ -1,0 +1,28 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:26.69,Hook,,0,0,0,,CHAT NO LO AYUDÓ
+Dialogue: 0,0:00:00.12,0:00:01.12,Sub,,0,0,0,,{\fad(60,0)}¿¡Cómo carajo se me puso\Natrás!?
+Dialogue: 0,0:00:01.36,0:00:03.14,Sub,,0,0,0,,{\fad(60,0)}Por favor, que no sea la\Npolicía...
+Dialogue: 0,0:00:04.34,0:00:05.06,Sub,,0,0,0,,{\fad(60,0)}Bomba lapa.
+Dialogue: 0,0:00:06.26,0:00:07.24,Sub,,0,0,0,,{\fad(60,0)}¿Cómo la agarro?
+Dialogue: 0,0:00:08.44,0:00:08.96,Sub,,0,0,0,,{\fad(60,0)}Uy, se acabó.
+Dialogue: 0,0:00:09.20,0:00:11.64,Sub,,0,0,0,,{\fad(60,0)}Quería abrir las malditas\Ncajas fuertes.
+Dialogue: 0,0:00:13.63,0:00:14.27,Sub,,0,0,0,,{\fad(60,0)}Maldita sea.
+Dialogue: 0,0:00:15.47,0:00:17.15,Sub,,0,0,0,,{\fad(60,0)}Estoy súper enojado, bro.
+Dialogue: 0,0:00:18.71,0:00:21.01,Sub,,0,0,0,,{\fad(60,0)}No me dan nada de apoyo\Nemocional.
+Dialogue: 0,0:00:21.79,0:00:23.25,Sub,,0,0,0,,{\fad(60,0)}No ayudan en nada.
+Dialogue: 0,0:00:23.63,0:00:24.83,Sub,,0,0,0,,{\fad(60,0)}No me dan nada.
+Dialogue: 0,0:00:25.33,0:00:26.57,Sub,,0,0,0,,{\fad(60,0)}¡Váyanse al carajo!

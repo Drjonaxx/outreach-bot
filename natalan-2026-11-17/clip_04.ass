@@ -1,0 +1,29 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:34.36,Hook,,0,0,0,,SE ME DESPEGÓ UN\NBRACKET EN PLENO\NSTREAM
+Dialogue: 0,0:00:00.00,0:00:03.06,Sub,,0,0,0,,{\fad(60,0)}No sé qué pasó, pero el\Nbracket se despegó y se
+Dialogue: 0,0:00:03.06,0:00:07.06,Sub,,0,0,0,,{\fad(60,0)}dio la vuelta. O sea, se\Npuso como de espaldas.
+Dialogue: 0,0:00:07.18,0:00:07.80,Sub,,0,0,0,,{\fad(60,0)}Y se siente…
+Dialogue: 0,0:00:08.84,0:00:11.78,Sub,,0,0,0,,{\fad(60,0)}súper estorboso. Ustedes\Nno lo alcanzan a
+Dialogue: 0,0:00:11.78,0:00:14.58,Sub,,0,0,0,,{\fad(60,0)}escuchar, pero cada vez\Nque hablo escucho el\Nbracket.
+Dialogue: 0,0:00:16.24,0:00:18.38,Sub,,0,0,0,,{\fad(60,0)}Es que no lo escuchan.\NHagan de cuenta que
+Dialogue: 0,0:00:18.38,0:00:23.06,Sub,,0,0,0,,{\fad(60,0)}tienen un manojo de\Nllaves.
+Dialogue: 0,0:00:24.38,0:00:26.06,Sub,,0,0,0,,{\fad(60,0)}Y cuando agitan el manojo\Nde llaves,
+Dialogue: 0,0:00:26.06,0:00:27.54,Sub,,0,0,0,,{\fad(60,0)}escuchan las llaves chocar\Nentre sí.
+Dialogue: 0,0:00:27.66,0:00:28.34,Sub,,0,0,0,,{\fad(60,0)}Así estoy ahorita.
+Dialogue: 0,0:00:29.48,0:00:31.48,Sub,,0,0,0,,{\fad(60,0)}Cada palabra que está\Nsaliendo
+Dialogue: 0,0:00:31.48,0:00:33.04,Sub,,0,0,0,,{\fad(60,0)}ahorita de mi boca,\Nescucho cómo el bracket
+Dialogue: 0,0:00:33.04,0:00:34.36,Sub,,0,0,0,,{\fad(60,0)}rebota y rebota y rebota.

@@ -1,0 +1,31 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:42.70,Hook,,0,0,0,,¿CON QUÉ SE HACEN LAS\NPOCIONES NUEVAS?
+Dialogue: 0,0:00:00.12,0:00:03.58,Sub,,0,0,0,,{\fad(60,0)}¿Con qué se hacen las tres\Npociones nuevas que\Nmetieron?
+Dialogue: 0,0:00:04.34,0:00:04.98,Sub,,0,0,0,,{\fad(60,0)}Las nuevas.
+Dialogue: 0,0:00:06.16,0:00:06.44,Sub,,0,0,0,,{\fad(60,0)}Sí.
+Dialogue: 0,0:00:07.80,0:00:11.08,Sub,,0,0,0,,{\fad(60,0)}Pues hay una de\Nsilverfish, que es con\Npiedra.
+Dialogue: 0,0:00:11.98,0:00:13.82,Sub,,0,0,0,,{\fad(60,0)}Hay una de slime, que se\Nhace con la bola de slime.
+Dialogue: 0,0:00:14.46,0:00:16.44,Sub,,0,0,0,,{\fad(60,0)}Y la última… ¿Cuál es la\Núltima?
+Dialogue: 0,0:00:16.52,0:00:18.02,Sub,,0,0,0,,{\fad(60,0)}La de Wind Charged. ¿Con\Nqué se hace?
+Dialogue: 0,0:00:19.76,0:00:21.34,Sub,,0,0,0,,{\fad(60,0)}Bueno, fácil… No lo sé.
+Dialogue: 0,0:00:21.92,0:00:23.14,Sub,,0,0,0,,{\fad(60,0)}A ver, Carlos.
+Dialogue: 0,0:00:23.96,0:00:28.06,Sub,,0,0,0,,{\fad(60,0)}¿Cómo afecta a la tile\Ntick priority de un\Ncomparador que tenga un\Nrepetidor girado 90\Ngrados?
+Dialogue: 0,0:00:29.06,0:00:30.06,Sub,,0,0,0,,{\fad(60,0)}¿Qué, qué, qué?
+Dialogue: 0,0:00:31.12,0:00:37.40,Sub,,0,0,0,,{\fad(60,0)}¿Cómo afecta a la tile\Ntick priority de un\Ncomparador que tenga un\Nrepetidor girado 90\Ngrados?
+Dialogue: 0,0:00:38.28,0:00:38.78,Sub,,0,0,0,,{\fad(60,0)}Básico.
+Dialogue: 0,0:00:39.54,0:00:40.40,Sub,,0,0,0,,{\fad(60,0)}¿Y tú sabes eso?
+Dialogue: 0,0:00:41.68,0:00:42.20,Sub,,0,0,0,,{\fad(60,0)}No.

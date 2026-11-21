@@ -1,0 +1,29 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:50.38,Hook,,0,0,0,,UN GRANO ME BAJÓ DE 10\NA 4
+Dialogue: 0,0:00:00.00,0:00:02.04,Sub,,0,0,0,,{\fad(60,0)}Hoy me salió un grano…
+Dialogue: 0,0:00:03.24,0:00:05.58,Sub,,0,0,0,,{\fad(60,0)}en la nariz. En la punta\Nde la nariz.
+Dialogue: 0,0:00:07.56,0:00:08.64,Sub,,0,0,0,,{\fad(60,0)}Vale.
+Dialogue: 0,0:00:10.44,0:00:15.52,Sub,,0,0,0,,{\fad(60,0)}Les dije ayer: «me está\Nsaliendo un grano». Nadie\Nme creyó, wey.
+Dialogue: 0,0:00:15.52,0:00:20.46,Sub,,0,0,0,,{\fad(60,0)}Y hoy en la mañana me\Nlevanté con una\Nprotuberancia saliéndome\Nen la nariz,
+Dialogue: 0,0:00:20.46,0:00:23.38,Sub,,0,0,0,,{\fad(60,0)}en medio, literal, en la\Npunta de la nariz,
+Dialogue: 0,0:00:23.38,0:00:27.90,Sub,,0,0,0,,{\fad(60,0)}como si fuera un reno de\NSanta Claus, bro.
+Dialogue: 0,0:00:27.90,0:00:32.46,Sub,,0,0,0,,{\fad(60,0)}Así lo tengo. Por suerte\Nhoy es día de no prender\Ncam,
+Dialogue: 0,0:00:32.46,0:00:37.50,Sub,,0,0,0,,{\fad(60,0)}entonces me salvo. Pero\Nestá horrible, hermano.
+Dialogue: 0,0:00:37.50,0:00:40.60,Sub,,0,0,0,,{\fad(60,0)}Ese grano me quita seis\Npuntos de belleza,\Nhermano.
+Dialogue: 0,0:00:40.60,0:00:44.98,Sub,,0,0,0,,{\fad(60,0)}Y yo soy un diez de diez,\Nentonces me quedo en un\Ncuatro, bro.
+Dialogue: 0,0:00:44.98,0:00:47.30,Sub,,0,0,0,,{\fad(60,0)}O sea, con este grano en\Nla nariz me siento un\Ncuatro de diez.
+Dialogue: 0,0:00:47.30,0:00:50.38,Sub,,0,0,0,,{\fad(60,0)}Fatal.

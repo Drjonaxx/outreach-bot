@@ -1,0 +1,29 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:29.32,Hook,,0,0,0,,DOM TE DIO UN BESO
+Dialogue: 0,0:00:00.06,0:00:02.66,Sub,,0,0,0,,{\fad(60,0)}Iba en camino… lo último\Nque recuerdo
+Dialogue: 0,0:00:02.66,0:00:05.16,Sub,,0,0,0,,{\fad(60,0)}es que iba en bici para\Nallá, y no sé
+Dialogue: 0,0:00:05.16,0:00:07.18,Sub,,0,0,0,,{\fad(60,0)}qué pasó. Desperté en el\Nhospital.
+Dialogue: 0,0:00:07.30,0:00:09.34,Sub,,0,0,0,,{\fad(60,0)}—Sí, te encontramos al\Nlado de la calle,
+Dialogue: 0,0:00:09.40,0:00:10.90,Sub,,0,0,0,,{\fad(60,0)}y no estabas… te llevamos\Nal…
+Dialogue: 0,0:00:11.14,0:00:13.30,Sub,,0,0,0,,{\fad(60,0)}El doctor dijo que te\Ndejáramos dormir ahí
+Dialogue: 0,0:00:13.30,0:00:16.54,Sub,,0,0,0,,{\fad(60,0)}hasta que se te pasara, y\Nluego Dom te dio un beso\Nen el cachete.
+Dialogue: 0,0:00:16.78,0:00:18.76,Sub,,0,0,0,,{\fad(60,0)}—¿Bro, ustedes dejaron que\NDom…?
+Dialogue: 0,0:00:18.96,0:00:19.42,Sub,,0,0,0,,{\fad(60,0)}¡Estaba dormido!
+Dialogue: 0,0:00:19.64,0:00:20.50,Sub,,0,0,0,,{\fad(60,0)}¿Es en serio?
+Dialogue: 0,0:00:20.74,0:00:22.18,Sub,,0,0,0,,{\fad(60,0)}Qué asco, bro.
+Dialogue: 0,0:00:22.30,0:00:24.62,Sub,,0,0,0,,{\fad(60,0)}—Ah, yo sí le doy besos en\Nel cachete a Delver.
+Dialogue: 0,0:00:27.56,0:00:29.20,Sub,,0,0,0,,{\fad(60,0)}Ojalá él estuviera\Ndormido.

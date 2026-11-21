@@ -1,0 +1,25 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:35.92,Hook,,0,0,0,,EL MAYOR ROBO DE\NPAYASOS
+Dialogue: 0,0:00:00.00,0:00:06.78,Sub,,0,0,0,,{\fad(60,0)}Habría pasado a la\Nhistoria como el mayor\Nrobo de payasos… en por lo\Nmenos una hora.
+Dialogue: 0,0:00:08.08,0:00:11.18,Sub,,0,0,0,,{\fad(60,0)}¡Maldita sea, Moose\NKnuckles! ¿Por qué\Napuñalaste a un hombre?
+Dialogue: 0,0:00:12.38,0:00:15.36,Sub,,0,0,0,,{\fad(60,0)}Porque se me coló con el\Ndoctor. Se lo buscó.
+Dialogue: 0,0:00:16.56,0:00:18.70,Sub,,0,0,0,,{\fad(60,0)}¡El Dr. Cantor estaba ahí\Nmismo!
+Dialogue: 0,0:00:18.94,0:00:24.76,Sub,,0,0,0,,{\fad(60,0)}Y casi no hice nada. Solo\Nle pegué a un policía,\Ntraté de robarme un montón\Nde patrullas
+Dialogue: 0,0:00:24.76,0:00:28.12,Sub,,0,0,0,,{\fad(60,0)}y salí a toda velocidad\Ndespués de apuñalar a mi\Nmejor amigo.
+Dialogue: 0,0:00:29.26,0:00:31.56,Sub,,0,0,0,,{\fad(60,0)}Sí, yo estaba ahí.
+Dialogue: 0,0:00:31.62,0:00:33.74,Sub,,0,0,0,,{\fad(60,0)}Entonces, ¿por qué me\Npegaste con la macana?
+Dialogue: 0,0:00:33.98,0:00:35.80,Sub,,0,0,0,,{\fad(60,0)}¿Sabes qué? Voy a poner\Nuna queja.

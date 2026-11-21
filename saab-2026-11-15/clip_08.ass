@@ -1,0 +1,27 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:54.39,Hook,,0,0,0,,¿NOS LLEVAMOS LA\NCERCA?
+Dialogue: 0,0:00:00.00,0:00:05.53,Sub,,0,0,0,,{\fad(60,0)}¿Y si estamos persiguiendo\Na un sospechoso,
+Dialogue: 0,0:00:05.61,0:00:09.35,Sub,,0,0,0,,{\fad(60,0)}salta de un edificio y\Nqueda clavado en un poste\Nde la cerca?
+Dialogue: 0,0:00:09.57,0:00:12.17,Sub,,0,0,0,,{\fad(60,0)}¿Nos llevamos la cerca con\Nél?
+Dialogue: 0,0:00:13.65,0:00:15.07,Sub,,0,0,0,,{\fad(60,0)}Sí, hasta cierto punto.
+Dialogue: 0,0:00:15.49,0:00:19.59,Sub,,0,0,0,,{\fad(60,0)}Lo dejan en la cerca, por\Ndesgracia.
+Dialogue: 0,0:00:20.29,0:00:23.43,Sub,,0,0,0,,{\fad(60,0)}Probablemente necesiten\Nherramientas
+Dialogue: 0,0:00:23.43,0:00:28.65,Sub,,0,0,0,,{\fad(60,0)}para cortar alrededor y\Nllevarse ese pedazo de\Ncerca con él.
+Dialogue: 0,0:00:30.65,0:00:35.25,Sub,,0,0,0,,{\fad(60,0)}Seguramente las pinzas\Nhidráulicas de rescate\Nsirvan para eso.
+Dialogue: 0,0:00:37.93,0:00:44.71,Sub,,0,0,0,,{\fad(60,0)}Si es un poste, digamos,\Nun poste de soporte,
+Dialogue: 0,0:00:46.13,0:00:50.09,Sub,,0,0,0,,{\fad(60,0)}seguramente quieran\Nllevarse ese poste, pero\Nno demasiado.
+Dialogue: 0,0:00:50.31,0:00:54.27,Sub,,0,0,0,,{\fad(60,0)}Obviamente tiene que caber\Nen el transporte que usen.

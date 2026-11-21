@@ -1,0 +1,31 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:30.20,Hook,,0,0,0,,¿ME EVITAN POR SER\NBUENO?
+Dialogue: 0,0:00:00.12,0:00:01.12,Sub,,0,0,0,,{\fad(60,0)}O sea, ¿que soy muy bueno?
+Dialogue: 0,0:00:02.32,0:00:05.10,Sub,,0,0,0,,{\fad(60,0)}Eso suena a mucho ego,\Npero puede ser verdad
+Dialogue: 0,0:00:05.10,0:00:05.46,Sub,,0,0,0,,{\fad(60,0)}que sí.
+Dialogue: 0,0:00:06.66,0:00:08.34,Sub,,0,0,0,,{\fad(60,0)}No lo había pensado, pero\Nsí puede ser una
+Dialogue: 0,0:00:08.34,0:00:08.64,Sub,,0,0,0,,{\fad(60,0)}posibilidad.
+Dialogue: 0,0:00:09.90,0:00:10.84,Sub,,0,0,0,,{\fad(60,0)}Yo sé que
+Dialogue: 0,0:00:12.00,0:00:14.02,Sub,,0,0,0,,{\fad(60,0)}hay gente a la que no le\Ngusta jugar conmigo porque
+Dialogue: 0,0:00:14.02,0:00:16.00,Sub,,0,0,0,,{\fad(60,0)}yo tryhardeo.
+Dialogue: 0,0:00:16.76,0:00:18.88,Sub,,0,0,0,,{\fad(60,0)}Y está bien, yo sí\Ntryhardeo las cosas.
+Dialogue: 0,0:00:19.84,0:00:20.68,Sub,,0,0,0,,{\fad(60,0)}Me divierto así.
+Dialogue: 0,0:00:21.88,0:00:22.84,Sub,,0,0,0,,{\fad(60,0)}Lo entiendo.
+Dialogue: 0,0:00:24.00,0:00:25.36,Sub,,0,0,0,,{\fad(60,0)}¿Quieren la oportunidad de\Nganar?
+Dialogue: 0,0:00:25.58,0:00:26.84,Sub,,0,0,0,,{\fad(60,0)}Porque conmigo no pueden.
+Dialogue: 0,0:00:27.82,0:00:28.90,Sub,,0,0,0,,{\fad(60,0)}Life is life, bro.
+Dialogue: 0,0:00:29.04,0:00:30.08,Sub,,0,0,0,,{\fad(60,0)}Life is life.

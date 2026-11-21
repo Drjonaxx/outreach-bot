@@ -1,0 +1,33 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:50.99,Hook,,0,0,0,,LA IA YA TIENE SU\NPROPIO COMIC SANS
+Dialogue: 0,0:00:00.12,0:00:03.04,Sub,,0,0,0,,{\fad(60,0)}Bueno, yo no sé por qué la\NIA decidió usar
+Dialogue: 0,0:00:03.04,0:00:05.00,Sub,,0,0,0,,{\fad(60,0)}Road Rage.
+Dialogue: 0,0:00:06.35,0:00:08.19,Sub,,0,0,0,,{\fad(60,0)}La fuente Road Rage para\Nhacer todos los
+Dialogue: 0,0:00:08.19,0:00:10.09,Sub,,0,0,0,,{\fad(60,0)}títulos, todos los títulos\Nde todas las imágenes.
+Dialogue: 0,0:00:11.29,0:00:14.53,Sub,,0,0,0,,{\fad(60,0)}Es increíble: todas las\Nminiaturas de YouTube\Ntienen esa fuente.
+Dialogue: 0,0:00:15.73,0:00:16.85,Sub,,0,0,0,,{\fad(60,0)}Hay una fuente
+Dialogue: 0,0:00:17.95,0:00:20.93,Sub,,0,0,0,,{\fad(60,0)}que existe hace años, que\Nsiempre se usó
+Dialogue: 0,0:00:22.73,0:00:25.75,Sub,,0,0,0,,{\fad(60,0)}para cosas temáticas,\Nochentosas,
+Dialogue: 0,0:00:26.53,0:00:29.11,Sub,,0,0,0,,{\fad(60,0)}de los 80, que se llama\NRoad Rage.
+Dialogue: 0,0:00:30.31,0:00:31.17,Sub,,0,0,0,,{\fad(60,0)}Está horrible.
+Dialogue: 0,0:00:32.37,0:00:34.83,Sub,,0,0,0,,{\fad(60,0)}Esa fuente. Y ahora la\Nponen en todas las
+Dialogue: 0,0:00:34.83,0:00:36.61,Sub,,0,0,0,,{\fad(60,0)}imágenes, todas las\Nminiaturas, todos los
+Dialogue: 0,0:00:36.61,0:00:39.77,Sub,,0,0,0,,{\fad(60,0)}carteles: Road Rage, Road\NRage, esa fuente,
+Dialogue: 0,0:00:39.77,0:00:42.47,Sub,,0,0,0,,{\fad(60,0)}esa fuente de letra. No sé\Npor qué
+Dialogue: 0,0:00:42.47,0:00:45.43,Sub,,0,0,0,,{\fad(60,0)}decidió agarrar esa\Nfuente, pero
+Dialogue: 0,0:00:45.43,0:00:48.35,Sub,,0,0,0,,{\fad(60,0)}o sea, es el nuevo Comic\NSans pero de
+Dialogue: 0,0:00:48.35,0:00:50.87,Sub,,0,0,0,,{\fad(60,0)}la IA, literal. Qué grande\Nel Comic Sans, eh.

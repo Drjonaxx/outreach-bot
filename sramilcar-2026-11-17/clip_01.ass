@@ -1,0 +1,31 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:36.52,Hook,,0,0,0,,SE ME MURIÓ EL ALDEANO\NDE FORTUNA III
+Dialogue: 0,0:00:00.12,0:00:00.52,Sub,,0,0,0,,{\fad(60,0)}No…
+Dialogue: 0,0:00:01.36,0:00:02.82,Sub,,0,0,0,,{\fad(60,0)}¿Se me escapó uno?
+Dialogue: 0,0:00:03.58,0:00:04.50,Sub,,0,0,0,,{\fad(60,0)}¿Estaban en el barco?
+Dialogue: 0,0:00:04.56,0:00:05.42,Sub,,0,0,0,,{\fad(60,0)}¿No estaban para llevar al\NEnd?
+Dialogue: 0,0:00:06.70,0:00:07.10,Sub,,0,0,0,,{\fad(60,0)}¿Despawneó?
+Dialogue: 0,0:00:07.34,0:00:08.46,Sub,,0,0,0,,{\fad(60,0)}No, no hay nada acá.
+Dialogue: 0,0:00:09.66,0:00:10.68,Sub,,0,0,0,,{\fad(60,0)}No… pobre.
+Dialogue: 0,0:00:11.88,0:00:12.96,Sub,,0,0,0,,{\fad(60,0)}¿Se habrá sofocado?
+Dialogue: 0,0:00:13.28,0:00:13.64,Sub,,0,0,0,,{\fad(60,0)}No creo.
+Dialogue: 0,0:00:16.18,0:00:17.54,Sub,,0,0,0,,{\fad(60,0)}¿De qué era ese aldeano?
+Dialogue: 0,0:00:20.04,0:00:21.02,Sub,,0,0,0,,{\fad(60,0)}Pobre aldeano.
+Dialogue: 0,0:00:22.48,0:00:26.20,Sub,,0,0,0,,{\fad(60,0)}Vivió tiempos mejores. Yo\Nsabía que iba a pasar esta\Nmierda, pero bueno.
+Dialogue: 0,0:00:28.84,0:00:30.86,Sub,,0,0,0,,{\fad(60,0)}Vivió tiempos mejores. El\Naldeano…
+Dialogue: 0,0:00:31.88,0:00:34.52,Sub,,0,0,0,,{\fad(60,0)}El de Fortuna III. Uah,\Nese lo tenía a 11
+Dialogue: 0,0:00:34.52,0:00:36.40,Sub,,0,0,0,,{\fad(60,0)}esmeraldas encima. La puta\Nmadre.

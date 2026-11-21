@@ -1,0 +1,31 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:50.34,Hook,,0,0,0,,ASÍ FUNCIONAN LAS\NVACUNAS
+Dialogue: 0,0:00:00.12,0:00:03.48,Sub,,0,0,0,,{\fad(60,0)}Las inyecciones son…\Nbueno, las vacunas, más\Nbien.
+Dialogue: 0,0:00:05.24,0:00:08.58,Sub,,0,0,0,,{\fad(60,0)}Son la enfermedad que te\Ninyectan en pequeña
+Dialogue: 0,0:00:08.58,0:00:11.68,Sub,,0,0,0,,{\fad(60,0)}dosis para que tu cuerpo\Nfabrique
+Dialogue: 0,0:00:11.68,0:00:14.20,Sub,,0,0,0,,{\fad(60,0)}defensas en contra de esa\Nenfermedad.
+Dialogue: 0,0:00:15.76,0:00:17.46,Sub,,0,0,0,,{\fad(60,0)}Así funcionan las vacunas.
+Dialogue: 0,0:00:17.70,0:00:21.12,Sub,,0,0,0,,{\fad(60,0)}Por eso no son de a huevo.\NNo te ponen chips.
+Dialogue: 0,0:00:21.36,0:00:24.92,Sub,,0,0,0,,{\fad(60,0)}Es la enfermedad,\Nobviamente, pero en dosis\Nmuy pequeña e inactiva.
+Dialogue: 0,0:00:25.42,0:00:27.92,Sub,,0,0,0,,{\fad(60,0)}Como… como muertita.
+Dialogue: 0,0:00:28.24,0:00:30.86,Sub,,0,0,0,,{\fad(60,0)}Es para que tu sistema\Ninmune la desbloquee, ¿no?
+Dialogue: 0,0:00:31.08,0:00:32.26,Sub,,0,0,0,,{\fad(60,0)}Como con un Pokémon nuevo,\N¿no?
+Dialogue: 0,0:00:32.88,0:00:35.18,Sub,,0,0,0,,{\fad(60,0)}Está todo oscuro y ¡pum!,\Ndesbloqueado.
+Dialogue: 0,0:00:35.82,0:00:37.88,Sub,,0,0,0,,{\fad(60,0)}«¡Ah, ya la reconozco,\Nesta hija de su madre!».
+Dialogue: 0,0:00:38.12,0:00:42.48,Sub,,0,0,0,,{\fad(60,0)}Y si te quieres enfermar\Nde lo que sea, tu sistema\Ninmune no se deja.
+Dialogue: 0,0:00:44.78,0:00:48.40,Sub,,0,0,0,,{\fad(60,0)}¡Eh! Estoy tan idiota.
+Dialogue: 0,0:00:49.20,0:00:50.22,Sub,,0,0,0,,{\fad(60,0)}Sí me acuerdo de la\Nprimaria.

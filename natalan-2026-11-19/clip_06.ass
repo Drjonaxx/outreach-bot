@@ -1,0 +1,26 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:25.00,Hook,,0,0,0,,GTA 6 ES UN SIMULADOR\NDE VIDA
+Dialogue: 0,0:00:00.00,0:00:02.22,Sub,,0,0,0,,{\fad(60,0)}Tengo que regresar a la\Ncasa, wey. Este juego es
+Dialogue: 0,0:00:02.22,0:00:03.12,Sub,,0,0,0,,{\fad(60,0)}un simulador de vida.
+Dialogue: 0,0:00:04.40,0:00:06.20,Sub,,0,0,0,,{\fad(60,0)}Ya no es lo que era el GTA\NSan Andreas, bro.
+Dialogue: 0,0:00:07.40,0:00:09.10,Sub,,0,0,0,,{\fad(60,0)}¿Qué hago yo haciendo el\Nsúper?
+Dialogue: 0,0:00:09.34,0:00:12.08,Sub,,0,0,0,,{\fad(60,0)}«¿Mañana prenderás\Ntemprano?» Mañana, mis\Nhuevos.
+Dialogue: 0,0:00:12.92,0:00:14.58,Sub,,0,0,0,,{\fad(60,0)}Mañana me prendo a la\Nmisma hora de siempre.
+Dialogue: 0,0:00:15.78,0:00:18.04,Sub,,0,0,0,,{\fad(60,0)}GTA solo es de hoy,\Nchicos. Ya mañana nunca lo
+Dialogue: 0,0:00:18.04,0:00:20.64,Sub,,0,0,0,,{\fad(60,0)}vuelvo a jugar. Yo lo\Nreembolso después de hoy.
+Dialogue: 0,0:00:20.88,0:00:23.98,Sub,,0,0,0,,{\fad(60,0)}Mañana… mañana prendemos\Ntemprano y jugamos
+Dialogue: 0,0:00:23.98,0:00:25.00,Sub,,0,0,0,,{\fad(60,0)}GTA, ¿vale?

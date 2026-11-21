@@ -1,0 +1,39 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:42.57,Hook,,0,0,0,,VIEWERS Y DINERO
+Dialogue: 0,0:00:00.00,0:00:02.30,Sub,,0,0,0,,{\fad(60,0)}¿Te parece que nadie tiene\Nlos huevos de hacernos
+Dialogue: 0,0:00:02.30,0:00:03.02,Sub,,0,0,0,,{\fad(60,0)}una prank?
+Dialogue: 0,0:00:04.14,0:00:05.60,Sub,,0,0,0,,{\fad(60,0)}—Oh, Vicky, ¿demostrarle?
+Dialogue: 0,0:00:06.46,0:00:07.12,Sub,,0,0,0,,{\fad(60,0)}Demostrarle a Vicky.
+Dialogue: 0,0:00:07.78,0:00:09.36,Sub,,0,0,0,,{\fad(60,0)}O sea, ¿que yo les hago\Nuna prank a ustedes?
+Dialogue: 0,0:00:09.84,0:00:10.10,Sub,,0,0,0,,{\fad(60,0)}—Sí.
+Dialogue: 0,0:00:11.64,0:00:14.00,Sub,,0,0,0,,{\fad(60,0)}—No puedes dejar así de\Nsobrao a Shadoune, ¿eh?
+Dialogue: 0,0:00:14.24,0:00:16.70,Sub,,0,0,0,,{\fad(60,0)}—Pero es horrible, tipo,\Nque nos
+Dialogue: 0,0:00:18.05,0:00:19.81,Sub,,0,0,0,,{\fad(60,0)}conectemos y estemos\Nadentro de una
+Dialogue: 0,0:00:19.81,0:00:22.85,Sub,,0,0,0,,{\fad(60,0)}caja de obsidiana con el\NWarden
+Dialogue: 0,0:00:22.85,0:00:23.67,Sub,,0,0,0,,{\fad(60,0)}al lado, de guardia.
+Dialogue: 0,0:00:23.69,0:00:24.91,Sub,,0,0,0,,{\fad(60,0)}Que no podamos hacer\Nabsolutamente nada.
+Dialogue: 0,0:00:25.55,0:00:26.57,Sub,,0,0,0,,{\fad(60,0)}Y es muerte infinita.
+Dialogue: 0,0:00:29.01,0:00:29.45,Sub,,0,0,0,,{\fad(60,0)}—Ok.
+Dialogue: 0,0:00:30.19,0:00:30.63,Sub,,0,0,0,,{\fad(60,0)}Ojo.
+Dialogue: 0,0:00:30.79,0:00:31.15,Sub,,0,0,0,,{\fad(60,0)}Ok.
+Dialogue: 0,0:00:31.87,0:00:32.75,Sub,,0,0,0,,{\fad(60,0)}Lo pensaré.
+Dialogue: 0,0:00:32.89,0:00:34.75,Sub,,0,0,0,,{\fad(60,0)}Voy a pensar en qué puedo\Nhacer para joderles la
+Dialogue: 0,0:00:34.75,0:00:36.75,Sub,,0,0,0,,{\fad(60,0)}existencia y hacer que se\Nsalgan de la serie.
+Dialogue: 0,0:00:37.01,0:00:37.45,Sub,,0,0,0,,{\fad(60,0)}Vamos.
+Dialogue: 0,0:00:38.55,0:00:40.13,Sub,,0,0,0,,{\fad(60,0)}Y así todos sus viewers\Nterminan conmigo.
+Dialogue: 0,0:00:40.37,0:00:41.55,Sub,,0,0,0,,{\fad(60,0)}Yo pienso mucho en mis\Nviewers.
+Dialogue: 0,0:00:41.77,0:00:42.45,Sub,,0,0,0,,{\fad(60,0)}Viewers y dinero.

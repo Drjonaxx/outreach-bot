@@ -1,0 +1,44 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:50.47,Hook,,0,0,0,,¡YO NO HICE NADA!
+Dialogue: 0,0:00:00.12,0:00:01.32,Sub,,0,0,0,,{\fad(60,0)}Hey, ¡yo no hice nada!
+Dialogue: 0,0:00:02.52,0:00:03.56,Sub,,0,0,0,,{\fad(60,0)}¿Ya me...?
+Dialogue: 0,0:00:03.56,0:00:03.98,Sub,,0,0,0,,{\fad(60,0)}¿Es en serio?
+Dialogue: 0,0:00:04.46,0:00:05.90,Sub,,0,0,0,,{\fad(60,0)}Esta zona...
+Dialogue: 0,0:00:07.66,0:00:08.14,Sub,,0,0,0,,{\fad(60,0)}¡Ya me fui!
+Dialogue: 0,0:00:09.34,0:00:09.56,Sub,,0,0,0,,{\fad(60,0)}¿Qué?
+Dialogue: 0,0:00:10.68,0:00:11.20,Sub,,0,0,0,,{\fad(60,0)}¿Qué?
+Dialogue: 0,0:00:12.06,0:00:12.88,Sub,,0,0,0,,{\fad(60,0)}¿Qué, cabrón?
+Dialogue: 0,0:00:14.08,0:00:14.56,Sub,,0,0,0,,{\fad(60,0)}¡Mierda!
+Dialogue: 0,0:00:15.40,0:00:16.06,Sub,,0,0,0,,{\fad(60,0)}¡Joder, puta!
+Dialogue: 0,0:00:17.26,0:00:17.74,Sub,,0,0,0,,{\fad(60,0)}¡Espérense!
+Dialogue: 0,0:00:19.20,0:00:20.24,Sub,,0,0,0,,{\fad(60,0)}¡Un momento, ya!
+Dialogue: 0,0:00:20.66,0:00:21.08,Sub,,0,0,0,,{\fad(60,0)}¡Ya!
+Dialogue: 0,0:00:21.86,0:00:22.50,Sub,,0,0,0,,{\fad(60,0)}¡Ya, ya, ya!
+Dialogue: 0,0:00:22.60,0:00:22.78,Sub,,0,0,0,,{\fad(60,0)}Me voy.
+Dialogue: 0,0:00:23.30,0:00:23.62,Sub,,0,0,0,,{\fad(60,0)}Me voy.
+Dialogue: 0,0:00:24.82,0:00:25.88,Sub,,0,0,0,,{\fad(60,0)}¡Te dije que me iba!
+Dialogue: 0,0:00:26.10,0:00:26.16,Sub,,0,0,0,,{\fad(60,0)}¡Ya!
+Dialogue: 0,0:00:26.60,0:00:27.08,Sub,,0,0,0,,{\fad(60,0)}¡Suéltenme!
+Dialogue: 0,0:00:27.32,0:00:28.06,Sub,,0,0,0,,{\fad(60,0)}¡Me matan!
+Dialogue: 0,0:00:29.26,0:00:29.92,Sub,,0,0,0,,{\fad(60,0)}¡Hijo de puta!
+Dialogue: 0,0:00:29.92,0:00:31.98,Sub,,0,0,0,,{\fad(60,0)}Y todo por...
+Dialogue: 0,0:00:33.18,0:00:35.05,Sub,,0,0,0,,{\fad(60,0)}...un pendejo que me\Nbloqueó, wey.
+Dialogue: 0,0:00:36.25,0:00:37.97,Sub,,0,0,0,,{\fad(60,0)}Ok, me...
+Dialogue: 0,0:00:39.17,0:00:41.57,Sub,,0,0,0,,{\fad(60,0)}...descontaron 800\Ndólares.
+Dialogue: 0,0:00:41.81,0:00:44.81,Sub,,0,0,0,,{\fad(60,0)}¡Cargamos la partida,\Nlocos! ¡Aquí está!
+Dialogue: 0,0:00:44.81,0:00:47.95,Sub,,0,0,0,,{\fad(60,0)}¿Ven? Les dije. ¡Vámonos!
+Dialogue: 0,0:00:47.95,0:00:50.35,Sub,,0,0,0,,{\fad(60,0)}¡No perdí, no perdí!

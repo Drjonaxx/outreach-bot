@@ -1,0 +1,33 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:43.05,Hook,,0,0,0,,¿SE VAN A APROVECHAR\NDE UN ENFERMITO?
+Dialogue: 0,0:00:00.12,0:00:01.52,Sub,,0,0,0,,{\fad(60,0)}¿Van a hacer eso? ¿Es\Nneta?
+Dialogue: 0,0:00:02.16,0:00:04.40,Sub,,0,0,0,,{\fad(60,0)}¿Se van a aprovechar de un\Npobre enfermito?
+Dialogue: 0,0:00:05.40,0:00:06.86,Sub,,0,0,0,,{\fad(60,0)}¿Eh? ¿Para ganar así?
+Dialogue: 0,0:00:07.64,0:00:09.64,Sub,,0,0,0,,{\fad(60,0)}Vergüenza me daría a mí\Nganar así, ¿eh, chula?
+Dialogue: 0,0:00:09.88,0:00:12.86,Sub,,0,0,0,,{\fad(60,0)}Yo digo que todo el mundo\Nsalga…
+Dialogue: 0,0:00:13.10,0:00:13.66,Sub,,0,0,0,,{\fad(60,0)}Solidaridad.
+Dialogue: 0,0:00:14.30,0:00:16.12,Sub,,0,0,0,,{\fad(60,0)}Todo el mundo salga y\Nnadie se esconda.
+Dialogue: 0,0:00:16.64,0:00:17.24,Sub,,0,0,0,,{\fad(60,0)}¿Qué dicen?
+Dialogue: 0,0:00:17.84,0:00:19.06,Sub,,0,0,0,,{\fad(60,0)}Verdad que se me fue la\Nvoz ahí, ¿eh?
+Dialogue: 0,0:00:20.16,0:00:22.14,Sub,,0,0,0,,{\fad(60,0)}Me pierden, ¿eh? Me\Ndesvanezco.
+Dialogue: 0,0:00:24.95,0:00:26.59,Sub,,0,0,0,,{\fad(60,0)}Vale, nadie está saliendo,\Nni verga.
+Dialogue: 0,0:00:26.97,0:00:28.85,Sub,,0,0,0,,{\fad(60,0)}Qué buena solidaridad,\N¿eh?
+Dialogue: 0,0:00:30.39,0:00:31.47,Sub,,0,0,0,,{\fad(60,0)}Las amo, nunca cambien.
+Dialogue: 0,0:00:32.65,0:00:36.53,Sub,,0,0,0,,{\fad(60,0)}La neta, si hubiese salido\Nalguien, me hubiese\Nespantado.
+Dialogue: 0,0:00:37.07,0:00:39.27,Sub,,0,0,0,,{\fad(60,0)}Hubiese dicho: «No son mis\NCrayboyers, ¿qué pasó\Naquí?
+Dialogue: 0,0:00:39.61,0:00:40.53,Sub,,0,0,0,,{\fad(60,0)}¿Desde cuándo\Nperdonamos?».
+Dialogue: 0,0:00:41.65,0:00:42.93,Sub,,0,0,0,,{\fad(60,0)}Aquí no perdonamos a\Nnadie.

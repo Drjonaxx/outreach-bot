@@ -1,0 +1,32 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:24.52,Hook,,0,0,0,,CONDUCTOR RESPONSABLE\NEN GTA 6
+Dialogue: 0,0:00:00.12,0:00:00.36,Sub,,0,0,0,,{\fad(60,0)}¿Qué?
+Dialogue: 0,0:00:00.60,0:00:01.30,Sub,,0,0,0,,{\fad(60,0)}¿Las intermitentes?
+Dialogue: 0,0:00:01.50,0:00:02.04,Sub,,0,0,0,,{\fad(60,0)}¿Cómo se usan?
+Dialogue: 0,0:00:02.28,0:00:03.82,Sub,,0,0,0,,{\fad(60,0)}En teoría estoy usando las\Nintermitentes,
+Dialogue: 0,0:00:03.84,0:00:04.04,Sub,,0,0,0,,{\fad(60,0)}pero…
+Dialogue: 0,0:00:04.62,0:00:05.10,Sub,,0,0,0,,{\fad(60,0)}no las veo.
+Dialogue: 0,0:00:05.34,0:00:06.96,Sub,,0,0,0,,{\fad(60,0)}¿Y qué si explotaba un\Ncarro enfrente de ti?
+Dialogue: 0,0:00:07.28,0:00:09.84,Sub,,0,0,0,,{\fad(60,0)}Ni siquiera había\Nanimación, güey.
+Dialogue: 0,0:00:11.04,0:00:11.40,Sub,,0,0,0,,{\fad(60,0)}¡F*ck!
+Dialogue: 0,0:00:12.60,0:00:13.44,Sub,,0,0,0,,{\fad(60,0)}¿Cómo explota un carro?
+Dialogue: 0,0:00:14.64,0:00:14.96,Sub,,0,0,0,,{\fad(60,0)}Adelante.
+Dialogue: 0,0:00:16.16,0:00:18.22,Sub,,0,0,0,,{\fad(60,0)}¡Explota esta mierda! Ya\Nveo a la policía.
+Dialogue: 0,0:00:19.42,0:00:19.86,Sub,,0,0,0,,{\fad(60,0)}Un momento.
+Dialogue: 0,0:00:20.48,0:00:21.70,Sub,,0,0,0,,{\fad(60,0)}¿Y me reportaron por\Ndisparar?
+Dialogue: 0,0:00:21.82,0:00:22.92,Sub,,0,0,0,,{\fad(60,0)}Hermano, esto es Estados\NUnidos.
+Dialogue: 0,0:00:23.56,0:00:24.40,Sub,,0,0,0,,{\fad(60,0)}¡Es un país libre!

@@ -1,0 +1,27 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:25.58,Hook,,0,0,0,,¿PIE GRANDE EN GTA 6?
+Dialogue: 0,0:00:00.12,0:00:01.66,Sub,,0,0,0,,{\fad(60,0)}¿Qué vergas fue eso?
+Dialogue: 0,0:00:01.66,0:00:02.84,Sub,,0,0,0,,{\fad(60,0)}¿Pie Grande?
+Dialogue: 0,0:00:04.04,0:00:05.26,Sub,,0,0,0,,{\fad(60,0)}¿Qué vergas?
+Dialogue: 0,0:00:06.46,0:00:08.74,Sub,,0,0,0,,{\fad(60,0)}¡Siempre te quise conocer!
+Dialogue: 0,0:00:09.94,0:00:11.06,Sub,,0,0,0,,{\fad(60,0)}¡Hijo de perra!
+Dialogue: 0,0:00:12.00,0:00:13.44,Sub,,0,0,0,,{\fad(60,0)}Lo perdí.
+Dialogue: 0,0:00:14.64,0:00:17.70,Sub,,0,0,0,,{\fad(60,0)}No lo vas a creer, Lucía:
+Dialogue: 0,0:00:17.70,0:00:19.24,Sub,,0,0,0,,{\fad(60,0)}llegué tarde a nuestra\Ncita porque vi a Pie\NGrande.
+Dialogue: 0,0:00:19.48,0:00:21.28,Sub,,0,0,0,,{\fad(60,0)}Ya hay un tutorial de cómo\Nencontrar a Pie Grande.
+Dialogue: 0,0:00:21.28,0:00:23.72,Sub,,0,0,0,,{\fad(60,0)}Y yo que creí que iba a\Nser el primero…
+Dialogue: 0,0:00:24.44,0:00:25.46,Sub,,0,0,0,,{\fad(60,0)}¡Vaya, f*cking sh*t!
