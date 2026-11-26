@@ -1,0 +1,39 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:35.66,Hook,,0,0,0,,SOLO QUERÍA UNA MOTO
+Dialogue: 0,0:00:00.12,0:00:01.84,Sub,,0,0,0,,{\fad(60,0)}Oh, mira esa moto.
+Dialogue: 0,0:00:03.04,0:00:04.34,Sub,,0,0,0,,{\fad(60,0)}¿Me puedo robar esa moto?
+Dialogue: 0,0:00:04.64,0:00:06.22,Sub,,0,0,0,,{\fad(60,0)}Claro que me la voy a\Nrobar.
+Dialogue: 0,0:00:06.60,0:00:07.58,Sub,,0,0,0,,{\fad(60,0)}Te la vas a robar, bro.
+Dialogue: 0,0:00:09.20,0:00:09.88,Sub,,0,0,0,,{\fad(60,0)}Espera, ¿me oyeron?
+Dialogue: 0,0:00:11.08,0:00:12.28,Sub,,0,0,0,,{\fad(60,0)}¡Mierda! ¿Jason?
+Dialogue: 0,0:00:13.28,0:00:14.14,Sub,,0,0,0,,{\fad(60,0)}Metí la pata.
+Dialogue: 0,0:00:14.68,0:00:15.28,Sub,,0,0,0,,{\fad(60,0)}Te necesito, bro.
+Dialogue: 0,0:00:16.48,0:00:16.88,Sub,,0,0,0,,{\fad(60,0)}¿Jason?
+Dialogue: 0,0:00:17.56,0:00:17.80,Sub,,0,0,0,,{\fad(60,0)}Oh…
+Dialogue: 0,0:00:19.00,0:00:19.28,Sub,,0,0,0,,{\fad(60,0)}¡mierda!
+Dialogue: 0,0:00:19.44,0:00:20.78,Sub,,0,0,0,,{\fad(60,0)}Voy a matar a cualquiera\Nque se me
+Dialogue: 0,0:00:20.78,0:00:20.94,Sub,,0,0,0,,{\fad(60,0)}atraviese.
+Dialogue: 0,0:00:21.18,0:00:22.22,Sub,,0,0,0,,{\fad(60,0)}¿Quieren problemas?
+Dialogue: 0,0:00:22.42,0:00:22.50,Sub,,0,0,0,,{\fad(60,0)}¿Eh?
+Dialogue: 0,0:00:22.64,0:00:23.62,Sub,,0,0,0,,{\fad(60,0)}¿Quieren problemas\Nconmigo?
+Dialogue: 0,0:00:24.82,0:00:25.36,Sub,,0,0,0,,{\fad(60,0)}¿Todo bien, muchachos?
+Dialogue: 0,0:00:26.56,0:00:27.76,Sub,,0,0,0,,{\fad(60,0)}Voy por sus cosas, man.
+Dialogue: 0,0:00:28.00,0:00:28.98,Sub,,0,0,0,,{\fad(60,0)}¡Hazlo volar en pedazos!
+Dialogue: 0,0:00:31.34,0:00:31.92,Sub,,0,0,0,,{\fad(60,0)}¡Mierda!
+Dialogue: 0,0:00:33.12,0:00:33.68,Sub,,0,0,0,,{\fad(60,0)}¡Mierda!
+Dialogue: 0,0:00:33.68,0:00:34.18,Sub,,0,0,0,,{\fad(60,0)}¡Dios mío, bro!
+Dialogue: 0,0:00:34.20,0:00:35.54,Sub,,0,0,0,,{\fad(60,0)}¡Me saqué un montón de\Ndinero con esto!

@@ -1,0 +1,41 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:01:00.26,Hook,,0,0,0,,JUGAMOS LÁSER TAG\NCONTRA DOS NENES
+Dialogue: 0,0:00:00.00,0:00:02.50,Sub,,0,0,0,,{\fad(60,0)}Amigo, vos pensá, para la\Ngente que no sabe:
+Dialogue: 0,0:00:02.94,0:00:05.48,Sub,,0,0,0,,{\fad(60,0)}Starlight hace airsoft,\Ngente.
+Dialogue: 0,0:00:06.02,0:00:08.64,Sub,,0,0,0,,{\fad(60,0)}Starlight tiene una M4 de\Nairsoft que se compró\Nnueva,
+Dialogue: 0,0:00:08.94,0:00:11.78,Sub,,0,0,0,,{\fad(60,0)}con el turbo, silenciador
+Dialogue: 0,0:00:11.78,0:00:14.92,Sub,,0,0,0,,{\fad(60,0)}soviético y cuatro\Nvelocidades.
+Dialogue: 0,0:00:15.18,0:00:15.66,Sub,,0,0,0,,{\fad(60,0)}Durísimo.
+Dialogue: 0,0:00:16.44,0:00:19.28,Sub,,0,0,0,,{\fad(60,0)}O sea, Starlight sabe. Son\Nfierros posta.
+Dialogue: 0,0:00:19.44,0:00:21.66,Sub,,0,0,0,,{\fad(60,0)}Entonces los nenes estaban\Ncorriendo en
+Dialogue: 0,0:00:21.66,0:00:23.20,Sub,,0,0,0,,{\fad(60,0)}círculo, no entendían el\Nmapa,
+Dialogue: 0,0:00:24.08,0:00:25.58,Sub,,0,0,0,,{\fad(60,0)}y Starlight estaba\Njugando…
+Dialogue: 0,0:00:25.70,0:00:27.02,Sub,,0,0,0,,{\fad(60,0)}Así estaba Starlight,\Nestaba corriendo
+Dialogue: 0,0:00:27.02,0:00:28.32,Sub,,0,0,0,,{\fad(60,0)}como si fuera Warzone, el\Nhijo de puta.
+Dialogue: 0,0:00:30.22,0:00:30.54,Sub,,0,0,0,,{\fad(60,0)}Y…
+Dialogue: 0,0:00:32.24,0:00:34.92,Sub,,0,0,0,,{\fad(60,0)}pasó lo que tenía que\Npasar: ganó Starlight.
+Dialogue: 0,0:00:34.92,0:00:36.50,Sub,,0,0,0,,{\fad(60,0)}Y Farfa, pero sobre todo\NStarlight.
+Dialogue: 0,0:00:36.70,0:00:38.54,Sub,,0,0,0,,{\fad(60,0)}Y a la salida me rompió el\Ncorazón.
+Dialogue: 0,0:00:40.86,0:00:42.06,Sub,,0,0,0,,{\fad(60,0)}Amigo, nos estábamos\Nyendo.
+Dialogue: 0,0:00:43.00,0:00:44.80,Sub,,0,0,0,,{\fad(60,0)}Starlight adelante, re\Nemocionado, viste.
+Dialogue: 0,0:00:45.00,0:00:45.86,Sub,,0,0,0,,{\fad(60,0)}Sí, sí, sí.
+Dialogue: 0,0:00:47.76,0:00:50.96,Sub,,0,0,0,,{\fad(60,0)}Amigo, atrás del todo yo\Niba con los pibitos y\Nescucho que uno le dice al\Notro:
+Dialogue: 0,0:00:51.98,0:00:53.02,Sub,,0,0,0,,{\fad(60,0)}«Estuvo bueno, ¿no?
+Dialogue: 0,0:00:53.12,0:00:53.94,Sub,,0,0,0,,{\fad(60,0)}Un poco difícil».
+Dialogue: 0,0:00:54.38,0:00:54.92,Sub,,0,0,0,,{\fad(60,0)}Y el otro le dice:
+Dialogue: 0,0:00:55.64,0:00:58.74,Sub,,0,0,0,,{\fad(60,0)}«Sí, sí, bueno, no\Npodíamos hacer nada».
+Dialogue: 0,0:00:58.86,0:01:00.14,Sub,,0,0,0,,{\fad(60,0)}Y se van.

@@ -1,0 +1,32 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:59.12,Hook,,0,0,0,,ESCÚCHEME, VIEJO
+Dialogue: 0,0:00:00.00,0:00:03.16,Sub,,0,0,0,,{\fad(60,0)}—Esto es mi culpa. Ese\Npitufo…
+Dialogue: 0,0:00:03.16,0:00:06.06,Sub,,0,0,0,,{\fad(60,0)}—…yo lo creé.
+Dialogue: 0,0:00:06.06,0:00:11.54,Sub,,0,0,0,,{\fad(60,0)}—Quería una poción para\Nque Gargamel nunca más nos\Nlastimara.
+Dialogue: 0,0:00:11.54,0:00:17.88,Sub,,0,0,0,,{\fad(60,0)}—Fallé 998 veces.
+Dialogue: 0,0:00:19.36,0:00:21.92,Sub,,0,0,0,,{\fad(60,0)}—El 999 se volvió eso.
+Dialogue: 0,0:00:21.92,0:00:26.74,Sub,,0,0,0,,{\fad(60,0)}—Lo encerré bajo el árbol\Ngigante y escapó.
+Dialogue: 0,0:00:26.74,0:00:30.45,Sub,,0,0,0,,{\fad(60,0)}—Te lo suplico, ayúdame a\Narreglarlo.
+Dialogue: 0,0:00:30.48,0:00:33.56,Sub,,0,0,0,,{\fad(60,0)}Hermano, ¿te das cuenta?
+Dialogue: 0,0:00:33.56,0:00:37.42,Sub,,0,0,0,,{\fad(60,0)}¿Te das cuenta, Papá\NPitufo, de que por tu\Nculpa ya murieron dos\Npitufitos?
+Dialogue: 0,0:00:37.42,0:00:39.41,Sub,,0,0,0,,{\fad(60,0)}¿Te das cuenta?
+Dialogue: 0,0:00:39.92,0:00:42.76,Sub,,0,0,0,,{\fad(60,0)}*Lo agarra del cuello y lo\Npone contra la pared*
+Dialogue: 0,0:00:42.98,0:00:45.58,Sub,,0,0,0,,{\fad(60,0)}Escúcheme una cosa, viejo\Npendejo:
+Dialogue: 0,0:00:45.58,0:00:48.70,Sub,,0,0,0,,{\fad(60,0)}voy a ayudarte, pero más\Nte vale
+Dialogue: 0,0:00:48.70,0:00:51.44,Sub,,0,0,0,,{\fad(60,0)}que pueda recuperar a\NPitufina con vida.
+Dialogue: 0,0:00:51.44,0:00:55.68,Sub,,0,0,0,,{\fad(60,0)}De lo contrario, vas a\Narrepentirte.
+Dialogue: 0,0:00:55.68,0:00:59.01,Sub,,0,0,0,,{\fad(60,0)}Voy a hacerte pasar un mal\Nrato.

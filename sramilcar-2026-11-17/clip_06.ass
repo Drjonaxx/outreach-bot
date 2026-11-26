@@ -1,0 +1,27 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:25.48,Hook,,0,0,0,,MI ABUELA NOS VA A\NENTERRAR A TODOS
+Dialogue: 0,0:00:00.12,0:00:01.44,Sub,,0,0,0,,{\fad(60,0)}Estoy esperando a que se\Nhaga de noche.
+Dialogue: 0,0:00:02.24,0:00:03.12,Sub,,0,0,0,,{\fad(60,0)}¡Duerman, vergas!
+Dialogue: 0,0:00:04.60,0:00:06.98,Sub,,0,0,0,,{\fad(60,0)}Hoy no quería prender\Nporque, bueno, el cumple\Nde
+Dialogue: 0,0:00:06.98,0:00:09.26,Sub,,0,0,0,,{\fad(60,0)}mi abuela, viste, y quería\Npasar.
+Dialogue: 0,0:00:09.84,0:00:10.66,Sub,,0,0,0,,{\fad(60,0)}¿Cuántos cumple, boludo?
+Dialogue: 0,0:00:11.96,0:00:13.62,Sub,,0,0,0,,{\fad(60,0)}No se le pregunta, no se\Nle pregunta.
+Dialogue: 0,0:00:13.86,0:00:16.80,Sub,,0,0,0,,{\fad(60,0)}Una banda.
+Dialogue: 0,0:00:18.00,0:00:19.52,Sub,,0,0,0,,{\fad(60,0)}Amigo, es una banda,\N¿viste?
+Dialogue: 0,0:00:20.10,0:00:21.02,Sub,,0,0,0,,{\fad(60,0)}Un montón, mal.
+Dialogue: 0,0:00:21.26,0:00:22.64,Sub,,0,0,0,,{\fad(60,0)}Nos va a enterrar a todos,\Nboludo.
+Dialogue: 0,0:00:23.34,0:00:25.36,Sub,,0,0,0,,{\fad(60,0)}Está re sana encima, está\Nre lúcida.

@@ -1,0 +1,31 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:40.34,Hook,,0,0,0,,SE BUSCA CONTABLE\NURGENTE
+Dialogue: 0,0:00:00.00,0:00:02.68,Sub,,0,0,0,,{\fad(60,0)}¿Quién quiere ser mi\Ncontable? Digo, no
+Dialogue: 0,0:00:02.68,0:00:05.22,Sub,,0,0,0,,{\fad(60,0)}hace falta saber\Ncontabilidad, solo quítame\Nla
+Dialogue: 0,0:00:05.22,0:00:08.26,Sub,,0,0,0,,{\fad(60,0)}cuenta de Amazon, cámbiale\Nla contraseña
+Dialogue: 0,0:00:08.26,0:00:11.34,Sub,,0,0,0,,{\fad(60,0)}o ponme el control\Nparental de solo
+Dialogue: 0,0:00:11.34,0:00:14.50,Sub,,0,0,0,,{\fad(60,0)}una compra a la semana.
+Dialogue: 0,0:00:14.50,0:00:17.52,Sub,,0,0,0,,{\fad(60,0)}Y me lo guardo y me hago\Nun carrito
+Dialogue: 0,0:00:17.52,0:00:20.30,Sub,,0,0,0,,{\fad(60,0)}como el de Shein, ¿no? Y\Nde repente,
+Dialogue: 0,0:00:20.30,0:00:22.78,Sub,,0,0,0,,{\fad(60,0)}vergazo de 200 mil\Nmillones de pesos.
+Dialogue: 0,0:00:22.78,0:00:24.46,Sub,,0,0,0,,{\fad(60,0)}Endeudado de por vida.
+Dialogue: 0,0:00:24.58,0:00:27.54,Sub,,0,0,0,,{\fad(60,0)}Mi actividad
+Dialogue: 0,0:00:27.54,0:00:30.38,Sub,,0,0,0,,{\fad(60,0)}favorita hasta ahora...\Nahora ya no sé,
+Dialogue: 0,0:00:30.38,0:00:32.76,Sub,,0,0,0,,{\fad(60,0)}cuando estábamos con la\Nmochila de stream, era
+Dialogue: 0,0:00:32.76,0:00:34.36,Sub,,0,0,0,,{\fad(60,0)}entrar a Amazon en la\Nnoche y ver qué cable
+Dialogue: 0,0:00:34.36,0:00:37.38,Sub,,0,0,0,,{\fad(60,0)}comprar, qué\Nadaptadores... Pero
+Dialogue: 0,0:00:37.38,0:00:40.34,Sub,,0,0,0,,{\fad(60,0)}ahora ya no sé. Empty. Me\Nsiento vacío.

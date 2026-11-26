@@ -1,0 +1,32 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:24.12,Hook,,0,0,0,,CUANDO TU AMIGO POR\NFIN SE VA
+Dialogue: 0,0:00:00.12,0:00:01.40,Sub,,0,0,0,,{\fad(60,0)}Muchas gracias por la\Ninvitación.
+Dialogue: 0,0:00:01.72,0:00:03.44,Sub,,0,0,0,,{\fad(60,0)}Te quiero mucho, y el\Nmartes nos vemos, ¿eh?
+Dialogue: 0,0:00:03.72,0:00:04.60,Sub,,0,0,0,,{\fad(60,0)}—Yo también te quiero,\Nhermano.
+Dialogue: 0,0:00:04.68,0:00:07.10,Sub,,0,0,0,,{\fad(60,0)}Nos vemos el martes. Yo\Nhago planes, y si tienes
+Dialogue: 0,0:00:07.10,0:00:09.14,Sub,,0,0,0,,{\fad(60,0)}algo tú también, pues lo\Nrecomiendas...
+Dialogue: 0,0:00:09.14,0:00:09.90,Sub,,0,0,0,,{\fad(60,0)}—Va, va, va.
+Dialogue: 0,0:00:10.02,0:00:12.14,Sub,,0,0,0,,{\fad(60,0)}Y disfruta tu stream,\Nhermano, lo que quede.
+Dialogue: 0,0:00:12.26,0:00:12.58,Sub,,0,0,0,,{\fad(60,0)}—Va.
+Dialogue: 0,0:00:13.58,0:00:14.38,Sub,,0,0,0,,{\fad(60,0)}—Un besote, Nat.
+Dialogue: 0,0:00:14.56,0:00:15.20,Sub,,0,0,0,,{\fad(60,0)}—Igual, un beso, bro.
+Dialogue: 0,0:00:15.44,0:00:16.98,Sub,,0,0,0,,{\fad(60,0)}—Un abrazo a ti, a tu\Ncomunidad. ¡Chao!
+Dialogue: 0,0:00:17.22,0:00:18.80,Sub,,0,0,0,,{\fad(60,0)}Sobres, pues. ¡Adiós,\Nadiós!
+Dialogue: 0,0:00:18.80,0:00:20.20,Sub,,0,0,0,,{\fad(60,0)}Suerte, suerte de stream,\Namigo.
+Dialogue: 0,0:00:20.34,0:00:20.56,Sub,,0,0,0,,{\fad(60,0)}—Gracias.
+Dialogue: 0,0:00:21.76,0:00:23.02,Sub,,0,0,0,,{\fad(60,0)}Ay, al fin se fue, cabrón.
+Dialogue: 0,0:00:23.32,0:00:24.00,Sub,,0,0,0,,{\fad(60,0)}Ya no lo soportaba.

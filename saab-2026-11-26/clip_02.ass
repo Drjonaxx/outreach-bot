@@ -1,0 +1,41 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:42.29,Hook,,0,0,0,,¡LE EXPLOTÓ EL BOTÍN!
+Dialogue: 0,0:00:00.12,0:00:00.96,Sub,,0,0,0,,{\fad(60,0)}¡Me puse codicioso!
+Dialogue: 0,0:00:01.06,0:00:01.54,Sub,,0,0,0,,{\fad(60,0)}¡Me puse codicioso!
+Dialogue: 0,0:00:01.64,0:00:02.54,Sub,,0,0,0,,{\fad(60,0)}¡Me puse codicioso!
+Dialogue: 0,0:00:02.68,0:00:03.06,Sub,,0,0,0,,{\fad(60,0)}¡Me puse codicioso!
+Dialogue: 0,0:00:03.44,0:00:05.02,Sub,,0,0,0,,{\fad(60,0)}¡Me puse codicioso!
+Dialogue: 0,0:00:05.16,0:00:05.78,Sub,,0,0,0,,{\fad(60,0)}¡Me puse codicioso!
+Dialogue: 0,0:00:06.08,0:00:07.20,Sub,,0,0,0,,{\fad(60,0)}¡Me puse codicioso!
+Dialogue: 0,0:00:08.36,0:00:09.10,Sub,,0,0,0,,{\fad(60,0)}¿Esto es todo?
+Dialogue: 0,0:00:11.71,0:00:12.27,Sub,,0,0,0,,{\fad(60,0)}¿Eso es todo?
+Dialogue: 0,0:00:12.61,0:00:13.41,Sub,,0,0,0,,{\fad(60,0)}No puede ser, imposible
+Dialogue: 0,0:00:13.93,0:00:15.51,Sub,,0,0,0,,{\fad(60,0)}¡Arriesgué un explosivo\Npor esta mierda!
+Dialogue: 0,0:00:15.75,0:00:17.13,Sub,,0,0,0,,{\fad(60,0)}«Explotaron los billetes\Nmarcados con tinta»
+Dialogue: 0,0:00:17.55,0:00:18.57,Sub,,0,0,0,,{\fad(60,0)}Espera, ¿qué?
+Dialogue: 0,0:00:20.49,0:00:21.13,Sub,,0,0,0,,{\fad(60,0)}¿Perdón?
+Dialogue: 0,0:00:22.13,0:00:23.59,Sub,,0,0,0,,{\fad(60,0)}¿Cómo que billetes\Nmarcados?
+Dialogue: 0,0:00:24.75,0:00:25.99,Sub,,0,0,0,,{\fad(60,0)}¿Cómo que tinta en el\Ndinero?
+Dialogue: 0,0:00:27.07,0:00:27.87,Sub,,0,0,0,,{\fad(60,0)}¿Es en serio?
+Dialogue: 0,0:00:29.55,0:00:30.31,Sub,,0,0,0,,{\fad(60,0)}¿Qué significa eso?
+Dialogue: 0,0:00:30.51,0:00:30.89,Sub,,0,0,0,,{\fad(60,0)}¿Qué significa?
+Dialogue: 0,0:00:31.03,0:00:31.79,Sub,,0,0,0,,{\fad(60,0)}¿Qué me estás diciendo?
+Dialogue: 0,0:00:31.99,0:00:32.93,Sub,,0,0,0,,{\fad(60,0)}Espera...
+Dialogue: 0,0:00:34.13,0:00:36.63,Sub,,0,0,0,,{\fad(60,0)}Eso explica por qué Lucía\Nestá toda morada
+Dialogue: 0,0:00:36.63,0:00:38.07,Sub,,0,0,0,,{\fad(60,0)}¡Qué carajo! Es cierto,\N¡mira mi cuerpo!
+Dialogue: 0,0:00:39.27,0:00:41.41,Sub,,0,0,0,,{\fad(60,0)}¿Cómo hago para que no me\Nexploten los billetes?
+Dialogue: 0,0:00:41.51,0:00:42.17,Sub,,0,0,0,,{\fad(60,0)}Estoy tan confundido

@@ -1,0 +1,32 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:36.00,Hook,,0,0,0,,POLICÍA EN EL ARBUSTO
+Dialogue: 0,0:00:00.00,0:00:01.48,Sub,,0,0,0,,{\fad(60,0)}Todavía hay una policía\Nmetida en un arbusto.
+Dialogue: 0,0:00:01.62,0:00:02.88,Sub,,0,0,0,,{\fad(60,0)}Es Ruby o algo así.
+Dialogue: 0,0:00:04.14,0:00:04.78,Sub,,0,0,0,,{\fad(60,0)}—¿Qué está haciendo?
+Dialogue: 0,0:00:06.30,0:00:08.40,Sub,,0,0,0,,{\fad(60,0)}—Está en la radio, en un\Narbusto en medio de
+Dialogue: 0,0:00:08.40,0:00:11.18,Sub,,0,0,0,,{\fad(60,0)}la calle donde yo estaba.\NMás hacia ti.
+Dialogue: 0,0:00:12.18,0:00:14.02,Sub,,0,0,0,,{\fad(60,0)}—Qué astuta, hermano.
+Dialogue: 0,0:00:15.64,0:00:17.40,Sub,,0,0,0,,{\fad(60,0)}—Una policía escondida
+Dialogue: 0,0:00:18.60,0:00:21.64,Sub,,0,0,0,,{\fad(60,0)}ahí adentro, sentadita en\Nel arbusto.
+Dialogue: 0,0:00:21.64,0:00:24.50,Sub,,0,0,0,,{\fad(60,0)}—Quiero ir a atropellarla.
+Dialogue: 0,0:00:25.70,0:00:26.40,Sub,,0,0,0,,{\fad(60,0)}—¡Dios mío, lo vi!
+Dialogue: 0,0:00:27.66,0:00:28.96,Sub,,0,0,0,,{\fad(60,0)}¡Se vuelve a meter\Narrastrándose!
+Dialogue: 0,0:00:29.20,0:00:30.24,Sub,,0,0,0,,{\fad(60,0)}—Ya la recogieron.
+Dialogue: 0,0:00:30.26,0:00:31.30,Sub,,0,0,0,,{\fad(60,0)}Creo que la habían dejado\Nahí.
+Dialogue: 0,0:00:31.54,0:00:33.42,Sub,,0,0,0,,{\fad(60,0)}—Desde ahora hay que\Nrevisar
+Dialogue: 0,0:00:33.42,0:00:33.82,Sub,,0,0,0,,{\fad(60,0)}todos los arbustos.
+Dialogue: 0,0:00:35.02,0:00:35.88,Sub,,0,0,0,,{\fad(60,0)}Techos y arbustos.

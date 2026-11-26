@@ -1,0 +1,37 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:33.80,Hook,,0,0,0,,SU PRIMER PARACAÍDAS
+Dialogue: 0,0:00:00.12,0:00:02.14,Sub,,0,0,0,,{\fad(60,0)}Voy a subir hasta arriba y\Nlanzarme en paracaídas
+Dialogue: 0,0:00:02.14,0:00:02.68,Sub,,0,0,0,,{\fad(60,0)}hasta el motel.
+Dialogue: 0,0:00:03.34,0:00:03.98,Sub,,0,0,0,,{\fad(60,0)}Dios mío.
+Dialogue: 0,0:00:04.00,0:00:05.76,Sub,,0,0,0,,{\fad(60,0)}¿Qué tan alta es esta\Nmaldita torre?
+Dialogue: 0,0:00:07.80,0:00:09.76,Sub,,0,0,0,,{\fad(60,0)}Me voy a lanzar en\Nparacaídas, ¿verdad, chat?
+Dialogue: 0,0:00:11.08,0:00:11.94,Sub,,0,0,0,,{\fad(60,0)}Ahí vamos.
+Dialogue: 0,0:00:12.06,0:00:13.64,Sub,,0,0,0,,{\fad(60,0)}Voy a guardar la partida\Nantes de hacer algo
+Dialogue: 0,0:00:13.64,0:00:14.34,Sub,,0,0,0,,{\fad(60,0)}bien estúpido.
+Dialogue: 0,0:00:14.58,0:00:15.64,Sub,,0,0,0,,{\fad(60,0)}¿Cómo se usa el\Nparacaídas?
+Dialogue: 0,0:00:15.94,0:00:16.92,Sub,,0,0,0,,{\fad(60,0)}Es mi primera vez... ¡wow!
+Dialogue: 0,0:00:17.68,0:00:18.48,Sub,,0,0,0,,{\fad(60,0)}¡Ay, Dios!
+Dialogue: 0,0:00:20.30,0:00:21.00,Sub,,0,0,0,,{\fad(60,0)}¡Dios mío!
+Dialogue: 0,0:00:21.38,0:00:21.98,Sub,,0,0,0,,{\fad(60,0)}¡Dios mío!
+Dialogue: 0,0:00:22.00,0:00:22.62,Sub,,0,0,0,,{\fad(60,0)}¿Qué está pasando?
+Dialogue: 0,0:00:23.82,0:00:24.22,Sub,,0,0,0,,{\fad(60,0)}Bueno...
+Dialogue: 0,0:00:24.26,0:00:25.90,Sub,,0,0,0,,{\fad(60,0)}Eso fue un desastre de\Nparacaidismo.
+Dialogue: 0,0:00:27.10,0:00:28.60,Sub,,0,0,0,,{\fad(60,0)}Oye, terminé rodando, bro.
+Dialogue: 0,0:00:28.96,0:00:29.52,Sub,,0,0,0,,{\fad(60,0)}Mira.
+Dialogue: 0,0:00:29.62,0:00:30.40,Sub,,0,0,0,,{\fad(60,0)}¿Qué? El
+Dialogue: 0,0:00:31.60,0:00:32.30,Sub,,0,0,0,,{\fad(60,0)}aterrizaje fue perfecto.
+Dialogue: 0,0:00:32.42,0:00:33.68,Sub,,0,0,0,,{\fad(60,0)}El vuelo, no tanto.

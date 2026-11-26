@@ -1,0 +1,40 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:46.94,Hook,,0,0,0,,PROMETIÓ NO EXPLOTAR
+Dialogue: 0,0:00:00.12,0:00:02.28,Sub,,0,0,0,,{\fad(60,0)}Vi en el chat del grupo\Nque ya le están pagando
+Dialogue: 0,0:00:02.28,0:00:02.58,Sub,,0,0,0,,{\fad(60,0)}a la gente.
+Dialogue: 0,0:00:04.12,0:00:05.92,Sub,,0,0,0,,{\fad(60,0)}—Sí, pero a nosotros\Nparece que no. Le escribo
+Dialogue: 0,0:00:05.92,0:00:07.90,Sub,,0,0,0,,{\fad(60,0)}a Lexi a ver qué pasa. Le\Nmandé la cuenta
+Dialogue: 0,0:00:07.90,0:00:09.94,Sub,,0,0,0,,{\fad(60,0)}a Marty la semana pasada,\Npero esta no
+Dialogue: 0,0:00:09.94,0:00:12.04,Sub,,0,0,0,,{\fad(60,0)}porque, o sea, son como\Nciento
+Dialogue: 0,0:00:12.04,0:00:14.40,Sub,,0,0,0,,{\fad(60,0)}veintidós mil de la semana\Npasada. —No,
+Dialogue: 0,0:00:15.04,0:00:17.52,Sub,,0,0,0,,{\fad(60,0)}yo llamo ya. Bueno, antes\Nde llamar, mejor
+Dialogue: 0,0:00:17.52,0:00:19.36,Sub,,0,0,0,,{\fad(60,0)}que salga de ti, porque\Nando medio... ya sabes,
+Dialogue: 0,0:00:19.36,0:00:22.22,Sub,,0,0,0,,{\fad(60,0)}voy a decir alguna\Nbarbaridad. —No
+Dialogue: 0,0:00:22.22,0:00:23.58,Sub,,0,0,0,,{\fad(60,0)}hace falta decir\Nbarbaridades.
+Dialogue: 0,0:00:23.66,0:00:24.72,Sub,,0,0,0,,{\fad(60,0)}Creo que tuvieron una\Nsemana pesada.
+Dialogue: 0,0:00:24.80,0:00:25.62,Sub,,0,0,0,,{\fad(60,0)}Ya se va a resolver.
+Dialogue: 0,0:00:25.62,0:00:26.82,Sub,,0,0,0,,{\fad(60,0)}—¿Y cuándo salen los\Npagos?
+Dialogue: 0,0:00:26.86,0:00:28.30,Sub,,0,0,0,,{\fad(60,0)}¡No nos han pagado un\Ncarajo, hermano!
+Dialogue: 0,0:00:29.46,0:00:32.04,Sub,,0,0,0,,{\fad(60,0)}¡La mitad del trabajo ahí\Nlo haces tú! —Yo le mandé
+Dialogue: 0,0:00:32.04,0:00:35.18,Sub,,0,0,0,,{\fad(60,0)}la cuenta a Marty, y si\NLexi es la que
+Dialogue: 0,0:00:35.18,0:00:36.72,Sub,,0,0,0,,{\fad(60,0)}hace los pagos, quizá no\Nle pasaron
+Dialogue: 0,0:00:36.72,0:00:37.24,Sub,,0,0,0,,{\fad(60,0)}la info.
+Dialogue: 0,0:00:37.40,0:00:39.06,Sub,,0,0,0,,{\fad(60,0)}—¿Y por qué carajo me\Ngritas a mí?
+Dialogue: 0,0:00:39.90,0:00:41.30,Sub,,0,0,0,,{\fad(60,0)}—¡El que está gritando\Neres tú, Harry!
+Dialogue: 0,0:00:41.72,0:00:44.00,Sub,,0,0,0,,{\fad(60,0)}—¡Grito porque estoy\Nfurioso con Lexi! —¿Y qué
+Dialogue: 0,0:00:44.00,0:00:45.92,Sub,,0,0,0,,{\fad(60,0)}le pasa gritándome a mí?\NYo no hago los
+Dialogue: 0,0:00:45.92,0:00:46.82,Sub,,0,0,0,,{\fad(60,0)}malditos pagos.

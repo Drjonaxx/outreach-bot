@@ -1,0 +1,38 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:47.44,Hook,,0,0,0,,13 AÑOS ESPERANDO ESTO
+Dialogue: 0,0:00:00.12,0:00:01.16,Sub,,0,0,0,,{\fad(60,0)}Ay, Dios mío.
+Dialogue: 0,0:00:02.62,0:00:05.68,Sub,,0,0,0,,{\fad(60,0)}Me llegó la notificación:\N20 minutos, 20 minutos
+Dialogue: 0,0:00:05.68,0:00:06.54,Sub,,0,0,0,,{\fad(60,0)}para abordar mi vuelo.
+Dialogue: 0,0:00:07.40,0:00:08.28,Sub,,0,0,0,,{\fad(60,0)}No lo puedo creer.
+Dialogue: 0,0:00:08.44,0:00:08.98,Sub,,0,0,0,,{\fad(60,0)}Dios mío.
+Dialogue: 0,0:00:09.14,0:00:09.38,Sub,,0,0,0,,{\fad(60,0)}—¿Estás listo?
+Dialogue: 0,0:00:09.62,0:00:10.94,Sub,,0,0,0,,{\fad(60,0)}—¿Sabes? Llevo 13 años\Nesperando
+Dialogue: 0,0:00:10.94,0:00:13.94,Sub,,0,0,0,,{\fad(60,0)}esto. Ir a conocer al\Ncomisionado.
+Dialogue: 0,0:00:14.06,0:00:16.48,Sub,,0,0,0,,{\fad(60,0)}Sí, ha pasado muchísimo\Ntiempo.
+Dialogue: 0,0:00:16.48,0:00:18.08,Sub,,0,0,0,,{\fad(60,0)}—Ya me imagino.
+Dialogue: 0,0:00:18.24,0:00:19.98,Sub,,0,0,0,,{\fad(60,0)}—Sí, 13 años.
+Dialogue: 0,0:00:20.26,0:00:22.20,Sub,,0,0,0,,{\fad(60,0)}¿Te imaginas cuánto tiempo\Nes? ¿13?
+Dialogue: 0,0:00:22.72,0:00:24.64,Sub,,0,0,0,,{\fad(60,0)}—Sí, sí, sí. 13, qué\Nlocura.
+Dialogue: 0,0:00:25.00,0:00:27.38,Sub,,0,0,0,,{\fad(60,0)}—Ya sé, una década y tres\Naños.
+Dialogue: 0,0:00:27.38,0:00:29.62,Sub,,0,0,0,,{\fad(60,0)}—Hay niños que todavía no\Nsaben ni pensar
+Dialogue: 0,0:00:29.62,0:00:30.52,Sub,,0,0,0,,{\fad(60,0)}y ya tienen esa edad.
+Dialogue: 0,0:00:30.76,0:00:33.90,Sub,,0,0,0,,{\fad(60,0)}No puedo creer que pasaron\N13 años.
+Dialogue: 0,0:00:35.04,0:00:38.12,Sub,,0,0,0,,{\fad(60,0)}Pasaron 13 malditos años\Ndesde
+Dialogue: 0,0:00:38.12,0:00:41.24,Sub,,0,0,0,,{\fad(60,0)}que jugamos un GTA nuevo.\NY
+Dialogue: 0,0:00:41.24,0:00:42.56,Sub,,0,0,0,,{\fad(60,0)}en menos de 20 minutos
+Dialogue: 0,0:00:43.35,0:00:46.06,Sub,,0,0,0,,{\fad(60,0)}nosotros en Estados Unidos\Nvamos a
+Dialogue: 0,0:00:46.06,0:00:47.32,Sub,,0,0,0,,{\fad(60,0)}poder jugarlo.

@@ -1,0 +1,29 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:35.06,Hook,,0,0,0,,SIEMPRE SÉ QUIÉN ES… Y\NNADIE ME CREE
+Dialogue: 0,0:00:00.00,0:00:01.68,Sub,,0,0,0,,{\fad(60,0)}No me gustan estos tipos\Nde juegos porque, por
+Dialogue: 0,0:00:01.68,0:00:05.50,Sub,,0,0,0,,{\fad(60,0)}alguna razón, siempre\Nadivino quiénes son…
+Dialogue: 0,0:00:05.50,0:00:08.52,Sub,,0,0,0,,{\fad(60,0)}y nadie me cree nunca.
+Dialogue: 0,0:00:08.52,0:00:11.24,Sub,,0,0,0,,{\fad(60,0)}Y lo mismo era en Among\NUs. Siempre lo mismo:
+Dialogue: 0,0:00:11.24,0:00:14.40,Sub,,0,0,0,,{\fad(60,0)}digo quiénes y nadie me\Ncree. Hasta desconfían
+Dialogue: 0,0:00:14.40,0:00:17.80,Sub,,0,0,0,,{\fad(60,0)}de mí, o me matan a mí por\Ndecir la verdad.
+Dialogue: 0,0:00:19.10,0:00:20.46,Sub,,0,0,0,,{\fad(60,0)}Esto está de la chingada.
+Dialogue: 0,0:00:20.70,0:00:23.76,Sub,,0,0,0,,{\fad(60,0)}Ya. Esto es una tiradera\Npara estos hijos
+Dialogue: 0,0:00:23.76,0:00:26.42,Sub,,0,0,0,,{\fad(60,0)}de perra que se hacen\Npasar por mis amigos.\NEscuchen,
+Dialogue: 0,0:00:26.42,0:00:28.80,Sub,,0,0,0,,{\fad(60,0)}hijos de perra: la otra\Nque no me crean, ojalá nos
+Dialogue: 0,0:00:28.80,0:00:30.68,Sub,,0,0,0,,{\fad(60,0)}maten de verdad, weyes.
+Dialogue: 0,0:00:30.68,0:00:33.54,Sub,,0,0,0,,{\fad(60,0)}Al chile, no saben jugar.\NJuega mejor un niño que
+Dialogue: 0,0:00:33.54,0:00:35.06,Sub,,0,0,0,,{\fad(60,0)}ustedes. ¡Váyanse con sus\Nmamás!

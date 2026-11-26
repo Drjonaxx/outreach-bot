@@ -1,0 +1,47 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:50.99,Hook,,0,0,0,,¿SOPA CON FIDEOS?
+Dialogue: 0,0:00:00.12,0:00:02.96,Sub,,0,0,0,,{\fad(60,0)}Lo entiendo si es una sopa\Nsin fideos,
+Dialogue: 0,0:00:03.24,0:00:04.28,Sub,,0,0,0,,{\fad(60,0)}sin carbohidratos ni\Nproteína.
+Dialogue: 0,0:00:04.54,0:00:05.12,Sub,,0,0,0,,{\fad(60,0)}—¿Y cuál tiene eso?
+Dialogue: 0,0:00:06.42,0:00:07.42,Sub,,0,0,0,,{\fad(60,0)}—Pues, los fideos udon.
+Dialogue: 0,0:00:07.78,0:00:08.58,Sub,,0,0,0,,{\fad(60,0)}Sopa de fideos udon.
+Dialogue: 0,0:00:09.40,0:00:10.78,Sub,,0,0,0,,{\fad(60,0)}—Entonces ya no es una\Nsopa.
+Dialogue: 0,0:00:11.04,0:00:12.62,Sub,,0,0,0,,{\fad(60,0)}Si tiene fideos y todo lo\Ndemás,
+Dialogue: 0,0:00:12.62,0:00:13.16,Sub,,0,0,0,,{\fad(60,0)}entonces es un maldito...
+Dialogue: 0,0:00:14.48,0:00:15.26,Sub,,0,0,0,,{\fad(60,0)}—Speedy, ¿de qué hablas?
+Dialogue: 0,0:00:15.26,0:00:15.72,Sub,,0,0,0,,{\fad(60,0)}Sopa de fideos.
+Dialogue: 0,0:00:15.94,0:00:16.58,Sub,,0,0,0,,{\fad(60,0)}¡Sopa de fideos!
+Dialogue: 0,0:00:17.16,0:00:18.30,Sub,,0,0,0,,{\fad(60,0)}Eso es una sopa de fideos,\Nhermano.
+Dialogue: 0,0:00:19.08,0:00:20.08,Sub,,0,0,0,,{\fad(60,0)}—Para mí eso no es sopa.
+Dialogue: 0,0:00:20.20,0:00:21.00,Sub,,0,0,0,,{\fad(60,0)}Para mí, una sopa es
+Dialogue: 0,0:00:21.08,0:00:22.38,Sub,,0,0,0,,{\fad(60,0)}sopa de tomate, sopa de\Npollo.
+Dialogue: 0,0:00:22.74,0:00:23.10,Sub,,0,0,0,,{\fad(60,0)}¿Me entiendes?
+Dialogue: 0,0:00:23.44,0:00:24.00,Sub,,0,0,0,,{\fad(60,0)}Sopa de verduras.
+Dialogue: 0,0:00:24.18,0:00:26.62,Sub,,0,0,0,,{\fad(60,0)}—Sí, pero la sopa de pollo\Nlleva fideos.
+Dialogue: 0,0:00:29.39,0:00:31.21,Sub,,0,0,0,,{\fad(60,0)}Por eso se llama sopa de\Npollo con fideos.
+Dialogue: 0,0:00:32.61,0:00:33.87,Sub,,0,0,0,,{\fad(60,0)}—Ok, ahora sí lo dijiste.
+Dialogue: 0,0:00:33.99,0:00:34.93,Sub,,0,0,0,,{\fad(60,0)}Sopa de pollo con fideos.
+Dialogue: 0,0:00:35.01,0:00:35.71,Sub,,0,0,0,,{\fad(60,0)}Con fideos.
+Dialogue: 0,0:00:35.73,0:00:36.29,Sub,,0,0,0,,{\fad(60,0)}—Solo sopa de pollo.
+Dialogue: 0,0:00:36.89,0:00:37.81,Sub,,0,0,0,,{\fad(60,0)}Solo sopa de pollo.
+Dialogue: 0,0:00:38.07,0:00:38.89,Sub,,0,0,0,,{\fad(60,0)}Es pollo y sopa.
+Dialogue: 0,0:00:39.61,0:00:40.41,Sub,,0,0,0,,{\fad(60,0)}—Cállate, hombre.
+Dialogue: 0,0:00:40.55,0:00:41.75,Sub,,0,0,0,,{\fad(60,0)}Ya se me antojó una sopa\Nde pollo con fideos.
+Dialogue: 0,0:00:43.09,0:00:44.95,Sub,,0,0,0,,{\fad(60,0)}—Nunca había oído a nadie\Ndecirle sopa de pollo
+Dialogue: 0,0:00:44.95,0:00:46.95,Sub,,0,0,0,,{\fad(60,0)}en vez de sopa de pollo\Ncon fideos.
+Dialogue: 0,0:00:48.15,0:00:50.07,Sub,,0,0,0,,{\fad(60,0)}¿Por qué no te dejan\Nponerle fideos
+Dialogue: 0,0:00:50.07,0:00:50.87,Sub,,0,0,0,,{\fad(60,0)}a tus sopas, tonto?

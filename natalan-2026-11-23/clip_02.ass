@@ -1,0 +1,33 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:39.28,Hook,,0,0,0,,¿GUATEMALTECO O\NMEXICANO?
+Dialogue: 0,0:00:00.12,0:00:01.60,Sub,,0,0,0,,{\fad(60,0)}—Disculpa, güey, pero yo\Npensé que eras
+Dialogue: 0,0:00:02.08,0:00:05.14,Sub,,0,0,0,,{\fad(60,0)}mexicano, güey. —Sí, no,\Nes que yo soy
+Dialogue: 0,0:00:05.14,0:00:05.94,Sub,,0,0,0,,{\fad(60,0)}guatemalteco,
+Dialogue: 0,0:00:08.42,0:00:10.64,Sub,,0,0,0,,{\fad(60,0)}pero siempre hablé como\Nmexicano. —¿Y eso?
+Dialogue: 0,0:00:10.66,0:00:11.26,Sub,,0,0,0,,{\fad(60,0)}¿Por qué?
+Dialogue: 0,0:00:11.34,0:00:12.14,Sub,,0,0,0,,{\fad(60,0)}—Porque no tengo
+Dialogue: 0,0:00:14.70,0:00:16.96,Sub,,0,0,0,,{\fad(60,0)}identidad propia, güey, a\Nla verga. —No sé, güey.
+Dialogue: 0,0:00:17.56,0:00:19.58,Sub,,0,0,0,,{\fad(60,0)}Tampoco creo que los\Nguatemaltecos tengan como
+Dialogue: 0,0:00:19.58,0:00:20.36,Sub,,0,0,0,,{\fad(60,0)}un acento, ¿no?
+Dialogue: 0,0:00:20.42,0:00:21.42,Sub,,0,0,0,,{\fad(60,0)}Que yo sepa, ¿no, güey?
+Dialogue: 0,0:00:21.54,0:00:24.00,Sub,,0,0,0,,{\fad(60,0)}—No, sí tenemos acento, sí\Ntenemos acento.
+Dialogue: 0,0:00:24.64,0:00:27.44,Sub,,0,0,0,,{\fad(60,0)}Lo que pasa es que, como\Nyo fui un
+Dialogue: 0,0:00:27.44,0:00:29.90,Sub,,0,0,0,,{\fad(60,0)}retraído social, güey, no\Ntenía amigos,
+Dialogue: 0,0:00:30.72,0:00:32.60,Sub,,0,0,0,,{\fad(60,0)}los únicos cabrones que\Nconocía eran de
+Dialogue: 0,0:00:32.60,0:00:34.08,Sub,,0,0,0,,{\fad(60,0)}internet y eran mexicanos.
+Dialogue: 0,0:00:35.40,0:00:38.26,Sub,,0,0,0,,{\fad(60,0)}Entonces se me pegó,\Nsupongo yo, y al final
+Dialogue: 0,0:00:38.26,0:00:39.20,Sub,,0,0,0,,{\fad(60,0)}me terminé mudando a\NMéxico.

@@ -1,0 +1,33 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:36.30,Hook,,0,0,0,,EFECTO DRAMÁTICO:\NFALLIDO
+Dialogue: 0,0:00:00.00,0:00:02.14,Sub,,0,0,0,,{\fad(60,0)}…porque el volumen 1 dura\Ndos horas.
+Dialogue: 0,0:00:03.64,0:00:04.38,Sub,,0,0,0,,{\fad(60,0)}O sea, sí,
+Dialogue: 0,0:00:05.58,0:00:08.70,Sub,,0,0,0,,{\fad(60,0)}quería pegarle para hacer\Nefecto dramático y se
+Dialogue: 0,0:00:08.70,0:00:09.58,Sub,,0,0,0,,{\fad(60,0)}me cayó la iluminación.
+Dialogue: 0,0:00:09.74,0:00:11.20,Sub,,0,0,0,,{\fad(60,0)}La tengo pegada con\Nmasking tape, espérate.
+Dialogue: 0,0:00:12.40,0:00:12.76,Sub,,0,0,0,,{\fad(60,0)}Ya está.
+Dialogue: 0,0:00:13.14,0:00:15.08,Sub,,0,0,0,,{\fad(60,0)}Solo era de pegarle más el\Nmasking tape.
+Dialogue: 0,0:00:15.20,0:00:16.22,Sub,,0,0,0,,{\fad(60,0)}La gente sabe que soy\Npobre.
+Dialogue: 0,0:00:17.42,0:00:18.52,Sub,,0,0,0,,{\fad(60,0)}Sí, ¿y qué?
+Dialogue: 0,0:00:19.36,0:00:19.80,Sub,,0,0,0,,{\fad(60,0)}¿Y qué?
+Dialogue: 0,0:00:19.92,0:00:21.86,Sub,,0,0,0,,{\fad(60,0)}¿Qué tiene de malo tener\Nuna iluminación pegada
+Dialogue: 0,0:00:21.86,0:00:22.60,Sub,,0,0,0,,{\fad(60,0)}con masking tape?
+Dialogue: 0,0:00:24.94,0:00:27.76,Sub,,0,0,0,,{\fad(60,0)}Wey, cuando hemos hecho\Nlos eventos
+Dialogue: 0,0:00:28.90,0:00:31.48,Sub,,0,0,0,,{\fad(60,0)}de que me muestran su\Ncuarto, su baño, se ve
+Dialogue: 0,0:00:31.48,0:00:33.92,Sub,,0,0,0,,{\fad(60,0)}todo podrido, wey, se ven\Nlas paredes también
+Dialogue: 0,0:00:33.92,0:00:34.44,Sub,,0,0,0,,{\fad(60,0)}con moho.
+Dialogue: 0,0:00:34.78,0:00:36.18,Sub,,0,0,0,,{\fad(60,0)}No me pueden venir a\Ncriticar.

@@ -1,0 +1,35 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:48.80,Hook,,0,0,0,,MI PROBLEMA BIEN RARO
+Dialogue: 0,0:00:00.00,0:00:02.76,Sub,,0,0,0,,{\fad(60,0)}A mí me gustaba un chingo\Nla hija del maestro de
+Dialogue: 0,0:00:02.76,0:00:05.66,Sub,,0,0,0,,{\fad(60,0)}karate, wey. Me acuerdo de\Nque cuando la vi
+Dialogue: 0,0:00:05.66,0:00:08.66,Sub,,0,0,0,,{\fad(60,0)}por primera vez me enamoré
+Dialogue: 0,0:00:08.66,0:00:09.32,Sub,,0,0,0,,{\fad(60,0)}cabroncísimo.
+Dialogue: 0,0:00:09.32,0:00:12.26,Sub,,0,0,0,,{\fad(60,0)}Yo tenía un problema, wey,\Nun problema bien raro,
+Dialogue: 0,0:00:12.26,0:00:14.56,Sub,,0,0,0,,{\fad(60,0)}y era que a mí me gustaba
+Dialogue: 0,0:00:14.56,0:00:17.00,Sub,,0,0,0,,{\fad(60,0)}caerme.
+Dialogue: 0,0:00:17.00,0:00:20.00,Sub,,0,0,0,,{\fad(60,0)}¿Vale? Es decir, me
+Dialogue: 0,0:00:20.00,0:00:22.24,Sub,,0,0,0,,{\fad(60,0)}venían persiguiendo y yo\Nme tiraba hacia el piso
+Dialogue: 0,0:00:22.24,0:00:24.70,Sub,,0,0,0,,{\fad(60,0)}como si me hubiera caído,\Nasí como en las
+Dialogue: 0,0:00:24.70,0:00:27.20,Sub,,0,0,0,,{\fad(60,0)}películas cuando los\Npersigue un
+Dialogue: 0,0:00:27.20,0:00:30.14,Sub,,0,0,0,,{\fad(60,0)}monstruo y se caen, así,\Nwey. Me tiraba al
+Dialogue: 0,0:00:30.14,0:00:33.10,Sub,,0,0,0,,{\fad(60,0)}piso y «¡ah!», daba tres\Ngiros, «¡ah!», y decía:
+Dialogue: 0,0:00:33.10,0:00:35.98,Sub,,0,0,0,,{\fad(60,0)}«¡Estoy bien!». Me paraba\Ny volvía a correr.
+Dialogue: 0,0:00:35.98,0:00:38.24,Sub,,0,0,0,,{\fad(60,0)}Pero como no me miraba,\Nwey...
+Dialogue: 0,0:00:38.24,0:00:41.14,Sub,,0,0,0,,{\fad(60,0)}hasta me volvía a caer, o\Nsea, me volvía a tirar
+Dialogue: 0,0:00:41.14,0:00:43.70,Sub,,0,0,0,,{\fad(60,0)}al piso y «¡estoy bien!»,
+Dialogue: 0,0:00:43.70,0:00:45.94,Sub,,0,0,0,,{\fad(60,0)}pero no me veía nunca,\Nwey.
+Dialogue: 0,0:00:47.14,0:00:48.80,Sub,,0,0,0,,{\fad(60,0)}Y lo hice como cinco\Nveces.

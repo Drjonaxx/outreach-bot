@@ -1,0 +1,30 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:33.30,Hook,,0,0,0,,¿CÓMO SUENA JASON?
+Dialogue: 0,0:00:00.12,0:00:01.82,Sub,,0,0,0,,{\fad(60,0)}No sé, es solo mi teoría,\Npero
+Dialogue: 0,0:00:01.82,0:00:03.14,Sub,,0,0,0,,{\fad(60,0)}creo que Brian esconde\Nalgo.
+Dialogue: 0,0:00:05.56,0:00:07.86,Sub,,0,0,0,,{\fad(60,0)}Y es loco que cuando el\Ncarro está dañado
+Dialogue: 0,0:00:07.86,0:00:10.02,Sub,,0,0,0,,{\fad(60,0)}cambia cómo se maneja,\Nbro.
+Dialogue: 0,0:00:10.26,0:00:12.24,Sub,,0,0,0,,{\fad(60,0)}Dios mío, bro.
+Dialogue: 0,0:00:14.70,0:00:16.74,Sub,,0,0,0,,{\fad(60,0)}Ya casi no puedo manejar\Nel carro.
+Dialogue: 0,0:00:16.98,0:00:18.60,Sub,,0,0,0,,{\fad(60,0)}¿Y cómo suena este\Nprotagonista?
+Dialogue: 0,0:00:19.62,0:00:22.18,Sub,,0,0,0,,{\fad(60,0)}Como si guardara bellotas\Nen los cachetes
+Dialogue: 0,0:00:22.18,0:00:24.68,Sub,,0,0,0,,{\fad(60,0)}como una ardilla. Alguien\Ndijo una vez
+Dialogue: 0,0:00:24.68,0:00:26.72,Sub,,0,0,0,,{\fad(60,0)}que Jason suena como si le\Nsacaran las muelas del\Njuicio
+Dialogue: 0,0:00:26.72,0:00:28.74,Sub,,0,0,0,,{\fad(60,0)}y ya no puedo dejar de\Noírlo
+Dialogue: 0,0:00:28.74,0:00:28.94,Sub,,0,0,0,,{\fad(60,0)}por alguna razón.
+Dialogue: 0,0:00:29.06,0:00:30.34,Sub,,0,0,0,,{\fad(60,0)}No sé por qué,
+Dialogue: 0,0:00:31.98,0:00:33.18,Sub,,0,0,0,,{\fad(60,0)}no sé por qué, ya no puedo\Ndejar de oírlo.

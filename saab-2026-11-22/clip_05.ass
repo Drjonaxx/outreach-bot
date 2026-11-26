@@ -1,0 +1,33 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:39.96,Hook,,0,0,0,,PRESINTIÓ AL TIBURÓN
+Dialogue: 0,0:00:00.12,0:00:01.06,Sub,,0,0,0,,{\fad(60,0)}Uy, esto está profundo.
+Dialogue: 0,0:00:02.90,0:00:05.78,Sub,,0,0,0,,{\fad(60,0)}Seguro que va a salir un\Ntiburón.
+Dialogue: 0,0:00:07.60,0:00:10.64,Sub,,0,0,0,,{\fad(60,0)}Deséenme suerte. Seguro va\Na salir
+Dialogue: 0,0:00:10.64,0:00:11.32,Sub,,0,0,0,,{\fad(60,0)}un tiburón, segurísimo.
+Dialogue: 0,0:00:12.56,0:00:13.60,Sub,,0,0,0,,{\fad(60,0)}Lo presiento.
+Dialogue: 0,0:00:13.84,0:00:15.06,Sub,,0,0,0,,{\fad(60,0)}Bien, ahí está el\Nnaufragio.
+Dialogue: 0,0:00:15.22,0:00:16.16,Sub,,0,0,0,,{\fad(60,0)}Tiene que ser ahí.
+Dialogue: 0,0:00:17.36,0:00:18.84,Sub,,0,0,0,,{\fad(60,0)}No uno, sino dos.
+Dialogue: 0,0:00:20.04,0:00:21.44,Sub,,0,0,0,,{\fad(60,0)}Hay que atacar primero.
+Dialogue: 0,0:00:21.94,0:00:23.66,Sub,,0,0,0,,{\fad(60,0)}Uy, eso no es bueno.
+Dialogue: 0,0:00:23.72,0:00:24.36,Sub,,0,0,0,,{\fad(60,0)}Ya nos vio.
+Dialogue: 0,0:00:26.50,0:00:27.52,Sub,,0,0,0,,{\fad(60,0)}Eso no es bueno para mí.
+Dialogue: 0,0:00:27.80,0:00:30.42,Sub,,0,0,0,,{\fad(60,0)}Nada bueno para mí. Nada\Nbueno.
+Dialogue: 0,0:00:31.74,0:00:32.20,Sub,,0,0,0,,{\fad(60,0)}¡Uy!
+Dialogue: 0,0:00:33.40,0:00:34.82,Sub,,0,0,0,,{\fad(60,0)}Bueno, primera sangre para\Nmí.
+Dialogue: 0,0:00:35.06,0:00:37.20,Sub,,0,0,0,,{\fad(60,0)}Mierda, me quedé sin\Narpones.
+Dialogue: 0,0:00:38.30,0:00:39.84,Sub,,0,0,0,,{\fad(60,0)}Bueno, esto no está nada\Nbien.

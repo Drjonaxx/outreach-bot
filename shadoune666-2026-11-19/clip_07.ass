@@ -1,0 +1,35 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:47.53,Hook,,0,0,0,,EL QUE MEJOR SE PORTÓ
+Dialogue: 0,0:00:00.12,0:00:01.92,Sub,,0,0,0,,{\fad(60,0)}Yo sé que Piru ha sido muy
+Dialogue: 0,0:00:01.92,0:00:05.02,Sub,,0,0,0,,{\fad(60,0)}buen invitado… Bueno,\Nobviamente
+Dialogue: 0,0:00:05.02,0:00:06.48,Sub,,0,0,0,,{\fad(60,0)}no es invitado, porque\Nestá
+Dialogue: 0,0:00:07.56,0:00:09.64,Sub,,0,0,0,,{\fad(60,0)}en el team, ¿no?
+Dialogue: 0,0:00:09.90,0:00:12.74,Sub,,0,0,0,,{\fad(60,0)}Pero
+Dialogue: 0,0:00:12.74,0:00:15.08,Sub,,0,0,0,,{\fad(60,0)}viendo cómo se comportó\NPiru, tengo ganas de
+Dialogue: 0,0:00:15.94,0:00:19.08,Sub,,0,0,0,,{\fad(60,0)}estar con él en otra casa,\N¿sabes? Sientes que
+Dialogue: 0,0:00:19.08,0:00:20.74,Sub,,0,0,0,,{\fad(60,0)}es alguien responsable.
+Dialogue: 0,0:00:20.86,0:00:21.88,Sub,,0,0,0,,{\fad(60,0)}¿Quién
+Dialogue: 0,0:00:23.51,0:00:25.57,Sub,,0,0,0,,{\fad(60,0)}se portó mejor? Es muy\Ncomplicado decirlo.
+Dialogue: 0,0:00:28.45,0:00:30.11,Sub,,0,0,0,,{\fad(60,0)}Ellos pueden decir quién\Nme pagó la seguridad
+Dialogue: 0,0:00:30.11,0:00:32.93,Sub,,0,0,0,,{\fad(60,0)}y quién no todavía. A ver,
+Dialogue: 0,0:00:33.15,0:00:34.53,Sub,,0,0,0,,{\fad(60,0)}¿cuánto
+Dialogue: 0,0:00:35.73,0:00:36.09,Sub,,0,0,0,,{\fad(60,0)}me deben?
+Dialogue: 0,0:00:37.29,0:00:40.33,Sub,,0,0,0,,{\fad(60,0)}Es que está en WhatsApp.\NLa mitad no me pagó la
+Dialogue: 0,0:00:40.33,0:00:41.09,Sub,,0,0,0,,{\fad(60,0)}seguridad todavía.
+Dialogue: 0,0:00:42.61,0:00:44.29,Sub,,0,0,0,,{\fad(60,0)}Rubén sí me pagó.
+Dialogue: 0,0:00:45.09,0:00:46.69,Sub,,0,0,0,,{\fad(60,0)}¡Ah, chicos, no puede ser!\NPiru, el que se portó
+Dialogue: 0,0:00:46.69,0:00:47.41,Sub,,0,0,0,,{\fad(60,0)}bien, ¡no me pagó!

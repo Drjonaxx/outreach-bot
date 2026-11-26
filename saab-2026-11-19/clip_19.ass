@@ -1,0 +1,40 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:41.86,Hook,,0,0,0,,TODO FUE UN SUEÑO
+Dialogue: 0,0:00:00.12,0:00:00.84,Sub,,0,0,0,,{\fad(60,0)}Dios mío.
+Dialogue: 0,0:00:00.92,0:00:02.58,Sub,,0,0,0,,{\fad(60,0)}Veo la luz...
+Dialogue: 0,0:00:03.78,0:00:04.22,Sub,,0,0,0,,{\fad(60,0)}...me voy a ahogar.
+Dialogue: 0,0:00:05.42,0:00:07.18,Sub,,0,0,0,,{\fad(60,0)}Estas son tácticas de RP
+Dialogue: 0,0:00:07.28,0:00:08.12,Sub,,0,0,0,,{\fad(60,0)}que estoy usando ahora.
+Dialogue: 0,0:00:09.04,0:00:10.48,Sub,,0,0,0,,{\fad(60,0)}Aguanto la respiración al\Nmáximo.
+Dialogue: 0,0:00:12.80,0:00:13.62,Sub,,0,0,0,,{\fad(60,0)}Oigo el helicóptero,
+Dialogue: 0,0:00:13.72,0:00:14.60,Sub,,0,0,0,,{\fad(60,0)}pero no lo veo.
+Dialogue: 0,0:00:15.80,0:00:17.88,Sub,,0,0,0,,{\fad(60,0)}Por favor, Dios, por\Nfavor, Dios.
+Dialogue: 0,0:00:19.68,0:00:20.96,Sub,,0,0,0,,{\fad(60,0)}No, no, el helicóptero.
+Dialogue: 0,0:00:22.16,0:00:23.10,Sub,,0,0,0,,{\fad(60,0)}Tengo que llegar a la\Nisla.
+Dialogue: 0,0:00:23.22,0:00:24.76,Sub,,0,0,0,,{\fad(60,0)}Tengo que llegar a la isla\Ny perderlos a todos.
+Dialogue: 0,0:00:25.96,0:00:26.78,Sub,,0,0,0,,{\fad(60,0)}¿Es un delfín?
+Dialogue: 0,0:00:27.12,0:00:27.74,Sub,,0,0,0,,{\fad(60,0)}¡Tú me vas a salvar!
+Dialogue: 0,0:00:28.94,0:00:31.06,Sub,,0,0,0,,{\fad(60,0)}Dios mío, todos están\Njusto enfrente de mí.
+Dialogue: 0,0:00:31.76,0:00:32.66,Sub,,0,0,0,,{\fad(60,0)}Miren, ¿qué es esto?
+Dialogue: 0,0:00:32.76,0:00:33.50,Sub,,0,0,0,,{\fad(60,0)}¿Qué está pasando?
+Dialogue: 0,0:00:33.74,0:00:34.38,Sub,,0,0,0,,{\fad(60,0)}Me voy a morir.
+Dialogue: 0,0:00:34.52,0:00:34.98,Sub,,0,0,0,,{\fad(60,0)}Me voy a morir.
+Dialogue: 0,0:00:35.06,0:00:35.56,Sub,,0,0,0,,{\fad(60,0)}Me voy a morir.
+Dialogue: 0,0:00:35.58,0:00:36.14,Sub,,0,0,0,,{\fad(60,0)}¡Me voy a morir!
+Dialogue: 0,0:00:36.34,0:00:36.84,Sub,,0,0,0,,{\fad(60,0)}Eso fue un sueño.
+Dialogue: 0,0:00:38.64,0:00:40.04,Sub,,0,0,0,,{\fad(60,0)}Fue un sueño que acabo de\Ntener.
+Dialogue: 0,0:00:40.90,0:00:41.74,Sub,,0,0,0,,{\fad(60,0)}Qué pesadilla.

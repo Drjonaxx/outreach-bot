@@ -1,0 +1,32 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:46.24,Hook,,0,0,0,,LE CAE MAL AL SUEGRO
+Dialogue: 0,0:00:00.12,0:00:03.20,Sub,,0,0,0,,{\fad(60,0)}—Mire, es... es muy
+Dialogue: 0,0:00:03.20,0:00:04.68,Sub,,0,0,0,,{\fad(60,0)}importante hablar con\Nusted pronto.
+Dialogue: 0,0:00:05.52,0:00:07.52,Sub,,0,0,0,,{\fad(60,0)}—¿Muy importante? Muy\Nimportante.
+Dialogue: 0,0:00:08.66,0:00:10.24,Sub,,0,0,0,,{\fad(60,0)}¿Qué tan importante, a\Nver?
+Dialogue: 0,0:00:11.44,0:00:13.72,Sub,,0,0,0,,{\fad(60,0)}—Yo diría que bastante\Nimportante.
+Dialogue: 0,0:00:14.46,0:00:15.84,Sub,,0,0,0,,{\fad(60,0)}—Bastante muy importante.
+Dialogue: 0,0:00:16.08,0:00:19.00,Sub,,0,0,0,,{\fad(60,0)}—Mire, señor Dawson, voy a\Nser directo y honesto
+Dialogue: 0,0:00:19.00,0:00:20.34,Sub,,0,0,0,,{\fad(60,0)}con usted por teléfono,\Nrapidito.
+Dialogue: 0,0:00:21.54,0:00:26.50,Sub,,0,0,0,,{\fad(60,0)}Sé que yo no le caigo\Nbien.
+Dialogue: 0,0:00:27.90,0:00:28.72,Sub,,0,0,0,,{\fad(60,0)}—Correcto.
+Dialogue: 0,0:00:29.92,0:00:31.56,Sub,,0,0,0,,{\fad(60,0)}—De verdad me gusta su\Nhija,
+Dialogue: 0,0:00:31.66,0:00:33.72,Sub,,0,0,0,,{\fad(60,0)}soy un hombre afortunado.
+Dialogue: 0,0:00:34.92,0:00:37.76,Sub,,0,0,0,,{\fad(60,0)}—Tú no le gustas. En mi\Nopinión,
+Dialogue: 0,0:00:39.06,0:00:40.94,Sub,,0,0,0,,{\fad(60,0)}ella te ve como un amigo,\Ncomo
+Dialogue: 0,0:00:40.94,0:00:41.98,Sub,,0,0,0,,{\fad(60,0)}un pez en una pecera.
+Dialogue: 0,0:00:43.18,0:00:46.12,Sub,,0,0,0,,{\fad(60,0)}—¿Por qué lo dice, señor?\N—Porque conozco a mi hija.

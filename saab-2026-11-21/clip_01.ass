@@ -1,0 +1,31 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:46.11,Hook,,0,0,0,,GTA 6 ES EL FUTURO
+Dialogue: 0,0:00:00.00,0:00:01.58,Sub,,0,0,0,,{\fad(60,0)}No puedo creer que esto\Nsea GTA 6, bro
+Dialogue: 0,0:00:01.58,0:00:04.54,Sub,,0,0,0,,{\fad(60,0)}Sí, esto es GTA 6, bro
+Dialogue: 0,0:00:06.74,0:00:09.64,Sub,,0,0,0,,{\fad(60,0)}Anoche hice lo de buscar\Ntesoros
+Dialogue: 0,0:00:09.64,0:00:12.64,Sub,,0,0,0,,{\fad(60,0)}Gané 2,000 dólares, bro
+Dialogue: 0,0:00:12.64,0:00:15.00,Sub,,0,0,0,,{\fad(60,0)}Gané 2,000 dólares
+Dialogue: 0,0:00:15.00,0:00:16.56,Sub,,0,0,0,,{\fad(60,0)}Sí
+Dialogue: 0,0:00:17.76,0:00:19.96,Sub,,0,0,0,,{\fad(60,0)}Hice toda la búsqueda de\Ntesoros, Dios mío
+Dialogue: 0,0:00:19.96,0:00:22.76,Sub,,0,0,0,,{\fad(60,0)}Estuvo buenísimo, de\Nverdad, buenísimo
+Dialogue: 0,0:00:22.76,0:00:25.18,Sub,,0,0,0,,{\fad(60,0)}Voy a guardar algo de\Nefectivo por ahora
+Dialogue: 0,0:00:25.18,0:00:27.74,Sub,,0,0,0,,{\fad(60,0)}Más vale que mi balón esté\Nafuera
+Dialogue: 0,0:00:31.25,0:00:34.39,Sub,,0,0,0,,{\fad(60,0)}Dios mío, bro, no puedo\Ncreer que esto sea GTA 6
+Dialogue: 0,0:00:34.39,0:00:37.39,Sub,,0,0,0,,{\fad(60,0)}No lo puedo creer, no lo\Npuedo...
+Dialogue: 0,0:00:37.39,0:00:40.41,Sub,,0,0,0,,{\fad(60,0)}...creer. Esto de aquí es\Nel futuro, bro
+Dialogue: 0,0:00:41.61,0:00:43.75,Sub,,0,0,0,,{\fad(60,0)}Ahí está mi balón. ¡Vamos!
+Dialogue: 0,0:00:44.95,0:00:46.11,Sub,,0,0,0,,{\fad(60,0)}Es el primer tiro, apenas\Nestoy calentando

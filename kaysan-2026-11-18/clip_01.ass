@@ -1,0 +1,29 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:37.70,Hook,,0,0,0,,NI CASA TENGO
+Dialogue: 0,0:00:00.12,0:00:02.72,Sub,,0,0,0,,{\fad(60,0)}—Dale a Start, y luego\Ncreo que es en Ajustes.
+Dialogue: 0,0:00:04.06,0:00:06.34,Sub,,0,0,0,,{\fad(60,0)}—Sí, es en Otros, Social.
+Dialogue: 0,0:00:07.50,0:00:07.90,Sub,,0,0,0,,{\fad(60,0)}Okay.
+Dialogue: 0,0:00:09.10,0:00:11.28,Sub,,0,0,0,,{\fad(60,0)}—Ya está, ya está. Pero\Nsaben en qué servidor\Nestoy.
+Dialogue: 0,0:00:11.90,0:00:15.12,Sub,,0,0,0,,{\fad(60,0)}—Sí, eso está bien. Pero\Nno saben dónde vives, ¿no?
+Dialogue: 0,0:00:16.26,0:00:16.70,Sub,,0,0,0,,{\fad(60,0)}—Nop.
+Dialogue: 0,0:00:17.74,0:00:18.88,Sub,,0,0,0,,{\fad(60,0)}Pero es que no tengo casa.
+Dialogue: 0,0:00:19.00,0:00:23.80,Sub,,0,0,0,,{\fad(60,0)}Cuando camines, bro, y me\Nveas venir, te apartas.
+Dialogue: 0,0:00:23.80,0:00:25.40,Sub,,0,0,0,,{\fad(60,0)}¿Crees que esa M4 de\Njuguete me da miedo?
+Dialogue: 0,0:00:26.60,0:00:31.58,Sub,,0,0,0,,{\fad(60,0)}Te voy a dar una paliza,\N¿entiendes? Te voy a\Nagarrar del cuello
+Dialogue: 0,0:00:31.58,0:00:35.44,Sub,,0,0,0,,{\fad(60,0)}y te voy a hacer un choke\Nslam como Kane, como el\NUndertaker, ¿entiendes?
+Dialogue: 0,0:00:35.44,0:00:36.72,Sub,,0,0,0,,{\fad(60,0)}Con un tombstone.
+Dialogue: 0,0:00:37.04,0:00:37.58,Sub,,0,0,0,,{\fad(60,0)}¿Qué soy?

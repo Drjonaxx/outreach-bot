@@ -1,0 +1,30 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:30.96,Hook,,0,0,0,,¡5 ESTRELLAS EN GTA 6!
+Dialogue: 0,0:00:00.12,0:00:01.20,Sub,,0,0,0,,{\fad(60,0)}Chat, ¿qué hago? Vienen…
+Dialogue: 0,0:00:02.58,0:00:04.82,Sub,,0,0,0,,{\fad(60,0)}¡Cinco estrellas! Dicen\Ncinco, dicen cinco…
+Dialogue: 0,0:00:04.82,0:00:05.76,Sub,,0,0,0,,{\fad(60,0)}…estrellas. ¡Vienen!
+Dialogue: 0,0:00:06.00,0:00:06.78,Sub,,0,0,0,,{\fad(60,0)}Holy sh*t.
+Dialogue: 0,0:00:07.82,0:00:09.18,Sub,,0,0,0,,{\fad(60,0)}¡Holy sh*t!
+Dialogue: 0,0:00:09.30,0:00:11.50,Sub,,0,0,0,,{\fad(60,0)}Ok, no tengo… ¡No me puedo\Nescapar!
+Dialogue: 0,0:00:12.70,0:00:13.82,Sub,,0,0,0,,{\fad(60,0)}¡No me puedo escapar!
+Dialogue: 0,0:00:14.78,0:00:16.82,Sub,,0,0,0,,{\fad(60,0)}¡Voy a escapar, voy a\Nescapar, voy a escapar…
+Dialogue: 0,0:00:16.82,0:00:17.16,Sub,,0,0,0,,{\fad(60,0)}…voy a escapar!
+Dialogue: 0,0:00:19.00,0:00:20.28,Sub,,0,0,0,,{\fad(60,0)}Ah, Dios.
+Dialogue: 0,0:00:21.48,0:00:23.98,Sub,,0,0,0,,{\fad(60,0)}Es muy complicado escapar.
+Dialogue: 0,0:00:25.18,0:00:25.76,Sub,,0,0,0,,{\fad(60,0)}Oh, me morí.
+Dialogue: 0,0:00:27.06,0:00:27.56,Sub,,0,0,0,,{\fad(60,0)}Me morí.
+Dialogue: 0,0:00:28.76,0:00:30.84,Sub,,0,0,0,,{\fad(60,0)}No te curas en este juego.

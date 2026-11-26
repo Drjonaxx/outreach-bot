@@ -1,0 +1,29 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:30.32,Hook,,0,0,0,,ESTO ES FACILITO
+Dialogue: 0,0:00:00.12,0:00:01.76,Sub,,0,0,0,,{\fad(60,0)}¡Oh, mi hermano! Facilito.
+Dialogue: 0,0:00:02.96,0:00:04.26,Sub,,0,0,0,,{\fad(60,0)}Hombre, qué fácil,\Nhermano.
+Dialogue: 0,0:00:05.46,0:00:07.14,Sub,,0,0,0,,{\fad(60,0)}Esto es lo más fácil del\Nmundo, mira.
+Dialogue: 0,0:00:07.38,0:00:10.26,Sub,,0,0,0,,{\fad(60,0)}Ya, wey, para. ¡No mames,\Ncabrón!
+Dialogue: 0,0:00:10.26,0:00:11.40,Sub,,0,0,0,,{\fad(60,0)}¡Ya no mames!
+Dialogue: 0,0:00:12.60,0:00:14.42,Sub,,0,0,0,,{\fad(60,0)}¡Ya no me voy a acordar,\Nculero, hijo de tu
+Dialogue: 0,0:00:14.42,0:00:14.88,Sub,,0,0,0,,{\fad(60,0)}puta madre!
+Dialogue: 0,0:00:15.12,0:00:17.66,Sub,,0,0,0,,{\fad(60,0)}«Aquí es donde sostengo tu\Nmano y te digo lo
+Dialogue: 0,0:00:17.66,0:00:20.70,Sub,,0,0,0,,{\fad(60,0)}siguiente: tienes que\Nllegar hasta la ronda 19,\N20».
+Dialogue: 0,0:00:20.70,0:00:22.34,Sub,,0,0,0,,{\fad(60,0)}¡No, hombre! ¡A
+Dialogue: 0,0:00:23.54,0:00:26.70,Sub,,0,0,0,,{\fad(60,0)}la verga! No me digas eso.\N¿Cómo
+Dialogue: 0,0:00:26.70,0:00:29.64,Sub,,0,0,0,,{\fad(60,0)}que ronda 20? Llegué a la\N11, ya no podía
+Dialogue: 0,0:00:29.64,0:00:30.32,Sub,,0,0,0,,{\fad(60,0)}más.

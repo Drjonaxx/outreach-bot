@@ -1,0 +1,32 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:29.14,Hook,,0,0,0,,¡JASON, DEFIÉNDEME!
+Dialogue: 0,0:00:00.12,0:00:01.06,Sub,,0,0,0,,{\fad(60,0)}Esos tipos se están\Npeleando.
+Dialogue: 0,0:00:01.30,0:00:01.88,Sub,,0,0,0,,{\fad(60,0)}Tengo que ver esto.
+Dialogue: 0,0:00:02.92,0:00:03.32,Sub,,0,0,0,,{\fad(60,0)}¡Uy!
+Dialogue: 0,0:00:04.52,0:00:05.78,Sub,,0,0,0,,{\fad(60,0)}Se están dando duro.
+Dialogue: 0,0:00:06.12,0:00:08.16,Sub,,0,0,0,,{\fad(60,0)}Yo le voy al de la camisa\Nazul oscuro.
+Dialogue: 0,0:00:08.46,0:00:08.82,Sub,,0,0,0,,{\fad(60,0)}Ese gana.
+Dialogue: 0,0:00:11.44,0:00:13.22,Sub,,0,0,0,,{\fad(60,0)}Uy, te crees muy rudo,\N¿eh?
+Dialogue: 0,0:00:13.46,0:00:14.78,Sub,,0,0,0,,{\fad(60,0)}¡Jason, defiéndeme!
+Dialogue: 0,0:00:17.50,0:00:17.90,Sub,,0,0,0,,{\fad(60,0)}Sí,
+Dialogue: 0,0:00:18.68,0:00:19.32,Sub,,0,0,0,,{\fad(60,0)}sí, métete ahí.
+Dialogue: 0,0:00:19.40,0:00:19.88,Sub,,0,0,0,,{\fad(60,0)}Tengo novio.
+Dialogue: 0,0:00:20.12,0:00:20.92,Sub,,0,0,0,,{\fad(60,0)}Te va a romper la cara.
+Dialogue: 0,0:00:21.62,0:00:22.36,Sub,,0,0,0,,{\fad(60,0)}¡Vamos, Jason!
+Dialogue: 0,0:00:22.58,0:00:24.44,Sub,,0,0,0,,{\fad(60,0)}¡Eso! Sí, así es.
+Dialogue: 0,0:00:24.68,0:00:25.76,Sub,,0,0,0,,{\fad(60,0)}¡Dos contra uno!
+Dialogue: 0,0:00:26.66,0:00:29.02,Sub,,0,0,0,,{\fad(60,0)}Métete con alguien de tu\Ntamaño, idiota.

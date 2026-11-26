@@ -1,0 +1,29 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:26.06,Hook,,0,0,0,,GTA 6 NO ME DEJÓ\NATROPELLARLOS
+Dialogue: 0,0:00:00.12,0:00:01.66,Sub,,0,0,0,,{\fad(60,0)}—¡Vámonos de aquí, carajo!
+Dialogue: 0,0:00:03.04,0:00:04.34,Sub,,0,0,0,,{\fad(60,0)}—Soy hombre muerto.
+Dialogue: 0,0:00:05.54,0:00:06.28,Sub,,0,0,0,,{\fad(60,0)}—¡Se cagaron todos!
+Dialogue: 0,0:00:06.50,0:00:08.22,Sub,,0,0,0,,{\fad(60,0)}¡Y yo que iba para\Nadelante y no me dejaba!
+Dialogue: 0,0:00:08.36,0:00:09.12,Sub,,0,0,0,,{\fad(60,0)}¡Quería atropellarlos!
+Dialogue: 0,0:00:10.32,0:00:11.52,Sub,,0,0,0,,{\fad(60,0)}¡La puta, boludo!
+Dialogue: 0,0:00:11.86,0:00:14.94,Sub,,0,0,0,,{\fad(60,0)}Estaba apretando R2 para\Npasarlos por arriba y no
+Dialogue: 0,0:00:14.94,0:00:15.60,Sub,,0,0,0,,{\fad(60,0)}me dejaba.
+Dialogue: 0,0:00:16.80,0:00:17.67,Sub,,0,0,0,,{\fad(60,0)}No, no me dejaba.
+Dialogue: 0,0:00:19.00,0:00:20.14,Sub,,0,0,0,,{\fad(60,0)}No te deja ir para\Nadelante.
+Dialogue: 0,0:00:21.34,0:00:23.66,Sub,,0,0,0,,{\fad(60,0)}Lo que yo quería hacer es\Npuro GTA:
+Dialogue: 0,0:00:23.66,0:00:25.60,Sub,,0,0,0,,{\fad(60,0)}atropellarlos, porque los\Ntengo adelante con armas,
+Dialogue: 0,0:00:25.78,0:00:25.94,Sub,,0,0,0,,{\fad(60,0)}¡boludo!

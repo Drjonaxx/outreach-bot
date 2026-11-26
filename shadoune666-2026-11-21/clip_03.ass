@@ -1,0 +1,27 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:30.93,Hook,,0,0,0,,¿HUIR EN AVIÓN BAJO\NBALAS?
+Dialogue: 0,0:00:00.12,0:00:02.00,Sub,,0,0,0,,{\fad(60,0)}¿Tengo que ir al avión?
+Dialogue: 0,0:00:04.27,0:00:06.49,Sub,,0,0,0,,{\fad(60,0)}No, no, no tiene sentido.\N¿Cómo
+Dialogue: 0,0:00:07.69,0:00:09.75,Sub,,0,0,0,,{\fad(60,0)}vas a subir a un avión\Ncuando están disparando,
+Dialogue: 0,0:00:09.75,0:00:10.83,Sub,,0,0,0,,{\fad(60,0)}bro? No tiene sentido.
+Dialogue: 0,0:00:11.07,0:00:13.73,Sub,,0,0,0,,{\fad(60,0)}¿En qué momento te\Nconviene subir a un avión\Ncuando
+Dialogue: 0,0:00:13.73,0:00:15.85,Sub,,0,0,0,,{\fad(60,0)}hay 10 pibes disparando
+Dialogue: 0,0:00:17.83,0:00:20.15,Sub,,0,0,0,,{\fad(60,0)}aquí? Y sí, ahí vamos.\N¡Arriba, bro!
+Dialogue: 0,0:00:21.35,0:00:21.93,Sub,,0,0,0,,{\fad(60,0)}Ahí vamos. Ahora
+Dialogue: 0,0:00:23.21,0:00:24.33,Sub,,0,0,0,,{\fad(60,0)}va a ser un looping.
+Dialogue: 0,0:00:24.45,0:00:27.59,Sub,,0,0,0,,{\fad(60,0)}¡A la verga! Pensé que nos\Níbamos a morir. Me caía.
+Dialogue: 0,0:00:28.79,0:00:30.81,Sub,,0,0,0,,{\fad(60,0)}Estaba que me estrellaba\Nahí.

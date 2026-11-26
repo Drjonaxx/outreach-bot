@@ -1,0 +1,32 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:36.92,Hook,,0,0,0,,JASON YA ESTÁ\NMUSCULOSO
+Dialogue: 0,0:00:00.12,0:00:02.54,Sub,,0,0,0,,{\fad(60,0)}Espera, acabo de notar que\NJason
+Dialogue: 0,0:00:02.54,0:00:03.38,Sub,,0,0,0,,{\fad(60,0)}sí se puso musculoso.
+Dialogue: 0,0:00:04.30,0:00:06.94,Sub,,0,0,0,,{\fad(60,0)}Sí, miren, miren mis\Nbíceps.
+Dialogue: 0,0:00:07.12,0:00:08.12,Sub,,0,0,0,,{\fad(60,0)}¡Dios mío!
+Dialogue: 0,0:00:09.76,0:00:11.28,Sub,,0,0,0,,{\fad(60,0)}¡Nos estamos poniendo\Nenormes!
+Dialogue: 0,0:00:12.08,0:00:13.56,Sub,,0,0,0,,{\fad(60,0)}Hermano, miren esto.
+Dialogue: 0,0:00:13.70,0:00:14.14,Sub,,0,0,0,,{\fad(60,0)}Ay, hermano.
+Dialogue: 0,0:00:14.20,0:00:15.58,Sub,,0,0,0,,{\fad(60,0)}No puedo creer que esto\Nsea GTA 6.
+Dialogue: 0,0:00:16.86,0:00:19.56,Sub,,0,0,0,,{\fad(60,0)}No puedo creer que esto\Nsea GTA 6. Cada vez que\Nentro
+Dialogue: 0,0:00:19.56,0:00:22.04,Sub,,0,0,0,,{\fad(60,0)}me quedo en shock y, no\Nles voy a mentir,
+Dialogue: 0,0:00:22.04,0:00:23.90,Sub,,0,0,0,,{\fad(60,0)}se me cae la quijada hasta\Nel piso.
+Dialogue: 0,0:00:24.46,0:00:25.54,Sub,,0,0,0,,{\fad(60,0)}—Asegúrate de comer\Ntambién.
+Dialogue: 0,0:00:26.76,0:00:29.28,Sub,,0,0,0,,{\fad(60,0)}—Ya comí. Estoy en una\Ndieta de batidos de\Nproteína.
+Dialogue: 0,0:00:29.76,0:00:31.38,Sub,,0,0,0,,{\fad(60,0)}Hermano, ¿dónde consigo\Ncomida?
+Dialogue: 0,0:00:31.56,0:00:34.16,Sub,,0,0,0,,{\fad(60,0)}¿Voy a una tienda o al\Nsupermercado?
+Dialogue: 0,0:00:35.62,0:00:36.80,Sub,,0,0,0,,{\fad(60,0)}¿O tengo que cocinar yo?

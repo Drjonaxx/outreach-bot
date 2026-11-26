@@ -1,0 +1,33 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:27.10,Hook,,0,0,0,,LOS DETALLES DE GTA 6
+Dialogue: 0,0:00:00.12,0:00:00.74,Sub,,0,0,0,,{\fad(60,0)}¿Qué tenemos en el refri?
+Dialogue: 0,0:00:01.94,0:00:02.64,Sub,,0,0,0,,{\fad(60,0)}¿No hay batidos de\Nproteína?
+Dialogue: 0,0:00:02.80,0:00:03.26,Sub,,0,0,0,,{\fad(60,0)}¿Nada de eso?
+Dialogue: 0,0:00:04.28,0:00:05.44,Sub,,0,0,0,,{\fad(60,0)}Me llevo un batido.
+Dialogue: 0,0:00:06.54,0:00:07.92,Sub,,0,0,0,,{\fad(60,0)}¿Un batido...?
+Dialogue: 0,0:00:08.08,0:00:08.30,Sub,,0,0,0,,{\fad(60,0)}¿Qué es?
+Dialogue: 0,0:00:08.42,0:00:08.80,Sub,,0,0,0,,{\fad(60,0)}¿Un batido verde?
+Dialogue: 0,0:00:09.08,0:00:09.48,Sub,,0,0,0,,{\fad(60,0)}¡Dios mío!
+Dialogue: 0,0:00:09.54,0:00:10.50,Sub,,0,0,0,,{\fad(60,0)}Mira lo verde que se ve\Npor dentro.
+Dialogue: 0,0:00:11.28,0:00:12.24,Sub,,0,0,0,,{\fad(60,0)}¡Dios mío!
+Dialogue: 0,0:00:12.48,0:00:13.32,Sub,,0,0,0,,{\fad(60,0)}Esto es una locura.
+Dialogue: 0,0:00:13.52,0:00:14.84,Sub,,0,0,0,,{\fad(60,0)}¡Y hasta puedes hacer\Ncosas así!
+Dialogue: 0,0:00:17.84,0:00:18.58,Sub,,0,0,0,,{\fad(60,0)}¿Qué hay en la alacena?
+Dialogue: 0,0:00:19.78,0:00:20.56,Sub,,0,0,0,,{\fad(60,0)}Dame una barra de\Nproteína.
+Dialogue: 0,0:00:21.76,0:00:23.44,Sub,,0,0,0,,{\fad(60,0)}Hasta se la come con una\Nsola mano, hermano.
+Dialogue: 0,0:00:24.00,0:00:25.94,Sub,,0,0,0,,{\fad(60,0)}Usó la boca para abrir la\Nmaldita envoltura.
+Dialogue: 0,0:00:26.14,0:00:26.98,Sub,,0,0,0,,{\fad(60,0)}¡Dios mío!

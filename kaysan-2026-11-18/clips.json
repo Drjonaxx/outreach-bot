@@ -1,0 +1,842 @@
+[
+  {
+    "start": 1859.72,
+    "end": 1907.04,
+    "title": "Modo streamer activado… total, ni casa tengo 🏠",
+    "hook": "Ni casa tengo",
+    "description": "Kaysan activa el modo streamer para que no sepan dónde vive… y luego se acuerda de que no tiene casa.",
+    "hashtags": [
+      "kaysan",
+      "kick",
+      "streamer",
+      "subtitulado",
+      "quedijoelgringo"
+    ],
+    "score": 6,
+    "reason": "streamer",
+    "keep": [
+      [
+        1859.72,
+        1880.74
+      ],
+      [
+        1885.06,
+        1889.86
+      ],
+      [
+        1893.14,
+        1907.04
+      ]
+    ],
+    "subs": [
+      {
+        "start": 1859.84,
+        "end": 1862.44,
+        "text": "—Dale a Start, y luego creo que es en Ajustes."
+      },
+      {
+        "start": 1863.78,
+        "end": 1866.06,
+        "text": "—Sí, es en Otros, Social."
+      },
+      {
+        "start": 1867.22,
+        "end": 1867.62,
+        "text": "Okay."
+      },
+      {
+        "start": 1870.84,
+        "end": 1873.02,
+        "text": "—Ya está, ya está. Pero saben en qué servidor estoy."
+      },
+      {
+        "start": 1873.64,
+        "end": 1876.86,
+        "text": "—Sí, eso está bien. Pero no saben dónde vives, ¿no?"
+      },
+      {
+        "start": 1878.0,
+        "end": 1878.44,
+        "text": "—Nop."
+      },
+      {
+        "start": 1879.48,
+        "end": 1880.62,
+        "text": "Pero es que no tengo casa."
+      },
+      {
+        "start": 1885.04,
+        "end": 1889.88,
+        "text": "Cuando camines, bro, y me veas venir, te apartas."
+      },
+      {
+        "start": 1893.12,
+        "end": 1894.74,
+        "text": "¿Crees que esa M4 de juguete me da miedo?"
+      },
+      {
+        "start": 1895.94,
+        "end": 1900.92,
+        "text": "Te voy a dar una paliza, ¿entiendes? Te voy a agarrar del cuello"
+      },
+      {
+        "start": 1900.92,
+        "end": 1904.78,
+        "text": "y te voy a hacer un choke slam como Kane, como el Undertaker, ¿entiendes?"
+      },
+      {
+        "start": 1904.78,
+        "end": 1906.06,
+        "text": "Con un tombstone."
+      },
+      {
+        "start": 1906.38,
+        "end": 1906.92,
+        "text": "¿Qué soy?"
+      }
+    ]
+  },
+  {
+    "start": 2202.68,
+    "end": 2261.37,
+    "title": "Solo dime dónde vives, te juro que no traigo nada 😇",
+    "hook": "Solo dime dónde vives",
+    "description": "Kaysan intenta que un jugador le diga dónde vive… con la excusa de ser amigos.",
+    "hashtags": [
+      "kaysan",
+      "kick",
+      "streamer",
+      "subtitulado",
+      "quedijoelgringo"
+    ],
+    "score": 7,
+    "reason": "dondevives",
+    "keep": [
+      [
+        2202.68,
+        2206.26
+      ],
+      [
+        2215.12,
+        2223.66
+      ],
+      [
+        2227.08,
+        2233.4
+      ],
+      [
+        2236.3,
+        2239.0
+      ],
+      [
+        2242.08,
+        2245.64
+      ],
+      [
+        2252.31,
+        2256.71
+      ],
+      [
+        2259.45,
+        2261.37
+      ]
+    ],
+    "subs": [
+      {
+        "start": 2202.8,
+        "end": 2203.9,
+        "text": "—Randall Joseph, man."
+      },
+      {
+        "start": 2204.3,
+        "end": 2206.14,
+        "text": "—¿Qué tal, Randall? Mucho gusto, Randall."
+      },
+      {
+        "start": 2215.24,
+        "end": 2218.04,
+        "text": "Pero espera, Randall, tengo una pregunta: ¿me dirías dónde vives?"
+      },
+      {
+        "start": 2218.18,
+        "end": 2219.98,
+        "text": "Eso es lo que necesito saber. ¿Me dirías dónde vives?"
+      },
+      {
+        "start": 2220.1,
+        "end": 2220.8,
+        "text": "Para ir a visitarte."
+      },
+      {
+        "start": 2221.96,
+        "end": 2223.54,
+        "text": "Espera, no tengo nada. Estoy pelado."
+      },
+      {
+        "start": 2227.2,
+        "end": 2228.54,
+        "text": "Así que seamos amigos, man."
+      },
+      {
+        "start": 2228.62,
+        "end": 2231.74,
+        "text": "Voy a tu casa, pasamos un buen rato, tomamos algo, comemos algo."
+      },
+      {
+        "start": 2231.86,
+        "end": 2233.28,
+        "text": "Solo dime dónde vives. Yo llego."
+      },
+      {
+        "start": 2236.42,
+        "end": 2238.88,
+        "text": "No traigo nada encima, te lo juro. No traigo nada."
+      },
+      {
+        "start": 2242.2,
+        "end": 2245.52,
+        "text": "Okay, entonces dime dónde te veo en el mapa. Dime adónde ir en el mapa."
+      },
+      {
+        "start": 2252.43,
+        "end": 2256.73,
+        "text": "No quiero ir a ningún otro lado. Quiero ir a tu casa: invítame, trátame bien, llévame a cenar."
+      },
+      {
+        "start": 2259.43,
+        "end": 2261.25,
+        "text": "—Vamos, bro. No soy tu amigo para eso."
+      }
+    ]
+  },
+  {
+    "start": 2959.91,
+    "end": 2993.29,
+    "title": "Compró la única casa y ya se cree dueño del barrio 👑",
+    "hook": "Este es mi barrio",
+    "description": "Kaysan acaba de comprar la primera casa de la zona y ya les cobra renta a los vecinos que no existen.",
+    "hashtags": [
+      "kaysan",
+      "kick",
+      "streamer",
+      "subtitulado",
+      "quedijoelgringo"
+    ],
+    "score": 7,
+    "reason": "barrio",
+    "keep": [
+      [
+        2959.91,
+        2993.29
+      ]
+    ],
+    "subs": [
+      {
+        "start": 2959.89,
+        "end": 2960.87,
+        "text": "Espera…"
+      },
+      {
+        "start": 2962.53,
+        "end": 2965.67,
+        "text": "¿Ya hay gente dando vueltas por aquí? Oigo"
+      },
+      {
+        "start": 2965.67,
+        "end": 2968.71,
+        "text": "dos carros. Tranquilos, tranquilos,"
+      },
+      {
+        "start": 2968.71,
+        "end": 2971.77,
+        "text": "no van a intentar nada. Esto es Kaysan-ville. Sé que me oyen:"
+      },
+      {
+        "start": 2971.77,
+        "end": 2973.65,
+        "text": "esta es mi casa, mi ciudad."
+      },
+      {
+        "start": 2973.65,
+        "end": 2976.73,
+        "text": "Si alguien compra aquí, por cierto, lo sacamos."
+      },
+      {
+        "start": 2976.73,
+        "end": 2979.73,
+        "text": "Se los digo ahora mismo: si alguien compra en este barrio, lo sacamos"
+      },
+      {
+        "start": 2979.73,
+        "end": 2981.95,
+        "text": "de la ciudad. Se los digo: pagan renta,"
+      },
+      {
+        "start": 2981.95,
+        "end": 2984.07,
+        "text": "me tienen que mostrar respeto, tienen que reconocerme"
+      },
+      {
+        "start": 2984.07,
+        "end": 2987.05,
+        "text": "y decir que este es mi pueblo. Y si compran,"
+      },
+      {
+        "start": 2987.05,
+        "end": 2989.51,
+        "text": "si compran una casa aquí, se los digo ahora mismo:"
+      },
+      {
+        "start": 2989.51,
+        "end": 2993.17,
+        "text": "les vamos a asaltar la casa. Tenemos un montón de decodificadores. No jueguen con nosotros."
+      }
+    ]
+  },
+  {
+    "start": 4191.89,
+    "end": 4216.67,
+    "title": "Lo desalojó de su tierra y mandó a ejecutarlo 💀",
+    "hook": "Quedas desalojado",
+    "description": "Kaysan le da a un desconocido un aviso de desalojo muy formal… con un final inesperado.",
+    "hashtags": [
+      "kaysan",
+      "kick",
+      "streamer",
+      "subtitulado",
+      "quedijoelgringo"
+    ],
+    "score": 7,
+    "reason": "desalojo",
+    "keep": [
+      [
+        4191.89,
+        4193.45
+      ],
+      [
+        4197.69,
+        4216.67
+      ]
+    ],
+    "subs": [
+      {
+        "start": 4192.01,
+        "end": 4193.33,
+        "text": "¿De quién es ese carro? ¿De quién es ese carro?"
+      },
+      {
+        "start": 4197.81,
+        "end": 4200.35,
+        "text": "Oye, man, no eres bienvenido en esta casa, bro."
+      },
+      {
+        "start": 4200.43,
+        "end": 4201.25,
+        "text": "La puerta está cerrada."
+      },
+      {
+        "start": 4202.53,
+        "end": 4204.11,
+        "text": "Lárgate de aquí."
+      },
+      {
+        "start": 4204.31,
+        "end": 4207.05,
+        "text": "Esta es la tierra de Kaysan, te lo digo ahora mismo."
+      },
+      {
+        "start": 4207.05,
+        "end": 4208.79,
+        "text": "Quedas desalojado de esta tierra."
+      },
+      {
+        "start": 4208.93,
+        "end": 4212.43,
+        "text": "Quedas desalojado. No vuelvas por aquí."
+      },
+      {
+        "start": 4212.45,
+        "end": 4214.15,
+        "text": "Si vuelves, te las vas a ver conmigo."
+      },
+      {
+        "start": 4214.45,
+        "end": 4215.29,
+        "text": "Okay, Draco."
+      },
+      {
+        "start": 4215.35,
+        "end": 4216.55,
+        "text": "Adelante, ejecútalo."
+      }
+    ]
+  },
+  {
+    "start": 4771.32,
+    "end": 4822.14,
+    "title": "Conoció a Cornelius hace 1 minuto y le dejó la casa 🛡️",
+    "hook": "Protector de la Corona",
+    "description": "Kaysan le encarga su casa a un jugador que acaba de conocer y le da un título muy importante.",
+    "hashtags": [
+      "kaysan",
+      "kick",
+      "streamer",
+      "subtitulado",
+      "quedijoelgringo"
+    ],
+    "score": 7,
+    "reason": "protector",
+    "keep": [
+      [
+        4771.32,
+        4774.12
+      ],
+      [
+        4778.48,
+        4793.64
+      ],
+      [
+        4795.48,
+        4796.32
+      ],
+      [
+        4804.72,
+        4822.14
+      ]
+    ],
+    "subs": [
+      {
+        "start": 4771.3,
+        "end": 4772.34,
+        "text": "¿Puedo confiar en ti, bro?"
+      },
+      {
+        "start": 4773.3,
+        "end": 4774.0,
+        "text": "—Sí, claro."
+      },
+      {
+        "start": 4778.46,
+        "end": 4780.14,
+        "text": "—Escucha, solo necesito que cuides esto."
+      },
+      {
+        "start": 4780.2,
+        "end": 4783.74,
+        "text": "¿Ves a la gente moviéndose raro ahora mismo? Se mueven raro."
+      },
+      {
+        "start": 4783.8,
+        "end": 4787.6,
+        "text": "Van a intentar entrar a esta casa. Escucha: esta noche, cuando me vaya a dormir."
+      },
+      {
+        "start": 4787.6,
+        "end": 4788.18,
+        "text": "¿Sabes lo que van a intentar?"
+      },
+      {
+        "start": 4788.28,
+        "end": 4789.96,
+        "text": "No se van a atrever, pero"
+      },
+      {
+        "start": 4789.96,
+        "end": 4793.52,
+        "text": "confío en ti. —Me voy a asegurar de que nadie baje aquí."
+      },
+      {
+        "start": 4795.46,
+        "end": 4796.2,
+        "text": "—Espera, ¿cómo te llamas?"
+      },
+      {
+        "start": 4804.84,
+        "end": 4805.24,
+        "text": "—¿Cornelius?"
+      },
+      {
+        "start": 4806.76,
+        "end": 4809.12,
+        "text": "—Dale, dale, dale. Confío en ti,"
+      },
+      {
+        "start": 4809.12,
+        "end": 4811.92,
+        "text": "Cornelius. Ahora eres el Protector de la Corona de esta casa."
+      },
+      {
+        "start": 4813.0,
+        "end": 4814.12,
+        "text": "—Soy un defensor, ¿oíste?"
+      },
+      {
+        "start": 4814.36,
+        "end": 4819.64,
+        "text": "Soy un defensor, con mi vida. Voy a volver una y otra vez."
+      },
+      {
+        "start": 4819.64,
+        "end": 4822.16,
+        "text": "—Me cae bien este tipo. Me cae muy bien este tipo."
+      }
+    ]
+  },
+  {
+    "start": 6026.92,
+    "end": 6068.1,
+    "title": "Le dijo que lo haría desinstalar el juego… y se fue 😂",
+    "hook": "Te haré desinstalar el juego",
+    "description": "Kaysan amenaza a otro jugador con quitarle todo… y el jugador se sale del juego.",
+    "hashtags": [
+      "kaysan",
+      "kick",
+      "streamer",
+      "subtitulado",
+      "quedijoelgringo"
+    ],
+    "score": 6,
+    "reason": "desinstalar",
+    "keep": [
+      [
+        6026.92,
+        6040.38
+      ],
+      [
+        6047.64,
+        6057.0
+      ],
+      [
+        6064.7,
+        6068.1
+      ]
+    ],
+    "subs": [
+      {
+        "start": 6026.9,
+        "end": 6030.04,
+        "text": "Qué locura, bro. Empecé a jugar esto"
+      },
+      {
+        "start": 6030.04,
+        "end": 6031.68,
+        "text": "hace una hora y me voy a hacer rico"
+      },
+      {
+        "start": 6031.68,
+        "end": 6033.82,
+        "text": "contigo. Todo el trabajo que le metiste a este"
+      },
+      {
+        "start": 6033.82,
+        "end": 6036.16,
+        "text": "juego… Yo acabo de llegar y te lo voy a quitar."
+      },
+      {
+        "start": 6036.16,
+        "end": 6040.4,
+        "text": "¿Entiendes? Te voy a hacer desinstalar esto de Steam."
+      },
+      {
+        "start": 6047.62,
+        "end": 6049.76,
+        "text": "Lo descargué hace una hora y te voy a"
+      },
+      {
+        "start": 6049.76,
+        "end": 6052.72,
+        "text": "quitar… ¡Dios mío! ¿Qué…"
+      },
+      {
+        "start": 6052.72,
+        "end": 6055.22,
+        "text": "¿Qué acaba de hacer?"
+      },
+      {
+        "start": 6055.22,
+        "end": 6057.02,
+        "text": "¡Se salió del juego con todas sus cosas!"
+      },
+      {
+        "start": 6064.68,
+        "end": 6068.12,
+        "text": "—¿O sea que se salió con todo lo bueno?"
+      }
+    ]
+  },
+  {
+    "start": 7975.77,
+    "end": 8023.1,
+    "title": "Por ser buena gente me vaciaron la casa 😤",
+    "hook": "Me vació la casa",
+    "description": "Kaysan confía en un jugador… y cuando se da cuenta, ya le vació el almacén.",
+    "hashtags": [
+      "kaysan",
+      "kick",
+      "streamer",
+      "subtitulado",
+      "quedijoelgringo"
+    ],
+    "score": 7,
+    "reason": "buenagente",
+    "keep": [
+      [
+        7975.77,
+        7978.97
+      ],
+      [
+        7987.45,
+        7997.27
+      ],
+      [
+        7998.19,
+        8001.51
+      ],
+      [
+        8005.36,
+        8023.1
+      ]
+    ],
+    "subs": [
+      {
+        "start": 7975.89,
+        "end": 7977.27,
+        "text": "¿Estás bien con esto? ¿Estás bien con esto?"
+      },
+      {
+        "start": 7977.41,
+        "end": 7978.85,
+        "text": "—Él es buena gente. Sí, es de confianza. Es de confianza."
+      },
+      {
+        "start": 7987.57,
+        "end": 7989.77,
+        "text": "—Okay, y luego el mercado negro."
+      },
+      {
+        "start": 7991.05,
+        "end": 7992.31,
+        "text": "Son 800 mil, ¿este?"
+      },
+      {
+        "start": 7994.59,
+        "end": 7997.15,
+        "text": "Sí, okay. Sí, lo compré y luego…"
+      },
+      {
+        "start": 7998.31,
+        "end": 8001.39,
+        "text": "Oye, espera… se llevó todo lo que tenía guardado."
+      },
+      {
+        "start": 8005.48,
+        "end": 8008.82,
+        "text": "Wow, ¿qué rayos? Yo puse el dinero ahí."
+      },
+      {
+        "start": 8008.9,
+        "end": 8009.8,
+        "text": "Se llevó todo."
+      },
+      {
+        "start": 8012.14,
+        "end": 8014.28,
+        "text": "Se llevó… ¿y lo dejaste irse?"
+      },
+      {
+        "start": 8014.58,
+        "end": 8017.82,
+        "text": "Con razón se fue tan rápido."
+      },
+      {
+        "start": 8019.34,
+        "end": 8023.1,
+        "text": "Y la gente pregunta por qué… Por eso no puedes ser tan buena gente."
+      }
+    ]
+  },
+  {
+    "start": 9840.7,
+    "end": 9901.87,
+    "title": "Llegó el nuevo… y ya lo pusieron de carnada 🎣",
+    "hook": "Tú vas de carnada",
+    "description": "Cornelius entra al grupo de Kaysan justo antes de una guerra… y le toca el peor puesto.",
+    "hashtags": [
+      "kaysan",
+      "kick",
+      "streamer",
+      "subtitulado",
+      "quedijoelgringo"
+    ],
+    "score": 6,
+    "reason": "carnada",
+    "keep": [
+      [
+        9840.7,
+        9847.8
+      ],
+      [
+        9870.6,
+        9872.42
+      ],
+      [
+        9876.76,
+        9878.76
+      ],
+      [
+        9882.35,
+        9885.75
+      ],
+      [
+        9888.15,
+        9890.89
+      ],
+      [
+        9899.09,
+        9901.87
+      ]
+    ],
+    "subs": [
+      {
+        "start": 9840.82,
+        "end": 9843.58,
+        "text": "¡Bien ahí, Cornelius! Chat, ¡bien ahí, Cornelius!"
+      },
+      {
+        "start": 9843.94,
+        "end": 9845.0,
+        "text": "Ya es oficial."
+      },
+      {
+        "start": 9846.72,
+        "end": 9847.68,
+        "text": "Vamos a la guerra."
+      },
+      {
+        "start": 9870.72,
+        "end": 9872.38,
+        "text": "Todos a sus puestos, cuando es todos a sus puestos…"
+      },
+      {
+        "start": 9876.74,
+        "end": 9878.64,
+        "text": "Cornelius, ¿qué arma traes?"
+      },
+      {
+        "start": 9882.47,
+        "end": 9885.63,
+        "text": "Tú… no tienes ni una M4."
+      },
+      {
+        "start": 9888.27,
+        "end": 9890.91,
+        "text": "Tú vas de carnada. Cornelius va de carnada."
+      },
+      {
+        "start": 9899.21,
+        "end": 9901.77,
+        "text": "—Bro, no vas a aguantar contra los escudos de oro. Lo siento."
+      }
+    ]
+  },
+  {
+    "start": 11500.52,
+    "end": 11568.0,
+    "title": "Saben dónde vivo… pero ni yo sé dónde vivo 🏠",
+    "hook": "¿Dónde vivo?",
+    "description": "A Kaysan le avisan que los rivales encontraron su casa… y él ni sabe dónde vive.",
+    "hashtags": [
+      "kaysan",
+      "kick",
+      "streamer",
+      "subtitulado",
+      "quedijoelgringo"
+    ],
+    "score": 7,
+    "reason": "dondevivo",
+    "keep": [
+      [
+        11500.52,
+        11504.78
+      ],
+      [
+        11517.94,
+        11523.46
+      ],
+      [
+        11527.52,
+        11532.44
+      ],
+      [
+        11533.9,
+        11543.08
+      ],
+      [
+        11565.54,
+        11568.0
+      ]
+    ],
+    "subs": [
+      {
+        "start": 11500.64,
+        "end": 11503.56,
+        "text": "Ya vieron todas las casas, tipo: «Okay, ahí es donde viven»."
+      },
+      {
+        "start": 11503.58,
+        "end": 11504.8,
+        "text": "Saben exactamente adónde volver."
+      },
+      {
+        "start": 11518.06,
+        "end": 11521.08,
+        "text": "—Espera, ¿o sea que saben dónde vivo? —Saben dónde vivimos."
+      },
+      {
+        "start": 11521.3,
+        "end": 11523.34,
+        "text": "Sí, nos encontraron."
+      },
+      {
+        "start": 11527.64,
+        "end": 11529.76,
+        "text": "Les hicieron lo mismo que a los otros."
+      },
+      {
+        "start": 11529.88,
+        "end": 11532.32,
+        "text": "Buscaron los nombres y la encontraron."
+      },
+      {
+        "start": 11533.9,
+        "end": 11535.52,
+        "text": "—Ya voy para allá. Ya voy para allá."
+      },
+      {
+        "start": 11535.52,
+        "end": 11537.22,
+        "text": "Ya llego. Ya voy… ¿Dónde es que vivo?"
+      },
+      {
+        "start": 11537.98,
+        "end": 11539.18,
+        "text": "Ni sé dónde vivo, bro."
+      },
+      {
+        "start": 11539.86,
+        "end": 11540.9,
+        "text": "¡Dios mío!"
+      },
+      {
+        "start": 11541.9,
+        "end": 11542.96,
+        "text": "No sé dónde vivo."
+      },
+      {
+        "start": 11565.66,
+        "end": 11568.02,
+        "text": "Espera, creo que ni mi chat sabe dónde vivo, en serio."
+      }
+    ]
+  }
+]

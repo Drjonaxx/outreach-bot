@@ -1,0 +1,34 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:47.88,Hook,,0,0,0,,NADIE ME EXPLICÓ NADA
+Dialogue: 0,0:00:00.00,0:00:02.14,Sub,,0,0,0,,{\fad(60,0)}A mí nunca nadie me\Nexplicó nada, y todo lo\Ntuve
+Dialogue: 0,0:00:02.14,0:00:02.94,Sub,,0,0,0,,{\fad(60,0)}que ir aprendiendo yo.
+Dialogue: 0,0:00:02.94,0:00:05.54,Sub,,0,0,0,,{\fad(60,0)}Cuando me compré mi moto y\Nme fui a la uni,
+Dialogue: 0,0:00:05.54,0:00:08.62,Sub,,0,0,0,,{\fad(60,0)}pues me la compré, y me\Ncompré mi casco
+Dialogue: 0,0:00:08.62,0:00:10.98,Sub,,0,0,0,,{\fad(60,0)}y todo, y pues llevé mi
+Dialogue: 0,0:00:10.98,0:00:13.86,Sub,,0,0,0,,{\fad(60,0)}casco ahí, y puse mi casco\Nsobre el
+Dialogue: 0,0:00:13.86,0:00:16.54,Sub,,0,0,0,,{\fad(60,0)}volante de mi moto. Y yo\Nno sabía que tenías que
+Dialogue: 0,0:00:16.54,0:00:19.04,Sub,,0,0,0,,{\fad(60,0)}comprar un candado para\Nque no te robaran,
+Dialogue: 0,0:00:19.04,0:00:21.74,Sub,,0,0,0,,{\fad(60,0)}wey, el casco, ¿vale?
+Dialogue: 0,0:00:21.86,0:00:24.74,Sub,,0,0,0,,{\fad(60,0)}Y ese día, wey, salí de\Nmi...
+Dialogue: 0,0:00:24.74,0:00:27.50,Sub,,0,0,0,,{\fad(60,0)}de mi universidad y se\Nrobaron mi moto...
+Dialogue: 0,0:00:27.50,0:00:30.46,Sub,,0,0,0,,{\fad(60,0)}No, perdón, el casco. Se\Nrobaron mi
+Dialogue: 0,0:00:30.46,0:00:33.36,Sub,,0,0,0,,{\fad(60,0)}casco, y fue como:
+Dialogue: 0,0:00:33.36,0:00:36.34,Sub,,0,0,0,,{\fad(60,0)}«¡A la verga!». Y los\Ncascos son caros.
+Dialogue: 0,0:00:36.34,0:00:39.40,Sub,,0,0,0,,{\fad(60,0)}La cosa es que me fui sin\Ncasco. Agarré
+Dialogue: 0,0:00:39.40,0:00:42.28,Sub,,0,0,0,,{\fad(60,0)}mi moto y me tuve que ir\Nsin
+Dialogue: 0,0:00:42.28,0:00:45.24,Sub,,0,0,0,,{\fad(60,0)}casco, ¡y que me para un\Nputo policía y me mete
+Dialogue: 0,0:00:45.24,0:00:47.88,Sub,,0,0,0,,{\fad(60,0)}una multa, wey! Estaba de\Nla chingada.

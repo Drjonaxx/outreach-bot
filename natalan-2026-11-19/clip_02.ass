@@ -1,0 +1,32 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:29.86,Hook,,0,0,0,,¿CUÁL ES LA X?
+Dialogue: 0,0:00:00.12,0:00:00.80,Sub,,0,0,0,,{\fad(60,0)}¿Cuál es la X?
+Dialogue: 0,0:00:00.96,0:00:01.96,Sub,,0,0,0,,{\fad(60,0)}Es mi primera vez en\NPlayStation.
+Dialogue: 0,0:00:02.20,0:00:02.76,Sub,,0,0,0,,{\fad(60,0)}¡Mierda!
+Dialogue: 0,0:00:02.76,0:00:03.86,Sub,,0,0,0,,{\fad(60,0)}¿Qué es eso, wey?
+Dialogue: 0,0:00:05.06,0:00:06.68,Sub,,0,0,0,,{\fad(60,0)}¡Qué mierda fue eso!
+Dialogue: 0,0:00:08.38,0:00:10.18,Sub,,0,0,0,,{\fad(60,0)}Me explotó algo y no veo\Nnada.
+Dialogue: 0,0:00:11.32,0:00:12.02,Sub,,0,0,0,,{\fad(60,0)}¡A la verga!
+Dialogue: 0,0:00:13.12,0:00:13.60,Sub,,0,0,0,,{\fad(60,0)}¡No!
+Dialogue: 0,0:00:14.30,0:00:15.14,Sub,,0,0,0,,{\fad(60,0)}¿Cuál es la X?
+Dialogue: 0,0:00:19.04,0:00:19.50,Sub,,0,0,0,,{\fad(60,0)}¡No mames, cabrón!
+Dialogue: 0,0:00:20.70,0:00:21.98,Sub,,0,0,0,,{\fad(60,0)}¡No, hijos de perra!
+Dialogue: 0,0:00:22.06,0:00:22.78,Sub,,0,0,0,,{\fad(60,0)}¡Me tasearon!
+Dialogue: 0,0:00:23.98,0:00:24.68,Sub,,0,0,0,,{\fad(60,0)}¡Hermanos, yo no...!
+Dialogue: 0,0:00:25.88,0:00:27.36,Sub,,0,0,0,,{\fad(60,0)}No sabía cuál era la X.
+Dialogue: 0,0:00:27.56,0:00:28.00,Sub,,0,0,0,,{\fad(60,0)}Perdón.
+Dialogue: 0,0:00:28.42,0:00:29.74,Sub,,0,0,0,,{\fad(60,0)}Está presa por mí, wey.

@@ -1,0 +1,29 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:31.29,Hook,,0,0,0,,SU PRIMERA VEZ EN GTA\N6
+Dialogue: 0,0:00:00.12,0:00:00.60,Sub,,0,0,0,,{\fad(60,0)}Copyright...
+Dialogue: 0,0:00:01.90,0:00:04.90,Sub,,0,0,0,,{\fad(60,0)}A ver, a ver, ¿por qué hay\Ncosas de copyright? No
+Dialogue: 0,0:00:04.90,0:00:05.16,Sub,,0,0,0,,{\fad(60,0)}entiendo.
+Dialogue: 0,0:00:06.36,0:00:06.84,Sub,,0,0,0,,{\fad(60,0)}Siguiente.
+Dialogue: 0,0:00:09.79,0:00:12.31,Sub,,0,0,0,,{\fad(60,0)}Acepto todo, me da igual.\NEstoy vendiendo mi alma
+Dialogue: 0,0:00:12.31,0:00:12.95,Sub,,0,0,0,,{\fad(60,0)}al diablo gratis.
+Dialogue: 0,0:00:13.19,0:00:13.67,Sub,,0,0,0,,{\fad(60,0)}Ojo...
+Dialogue: 0,0:00:15.85,0:00:16.33,Sub,,0,0,0,,{\fad(60,0)}¡Ojo!
+Dialogue: 0,0:00:17.29,0:00:19.43,Sub,,0,0,0,,{\fad(60,0)}¡Wow!
+Dialogue: 0,0:00:23.35,0:00:24.67,Sub,,0,0,0,,{\fad(60,0)}¡Estamos en GTA 6!
+Dialogue: 0,0:00:24.91,0:00:25.49,Sub,,0,0,0,,{\fad(60,0)}Ya, mucho texto.
+Dialogue: 0,0:00:27.25,0:00:30.23,Sub,,0,0,0,,{\fad(60,0)}Ahora entiendo por qué\Ndura 80 horas: ¡son 20
+Dialogue: 0,0:00:30.23,0:00:31.17,Sub,,0,0,0,,{\fad(60,0)}horas de intro!

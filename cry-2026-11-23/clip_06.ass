@@ -1,0 +1,40 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:41.84,Hook,,0,0,0,,CRY VS. LA ANESTESIA
+Dialogue: 0,0:00:00.12,0:00:02.24,Sub,,0,0,0,,{\fad(60,0)}Intenté hacer la batalla\Nesa de que cuentes hasta
+Dialogue: 0,0:00:02.24,0:00:02.46,Sub,,0,0,0,,{\fad(60,0)}10.
+Dialogue: 0,0:00:03.32,0:00:05.30,Sub,,0,0,0,,{\fad(60,0)}Y según yo, llegué hasta\N7, 8...
+Dialogue: 0,0:00:06.02,0:00:07.00,Sub,,0,0,0,,{\fad(60,0)}y que me rendí.
+Dialogue: 0,0:00:07.38,0:00:08.60,Sub,,0,0,0,,{\fad(60,0)}Y me dijo que llegué a 3.
+Dialogue: 0,0:00:08.72,0:00:10.08,Sub,,0,0,0,,{\fad(60,0)}Yo recuerdo que conté\Nhasta 8.
+Dialogue: 0,0:00:10.18,0:00:10.52,Sub,,0,0,0,,{\fad(60,0)}—En el mundo...
+Dialogue: 0,0:00:10.52,0:00:13.60,Sub,,0,0,0,,{\fad(60,0)}En el mundo de Cry: 9, 10,
+Dialogue: 0,0:00:14.42,0:00:14.86,Sub,,0,0,0,,{\fad(60,0)}300...
+Dialogue: 0,0:00:14.86,0:00:15.52,Sub,,0,0,0,,{\fad(60,0)}—Pero...
+Dialogue: 0,0:00:15.52,0:00:17.80,Sub,,0,0,0,,{\fad(60,0)}O sea, yo recuerdo que ni\Nsiquiera
+Dialogue: 0,0:00:17.80,0:00:18.96,Sub,,0,0,0,,{\fad(60,0)}había cerrado los ojos del\Ntodo.
+Dialogue: 0,0:00:19.42,0:00:21.46,Sub,,0,0,0,,{\fad(60,0)}Los cerré cuando me rendí\Nen el 8.
+Dialogue: 0,0:00:22.64,0:00:23.30,Sub,,0,0,0,,{\fad(60,0)}Es que soy yo.
+Dialogue: 0,0:00:24.06,0:00:26.46,Sub,,0,0,0,,{\fad(60,0)}Tenía que pelear, era mi\Norgullo, imagínate,
+Dialogue: 0,0:00:26.46,0:00:26.80,Sub,,0,0,0,,{\fad(60,0)}lo di todo.
+Dialogue: 0,0:00:27.44,0:00:27.98,Sub,,0,0,0,,{\fad(60,0)}Y cuando...
+Dialogue: 0,0:00:27.98,0:00:29.52,Sub,,0,0,0,,{\fad(60,0)}le pregunté, me dice:
+Dialogue: 0,0:00:30.38,0:00:31.74,Sub,,0,0,0,,{\fad(60,0)}«Llegaste al 3 de milagro.
+Dialogue: 0,0:00:33.04,0:00:34.44,Sub,,0,0,0,,{\fad(60,0)}Normalmente es así, de 1.»
+Dialogue: 0,0:00:35.44,0:00:37.40,Sub,,0,0,0,,{\fad(60,0)}No, no, yo a punto de\Npedir las cámaras de
+Dialogue: 0,0:00:37.40,0:00:38.40,Sub,,0,0,0,,{\fad(60,0)}seguridad, porque no...
+Dialogue: 0,0:00:38.40,0:00:40.08,Sub,,0,0,0,,{\fad(60,0)}O sea, no tenía sentido.
+Dialogue: 0,0:00:40.08,0:00:41.72,Sub,,0,0,0,,{\fad(60,0)}¡No era posible eso!

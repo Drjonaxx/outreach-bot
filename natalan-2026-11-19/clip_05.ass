@@ -1,0 +1,32 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:35.74,Hook,,0,0,0,,¿GTA 6 O LOS SIMS?
+Dialogue: 0,0:00:00.12,0:00:01.44,Sub,,0,0,0,,{\fad(60,0)}Creo que tenemos que\Nseguir avanzando en la
+Dialogue: 0,0:00:01.44,0:00:03.20,Sub,,0,0,0,,{\fad(60,0)}historia, wey. Como dijo\Nque venía mañana, pero
+Dialogue: 0,0:00:03.20,0:00:05.78,Sub,,0,0,0,,{\fad(60,0)}pues… ¡ah, su puta madre,
+Dialogue: 0,0:00:05.78,0:00:08.40,Sub,,0,0,0,,{\fad(60,0)}wey! Tengo que hacer la\Ndespensa, tengo que
+Dialogue: 0,0:00:08.40,0:00:11.44,Sub,,0,0,0,,{\fad(60,0)}comprarle flores. No,\Nhombre, se acabó la
+Dialogue: 0,0:00:11.44,0:00:14.40,Sub,,0,0,0,,{\fad(60,0)}diversión en GTA. ¿Esto\Nqué es, simulador de
+Dialogue: 0,0:00:14.40,0:00:16.28,Sub,,0,0,0,,{\fad(60,0)}Los Sims? ¿Yo pa' qué\Nquiero eso?
+Dialogue: 0,0:00:16.40,0:00:19.38,Sub,,0,0,0,,{\fad(60,0)}Pues yo solo quería\Ncomprar
+Dialogue: 0,0:00:19.38,0:00:20.82,Sub,,0,0,0,,{\fad(60,0)}unas flores, cabrón.
+Dialogue: 0,0:00:21.90,0:00:22.32,Sub,,0,0,0,,{\fad(60,0)}¡Ah!
+Dialogue: 0,0:00:23.76,0:00:25.18,Sub,,0,0,0,,{\fad(60,0)}¡Me dio en la cabeza,\Npendejo!
+Dialogue: 0,0:00:27.68,0:00:28.22,Sub,,0,0,0,,{\fad(60,0)}¿Quién fue?
+Dialogue: 0,0:00:28.46,0:00:30.18,Sub,,0,0,0,,{\fad(60,0)}Uno quiere hacer las cosas\Nbien y no lo dejan,
+Dialogue: 0,0:00:30.28,0:00:30.70,Sub,,0,0,0,,{\fad(60,0)}cabrón.
+Dialogue: 0,0:00:31.90,0:00:35.04,Sub,,0,0,0,,{\fad(60,0)}Cerrado. Flores… cerrado.\N¡Vete a la
+Dialogue: 0,0:00:35.04,0:00:35.74,Sub,,0,0,0,,{\fad(60,0)}mierda!

@@ -1,0 +1,32 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:39.82,Hook,,0,0,0,,JASON MANEJA SOLO
+Dialogue: 0,0:00:00.12,0:00:02.48,Sub,,0,0,0,,{\fad(60,0)}¿Puedo poner a Jason a\Nmanejar un carro y yo\Notro?
+Dialogue: 0,0:00:02.78,0:00:03.20,Sub,,0,0,0,,{\fad(60,0)}¿Se puede?
+Dialogue: 0,0:00:04.40,0:00:05.02,Sub,,0,0,0,,{\fad(60,0)}¿Cómo hago eso?
+Dialogue: 0,0:00:07.04,0:00:08.48,Sub,,0,0,0,,{\fad(60,0)}—Oye, amor, ¿puedes\Nmanejar tú?
+Dialogue: 0,0:00:09.68,0:00:10.90,Sub,,0,0,0,,{\fad(60,0)}—A ver, ¿me sigue?
+Dialogue: 0,0:00:12.10,0:00:13.36,Sub,,0,0,0,,{\fad(60,0)}Ok, ¿me sigue o no?
+Dialogue: 0,0:00:14.74,0:00:15.60,Sub,,0,0,0,,{\fad(60,0)}Jason, vamos
+Dialogue: 0,0:00:16.68,0:00:18.30,Sub,,0,0,0,,{\fad(60,0)}Vamos... no viene
+Dialogue: 0,0:00:23.46,0:00:24.30,Sub,,0,0,0,,{\fad(60,0)}¡Ah, sí me sigue!
+Dialogue: 0,0:00:26.48,0:00:28.20,Sub,,0,0,0,,{\fad(60,0)}¡Dios mío, destrozó el\Ncarro!
+Dialogue: 0,0:00:29.40,0:00:30.50,Sub,,0,0,0,,{\fad(60,0)}Eso está increíble
+Dialogue: 0,0:00:30.68,0:00:31.58,Sub,,0,0,0,,{\fad(60,0)}O sea... qué increíble
+Dialogue: 0,0:00:31.70,0:00:33.56,Sub,,0,0,0,,{\fad(60,0)}Las posibilidades son\Ninfinitas,
+Dialogue: 0,0:00:33.56,0:00:34.28,Sub,,0,0,0,,{\fad(60,0)}poder tener a los dos
+Dialogue: 0,0:00:35.14,0:00:36.34,Sub,,0,0,0,,{\fad(60,0)}listos ahí cerca
+Dialogue: 0,0:00:38.62,0:00:39.70,Sub,,0,0,0,,{\fad(60,0)}¡Ya quiero ir a Vice City!

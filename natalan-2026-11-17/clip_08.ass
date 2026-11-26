@@ -1,0 +1,33 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:50.15,Hook,,0,0,0,,EL TAXISTA SE DORMÍA Y\NYO NO SÉ COREANO
+Dialogue: 0,0:00:00.12,0:00:02.90,Sub,,0,0,0,,{\fad(60,0)}Me acuerdo de que cuando\Nvinieron mis amigos de
+Dialogue: 0,0:00:02.90,0:00:04.60,Sub,,0,0,0,,{\fad(60,0)}Estados Unidos a\Nvisitarnos acá a Corea,
+Dialogue: 0,0:00:06.62,0:00:09.14,Sub,,0,0,0,,{\fad(60,0)}el taxista se estaba\Nquedando dormido.
+Dialogue: 0,0:00:09.36,0:00:12.14,Sub,,0,0,0,,{\fad(60,0)}¡A la verga! El taxista\Nestaba así
+Dialogue: 0,0:00:12.14,0:00:13.06,Sub,,0,0,0,,{\fad(60,0)}y…
+Dialogue: 0,0:00:14.63,0:00:16.51,Sub,,0,0,0,,{\fad(60,0)}de repente el carro se\Nsalió así.
+Dialogue: 0,0:00:17.25,0:00:19.47,Sub,,0,0,0,,{\fad(60,0)}Pero como el carro es\Ninteligente, le pita cada
+Dialogue: 0,0:00:19.47,0:00:21.97,Sub,,0,0,0,,{\fad(60,0)}vez que se está saliendo\Ndel carril. Y de repente
+Dialogue: 0,0:00:21.97,0:00:24.31,Sub,,0,0,0,,{\fad(60,0)}se salió, y de
+Dialogue: 0,0:00:25.91,0:00:28.25,Sub,,0,0,0,,{\fad(60,0)}repente a los 15 minutos,
+Dialogue: 0,0:00:30.95,0:00:34.33,Sub,,0,0,0,,{\fad(60,0)}otra vez así. Como cuatro\Nveces. Estuvo horrible.
+Dialogue: 0,0:00:34.57,0:00:36.23,Sub,,0,0,0,,{\fad(60,0)}Teníamos que hablarle para\Nque no se durmiera,
+Dialogue: 0,0:00:36.37,0:00:39.33,Sub,,0,0,0,,{\fad(60,0)}pero ni de broma sabíamos\Ncómo tener
+Dialogue: 0,0:00:39.33,0:00:42.41,Sub,,0,0,0,,{\fad(60,0)}una conversación en\Ncoreano. O sea, sé cómo
+Dialogue: 0,0:00:42.41,0:00:44.75,Sub,,0,0,0,,{\fad(60,0)}comprar cosas y tal, pero\Npreguntarle «¿qué onda,
+Dialogue: 0,0:00:44.75,0:00:47.75,Sub,,0,0,0,,{\fad(60,0)}qué tal, cómo estás, qué\Ndice la familia, qué
+Dialogue: 0,0:00:47.75,0:00:50.03,Sub,,0,0,0,,{\fad(60,0)}tal el perro?»… eso no sé\Ncómo preguntárselo.

@@ -1,0 +1,34 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:46.23,Hook,,0,0,0,,AHORA SÍ ME CONCENTRO
+Dialogue: 0,0:00:00.12,0:00:01.32,Sub,,0,0,0,,{\fad(60,0)}Espera…
+Dialogue: 0,0:00:02.52,0:00:03.10,Sub,,0,0,0,,{\fad(60,0)}la cagué en grande.
+Dialogue: 0,0:00:04.54,0:00:05.82,Sub,,0,0,0,,{\fad(60,0)}La cagué en grande.
+Dialogue: 0,0:00:06.06,0:00:08.22,Sub,,0,0,0,,{\fad(60,0)}¡Mierda! ¿Pero qué pasa?
+Dialogue: 0,0:00:08.24,0:00:08.82,Sub,,0,0,0,,{\fad(60,0)}Me están reiniciando.
+Dialogue: 0,0:00:11.41,0:00:12.31,Sub,,0,0,0,,{\fad(60,0)}Dios mío.
+Dialogue: 0,0:00:12.37,0:00:12.95,Sub,,0,0,0,,{\fad(60,0)}No puede ser.
+Dialogue: 0,0:00:13.67,0:00:15.49,Sub,,0,0,0,,{\fad(60,0)}Ay, carajo, no puede ser.
+Dialogue: 0,0:00:15.49,0:00:18.31,Sub,,0,0,0,,{\fad(60,0)}¿Es en serio?
+Dialogue: 0,0:00:21.43,0:00:22.85,Sub,,0,0,0,,{\fad(60,0)}—Qué buen bróker nuevo,\N¿eh?
+Dialogue: 0,0:00:23.09,0:00:25.01,Sub,,0,0,0,,{\fad(60,0)}—¡Eso! Lo logramos.
+Dialogue: 0,0:00:26.21,0:00:26.63,Sub,,0,0,0,,{\fad(60,0)}Carajo.
+Dialogue: 0,0:00:28.25,0:00:30.33,Sub,,0,0,0,,{\fad(60,0)}Ok, ahora sí me concentro,\Nme concentro,
+Dialogue: 0,0:00:30.33,0:00:32.05,Sub,,0,0,0,,{\fad(60,0)}me concentro. ¡Basta de\Npayasadas!
+Dialogue: 0,0:00:33.53,0:00:36.71,Sub,,0,0,0,,{\fad(60,0)}¿Aterrizando un hidroavión\Nen un árbol?
+Dialogue: 0,0:00:39.39,0:00:41.07,Sub,,0,0,0,,{\fad(60,0)}—Qué buen bróker nuevo,\N¿eh?
+Dialogue: 0,0:00:41.19,0:00:42.51,Sub,,0,0,0,,{\fad(60,0)}—¿No puede ser que la\Nvolví a cagar?
+Dialogue: 0,0:00:43.33,0:00:45.83,Sub,,0,0,0,,{\fad(60,0)}¡No puede ser! —Qué buen\Nbróker nuevo, ¿eh?

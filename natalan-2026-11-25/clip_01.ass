@@ -1,0 +1,35 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:48.34,Hook,,0,0,0,,4 MINUTOS PARA COBRAR
+Dialogue: 0,0:00:00.00,0:00:02.74,Sub,,0,0,0,,{\fad(60,0)}Cuando me entra mi dinero,\NGuatemala tiene un
+Dialogue: 0,0:00:02.74,0:00:04.58,Sub,,0,0,0,,{\fad(60,0)}temita: cuando te entra\Ndinero desde Estados
+Dialogue: 0,0:00:04.58,0:00:06.16,Sub,,0,0,0,,{\fad(60,0)}Unidos, tienes que llenar\Nun
+Dialogue: 0,0:00:06.16,0:00:07.06,Sub,,0,0,0,,{\fad(60,0)}formulario.
+Dialogue: 0,0:00:07.06,0:00:09.64,Sub,,0,0,0,,{\fad(60,0)}Se me olvidó que hoy lunes
+Dialogue: 0,0:00:09.64,0:00:11.36,Sub,,0,0,0,,{\fad(60,0)}me entraba mi pago de\NYouTube.
+Dialogue: 0,0:00:12.44,0:00:14.90,Sub,,0,0,0,,{\fad(60,0)}Y me di cuenta cuando me\Nquedaban cuatro
+Dialogue: 0,0:00:14.90,0:00:17.90,Sub,,0,0,0,,{\fad(60,0)}minutos para que fueran\Nlas cinco de la
+Dialogue: 0,0:00:17.90,0:00:20.52,Sub,,0,0,0,,{\fad(60,0)}tarde. A las cinco esos\Ncabrones
+Dialogue: 0,0:00:21.02,0:00:24.18,Sub,,0,0,0,,{\fad(60,0)}se van, se pelan. Y dije:\N«¡No mames,
+Dialogue: 0,0:00:24.34,0:00:26.78,Sub,,0,0,0,,{\fad(60,0)}mi dinero!». Me puse en\Nchinga
+Dialogue: 0,0:00:27.92,0:00:30.96,Sub,,0,0,0,,{\fad(60,0)}a conseguir todo, wey: los\Ndocumentos, el PDF,
+Dialogue: 0,0:00:31.06,0:00:33.44,Sub,,0,0,0,,{\fad(60,0)}llenar el formulario,\Nmandar el correo. Y
+Dialogue: 0,0:00:33.44,0:00:36.54,Sub,,0,0,0,,{\fad(60,0)}cuando lo envié, eran las\Ncinco en punto. Y la
+Dialogue: 0,0:00:36.54,0:00:38.70,Sub,,0,0,0,,{\fad(60,0)}persona que tenía que\Nverlo vio mi mensaje a las
+Dialogue: 0,0:00:38.70,0:00:41.56,Sub,,0,0,0,,{\fad(60,0)}cinco y dijo: «Papi, son\Nlas cinco. De aquí me
+Dialogue: 0,0:00:41.56,0:00:44.30,Sub,,0,0,0,,{\fad(60,0)}voy, fuga. Ni que me\Npagaras horas extra tú».\N¡Pum!
+Dialogue: 0,0:00:44.44,0:00:44.80,Sub,,0,0,0,,{\fad(60,0)}Se fue. No
+Dialogue: 0,0:00:46.72,0:00:48.34,Sub,,0,0,0,,{\fad(60,0)}me entró mi dinero.

@@ -1,0 +1,35 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:27.62,Hook,,0,0,0,,¡A UN PÍXEL DEL LOBO!
+Dialogue: 0,0:00:00.12,0:00:01.08,Sub,,0,0,0,,{\fad(60,0)}Dime que no te...
+Dialogue: 0,0:00:01.08,0:00:02.14,Sub,,0,0,0,,{\fad(60,0)}¡Dime que no te mata, wey!
+Dialogue: 0,0:00:02.16,0:00:03.20,Sub,,0,0,0,,{\fad(60,0)}Me voy a encabronar si te\Nmata.
+Dialogue: 0,0:00:03.32,0:00:04.60,Sub,,0,0,0,,{\fad(60,0)}Congélate, congélate,\Ncongélate.
+Dialogue: 0,0:00:05.66,0:00:07.76,Sub,,0,0,0,,{\fad(60,0)}—¡Wey, me está siguiendo,\Nhijo de la chingada, wey!
+Dialogue: 0,0:00:08.10,0:00:08.50,Sub,,0,0,0,,{\fad(60,0)}—¡Ay, wey!
+Dialogue: 0,0:00:08.62,0:00:09.92,Sub,,0,0,0,,{\fad(60,0)}¡Lo tienes viniendo atrás,\Nwey!
+Dialogue: 0,0:00:10.16,0:00:10.92,Sub,,0,0,0,,{\fad(60,0)}¡No mames, cabrón!
+Dialogue: 0,0:00:11.56,0:00:13.16,Sub,,0,0,0,,{\fad(60,0)}¡No pares, no pares, no\Npares, wey!
+Dialogue: 0,0:00:13.16,0:00:13.80,Sub,,0,0,0,,{\fad(60,0)}¡Lo tienes a un píxel!
+Dialogue: 0,0:00:15.08,0:00:16.30,Sub,,0,0,0,,{\fad(60,0)}¡Lo tienes a un píxel,\Ncabrón!
+Dialogue: 0,0:00:17.02,0:00:17.66,Sub,,0,0,0,,{\fad(60,0)}¡Ay, wey!
+Dialogue: 0,0:00:17.82,0:00:18.22,Sub,,0,0,0,,{\fad(60,0)}¡Ay, wey!
+Dialogue: 0,0:00:18.22,0:00:18.50,Sub,,0,0,0,,{\fad(60,0)}¡Lo tienes!
+Dialogue: 0,0:00:19.58,0:00:21.24,Sub,,0,0,0,,{\fad(60,0)}—¡Uf, por fin, wey!
+Dialogue: 0,0:00:21.40,0:00:22.82,Sub,,0,0,0,,{\fad(60,0)}—Sí, lo tenías a un píxel,\Ncabrón.
+Dialogue: 0,0:00:22.90,0:00:23.30,Sub,,0,0,0,,{\fad(60,0)}Te lo juro.
+Dialogue: 0,0:00:23.90,0:00:26.36,Sub,,0,0,0,,{\fad(60,0)}Si frenabas un segundo,
+Dialogue: 0,0:00:26.36,0:00:27.50,Sub,,0,0,0,,{\fad(60,0)}te mataba, wey.

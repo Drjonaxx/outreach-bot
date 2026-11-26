@@ -1,0 +1,35 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:55.47,Hook,,0,0,0,,SI DICES QUE TU NOVIA\N'SIEMPRE SE VE IGUAL
+Dialogue: 0,0:00:00.12,0:00:03.00,Sub,,0,0,0,,{\fad(60,0)}La gente que dice «se ve\Nigual siempre», wey…
+Dialogue: 0,0:00:05.91,0:00:08.15,Sub,,0,0,0,,{\fad(60,0)}esos son los weyes que no\Nsaben qué onda con la\Nvida.
+Dialogue: 0,0:00:08.39,0:00:12.05,Sub,,0,0,0,,{\fad(60,0)}Vas a tener una novia y te\Nvan a parar en la calle\Npara grabar un TikTok,
+Dialogue: 0,0:00:12.15,0:00:13.51,Sub,,0,0,0,,{\fad(60,0)}te van a parar en la calle\Ny te van a decir:
+Dialogue: 0,0:00:13.75,0:00:16.59,Sub,,0,0,0,,{\fad(60,0)}«Rápido, te doy una casa,\Nuna Hilux
+Dialogue: 0,0:00:16.69,0:00:20.17,Sub,,0,0,0,,{\fad(60,0)}si me dices cómo viene\Nvestida tu novia».
+Dialogue: 0,0:00:20.95,0:00:23.91,Sub,,0,0,0,,{\fad(60,0)}Pero como tú siempre dices\N«siempre se ve igual»,\Nwey,
+Dialogue: 0,0:00:24.03,0:00:26.95,Sub,,0,0,0,,{\fad(60,0)}y eres la persona más poco\Natenta, no
+Dialogue: 0,0:00:26.95,0:00:28.41,Sub,,0,0,0,,{\fad(60,0)}te van a dar ni mierda\Nporque no te vas a
+Dialogue: 0,0:00:28.41,0:00:30.19,Sub,,0,0,0,,{\fad(60,0)}acordar de nada, wey.
+Dialogue: 0,0:00:30.27,0:00:33.37,Sub,,0,0,0,,{\fad(60,0)}Y no vas a tener una casa\Nnunca en tu maldita
+Dialogue: 0,0:00:33.37,0:00:36.55,Sub,,0,0,0,,{\fad(60,0)}vida. Y vas a morir. Va a\Nllegar ese
+Dialogue: 0,0:00:36.55,0:00:39.63,Sub,,0,0,0,,{\fad(60,0)}momento, wey, donde vas a\Nestar tirado en una
+Dialogue: 0,0:00:39.63,0:00:41.93,Sub,,0,0,0,,{\fad(60,0)}calle porque te agarraron\Ntres perros con rabia
+Dialogue: 0,0:00:41.93,0:00:44.45,Sub,,0,0,0,,{\fad(60,0)}y te empezaron a morder, y\Nen ese momento vas a
+Dialogue: 0,0:00:44.45,0:00:47.25,Sub,,0,0,0,,{\fad(60,0)}ver al cielo y vas a\Ndecir:
+Dialogue: 0,0:00:48.45,0:00:50.55,Sub,,0,0,0,,{\fad(60,0)}«Nada de esto hubiera\Npasado si hubiera sido\Nmás…
+Dialogue: 0,0:00:50.95,0:00:53.97,Sub,,0,0,0,,{\fad(60,0)}si hubiera sido más atento\Ny hubiera
+Dialogue: 0,0:00:53.97,0:00:55.35,Sub,,0,0,0,,{\fad(60,0)}visto la ropa que trae mi\Nnovia».

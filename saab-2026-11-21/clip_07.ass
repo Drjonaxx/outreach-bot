@@ -1,0 +1,50 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Montserrat ExtraBold,86,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,7,3,8,60,60,1304,1
+Style: Hook,Montserrat ExtraBold,64,&H00111111&,&H00111111&,&H00FFFFFF&,&H00FFFFFF&,1,0,0,0,100,100,0,0,3,14,0,2,80,80,1304,1
+Style: Sub,Montserrat ExtraBold,70,&H00FFFFFF&,&H00FFFFFF&,&H00000000&,&H80000000&,1,0,0,0,100,100,0,0,1,6,3,8,70,70,1304,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:49.07,Hook,,0,0,0,,AYUDAR EN GTA 6 SALE\NCARO
+Dialogue: 0,0:00:00.12,0:00:00.52,Sub,,0,0,0,,{\fad(60,0)}¡Oye!
+Dialogue: 0,0:00:00.98,0:00:02.40,Sub,,0,0,0,,{\fad(60,0)}¿Nos puedes ayudar?
+Dialogue: 0,0:00:03.30,0:00:03.98,Sub,,0,0,0,,{\fad(60,0)}—Sí, claro.
+Dialogue: 0,0:00:04.82,0:00:06.08,Sub,,0,0,0,,{\fad(60,0)}Me voy a dejar la máscara\Npuesta.
+Dialogue: 0,0:00:06.22,0:00:06.52,Sub,,0,0,0,,{\fad(60,0)}Qué más da.
+Dialogue: 0,0:00:08.08,0:00:09.14,Sub,,0,0,0,,{\fad(60,0)}—¿Nos das un empujón?
+Dialogue: 0,0:00:09.50,0:00:10.62,Sub,,0,0,0,,{\fad(60,0)}Tenemos que irnos.
+Dialogue: 0,0:00:11.88,0:00:12.44,Sub,,0,0,0,,{\fad(60,0)}—No hay problema.
+Dialogue: 0,0:00:12.94,0:00:13.32,Sub,,0,0,0,,{\fad(60,0)}Claro.
+Dialogue: 0,0:00:14.08,0:00:14.44,Sub,,0,0,0,,{\fad(60,0)}—Genial.
+Dialogue: 0,0:00:14.92,0:00:16.14,Sub,,0,0,0,,{\fad(60,0)}Afirma bien los pies.
+Dialogue: 0,0:00:16.32,0:00:17.16,Sub,,0,0,0,,{\fad(60,0)}—Ay, mierda.
+Dialogue: 0,0:00:17.78,0:00:18.28,Sub,,0,0,0,,{\fad(60,0)}No, no, no.
+Dialogue: 0,0:00:18.34,0:00:18.94,Sub,,0,0,0,,{\fad(60,0)}Espera, espera.
+Dialogue: 0,0:00:19.62,0:00:21.10,Sub,,0,0,0,,{\fad(60,0)}¡Aléjate de ahí!
+Dialogue: 0,0:00:21.18,0:00:22.16,Sub,,0,0,0,,{\fad(60,0)}Dios mío.
+Dialogue: 0,0:00:22.92,0:00:23.60,Sub,,0,0,0,,{\fad(60,0)}Al carajo con estos tipos,
+Dialogue: 0,0:00:24.74,0:00:25.68,Sub,,0,0,0,,{\fad(60,0)}al carajo con ellos.
+Dialogue: 0,0:00:25.68,0:00:27.26,Sub,,0,0,0,,{\fad(60,0)}Que pase lo que tenga que\Npasar.
+Dialogue: 0,0:00:27.52,0:00:28.38,Sub,,0,0,0,,{\fad(60,0)}Que pase.
+Dialogue: 0,0:00:29.18,0:00:30.32,Sub,,0,0,0,,{\fad(60,0)}¡Ay, no!
+Dialogue: 0,0:00:30.80,0:00:31.72,Sub,,0,0,0,,{\fad(60,0)}No, yo...
+Dialogue: 0,0:00:31.72,0:00:32.70,Sub,,0,0,0,,{\fad(60,0)}Ay, mierda.
+Dialogue: 0,0:00:33.90,0:00:35.22,Sub,,0,0,0,,{\fad(60,0)}Maldita sea.
+Dialogue: 0,0:00:37.51,0:00:40.05,Sub,,0,0,0,,{\fad(60,0)}No pensé que se iba a\Nmover tan rápido.
+Dialogue: 0,0:00:40.29,0:00:41.49,Sub,,0,0,0,,{\fad(60,0)}Perdí todo mi dinero, bro.
+Dialogue: 0,0:00:42.35,0:00:43.37,Sub,,0,0,0,,{\fad(60,0)}No, no perdí mi dinero.
+Dialogue: 0,0:00:43.51,0:00:44.19,Sub,,0,0,0,,{\fad(60,0)}No, todavía lo tengo.
+Dialogue: 0,0:00:44.27,0:00:44.61,Sub,,0,0,0,,{\fad(60,0)}Lo tengo.
+Dialogue: 0,0:00:44.69,0:00:45.43,Sub,,0,0,0,,{\fad(60,0)}Todavía lo tengo.
+Dialogue: 0,0:00:45.67,0:00:46.65,Sub,,0,0,0,,{\fad(60,0)}Mentí, bro.
+Dialogue: 0,0:00:46.81,0:00:47.19,Sub,,0,0,0,,{\fad(60,0)}Mentí.
+Dialogue: 0,0:00:47.43,0:00:48.35,Sub,,0,0,0,,{\fad(60,0)}Acabo de atropellar al\Ncaimán.
+Dialogue: 0,0:00:48.47,0:00:48.95,Sub,,0,0,0,,{\fad(60,0)}Perdón, bro.
